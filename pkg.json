@@ -1,0 +1,31 @@
+{
+  "name": "scv-esm",
+  "version": "1.0.0",
+  "description": "SuttaCentral Voice ES Modules",
+  "main": "index.js",
+  "module": "main.js",
+  "type" : "module",
+  "scripts": {
+    "test": "npm run test:verbose",
+    "test:test": "mocha -w --watch-ignore node_modules,.git,local -R min --inline-diffs -g TEST './@(src|test)/**/*.js'",
+    "test:verbose": "mocha --inline-diffs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sc-voice/scv-esm.git"
+  },
+  "keywords": [
+    "SuttaCentral",
+    "Voice"
+  ],
+  "author": "Karl Lew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sc-voice/scv-esm/issues"
+  },
+  "homepage": "https://github.com/sc-voice/scv-esm#readme",
+  "dependencies": {
+    "mocha": "^9.2.2",
+    "should": "^13.2.3"
+  }
+}
