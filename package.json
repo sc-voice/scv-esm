@@ -1,6 +1,6 @@
 {
   "name": "scv-esm",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "SuttaCentral Voice ES Module",
   "main": "index.js",
   "module": "main.js",
@@ -19,8 +19,7 @@
   },
   "author": "Karl Lew",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "^9.2.2",
     "should": "^13.2.3"
