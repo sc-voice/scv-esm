@@ -1,7 +1,14 @@
 #!/usr/bin/env node
 
+// ESM Node ugliness
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 const fs = require('fs');
 const path = require('path');
+import {fileURLToPath} from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const Axios = require('axios');
 const { logger } = require('log-instance');
 const { Memoizer } = require('memo-again');

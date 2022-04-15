@@ -1,4 +1,4 @@
-import { BilaraPath } from "../main.js";
+import { BilaraPath } from "../main.mjs";
 import should from "should";
 
 (typeof describe === 'function') && describe("bilara-path", function() {
