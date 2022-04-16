@@ -26,5 +26,8 @@
     "mocha": "^9.2.2",
     "scv-bilara": "^3.16.2",
     "should": "^13.2.3"
+  },
+  "dependencies": {
+    "assert": "^2.0.0"
   }
 }
