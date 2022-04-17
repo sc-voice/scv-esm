@@ -1,0 +1,10 @@
+#!/bin/bash
+DIR=`dirname $0`; 
+pushd $DIR/..
+SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+
+npm install --save-dev suttacentral-api@latest
+$DIR/js/suidmap.js
+echo "TBD: $DIR/examples"
+
+
