@@ -6,6 +6,5 @@ SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 npm install --save-dev suttacentral-api@latest
 $DIR/js/suidmap.js
 $DIR/js/examples.js
-echo "TBD: $DIR/examples"
-
+$DIR/publish-npm
 
