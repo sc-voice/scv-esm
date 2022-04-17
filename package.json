@@ -28,6 +28,5 @@
     "should": "^13.2.3"
   },
   "dependencies": {
-    "assert": "^2.0.0"
   }
 }

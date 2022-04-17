@@ -1,14 +1,15 @@
 import SuttaCentralId from './sutta-central-id.mjs';
-import assert from 'assert';
 import SUID_MAP from './auto/suidmap.mjs';
 
 const SUIDS = Object.keys(SUID_MAP).sort(SuttaCentralId.compareLow);
 
 export default class SuttaRef {
+
   constructor({ sutta_uid, lang, author, segnum }) {
-    assert(!!sutta_uid);
-    assert(sutta_uid.length > 0);
-    assert(!sutta_uid.match("/"));
+    if (!sutta_uid || !sutta_uid.length || /\//.test(sutta_uid)) {
+      throw new Error('use SuttaRef.create(${sutta_uid})');
+    }
+
     Object.assign(this, {
       sutta_uid,
       lang,
