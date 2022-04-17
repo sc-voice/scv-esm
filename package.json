@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "npm run test:verbose",
-    "test:test": "mocha -w --watch-ignore node_modules,.git,local -R min --inline-diffs -g TEST './@(src|test)/**/*.js'",
+    "test:test": "mocha --config test/mocha-watch.json",
     "test:verbose": "mocha --inline-diffs"
   },
   "repository": {

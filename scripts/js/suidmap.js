@@ -1,45 +1,43 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const path = require('path');
-const Axios = require('axios');
-const { logger } = require('log-instance');
-const { Memoizer } = require('memo-again');
-const {
-    BilaraData,
-    BilaraPathMap,
-    ExecGit,
-} = require('scv-bilara');
-const APP_DIR = path.join(__dirname, '..', '..');
-const API_DIR = path.join(APP_DIR, 'api');
-const SRC_DIR = path.join(APP_DIR, 'src');
-const LOCAL_DIR = path.join(APP_DIR, 'local');
-const SRC_SUIDMAP_MJS = path.join(SRC_DIR, 'auto', 'suidmap.mjs');
+const fs = require("fs");
+const path = require("path");
+const Axios = require("axios");
+const { logger } = require("log-instance");
+const { Memoizer } = require("memo-again");
+const { BilaraData, BilaraPathMap, ExecGit } = require("scv-bilara");
+const APP_DIR = path.join(__dirname, "..", "..");
+const API_DIR = path.join(APP_DIR, "api");
+const SRC_DIR = path.join(APP_DIR, "src");
+const LOCAL_DIR = path.join(APP_DIR, "local");
+const SRC_SUIDMAP_MJS = path.join(SRC_DIR, "auto", "suidmap.mjs");
 
-logger.logLevel = 'info';
+logger.logLevel = "info";
 
-(async function(){ try {
+(async function () {
+  try {
     let execGit = new ExecGit({
-        repo: 'https://github.com/ebt-site/ebt-data.git',
-        logger,
+      repo: "https://github.com/ebt-site/ebt-data.git",
+      logger,
     });
     let bilaraData = await new BilaraData({
-        name: 'ebt-data',
-        branch: 'published',
-        execGit,
+      name: "ebt-data",
+      branch: "published",
+      execGit,
     }).initialize(true);
-    let name = 'ebt-data';
+    let name = "ebt-data";
     let root = path.join(LOCAL_DIR, name);
     let bpOpts = { root };
-    let bilaraPathMap = new BilaraPathMap(bpOpts)
+    let bilaraPathMap = new BilaraPathMap(bpOpts);
     await bilaraPathMap.initialize();
     let suidMap = await bilaraPathMap.buildSuidMap();
-    let suidJson = JSON.stringify(suidMap, null, '\t');
+    let suidJson = JSON.stringify(suidMap, null, "\t");
     let suidMjs = [
-      'const SUIDMAP = ' + suidJson,
-      'export default SUIDMAP;',
-    ].join('\n');
+      "const SUIDMAP = " + suidJson,
+      "export default SUIDMAP;",
+    ].join("\n");
     await fs.promises.writeFile(SRC_SUIDMAP_MJS, suidMjs);
-} catch(e) {
+  } catch (e) {
     logger.warn(e);
-}})();
+  }
+})();
