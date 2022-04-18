@@ -1,7 +1,7 @@
 # scv-esm
 SuttaCentral Voice ES Modules.
 
-The Voice application was originally implemented using CommonJS modules, 
+The Voice application was originally implemented using [CommonJS](https://nodejs.org/api/modules.html) modules, 
 which are not part of the Javascript language standard.
 Javascript eventually added its 
 [own ES Module design](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules). 
