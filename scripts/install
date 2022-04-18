@@ -1,0 +1,11 @@
+#!/bin/bash
+DIR=`dirname $0`
+${DIR}/install-node14
+npm install
+
+MSG=`type rg`
+RC=$?; if [ "$RC" == "0" ]; then
+  echo -e "INSTALL\t: $MSG (OK)"
+else
+  suod apt-get install ripgrep
+fi
