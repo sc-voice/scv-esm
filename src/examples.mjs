@@ -2,9 +2,10 @@ import Examples from "./auto/examples.mjs";
 
 Object.defineProperty(Examples, "isExample", {
   value: (text,lang) => {
-    let tlc = text.toLowerCase();
+    let pat = text;
+    let re = new RegExp(`^${pat}$`, "iu");
     if (lang) {
-      let example = Examples[lang].find(eg => eg.toLowerCase() === tlc);
+      let example = Examples[lang].find(eg => re.test(eg));
       return example == null ? undefined : lang;
     }
 
@@ -13,7 +14,7 @@ Object.defineProperty(Examples, "isExample", {
       .reduce((a,l,i) => {
         let langExamples = Examples[l];
         if (a) { return a; }
-        let example = langExamples.find(eg => eg.toLowerCase() === tlc);
+        let example = langExamples.find(eg => re.test(eg));
         return example == null ? a : l;
       }, undefined)
   }

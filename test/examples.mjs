@@ -25,7 +25,10 @@ typeof describe === "function" &&
     });
     it("TESTTESTisExample", ()=>{
       should(Examples.isExample("but ma'am")).equal('en');
+      should(Examples.isExample("but ma.am")).equal('en');
+      should(Examples.isExample("ma.am")).equal(undefined);
       should(Examples.isExample('root of suffering')).equal('en');
+      should(Examples.isExample('what is root of suffering')).equal(undefined);
       should(Examples.isExample('Wurzel des Leidens')).equal('de');
       should(Examples.isExample('wurzel des leidens')).equal('de');
       should(Examples.isExample('Wurzel des Leidens', 'en')).equal(undefined);
