@@ -24,6 +24,7 @@ typeof describe === "function" &&
       });
     });
     it("TESTTESTisExample", ()=>{
+      should(Examples.isExample("but ma'am")).equal('en');
       should(Examples.isExample('root of suffering')).equal('en');
       should(Examples.isExample('Wurzel des Leidens')).equal('de');
       should(Examples.isExample('wurzel des leidens')).equal('de');
