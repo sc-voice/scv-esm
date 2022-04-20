@@ -1,7 +1,7 @@
 import SuttaCentralId from './sutta-central-id.mjs';
-import SUID_MAP from './auto/suidmap.mjs';
+import SuidMap from './auto/suid-map.mjs';
 
-const SUIDS = Object.keys(SUID_MAP).sort(SuttaCentralId.compareLow);
+const SUIDS = Object.keys(SuidMap).sort(SuttaCentralId.compareLow);
 
 export default class SuttaRef {
 

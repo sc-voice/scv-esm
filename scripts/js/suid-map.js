@@ -10,7 +10,7 @@ const APP_DIR = path.join(__dirname, "..", "..");
 const API_DIR = path.join(APP_DIR, "api");
 const SRC_DIR = path.join(APP_DIR, "src");
 const LOCAL_DIR = path.join(APP_DIR, "local");
-const SRC_SUIDMAP_MJS = path.join(SRC_DIR, "auto", "suidmap.mjs");
+const SRC_SUIDMAP_MJS = path.join(SRC_DIR, "auto", "suid-map.mjs");
 
 logger.logLevel = "info";
 
