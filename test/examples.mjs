@@ -26,6 +26,7 @@ typeof describe === "function" &&
     it("TESTTESTisExample", ()=>{
       should(Examples.isExample('root of suffering')).equal('en');
       should(Examples.isExample('Wurzel des Leidens')).equal('de');
+      should(Examples.isExample('wurzel des leidens')).equal('de');
       should(Examples.isExample('Wurzel des Leidens', 'en')).equal(undefined);
       should(Examples.isExample('Wurzel des Leidens', 'de')).equal('de');
       should(Examples.isExample('not an example')).equal(undefined);

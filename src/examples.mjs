@@ -2,18 +2,19 @@ import Examples from "./auto/examples.mjs";
 
 Object.defineProperty(Examples, "isExample", {
   value: (text,lang) => {
+    let tlc = text.toLowerCase();
     if (lang) {
-      let iExample = Examples[lang].indexOf(text);
-      return iExample < 0 ? undefined : lang;
+      let example = Examples[lang].find(eg => eg.toLowerCase() === tlc);
+      return example == null ? undefined : lang;
     }
 
     return Object.keys(Examples)
       .filter(k => k !== 'comment' && k !== 'authors')
-      .reduce((a,k,i) => {
-        let langExamples = Examples[k];
+      .reduce((a,l,i) => {
+        let langExamples = Examples[l];
         if (a) { return a; }
-        let iExample = langExamples.indexOf(text);
-        return iExample < 0 ? a : k;
+        let example = langExamples.find(eg => eg.toLowerCase() === tlc);
+        return example == null ? a : l;
       }, undefined)
   }
 });
