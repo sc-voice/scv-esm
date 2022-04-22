@@ -7654,6 +7654,7 @@ const SUIDMAP = {
 	"dn21": {
 		"translation/de/sabbamitta": "sutta/dn",
 		"translation/en/sujato": "sutta/dn",
+		"translation/fr/noeismet": "sutta/dn",
 		"root/pli/ms": "sutta/dn"
 	},
 	"dn22": {
