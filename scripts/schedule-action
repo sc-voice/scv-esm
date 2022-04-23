@@ -3,6 +3,7 @@ DIR=`dirname $0`;
 pushd $DIR/..
 SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
+git pull
 npm install --save-dev suttacentral-api@latest
 $DIR/js/suid-map.js
 $DIR/js/examples.js
