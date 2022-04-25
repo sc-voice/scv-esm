@@ -7563,6 +7563,7 @@ const SUIDMAP = {
 	"dn2": {
 		"translation/en/sujato": "sutta/dn",
 		"translation/my/my-team": "sutta/dn",
+		"translation/sr/brankokovacevic": "sutta/dn",
 		"root/pli/ms": "sutta/dn"
 	},
 	"dn3": {
@@ -20498,34 +20499,42 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/ud/vagga4"
 	},
 	"ud4.6": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga4",
 		"translation/en/sujato": "sutta/kn/ud/vagga4",
 		"root/pli/ms": "sutta/kn/ud/vagga4"
 	},
 	"ud4.7": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga4",
 		"translation/en/sujato": "sutta/kn/ud/vagga4",
 		"root/pli/ms": "sutta/kn/ud/vagga4"
 	},
 	"ud4.8": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga4",
 		"translation/en/sujato": "sutta/kn/ud/vagga4",
 		"root/pli/ms": "sutta/kn/ud/vagga4"
 	},
 	"ud4.9": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga4",
 		"translation/en/sujato": "sutta/kn/ud/vagga4",
 		"root/pli/ms": "sutta/kn/ud/vagga4"
 	},
 	"ud4.10": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga4",
 		"translation/en/sujato": "sutta/kn/ud/vagga4",
 		"root/pli/ms": "sutta/kn/ud/vagga4"
 	},
 	"ud5.1": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga5",
 		"translation/en/sujato": "sutta/kn/ud/vagga5",
 		"root/pli/ms": "sutta/kn/ud/vagga5"
 	},
 	"ud5.2": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga5",
 		"translation/en/sujato": "sutta/kn/ud/vagga5",
 		"root/pli/ms": "sutta/kn/ud/vagga5"
 	},
 	"ud5.3": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga5",
 		"translation/en/sujato": "sutta/kn/ud/vagga5",
 		"root/pli/ms": "sutta/kn/ud/vagga5"
 	},
