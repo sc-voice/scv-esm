@@ -2143,6 +2143,7 @@ const SUIDMAP = {
 		"translation/cs/ashinsarana": "sutta/an/an4",
 		"translation/de/sabbamitta": "sutta/an/an4",
 		"translation/en/sujato": "sutta/an/an4",
+		"translation/lt/piyadassi": "sutta/an/an4",
 		"root/pli/ms": "sutta/an/an4"
 	},
 	"an4.171": {
@@ -8486,6 +8487,7 @@ const SUIDMAP = {
 	},
 	"mn62": {
 		"translation/en/sujato": "sutta/mn",
+		"translation/lt/piyadassi": "sutta/mn",
 		"root/pli/ms": "sutta/mn"
 	},
 	"mn63": {
@@ -8717,6 +8719,7 @@ const SUIDMAP = {
 	},
 	"mn119": {
 		"translation/en/sujato": "sutta/mn",
+		"translation/lt/piyadassi": "sutta/mn",
 		"root/pli/ms": "sutta/mn"
 	},
 	"mn120": {
@@ -13217,6 +13220,7 @@ const SUIDMAP = {
 	},
 	"sn22.22": {
 		"translation/en/sujato": "sutta/sn/sn22",
+		"translation/lt/piyadassi": "sutta/sn/sn22",
 		"root/pli/ms": "sutta/sn/sn22"
 	},
 	"sn22.23": {
