@@ -7,5 +7,6 @@ git pull
 npm install --save-dev suttacentral-api@latest
 $DIR/js/suid-map.js
 $DIR/js/examples.js
+$DIR/js/authors.js
 $DIR/publish-npm
 
