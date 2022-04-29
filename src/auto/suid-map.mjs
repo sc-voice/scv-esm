@@ -7626,6 +7626,7 @@ const SUIDMAP = {
 	"dn15": {
 		"translation/de/sabbamitta": "sutta/dn",
 		"translation/en/sujato": "sutta/dn",
+		"translation/fr/noeismet": "sutta/dn",
 		"root/pli/ms": "sutta/dn"
 	},
 	"dn16": {
@@ -12637,6 +12638,7 @@ const SUIDMAP = {
 	"sn15.1": {
 		"translation/de/sabbamitta": "sutta/sn/sn15",
 		"translation/en/sujato": "sutta/sn/sn15",
+		"translation/fr/noeismet": "sutta/sn/sn15",
 		"root/pli/ms": "sutta/sn/sn15"
 	},
 	"sn15.2": {
