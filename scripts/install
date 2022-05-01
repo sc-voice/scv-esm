@@ -1,9 +1,10 @@
 #!/bin/bash
 
 DIR=`dirname $0`
+SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
-npm --version
 ${DIR}/install-node14
-$DIR/install-ripgrep
+${DIR}/update-npm
+${DIR}/install-ripgrep
 
 npm install
