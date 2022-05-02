@@ -3,12 +3,12 @@
 DIR=`dirname $0`
 SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
-echo -e "${SCRIPT}: apt-get update..."
-sudo apt-get update
-echo -e "${SCRIPT}: apt-get upgrade..."
-sudo apt-get upgrade -y
-echo -e "${SCRIPT}: installing npm 8.6.0..."
-sudo npm install -g npm@8.6.0
-echo -e "${SCRIPT}: npm version `npm --version`"
+RQDVER=8
+NPMVER=`npm --version | sed -e 's/\..*//'`
+if [ "$NPMVER" == "${RQDVER}" ]; then
+    echo -e "${SCRIPT}: npm ${NPMVER} found (OK)"
+    exit 0
+fi
 
-npm install
+echo -e "${SCRIPT}: npm version expected:${RQDVER} actual:${NPMVER} not found (ERROR)"
+exit -1
