@@ -204,7 +204,7 @@ const AUTHORS = {
   },
   "brankokovacevic": {
     "type": "translator",
-    "name": "Branko Kovačević",
+    "name": "Branislav Kovačević",
     "author": "brankokovacevic",
     "exampleVersion": 0
   },
