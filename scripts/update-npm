@@ -3,7 +3,12 @@
 DIR=`dirname $0`
 SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
-sudo npm install -g npm@latest
+echo -e "${SCRIPT}: apt-get update..."
+sudo apt-get update
+echo -e "${SCRIPT}: apt-get upgrade..."
+sudo apt-get upgrade -y
+echo -e "${SCRIPT}: installing npm 8.6.0..."
+sudo npm install -g npm@8.6.0
 echo -e "${SCRIPT}: npm version `npm --version`"
 
 npm install
