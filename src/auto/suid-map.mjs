@@ -7571,7 +7571,7 @@ const SUIDMAP = {
 	"dn3": {
 		"translation/en/sujato": "sutta/dn",
 		"translation/my/my-team": "sutta/dn",
-		"translation/ru/team": "sutta/dn",
+		"translation/sr/brankokovacevic": "sutta/dn",
 		"root/pli/ms": "sutta/dn"
 	},
 	"dn4": {
