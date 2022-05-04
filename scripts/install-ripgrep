@@ -2,7 +2,7 @@
 
 DIR=`dirname $0`
 SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
-cd $DIR/..
+pushd $DIR
 
 type rg 2>&1 > /dev/null; RC=$?
 if [ "$RC" == "0" ]; then
