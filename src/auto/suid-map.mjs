@@ -12670,6 +12670,7 @@ const SUIDMAP = {
 	},
 	"sn15.8": {
 		"translation/en/sujato": "sutta/sn/sn15",
+		"translation/fr/noeismet": "sutta/sn/sn15",
 		"root/pli/ms": "sutta/sn/sn15"
 	},
 	"sn15.9": {
