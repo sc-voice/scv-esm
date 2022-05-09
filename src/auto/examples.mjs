@@ -1021,6 +1021,7 @@ const EXAMPLES = {
     "having few wishes",
     "head hair, body hair",
     "head w.* on fire",
+    "health is",
     "heard of anyone holding",
     "heart of love",
     "heart’s release by love",
