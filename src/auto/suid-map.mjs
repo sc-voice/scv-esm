@@ -20568,22 +20568,27 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/ud/vagga5"
 	},
 	"ud5.6": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga5",
 		"translation/en/sujato": "sutta/kn/ud/vagga5",
 		"root/pli/ms": "sutta/kn/ud/vagga5"
 	},
 	"ud5.7": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga5",
 		"translation/en/sujato": "sutta/kn/ud/vagga5",
 		"root/pli/ms": "sutta/kn/ud/vagga5"
 	},
 	"ud5.8": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga5",
 		"translation/en/sujato": "sutta/kn/ud/vagga5",
 		"root/pli/ms": "sutta/kn/ud/vagga5"
 	},
 	"ud5.9": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga5",
 		"translation/en/sujato": "sutta/kn/ud/vagga5",
 		"root/pli/ms": "sutta/kn/ud/vagga5"
 	},
 	"ud5.10": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga5",
 		"translation/en/sujato": "sutta/kn/ud/vagga5",
 		"root/pli/ms": "sutta/kn/ud/vagga5"
 	},
@@ -20598,46 +20603,57 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/ud/vagga6"
 	},
 	"ud6.3": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga6",
 		"translation/en/sujato": "sutta/kn/ud/vagga6",
 		"root/pli/ms": "sutta/kn/ud/vagga6"
 	},
 	"ud6.4": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga6",
 		"translation/en/sujato": "sutta/kn/ud/vagga6",
 		"root/pli/ms": "sutta/kn/ud/vagga6"
 	},
 	"ud6.5": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga6",
 		"translation/en/sujato": "sutta/kn/ud/vagga6",
 		"root/pli/ms": "sutta/kn/ud/vagga6"
 	},
 	"ud6.6": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga6",
 		"translation/en/sujato": "sutta/kn/ud/vagga6",
 		"root/pli/ms": "sutta/kn/ud/vagga6"
 	},
 	"ud6.7": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga6",
 		"translation/en/sujato": "sutta/kn/ud/vagga6",
 		"root/pli/ms": "sutta/kn/ud/vagga6"
 	},
 	"ud6.8": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga6",
 		"translation/en/sujato": "sutta/kn/ud/vagga6",
 		"root/pli/ms": "sutta/kn/ud/vagga6"
 	},
 	"ud6.9": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga6",
 		"translation/en/sujato": "sutta/kn/ud/vagga6",
 		"root/pli/ms": "sutta/kn/ud/vagga6"
 	},
 	"ud6.10": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga6",
 		"translation/en/sujato": "sutta/kn/ud/vagga6",
 		"root/pli/ms": "sutta/kn/ud/vagga6"
 	},
 	"ud7.1": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga7",
 		"translation/en/sujato": "sutta/kn/ud/vagga7",
 		"root/pli/ms": "sutta/kn/ud/vagga7"
 	},
 	"ud7.2": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga7",
 		"translation/en/sujato": "sutta/kn/ud/vagga7",
 		"root/pli/ms": "sutta/kn/ud/vagga7"
 	},
 	"ud7.3": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga7",
 		"translation/en/sujato": "sutta/kn/ud/vagga7",
 		"root/pli/ms": "sutta/kn/ud/vagga7"
 	},
