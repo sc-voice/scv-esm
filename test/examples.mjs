@@ -24,6 +24,7 @@ typeof describe === "function" &&
       });
     });
     it("TESTTESTisExample", ()=>{
+      should(Examples.isExample("wilde[sn] Fohlen")).equal('de');
       should(Examples.isExample("but ma'am")).equal('en');
       should(Examples.isExample("but ma.am")).equal('en');
       should(Examples.isExample("ma.am")).equal(undefined);
