@@ -71,6 +71,7 @@ const SUIDMAP = {
 	"an1.170-187": {
 		"translation/de/sabbamitta": "sutta/an/an1",
 		"translation/en/sujato": "sutta/an/an1",
+		"translation/fr/noeismet": "sutta/an/an1",
 		"translation/pt/laera-quaresma": "sutta/an/an1",
 		"root/pli/ms": "sutta/an/an1"
 	},
