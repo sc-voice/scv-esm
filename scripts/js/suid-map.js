@@ -37,7 +37,13 @@ logger.logLevel = "info";
       "const SUIDMAP = " + suidJson,
       "export default SUIDMAP;",
     ].join("\n");
+
+    // The following file is imported by this package
+    // and can be replaced with the suid_map.json file once
+    // import assertions are fully supported in all browsers (est. 2023)
     await fs.promises.writeFile(SRC_SUIDMAP_MJS, suidMjs);
+
+    // The following file is used by SuttaCentral to display Voice icon
     await fs.promises.writeFile(SRC_SUIDMAP_JSON, suidJson);
   } catch (e) {
     logger.warn(e);
