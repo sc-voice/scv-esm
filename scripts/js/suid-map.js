@@ -11,6 +11,7 @@ const API_DIR = path.join(APP_DIR, "api");
 const SRC_DIR = path.join(APP_DIR, "src");
 const LOCAL_DIR = path.join(APP_DIR, "local");
 const SRC_SUIDMAP_MJS = path.join(SRC_DIR, "auto", "suid-map.mjs");
+const SRC_SUIDMAP_JSON = path.join(SRC_DIR, "auto", "suid-map.json");
 
 logger.logLevel = "info";
 
@@ -37,6 +38,7 @@ logger.logLevel = "info";
       "export default SUIDMAP;",
     ].join("\n");
     await fs.promises.writeFile(SRC_SUIDMAP_MJS, suidMjs);
+    await fs.promises.writeFile(SRC_SUIDMAP_JSON, suidJson);
   } catch (e) {
     logger.warn(e);
   }
