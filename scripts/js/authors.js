@@ -47,7 +47,8 @@ logger.logLevel = "info";
       'export default AUTHORS;\n',
     ].join('\n');
     await fs.promises.writeFile(AUTHORS_PATH, authorMjs);
-    console.log(authorJson);
+    logger.info(`${SCRIPT}: DONE => ${AUTHORS_PATH}`);
+    //console.log(authorJson);
   } catch (e) {
     logger.warn(e);
   }
