@@ -1461,6 +1461,8 @@ const EXAMPLES = {
     "trust that",
     "tuned too tight",
     "two fools",
+    "two kinds of",
+    "two kinds of happiness",
     "two kinds of people",
     "two things should be developed",
     "twofold",
