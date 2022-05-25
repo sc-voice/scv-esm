@@ -18048,6 +18048,7 @@ const SUIDMAP = {
 	"sn56.11": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/noeismet": "sutta/sn/sn56",
 		"translation/lt/piyadassi": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
