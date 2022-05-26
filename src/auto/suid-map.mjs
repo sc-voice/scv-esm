@@ -978,6 +978,7 @@ const SUIDMAP = {
 	"an3.129": {
 		"translation/de/sabbamitta": "sutta/an/an3",
 		"translation/en/sujato": "sutta/an/an3",
+		"translation/fr/noeismet": "sutta/an/an3",
 		"root/pli/ms": "sutta/an/an3"
 	},
 	"an3.130": {
