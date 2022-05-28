@@ -213,6 +213,12 @@ const AUTHORS = {
     "name": "Noé Ismet",
     "author": "noeismet",
     "exampleVersion": 0
+  },
+  "laera-quaresma": {
+    "type": "translator",
+    "name": "Laera et al.",
+    "author": "laera-quaresma",
+    "exampleVersion": 0
   }
 }
 
