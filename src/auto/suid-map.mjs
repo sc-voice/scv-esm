@@ -20661,6 +20661,7 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/ud/vagga7"
 	},
 	"ud7.4": {
+		"translation/de/sabbamitta": "sutta/kn/ud/vagga7",
 		"translation/en/sujato": "sutta/kn/ud/vagga7",
 		"root/pli/ms": "sutta/kn/ud/vagga7"
 	},
