@@ -7599,6 +7599,7 @@ const SUIDMAP = {
 	"dn7": {
 		"translation/de/sabbamitta": "sutta/dn",
 		"translation/en/sujato": "sutta/dn",
+		"translation/sr/brankokovacevic": "sutta/dn",
 		"root/pli/ms": "sutta/dn"
 	},
 	"dn8": {
@@ -11843,22 +11844,27 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/sn/sn8"
 	},
 	"sn8.3": {
+		"translation/de/sabbamitta": "sutta/sn/sn8",
 		"translation/en/sujato": "sutta/sn/sn8",
 		"root/pli/ms": "sutta/sn/sn8"
 	},
 	"sn8.4": {
+		"translation/de/sabbamitta": "sutta/sn/sn8",
 		"translation/en/sujato": "sutta/sn/sn8",
 		"root/pli/ms": "sutta/sn/sn8"
 	},
 	"sn8.5": {
+		"translation/de/sabbamitta": "sutta/sn/sn8",
 		"translation/en/sujato": "sutta/sn/sn8",
 		"root/pli/ms": "sutta/sn/sn8"
 	},
 	"sn8.6": {
+		"translation/de/sabbamitta": "sutta/sn/sn8",
 		"translation/en/sujato": "sutta/sn/sn8",
 		"root/pli/ms": "sutta/sn/sn8"
 	},
 	"sn8.7": {
+		"translation/de/sabbamitta": "sutta/sn/sn8",
 		"translation/en/sujato": "sutta/sn/sn8",
 		"root/pli/ms": "sutta/sn/sn8"
 	},
