@@ -214,10 +214,10 @@ const AUTHORS = {
     "author": "noeismet",
     "exampleVersion": 0
   },
-  "laera-quaresma": {
+  "laera": {
     "type": "translator",
     "name": "Laera et al.",
-    "author": "laera-quaresma",
+    "author": "laera",
     "exampleVersion": 0
   }
 }
