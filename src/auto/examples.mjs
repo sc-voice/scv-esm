@@ -1302,6 +1302,7 @@ const EXAMPLES = {
     "puppet",
     "purification of view",
     "pursue other material possessions",
+    "put at ease",
     "rafter",
     "rebirth in the company",
     "rebirth in the dimension",
