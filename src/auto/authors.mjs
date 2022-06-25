@@ -219,6 +219,12 @@ const AUTHORS = {
     "name": "Laera et al.",
     "author": "laera",
     "exampleVersion": 0
+  },
+  "cittadhammo": {
+    "type": "translator",
+    "name": "Cittadhammo Bhikkhu",
+    "author": "cittadhammo",
+    "exampleVersion": 0
   }
 }
 
