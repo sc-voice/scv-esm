@@ -11967,30 +11967,37 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/sn/sn9"
 	},
 	"sn10.1": {
+		"translation/de/sabbamitta": "sutta/sn/sn10",
 		"translation/en/sujato": "sutta/sn/sn10",
 		"root/pli/ms": "sutta/sn/sn10"
 	},
 	"sn10.2": {
+		"translation/de/sabbamitta": "sutta/sn/sn10",
 		"translation/en/sujato": "sutta/sn/sn10",
 		"root/pli/ms": "sutta/sn/sn10"
 	},
 	"sn10.3": {
+		"translation/de/sabbamitta": "sutta/sn/sn10",
 		"translation/en/sujato": "sutta/sn/sn10",
 		"root/pli/ms": "sutta/sn/sn10"
 	},
 	"sn10.4": {
+		"translation/de/sabbamitta": "sutta/sn/sn10",
 		"translation/en/sujato": "sutta/sn/sn10",
 		"root/pli/ms": "sutta/sn/sn10"
 	},
 	"sn10.5": {
+		"translation/de/sabbamitta": "sutta/sn/sn10",
 		"translation/en/sujato": "sutta/sn/sn10",
 		"root/pli/ms": "sutta/sn/sn10"
 	},
 	"sn10.6": {
+		"translation/de/sabbamitta": "sutta/sn/sn10",
 		"translation/en/sujato": "sutta/sn/sn10",
 		"root/pli/ms": "sutta/sn/sn10"
 	},
 	"sn10.7": {
+		"translation/de/sabbamitta": "sutta/sn/sn10",
 		"translation/en/sujato": "sutta/sn/sn10",
 		"root/pli/ms": "sutta/sn/sn10"
 	},
@@ -12000,14 +12007,17 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/sn/sn10"
 	},
 	"sn10.9": {
+		"translation/de/sabbamitta": "sutta/sn/sn10",
 		"translation/en/sujato": "sutta/sn/sn10",
 		"root/pli/ms": "sutta/sn/sn10"
 	},
 	"sn10.10": {
+		"translation/de/sabbamitta": "sutta/sn/sn10",
 		"translation/en/sujato": "sutta/sn/sn10",
 		"root/pli/ms": "sutta/sn/sn10"
 	},
 	"sn10.11": {
+		"translation/de/sabbamitta": "sutta/sn/sn10",
 		"translation/en/sujato": "sutta/sn/sn10",
 		"root/pli/ms": "sutta/sn/sn10"
 	},
@@ -18669,6 +18679,7 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/snp/vagga2"
 	},
 	"snp2.5": {
+		"translation/de/sabbamitta": "sutta/kn/snp/vagga2",
 		"translation/en/sujato": "sutta/kn/snp/vagga2",
 		"root/pli/ms": "sutta/kn/snp/vagga2"
 	},
