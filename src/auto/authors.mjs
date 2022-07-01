@@ -225,6 +225,12 @@ const AUTHORS = {
     "name": "Cittadhammo Bhikkhu",
     "author": "cittadhammo",
     "exampleVersion": 0
+  },
+  "korakot": {
+    "type": "translator",
+    "name": "Korakot Chaovavanich",
+    "author": "korakot",
+    "exampleVersion": 0
   }
 }
 
