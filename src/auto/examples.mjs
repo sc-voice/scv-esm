@@ -724,6 +724,7 @@ const EXAMPLES = {
     "wie könnte es.* sein",
     "wie wenn es auf einem Berggipfel stark regnet",
     "wie ein Affe",
+    "wie wächst ein Kind",
     "wilde[sn] Fohlen",
     "wird nur das",
     "wo entsteht dieses Verlangen",
