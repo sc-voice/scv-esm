@@ -7622,6 +7622,7 @@ const SUIDMAP = {
 	},
 	"dn11": {
 		"translation/en/sujato": "sutta/dn",
+		"translation/sr/brankokovacevic": "sutta/dn",
 		"root/pli/ms": "sutta/dn"
 	},
 	"dn12": {
