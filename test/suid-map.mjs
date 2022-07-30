@@ -5,7 +5,7 @@ typeof describe === "function" &&
   describe("suid-map", function () {
     this.timeout(1 * 1000);
 
-    it("TESTTESTthig1.1", () => {
+    it("thig1.1", () => {
       let thig1_1 = SuidMap["thig1.1"];
       should.deepEqual(thig1_1, {
         "translation/de/sabbamitta": "sutta/kn/thig",

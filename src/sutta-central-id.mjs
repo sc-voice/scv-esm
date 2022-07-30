@@ -14,10 +14,15 @@ export default class SuttaCentralId {
 
   static match(scid, pat) {
     let id = pat.indexOf(":") >= 0 ? scid : scid.split(":")[0];
+    let pats = pat.split(/, */);
+    if (pats.length > 1) {
+      return pats.reduce((a,p) => a || SuttaCentralId.match(scid, p), false);
+    }
+    let scidPat = pat.replace(/\/[^:]*/, '');
     let scidLow = SuttaCentralId.rangeLow(id);
     let scidHigh = SuttaCentralId.rangeHigh(id);
-    let matchLow = SuttaCentralId.rangeLow(pat);
-    let matchHigh = SuttaCentralId.rangeHigh(pat);
+    let matchLow = SuttaCentralId.rangeLow(scidPat);
+    let matchHigh = SuttaCentralId.rangeHigh(scidPat);
     let cmpL = SuttaCentralId.compareLow(scidHigh, matchLow);
     let cmpH = SuttaCentralId.compareHigh(scidLow, matchHigh);
     var match = 0 <= cmpL && cmpH <= 0;

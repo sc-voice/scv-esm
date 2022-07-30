@@ -2,7 +2,7 @@ import { Authors } from "../main.mjs";
 import should from "should";
 
 typeof describe === "function" && describe("authors", function () {
-  it("TESTTESTauthorInfo() => supported author info", async()=>{
+  it("authorInfo() => supported author info", async()=>{
     var ms = {
         lang: 'pli',
         type: "root",

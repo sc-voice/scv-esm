@@ -23,7 +23,7 @@ typeof describe === "function" &&
         author: 'sujato',
       });
     });
-    it("TESTTESTisExample", ()=>{
+    it("isExample", ()=>{
       should(Examples.isExample("wilde[sn] Fohlen")).equal('de');
       should(Examples.isExample("but ma'am")).equal('en');
       should(Examples.isExample("but ma.am")).equal('en');

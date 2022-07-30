@@ -30,6 +30,36 @@ typeof describe === "function" &&
         var scid = new SuttaCentralId();
       });
     });
+    it("TESTTESTmatch(scid, pat)", ()=>{
+      let scid11 = "thig1.1:1.1";
+      let scid12 = "thig1.1:1.2";
+      let scid21 = "thig1.2:1.1";
+      let scid22 = "thig1.2:1.2";
+      let scids = [scid11, scid12, scid21, scid22 ];
+      let match = SuttaCentralId.match;
+      
+      should.deepEqual(scids.map(scid=>match(scid, "thig1.1-2")), 
+        [true, true, true, true]);
+      should.deepEqual(scids.map(scid=>match(scid, 
+        "thig1.1:1.2/en/soma,thig1.2:1.1/en/soma")), 
+        [false, true, true, false]);
+      should.deepEqual(scids.map(scid=>match(scid, "thig1.1:1.2/en/soma")), 
+        [false, true, false, false]);
+      should.deepEqual(scids.map(scid=>match(scid, "thig1.1/en/soma")), 
+        [true, true, false, false]);
+      should.deepEqual(scids.map(scid=>match(scid, "thig1.3, thig1.2")), 
+        [false, false, true, true]);
+      should.deepEqual(scids.map(scid=>match(scid, "thig1.1, thig1.2")), 
+        [true, true, true, true]);
+      should.deepEqual(scids.map(scid=>match(scid, "thig1.1")), 
+        [true, true, false, false]);
+      should.deepEqual(scids.map(scid=>match(scid, "thig1.2")), 
+        [false, false, true, true]);
+      should.deepEqual(scids.map(scid=>match(scid, "thig1.1:1.2")), 
+        [false, true, false, false]);
+      should.deepEqual(scids.map(scid=>match(scid, "thig1.2:1.1")), 
+        [false, false, true, false]);
+    });
     it("custom ctor", function () {
       // sutta id
       var scid = new SuttaCentralId("mn1");
