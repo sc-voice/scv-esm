@@ -38,6 +38,8 @@ typeof describe === "function" &&
       let scids = [scid11, scid12, scid21, scid22 ];
       let match = SuttaCentralId.match;
       
+      should.deepEqual(scids.map(scid=>match(scid, "thig 1.1-2")), 
+        [true, true, true, true]);
       should.deepEqual(scids.map(scid=>match(scid, "thig1.1-2")), 
         [true, true, true, true]);
       should.deepEqual(scids.map(scid=>match(scid, 

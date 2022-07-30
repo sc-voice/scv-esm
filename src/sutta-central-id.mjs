@@ -18,7 +18,9 @@ export default class SuttaCentralId {
     if (pats.length > 1) {
       return pats.reduce((a,p) => a || SuttaCentralId.match(scid, p), false);
     }
-    let scidPat = pat.replace(/\/[^:]*/, '');
+    let scidPat = pat
+      .replace(/\/[^:]*/, '') // remove language and  translator
+      .replace(/ */g, '');    // "thig 1.1" => "thig1.1"
     let scidLow = SuttaCentralId.rangeLow(id);
     let scidHigh = SuttaCentralId.rangeHigh(id);
     let matchLow = SuttaCentralId.rangeLow(scidPat);
