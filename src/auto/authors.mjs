@@ -138,7 +138,7 @@ const AUTHORS = {
   },
   "phantuananh": {
     "type": "translator",
-    "name": "Phan Tuấn Anh",
+    "name": "Bhikkhu Thích Minh Châu",
     "author": "phantuananh",
     "exampleVersion": 0
   },
