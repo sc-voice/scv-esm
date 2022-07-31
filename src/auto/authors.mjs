@@ -231,6 +231,12 @@ const AUTHORS = {
     "name": "Korakot Chaovavanich",
     "author": "korakot",
     "exampleVersion": 0
+  },
+  "sekha": {
+    "type": "translator",
+    "name": "Bhikkhu Sekha",
+    "author": "sekha",
+    "exampleVersion": 0
   }
 }
 
