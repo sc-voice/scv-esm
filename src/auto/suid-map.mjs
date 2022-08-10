@@ -7252,6 +7252,7 @@ const SUIDMAP = {
 	"an11.2": {
 		"translation/de/sabbamitta": "sutta/an/an11",
 		"translation/en/sujato": "sutta/an/an11",
+		"translation/fr/sekha": "sutta/an/an11",
 		"root/pli/ms": "sutta/an/an11"
 	},
 	"an11.3": {
@@ -7263,26 +7264,31 @@ const SUIDMAP = {
 	"an11.4": {
 		"translation/de/sabbamitta": "sutta/an/an11",
 		"translation/en/sujato": "sutta/an/an11",
+		"translation/fr/sekha": "sutta/an/an11",
 		"root/pli/ms": "sutta/an/an11"
 	},
 	"an11.5": {
 		"translation/de/sabbamitta": "sutta/an/an11",
 		"translation/en/sujato": "sutta/an/an11",
+		"translation/fr/sekha": "sutta/an/an11",
 		"root/pli/ms": "sutta/an/an11"
 	},
 	"an11.6": {
 		"translation/de/sabbamitta": "sutta/an/an11",
 		"translation/en/sujato": "sutta/an/an11",
+		"translation/fr/sekha": "sutta/an/an11",
 		"root/pli/ms": "sutta/an/an11"
 	},
 	"an11.7": {
 		"translation/de/sabbamitta": "sutta/an/an11",
 		"translation/en/sujato": "sutta/an/an11",
+		"translation/fr/sekha": "sutta/an/an11",
 		"root/pli/ms": "sutta/an/an11"
 	},
 	"an11.8": {
 		"translation/de/sabbamitta": "sutta/an/an11",
 		"translation/en/sujato": "sutta/an/an11",
+		"translation/fr/sekha": "sutta/an/an11",
 		"root/pli/ms": "sutta/an/an11"
 	},
 	"an11.9": {
