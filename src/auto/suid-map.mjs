@@ -34,23 +34,27 @@ const SUIDMAP = {
 	"an1.51-60": {
 		"translation/de/sabbamitta": "sutta/an/an1",
 		"translation/en/sujato": "sutta/an/an1",
+		"translation/fr/sekha": "sutta/an/an1",
 		"translation/jpn/kaz": "sutta/an/an1",
 		"root/pli/ms": "sutta/an/an1"
 	},
 	"an1.61-70": {
 		"translation/de/sabbamitta": "sutta/an/an1",
 		"translation/en/sujato": "sutta/an/an1",
+		"translation/fr/sekha": "sutta/an/an1",
 		"translation/jpn/kaz": "sutta/an/an1",
 		"root/pli/ms": "sutta/an/an1"
 	},
 	"an1.71-81": {
 		"translation/de/sabbamitta": "sutta/an/an1",
 		"translation/en/sujato": "sutta/an/an1",
+		"translation/fr/sekha": "sutta/an/an1",
 		"root/pli/ms": "sutta/an/an1"
 	},
 	"an1.82-97": {
 		"translation/de/sabbamitta": "sutta/an/an1",
 		"translation/en/sujato": "sutta/an/an1",
+		"translation/fr/sekha": "sutta/an/an1",
 		"translation/jpn/kaz": "sutta/an/an1",
 		"translation/pt/laera-quaresma": "sutta/an/an1",
 		"root/pli/ms": "sutta/an/an1"
@@ -58,6 +62,7 @@ const SUIDMAP = {
 	"an1.98-139": {
 		"translation/de/sabbamitta": "sutta/an/an1",
 		"translation/en/sujato": "sutta/an/an1",
+		"translation/fr/sekha": "sutta/an/an1",
 		"translation/jpn/kaz": "sutta/an/an1",
 		"root/pli/ms": "sutta/an/an1"
 	},
