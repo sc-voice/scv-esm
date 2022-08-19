@@ -1,6 +1,6 @@
 {
   "name": "scv-esm",
-  "version": "1.32.15",
+  "version": "1.32.16",
   "description": "SuttaCentral Voice ES Module",
   "main": "index.js",
   "module": "main.mjs",
