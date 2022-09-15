@@ -741,7 +741,7 @@ const EXAMPLES = {
     "wie ein Vogel",
     "wie Garn",
     "wie könnte es möglich sein",
-    "wie wenn es auf einem Berggipfel stark regnet",
+    "wie wenn auf einem Berggipfel der Regen",
     "wie ein Affe",
     "wie wächst ein Kind",
     "wilde[sn] Fohlen",
