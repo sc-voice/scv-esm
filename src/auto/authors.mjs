@@ -237,6 +237,12 @@ const AUTHORS = {
     "name": "Bhikkhu Sekha",
     "author": "sekha",
     "exampleVersion": 0
+  },
+  "davis": {
+    "type": "translator",
+    "name": "Dr Joongpyo Lee",
+    "author": "davis",
+    "exampleVersion": 0
   }
 }
 
