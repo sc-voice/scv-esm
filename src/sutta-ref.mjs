@@ -18,39 +18,67 @@ export default class SuttaRef {
     });
   }
 
-  static create(strOrObj, defaultLang = "pli", suids = SUIDS) {
-    if (typeof strOrObj === "string") {
-      let refLower = strOrObj.toLowerCase();
-      let [ref, segnum] = refLower.split(":");
-      let [sutta_uid, lang = defaultLang, author] = ref
-        .replace(/ /gu, "")
-        .split("/");
-      let { compareLow, compareHigh } = SuttaCentralId;
-      let keys = suids.filter((k) => {
-        return compareLow(k, sutta_uid) <= 0 && compareHigh(sutta_uid, k) <= 0;
-      });
-      if (keys.length === 1) {
-        return new SuttaRef({
-          sutta_uid: keys[0],
-          lang,
-          author,
-          segnum,
-        });
-      }
-    } else if (strOrObj) {
-      let parsed = SuttaRef.create(
-        strOrObj.sutta_uid,
-        strOrObj.lang || defaultLang
-      );
-      let { sutta_uid, lang, author, segnum } = parsed || {};
-      return new SuttaRef({
-        sutta_uid,
+  static createFromString(str, defaultLang="pli", suids=SUIDS) {
+    let refLower = str.toLowerCase();
+    let [ref, segnum] = refLower.split(":");
+    let [sutta_uid, lang=defaultLang, author] = ref
+      .replace(/ /gu, "")
+      .split("/");
+    if (author == null && lang === 'pli') {
+      author = 'ms';
+    }
+    let { compareLow, compareHigh } = SuttaCentralId;
+    let keys = suids.filter((k) => {
+      return compareLow(k, sutta_uid) <= 0 && compareHigh(sutta_uid, k) <= 0;
+    });
+    let suttaRef;
+    if (keys.length === 1) {
+      suttaRef = new SuttaRef({
+        sutta_uid: keys[0],
         lang,
-        author: author || strOrObj.author || strOrObj.translator,
-        segnum: segnum || strOrObj.segnum,
+        author,
+        segnum,
       });
+    }
+    return suttaRef;
+  }
+
+  static createFromObject(obj, defaultLang="pli", suids=SUIDS) {
+    let parsed = SuttaRef.createFromString(
+      obj.sutta_uid,
+      obj.lang || defaultLang
+    );
+    let { sutta_uid, lang, author, segnum } = parsed || {};
+    if (obj.translator) {
+      author = obj.translator; // legacy synonym
+    }
+    if (obj.author) {
+      author = obj.author;
+    }
+    let suttaRef = new SuttaRef({
+      sutta_uid,
+      lang,
+      author,
+      segnum: segnum || obj.segnum,
+    });
+
+    return suttaRef;
+  }
+
+  static create(strOrObj, defaultLang="pli", suids=SUIDS) {
+    if (typeof strOrObj === "string") {
+      return SuttaRef.createFromString(strOrObj, defaultLang, suids);
+    } else if (typeof strOrObj === "object") {
+      return SuttaRef.createFromObject(strOrObj, defaultLang, suids);
     }
 
     return null;
+  }
+
+  toString() {
+    let { sutta_uid, lang, author, segnum } = this;
+    return segnum 
+      ? `${sutta_uid}/${lang}/${author}:${segnum}`
+      : `${sutta_uid}/${lang}/${author}`;
   }
 }

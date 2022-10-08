@@ -8,9 +8,9 @@ typeof describe === "function" &&
     });
     it("custom ctor", () => {
       let sutta_uid = "thig1.1";
-      let lang = "test-lang";
+      let lang = "tst-lang";
       let defaultLang = "default-lang";
-      let author = "test-author";
+      let author = "tst-author";
       let segnum = "0.1";
       let suttaRef = new SuttaRef({ sutta_uid, lang, author, segnum });
       should(suttaRef).properties({ sutta_uid, lang, author, segnum });
@@ -20,8 +20,8 @@ typeof describe === "function" &&
     });
     it("create(...) => SuttaRef", () => {
       let defaultLang = "default-lang";
-      let author = "test-author";
-      let lang = "test-lang";
+      let author = "tst-author";
+      let lang = "tst-lang";
       let sutta_uid = "thig1.1";
       let segnum = "0.1";
 
@@ -50,13 +50,13 @@ typeof describe === "function" &&
       should(SuttaRef.create(`${sutta_uid}`)).properties({
         sutta_uid,
         lang: "pli",
-        author: undefined,
+        author: "ms",
         segnum: undefined,
       });
       should(SuttaRef.create(`${sutta_uid}:${segnum}`)).properties({
         sutta_uid,
         lang: "pli",
-        author: undefined,
+        author: "ms",
         segnum,
       });
 
@@ -88,8 +88,8 @@ typeof describe === "function" &&
     });
     it("create(object) => SuttaRef", () => {
       let defaultLang = "default-lang";
-      let author = "test-author";
-      let lang = "test-lang";
+      let author = "tst-author";
+      let lang = "tst-lang";
       let sutta_uid = "thig1.1";
       let segnum = "0.1";
 
@@ -106,7 +106,7 @@ typeof describe === "function" &&
         author,
         segnum: undefined,
       });
-      should(SuttaRef.create({ sutta_uid, lang })).properties({
+      should(SuttaRef.createFromObject({ sutta_uid, lang })).properties({
         sutta_uid,
         lang,
         author: undefined,
@@ -121,13 +121,13 @@ typeof describe === "function" &&
       should(SuttaRef.create({ sutta_uid })).properties({
         sutta_uid,
         lang: "pli",
-        author: undefined,
+        author: "ms",
         segnum: undefined,
       });
       should(SuttaRef.create({ sutta_uid, segnum })).properties({
         sutta_uid,
         lang: "pli",
-        author: undefined,
+        author: "ms",
         segnum,
       });
 
@@ -165,9 +165,16 @@ typeof describe === "function" &&
       let suttaRef2 = SuttaRef.create(suttaRef, defaultLang);
       should(suttaRef2).not.equal(suttaRef);
       should(suttaRef2).properties({ sutta_uid, lang, author, segnum });
+    });
+    it("TESTTESTcreate(object) translator => SuttaRef", () => {
+      let defaultLang = "default-lang";
+      let author = "tst-author";
+      let lang = "tst-lang";
+      let sutta_uid = "thig1.1";
+      let segnum = "0.1";
 
       // object sutta reference translator
-      let translator = "test-translator";
+      let translator = "tst-translator";
       should(
         SuttaRef.create({ sutta_uid, lang, author, translator, segnum })
       ).properties({ sutta_uid, lang, author, segnum });
@@ -195,5 +202,19 @@ typeof describe === "function" &&
         author: translator,
         segnum,
       });
+    });
+    it("toString()", ()=>{
+      let sutta_uid = 'thig1.1';
+      let lang = 'de';
+      let translator = 'sabbamitta';
+      let segnum = '2.3';
+      should(SuttaRef.create({sutta_uid, lang, translator}).toString())
+        .equal("thig1.1/de/sabbamitta");
+      should(SuttaRef.create({sutta_uid, lang, translator, segnum}).toString())
+        .equal("thig1.1/de/sabbamitta:2.3");
+      should(SuttaRef.create({sutta_uid:"thig1.1/de/sabbamitta:2.3"}).toString())
+        .equal("thig1.1/de/sabbamitta:2.3");
+      should(SuttaRef.create({sutta_uid:"thig1.1"}).toString())
+        .equal("thig1.1/pli/ms");
     });
   });

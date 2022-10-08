@@ -30,7 +30,7 @@ typeof describe === "function" &&
         var scid = new SuttaCentralId();
       });
     });
-    it("TESTTESTmatch(scid, pat)", ()=>{
+    it("match(scid, pat)", ()=>{
       let scid11 = "thig1.1:1.1";
       let scid12 = "thig1.1:1.2";
       let scid21 = "thig1.2:1.1";
