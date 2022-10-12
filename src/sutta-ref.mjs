@@ -1,6 +1,7 @@
 import SuttaCentralId from './sutta-central-id.mjs';
 import SuidMap from './auto/suid-map.mjs';
-import { logger } from "log-instance";
+import LOG_INSTANCE from "log-instance";
+const { logger } = LOG_INSTANCE;
 
 const SUIDS = Object.keys(SuidMap).sort(SuttaCentralId.compareLow);
 
