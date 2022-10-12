@@ -1,5 +1,6 @@
 import SuttaCentralId from './sutta-central-id.mjs';
 import SuidMap from './auto/suid-map.mjs';
+import { logger } from "log-instance";
 
 const SUIDS = Object.keys(SuidMap).sort(SuttaCentralId.compareLow);
 
@@ -39,6 +40,8 @@ export default class SuttaRef {
         author,
         segnum,
       });
+    } else {
+      throw new Error(`SuttaRef.createFromString(${str}) invalid`);
     }
     return suttaRef;
   }
@@ -66,10 +69,14 @@ export default class SuttaRef {
   }
 
   static create(strOrObj, defaultLang="pli", suids=SUIDS) {
-    if (typeof strOrObj === "string") {
-      return SuttaRef.createFromString(strOrObj, defaultLang, suids);
-    } else if (typeof strOrObj === "object") {
-      return SuttaRef.createFromObject(strOrObj, defaultLang, suids);
+    try {
+      if (typeof strOrObj === "string") {
+        return SuttaRef.createFromString(strOrObj, defaultLang, suids);
+      } else if (typeof strOrObj === "object") {
+        return SuttaRef.createFromObject(strOrObj, defaultLang, suids);
+      }
+    } catch(e) {
+      logger.warn(`SuttaRef.create()`, JSON.stringify(strOrObj), '=>', e.message);
     }
 
     return null;

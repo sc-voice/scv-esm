@@ -166,7 +166,11 @@ typeof describe === "function" &&
       should(suttaRef2).not.equal(suttaRef);
       should(suttaRef2).properties({ sutta_uid, lang, author, segnum });
     });
-    it("TESTTESTcreate(object) translator => SuttaRef", () => {
+    it("TESTTESTcreate(...) invalid SuttaRef", () => {
+      should(SuttaRef.create('test-bad!!!')).equal(null);
+      should(SuttaRef.create('thig1.1,en,abc')).equal(null);
+    });
+    it("create(object) translator => SuttaRef", () => {
       let defaultLang = "default-lang";
       let author = "tst-author";
       let lang = "tst-lang";
