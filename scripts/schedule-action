@@ -5,6 +5,7 @@ SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
 git pull
 npm install --save-dev suttacentral-api@latest
+npm install --save-dev scv-bilara@latest
 $DIR/js/suid-map.js
 $DIR/js/examples.js
 $DIR/js/authors.js
