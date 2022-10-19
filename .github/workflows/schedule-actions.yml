@@ -1,5 +1,5 @@
 name: schedule-actions
-on: 
+on:
   schedule:
     - cron: 0 3,11,19 * * *
 jobs:
@@ -8,14 +8,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      with:
-        node-version: 16
         with:
-          node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: 16
       - run: scripts/install
       - run: git config --global user.name github-actions
       - run: git config --global user.email github-actions@github.com
       - run: npm run schedule-action
-        env: 
+        env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
