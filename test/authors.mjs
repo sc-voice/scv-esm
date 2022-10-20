@@ -43,5 +43,37 @@ typeof describe === "function" && describe("authors", function () {
 
     should.deepEqual(Authors.authorInfo('sabbamitta'), sabbamitta);
   });
+  it("TESTTESTcompare(a1,a2)", ()=>{
+    let sujato = "sujato";
+    let sabbamitta = "sabbamitta";
+    let davis = "davis";
+    let unknown = "unknown";
+
+    // equal
+    should(Authors.compare()).equal(0);
+    should(Authors.compare(unknown,unknown)).equal(0);
+    should(Authors.compare(undefined,undefined)).equal(0);
+    should(Authors.compare(null,null)).equal(0);
+    should(Authors.compare(undefined,null)).equal(0);
+    should(Authors.compare(null,unknown)).equal(0);
+    should(Authors.compare(sujato,sujato)).equal(0);
+    should(Authors.compare(davis,davis)).equal(0);
+
+    // ascending
+    should(Authors.compare(undefined,davis)).equal(1);
+    should(Authors.compare(null,davis)).equal(1);
+    should(Authors.compare(unknown,davis)).equal(1);
+    should(Authors.compare(unknown,sujato)).equal(1);
+    should(Authors.compare(sujato,davis)).equal(1);
+    should(Authors.compare(sabbamitta, sujato)).equal(1);
+
+    // descending
+    should(Authors.compare(davis, sujato)).equal(-1);
+    should(Authors.compare(davis, undefined)).equal(-1);
+    should(Authors.compare(davis, null)).equal(-1);
+    should(Authors.compare(davis, unknown)).equal(-1);
+    should(Authors.compare(sujato, unknown)).equal(-1);
+    should(Authors.compare(sujato,sabbamitta)).equal(-1);
+  });
 
 });
