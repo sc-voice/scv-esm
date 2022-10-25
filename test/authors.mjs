@@ -20,7 +20,7 @@ typeof describe === "function" && describe("authors", function () {
         exampleVersion: 1,
     };
     var brahmali = {
-        //lang: 'en',
+        lang: 'en',
         type: "translator",
         author: "brahmali",
         //category: ["vinaya"],
@@ -74,6 +74,12 @@ typeof describe === "function" && describe("authors", function () {
     should(Authors.compare(davis, unknown)).equal(-1);
     should(Authors.compare(sujato, unknown)).equal(-1);
     should(Authors.compare(sujato,sabbamitta)).equal(-1);
+  });
+  it("TESTTESTlangAuthor", ()=>{
+    should(Authors.langAuthor('de')).equal('sabbamitta');
+    should(Authors.langAuthor('en')).equal('sujato');
+    should(Authors.langAuthor('jpn')).equal('kaz');
+    should(Authors.langAuthor('pt')).equal(undefined);
   });
 
 });

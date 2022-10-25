@@ -19,6 +19,19 @@ logger.logLevel = "info";
 
 (async function () {
   try {
+    let langs = await fs.promises.readdir(path.join(EBT_DATA_DIR, 'translation'));
+    let authorLangs = {};
+    for (let i=0; i < langs.length; i++) {
+      let lang = langs[i];
+      let langPath = path.join(EBT_DATA_DIR, 'translation', lang);
+      let authors = await fs.promises.readdir(langPath);
+      for (let j=0; j < authors.length; j++) {
+        let author = authors[j];
+        authorLangs[author] = authorLangs[author]
+          ? [lang, ...authorLangs[author]]
+          : [lang];
+      }
+    }
     let ebtAuthors = JSON.parse(await fs.promises.readFile(EBT_AUTHOR));
     Object.keys(ebtAuthors).forEach(auid => {
       let ea = ebtAuthors[auid];
@@ -38,6 +51,10 @@ logger.logLevel = "info";
         ea.category = ["sutta", "vinaya"].sort();
       } else {
         ea.exampleVersion = 0;
+      }
+      if (ea.lang == null) {
+        let langs = authorLangs[ea.author];
+        langs?.length && (ea.lang = langs[0]);
       }
     });
 

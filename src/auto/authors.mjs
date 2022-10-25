@@ -24,7 +24,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Bhikkhu Brahmali",
     "author": "brahmali",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "en"
   },
   "sabbamitta": {
     "type": "translator",
@@ -56,13 +57,15 @@ const AUTHORS = {
     "type": "translator",
     "name": "Charles Patton",
     "author": "patton",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "en"
   },
   "ashinsarana": {
     "type": "translator",
     "name": "Ashin Sarana",
     "author": "ashinsarana",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "cs"
   },
   "nyeinchanaye": {
     "type": "translator",
@@ -92,7 +95,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Myanmar Translation Team",
     "author": "my-team",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "my"
   },
   "carmi": {
     "type": "translator",
@@ -122,13 +126,15 @@ const AUTHORS = {
     "type": "translator",
     "name": "Seniya Ariyakumara",
     "author": "seniya",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "id"
   },
   "soma": {
     "type": "translator",
     "name": "Ayya Soma",
     "author": "soma",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "en"
   },
   "wynne": {
     "type": "translator",
@@ -140,7 +146,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Bhikkhu Thích Minh Châu",
     "author": "phantuananh",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "vi"
   },
   "kovilo": {
     "type": "translator",
@@ -164,19 +171,22 @@ const AUTHORS = {
     "type": "translator",
     "name": "Ajahn Mudito",
     "author": "mudito",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "fi"
   },
   "hardao": {
     "type": "translator",
     "name": "Piotr Jagodziński",
     "author": "hardao",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "pl"
   },
   "suddhaso": {
     "type": "translator",
     "name": "Bhante Suddhāso",
     "author": "suddhaso",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "en"
   },
   "giovannizappa": {
     "type": "translator",
@@ -188,7 +198,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Sayalay Piyadassi",
     "author": "piyadassi",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "lt"
   },
   "trush": {
     "type": "translator",
@@ -206,13 +217,15 @@ const AUTHORS = {
     "type": "translator",
     "name": "Branislav Kovačević",
     "author": "brankokovacevic",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "sr"
   },
   "noeismet": {
     "type": "translator",
     "name": "Noé Ismet",
     "author": "noeismet",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "fr"
   },
   "laera": {
     "type": "translator",
@@ -236,7 +249,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Bhikkhu Sekha",
     "author": "sekha",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "fr"
   },
   "davis": {
     "type": "translator",
