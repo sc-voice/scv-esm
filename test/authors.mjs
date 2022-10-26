@@ -43,7 +43,7 @@ typeof describe === "function" && describe("authors", function () {
 
     should.deepEqual(Authors.authorInfo('sabbamitta'), sabbamitta);
   });
-  it("TESTTESTcompare(a1,a2)", ()=>{
+  it("compare(a1,a2)", ()=>{
     let sujato = "sujato";
     let sabbamitta = "sabbamitta";
     let davis = "davis";
@@ -75,7 +75,7 @@ typeof describe === "function" && describe("authors", function () {
     should(Authors.compare(sujato, unknown)).equal(-1);
     should(Authors.compare(sujato,sabbamitta)).equal(-1);
   });
-  it("TESTTESTlangAuthor", ()=>{
+  it("langAuthor", ()=>{
     should(Authors.langAuthor('de')).equal('sabbamitta');
     should(Authors.langAuthor('en')).equal('sujato');
     should(Authors.langAuthor('jpn')).equal('kaz');

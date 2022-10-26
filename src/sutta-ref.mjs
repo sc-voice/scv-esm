@@ -22,7 +22,14 @@ export default class SuttaRef {
 
   static createFromString(str, defaultLang="pli", suids=SUIDS) {
     let refLower = str.toLowerCase();
-    let [ref, segnum] = refLower.split(":");
+    let segMatch = refLower.match(/:[-0-9.]*/);
+    let segnum;
+    let ref = refLower;
+    if (segMatch) {
+      let [segPart]  = segMatch;
+      segnum = segPart.substring(1);
+      ref = ref.replace(segPart,'');
+    }
     let [sutta_uid, lang=defaultLang, author] = ref
       .replace(/ /gu, "")
       .split("/");

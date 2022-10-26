@@ -18,7 +18,7 @@ typeof describe === "function" &&
       let suttaRef2 = new SuttaRef(suttaRef);
       should(suttaRef2).properties({ sutta_uid, lang, author, segnum });
     });
-    it("create(...) => SuttaRef", () => {
+    it("TESTTESTcreate(...) => SuttaRef", () => {
       let defaultLang = "default-lang";
       let author = "tst-author";
       let lang = "tst-lang";
@@ -62,6 +62,9 @@ typeof describe === "function" &&
 
       // string sutta reference defaultLang
       should(
+        SuttaRef.create(`${sutta_uid}:${segnum}/${lang}/${author}`, defaultLang)
+      ).properties({ sutta_uid, lang, author, segnum });
+      should(
         SuttaRef.create(`${sutta_uid}/${lang}/${author}:${segnum}`, defaultLang)
       ).properties({ sutta_uid, lang, author, segnum });
       should(
@@ -73,6 +76,9 @@ typeof describe === "function" &&
         author: undefined,
         segnum: undefined,
       });
+      should(
+        SuttaRef.create(`${sutta_uid}:${segnum}/${lang}`, defaultLang)
+      ).properties({ sutta_uid, lang, author: undefined, segnum });
       should(
         SuttaRef.create(`${sutta_uid}/${lang}:${segnum}`, defaultLang)
       ).properties({ sutta_uid, lang, author: undefined, segnum });
@@ -166,7 +172,7 @@ typeof describe === "function" &&
       should(suttaRef2).not.equal(suttaRef);
       should(suttaRef2).properties({ sutta_uid, lang, author, segnum });
     });
-    it("TESTTESTcreate(...) invalid SuttaRef", () => {
+    it("create(...) invalid SuttaRef", () => {
       should(SuttaRef.create('test-bad!!!')).equal(null);
       should(SuttaRef.create('thig1.1,en,abc')).equal(null);
     });
