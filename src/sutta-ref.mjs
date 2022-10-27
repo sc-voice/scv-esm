@@ -90,10 +90,10 @@ export default class SuttaRef {
     return null;
   }
 
-  toString() {
+  toString() { 
     let { sutta_uid, lang, author, segnum } = this;
     return segnum 
-      ? `${sutta_uid}/${lang}/${author}:${segnum}`
+      ? `${sutta_uid}:${segnum}/${lang}/${author}`
       : `${sutta_uid}/${lang}/${author}`;
   }
 }

@@ -213,7 +213,7 @@ typeof describe === "function" &&
         segnum,
       });
     });
-    it("toString()", ()=>{
+    it("TESTTESTtoString()", ()=>{ 
       let sutta_uid = 'thig1.1';
       let lang = 'de';
       let translator = 'sabbamitta';
@@ -221,9 +221,9 @@ typeof describe === "function" &&
       should(SuttaRef.create({sutta_uid, lang, translator}).toString())
         .equal("thig1.1/de/sabbamitta");
       should(SuttaRef.create({sutta_uid, lang, translator, segnum}).toString())
-        .equal("thig1.1/de/sabbamitta:2.3");
-      should(SuttaRef.create({sutta_uid:"thig1.1/de/sabbamitta:2.3"}).toString())
-        .equal("thig1.1/de/sabbamitta:2.3");
+        .equal("thig1.1:2.3/de/sabbamitta");
+      should(SuttaRef.create({sutta_uid:"thig1.1:2.3/de/sabbamitta"}).toString())
+        .equal("thig1.1:2.3/de/sabbamitta");
       should(SuttaRef.create({sutta_uid:"thig1.1"}).toString())
         .equal("thig1.1/pli/ms");
     });
