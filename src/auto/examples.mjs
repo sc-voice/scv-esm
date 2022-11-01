@@ -125,7 +125,7 @@ const EXAMPLES = {
     "das ist zu eurem Wohl",
     "das Leiden, das im Zugrundegehen liegt",
     "das menschliche Leben",
-    "das nicht-selbst ist",
+    "das ohne Selbst ist",
     "das rechte Maß",
     "das Selbst ist",
     "das Stehlen auf",
