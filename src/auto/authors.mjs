@@ -256,7 +256,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Dr Joongpyo Lee",
     "author": "davis",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "en"
   }
 }
 
