@@ -59,9 +59,13 @@ export default class SuttaRef {
       obj.sutta_uid,
       obj.lang || defaultLang
     );
-    let { sutta_uid, lang, author, segnum } = parsed || {};
+    let { sutta_uid, lang, author, segnum, } = parsed || {};
+
     if (obj.translator) {
       author = obj.translator; // legacy synonym
+    }
+    if (obj.author_uid) {
+      author = obj.author_uid; // mlDoc
     }
     if (obj.author) {
       author = obj.author;

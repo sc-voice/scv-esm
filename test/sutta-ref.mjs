@@ -172,11 +172,28 @@ typeof describe === "function" &&
       should(suttaRef2).not.equal(suttaRef);
       should(suttaRef2).properties({ sutta_uid, lang, author, segnum });
     });
+    it("TESTTESTcreate(mlDoc) => SuttaRef", () => {
+      let defaultLang = "default-lang";
+      let author_uid = "tst-author";
+      let author = author_uid;
+      let lang = "tst-lang";
+      let sutta_uid = "thig1.1";
+      let segments = [];
+      let mlDoc = { sutta_uid, lang, author_uid, segments };
+
+      // string sutta reference defaultLang
+      should(SuttaRef.create(mlDoc)).properties({
+        sutta_uid,
+        lang,
+        author,
+      });
+      should(SuttaRef.segnum).equal(undefined);
+    });
     it("create(...) invalid SuttaRef", () => {
       should(SuttaRef.create('test-bad!!!')).equal(null);
       should(SuttaRef.create('thig1.1,en,abc')).equal(null);
     });
-    it("create(object) translator => SuttaRef", () => {
+    it("TESTTESTcreate(object) translator => SuttaRef", () => {
       let defaultLang = "default-lang";
       let author = "tst-author";
       let lang = "tst-lang";
