@@ -258,6 +258,12 @@ const AUTHORS = {
     "author": "davis",
     "exampleVersion": 0,
     "lang": "en"
+  },
+  "pasanna": {
+    "type": "translator",
+    "name": "Venerable Pasanna",
+    "author": "pasanna",
+    "exampleVersion": 0
   }
 }
 
