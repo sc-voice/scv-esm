@@ -18,7 +18,7 @@ typeof describe === "function" &&
       let suttaRef2 = new SuttaRef(suttaRef);
       should(suttaRef2).properties({ sutta_uid, lang, author, segnum });
     });
-    it("TESTTESTcreate(...) => SuttaRef", () => {
+    it("create(...) => SuttaRef", () => {
       let defaultLang = "default-lang";
       let author = "tst-author";
       let lang = "tst-lang";
@@ -172,7 +172,7 @@ typeof describe === "function" &&
       should(suttaRef2).not.equal(suttaRef);
       should(suttaRef2).properties({ sutta_uid, lang, author, segnum });
     });
-    it("TESTTESTcreate(mlDoc) => SuttaRef", () => {
+    it("create(mlDoc) => SuttaRef", () => {
       let defaultLang = "default-lang";
       let author_uid = "tst-author";
       let author = author_uid;
@@ -193,7 +193,7 @@ typeof describe === "function" &&
       should(SuttaRef.create('test-bad!!!')).equal(null);
       should(SuttaRef.create('thig1.1,en,abc')).equal(null);
     });
-    it("TESTTESTcreate(object) translator => SuttaRef", () => {
+    it("create(object) translator => SuttaRef", () => {
       let defaultLang = "default-lang";
       let author = "tst-author";
       let lang = "tst-lang";
@@ -230,7 +230,7 @@ typeof describe === "function" &&
         segnum,
       });
     });
-    it("TESTTESTtoString()", ()=>{ 
+    it("toString()", ()=>{ 
       let sutta_uid = 'thig1.1';
       let lang = 'de';
       let translator = 'sabbamitta';

@@ -36,4 +36,21 @@ typeof describe === "function" &&
       should(Examples.isExample('Wurzel des Leidens', 'de')).equal('de');
       should(Examples.isExample('not an example')).equal(undefined);
     });
+    it("TESTTESTregExpLangExamples('en')", ()=>{
+      let enText = 'brown Root of Suffering fox';
+      let deText = 'braune Wurzel des Leidens ist ein Fuchs';
+      let reEn = Examples.regExpLangExamples('en');
+      let reEn2 = Examples.regExpLangExamples('en');
+      should(reEn2).equal(reEn);
+      should(enText.replace(reEn, 'jumping'))
+      .equal("brown jumping fox");
+      should(deText.replace(reEn, 'jumping'))
+      .equal(deText);
+
+      let reDe = Examples.regExpLangExamples('de');
+      should(enText.replace(reDe, 'jumping'))
+      .equal(enText);
+      should(deText.replace(reDe, 'jumping'))
+      .equal('braune jumping ist ein Fuchs');
+    });
   });
