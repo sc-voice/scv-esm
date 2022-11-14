@@ -1,4 +1,5 @@
 import Examples from "./auto/examples.mjs";
+import { logger } from "log-instance";
 
 const REG_EXP_MAP = {};
 
@@ -25,6 +26,29 @@ function sanitizePattern(pattern) {
   return pattern;
 }
 
+function regExpLangExamples(lang) {
+  var reLang = REG_EXP_MAP[lang];
+  if (!reLang) {
+    let langExamples = Examples[lang];
+    if (langExamples == null) {
+      throw new Error(`No examples for ${lang}`);
+    }
+    langExamples = langExamples.map(e => sanitizePattern(e));
+    let pat = langExamples.join("|\\b");
+    reLang = new RegExp(`\\b${pat}`, "gimu");
+    REG_EXP_MAP[lang] = reLang;
+
+    // nodejs v16.16.0 11/15/2022
+    // --------------------------
+    // Javascript runtime optimization is triggered
+    // when the RegExp is executed TWICE.
+    // Use the before() method to pre-optimize 
+    // the regular expression so that
+    // unit test times match long-term behavior
+  }
+  reLang.lastIndex = 0; // reset state (reLang is a global RegExp)
+  return reLang;
+}
 
 Object.defineProperty(Examples, "isExample", {
   value: (text,lang) => {
@@ -44,20 +68,14 @@ Object.defineProperty(Examples, "isExample", {
   }
 });
 
-Object.defineProperty(Examples, "regExpLangExamples", {
-  value: (lang) => {
-    var reLang = REG_EXP_MAP[lang];
-    if (!reLang) {
-      let langExamples = Examples[lang];
-      if (langExamples == null) {
-        throw new Error(`No examples for ${lang}`);
-      }
-      langExamples = langExamples.map(e => sanitizePattern(e));
-      let pat = langExamples.join("|\\b");
-      reLang = new RegExp(`\\b${pat}`, "gimu");
-      REG_EXP_MAP[lang] = reLang;
-    }
-    return reLang;
+Object.defineProperty(Examples, "test", {
+  value: (str, lang='en') => regExpLangExamples(lang).test(str),
+});
+
+Object.defineProperty(Examples, "replaceAll", {
+  value: (text,template='$&',lang='en') => {
+    let re = regExpLangExamples(lang);
+    return text.replaceAll(re, template);
   }
 });
 

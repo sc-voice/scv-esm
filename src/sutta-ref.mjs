@@ -37,9 +37,32 @@ export default class SuttaRef {
       author = 'ms';
     }
     let { compareLow, compareHigh } = SuttaCentralId;
-    let keys = suids.filter((k) => {
-      return compareLow(k, sutta_uid) <= 0 && compareHigh(sutta_uid, k) <= 0;
-    });
+    let keys = [];
+    if (suids === SUIDS) {
+      let nSuids = suids.length;
+      let iLow = 0;
+      let iHigh = nSuids;
+      while (iLow < iHigh) {
+        let i = Math.floor((iLow+iHigh)/2);
+        let suid = suids[i];
+        let cmpLow = compareLow(suid, sutta_uid);
+        let cmpHigh = compareHigh(sutta_uid, suid);
+        if (cmpLow <= 0 && cmpHigh <= 0) {
+          keys.push(suid);
+          break;
+        }
+        if (cmpLow > 0) {
+          iHigh = i;
+        }
+        if (cmpHigh > 0) {
+          iLow = i;
+        }
+      }
+    } else {
+      keys = suids.filter((k) => {
+        return compareLow(k, sutta_uid) <= 0 && compareHigh(sutta_uid, k) <= 0;
+      });
+    }
     let suttaRef;
     if (keys.length === 1) {
       suttaRef = new SuttaRef({

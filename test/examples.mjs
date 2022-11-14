@@ -1,8 +1,23 @@
 import { Examples } from "../main.mjs";
+import { logger } from "log-instance";
 import should from "should";
+
+logger.logLevel = 'warn';
 
 typeof describe === "function" &&
   describe("examples", function () {
+    before(()=>{
+      let msStart = Date.now();
+
+      // pre-optimize by running TWICE!
+      for (let i = 0; i < 2; i++) {
+        should(Examples.test('warm up test', 'en')).equal(false);
+        should(Examples.test('warm up test', 'de')).equal(false);
+      }
+
+      let msElapsed = Date.now() - msStart;
+      console.log(`NOTE: before() pre-optimization takes ${msElapsed}ms`);
+    });
     it("en", ()=>{
       let { en } = Examples;
       should(en.indexOf('root of suffering')).above(0);
@@ -23,7 +38,7 @@ typeof describe === "function" &&
         author: 'sujato',
       });
     });
-    it("isExample", ()=>{
+    it("TESTTESTisExample", ()=>{
       should(Examples.isExample("wilde[sn] Fohlen")).equal('de');
       should(Examples.isExample("but ma'am")).equal('en');
       should(Examples.isExample("but ma.am")).equal('en');
@@ -36,21 +51,32 @@ typeof describe === "function" &&
       should(Examples.isExample('Wurzel des Leidens', 'de')).equal('de');
       should(Examples.isExample('not an example')).equal(undefined);
     });
-    it("TESTTESTregExpLangExamples('en')", ()=>{
+    it("TESTTESTtest()", ()=>{
       let enText = 'brown Root of Suffering fox';
       let deText = 'braune Wurzel des Leidens ist ein Fuchs';
-      let reEn = Examples.regExpLangExamples('en');
-      let reEn2 = Examples.regExpLangExamples('en');
-      should(reEn2).equal(reEn);
-      should(enText.replace(reEn, 'jumping'))
-      .equal("brown jumping fox");
-      should(deText.replace(reEn, 'jumping'))
-      .equal(deText);
+      let noMatch = 'no match text';
 
-      let reDe = Examples.regExpLangExamples('de');
-      should(enText.replace(reDe, 'jumping'))
-      .equal(enText);
-      should(deText.replace(reDe, 'jumping'))
-      .equal('braune jumping ist ein Fuchs');
+      let msStart = Date.now();
+
+      // test() is stateless, but global RegExp's are stateful
+      should(Examples.test('root of suffering')).equal(true);
+      should(Examples.test('root of suffering')).equal(true); 
+
+      should(Examples.test(enText)).equal(true); 
+      should(Examples.test('wurzel des leidens', 'en')).equal(false);
+      should(Examples.test('wurzel des leidens', 'de')).equal(true);
+
+      //console.log("test() msElapsed", Date.now() - msStart);
+      let msElapsed = Date.now() - msStart;
+      should(msElapsed).below(10);
+    });
+    it("TESTTESTreplaceAll()", ()=>{
+      let msStart = Date.now();
+      let text = 'A root of suffering B Root of Suffering C ANXIETY D';
+      let template = '($&)';
+      should(Examples.replaceAll(text, template))
+        .equal('A (root of suffering) B (Root of Suffering) C (ANXIETY) D');
+      let msElapsed = Date.now() - msStart;
+      should(msElapsed).below(10);
     });
   });

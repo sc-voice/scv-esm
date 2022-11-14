@@ -1,5 +1,6 @@
 import should from "should";
 import { SuttaRef } from "../main.mjs";
+import { logger } from "log-instance";
 
 typeof describe === "function" &&
   describe("sutta-ref", function () {
@@ -190,8 +191,11 @@ typeof describe === "function" &&
       should(SuttaRef.segnum).equal(undefined);
     });
     it("create(...) invalid SuttaRef", () => {
+      let logLevel = logger.logLevel;
+      logger.logLevel = 'error';
       should(SuttaRef.create('test-bad!!!')).equal(null);
       should(SuttaRef.create('thig1.1,en,abc')).equal(null);
+      logger.logLevel = logLevel;
     });
     it("create(object) translator => SuttaRef", () => {
       let defaultLang = "default-lang";
