@@ -39,19 +39,23 @@ typeof describe === "function" &&
       });
     });
     it("TESTTESTisExample", ()=>{
+      // examples return example language
       should(Examples.isExample("wilde[sn] Fohlen")).equal('de');
       should(Examples.isExample("but ma'am")).equal('en');
       should(Examples.isExample("but ma.am")).equal('en');
-      should(Examples.isExample("ma.am")).equal(undefined);
       should(Examples.isExample('root of suffering')).equal('en');
-      should(Examples.isExample('what is root of suffering')).equal(undefined);
       should(Examples.isExample('Wurzel des Leidens')).equal('de');
       should(Examples.isExample('wurzel des leidens')).equal('de');
-      should(Examples.isExample('Wurzel des Leidens', 'en')).equal(undefined);
       should(Examples.isExample('Wurzel des Leidens', 'de')).equal('de');
+
+      // Non-examples return undefined
+      should(Examples.isExample("ma.am")).equal(undefined);
+      should(Examples.isExample('what is root of suffering')).equal(undefined);
+      should(Examples.isExample('Wurzel des Leidens', 'en')).equal(undefined);
+      should(Examples.isExample('Wurzel des Leidens', 'no-lang')).equal(undefined);
       should(Examples.isExample('not an example')).equal(undefined);
     });
-    it("TESTTESTtest()", ()=>{
+    it("test()", ()=>{
       let enText = 'brown Root of Suffering fox';
       let deText = 'braune Wurzel des Leidens ist ein Fuchs';
       let noMatch = 'no match text';
@@ -71,12 +75,20 @@ typeof describe === "function" &&
       should(msElapsed).below(10);
     });
     it("TESTTESTreplaceAll()", ()=>{
-      let msStart = Date.now();
       let text = 'A root of suffering B Root of Suffering C ANXIETY D';
       let template = '($&)';
+      
+      let msStart = Date.now();
       should(Examples.replaceAll(text, template))
         .equal('A (root of suffering) B (Root of Suffering) C (ANXIETY) D');
       let msElapsed = Date.now() - msStart;
       should(msElapsed).below(10);
+
+      should(Examples.replaceAll(text, template, 'en'))
+        .equal('A (root of suffering) B (Root of Suffering) C (ANXIETY) D');
+      should(Examples.replaceAll(text, template, 'de'))
+        .equal('A root of suffering B Root of Suffering C ANXIETY D');
+      should(Examples.replaceAll(text, template, 'no-lang'))
+        .equal('A root of suffering B Root of Suffering C ANXIETY D');
     });
   });

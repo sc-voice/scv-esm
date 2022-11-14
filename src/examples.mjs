@@ -31,7 +31,7 @@ function regExpLangExamples(lang) {
   if (!reLang) {
     let langExamples = Examples[lang];
     if (langExamples == null) {
-      throw new Error(`No examples for ${lang}`);
+      return null;
     }
     langExamples = langExamples.map(e => sanitizePattern(e));
     let pat = langExamples.join("|\\b");
@@ -56,14 +56,14 @@ Object.defineProperty(Examples, "isExample", {
     let re = new RegExp(`^${pat}$`, "iu");
     let match = (eg) => pat.toLowerCase() === eg.toLowerCase() || re.test(eg);
     if (lang) {
-      return Examples[lang].find(match) && lang || undefined;
+      return Examples[lang]?.find(match) && lang || undefined;
     }
 
     return Object.keys(Examples)
       .filter(k => k !== 'comment' && k !== 'authors')
       .reduce((a,l,i) => {
         let langExamples = Examples[l];
-        return a || langExamples.find(match) && l || a;
+        return a || langExamples?.find(match) && l || a;
       }, undefined)
   }
 });
@@ -75,7 +75,7 @@ Object.defineProperty(Examples, "test", {
 Object.defineProperty(Examples, "replaceAll", {
   value: (text,template='$&',lang='en') => {
     let re = regExpLangExamples(lang);
-    return text.replaceAll(re, template);
+    return re ? text.replaceAll(re, template) : text;
   }
 });
 
