@@ -1,5 +1,6 @@
 import Examples from "./auto/examples.mjs";
-import { logger } from "log-instance";
+import LOG_INSTANCE from "log-instance";
+const { logger } = LOG_INSTANCE;
 
 const REG_EXP_MAP = {};
 
