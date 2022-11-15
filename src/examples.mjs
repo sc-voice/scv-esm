@@ -56,14 +56,24 @@ Object.defineProperty(Examples, "isExample", {
     let re = new RegExp(`^${pat}$`, "iu");
     let match = (eg) => pat.toLowerCase() === eg.toLowerCase() || re.test(eg);
     if (lang) {
-      return Examples[lang]?.find(match) && lang || undefined;
+      let egLang = Examples[lang];
+
+      return egLang
+        ? egLang.find(match) && lang || undefined
+        : undefined;
     }
 
     return Object.keys(Examples)
       .filter(k => k !== 'comment' && k !== 'authors')
       .reduce((a,l,i) => {
         let langExamples = Examples[l];
-        return a || langExamples?.find(match) && l || a;
+        if (langExamples == null) {
+          return a;
+        }
+        if (a) {
+          return a;
+        }
+        return langExamples.find(match) && l;
       }, undefined)
   }
 });
