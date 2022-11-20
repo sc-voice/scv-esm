@@ -345,7 +345,7 @@ const EXAMPLES = {
     "gut, Schwester",
     "Haare.* zu Berge",
     "haarsträubend",
-    "hab' ich das beste getroffen",
+    "bei der besten angekommen",
     "Harfe",
     "hässlich und entstellt",
     "hast du Vertrauen",
