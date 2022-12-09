@@ -264,6 +264,12 @@ const AUTHORS = {
     "name": "Venerable Pasanna",
     "author": "pasanna",
     "exampleVersion": 0
+  },
+  "marcinow": {
+    "type": "translator",
+    "name": "Piotr Marcinów",
+    "author": "marcinow",
+    "exampleVersion": 0
   }
 }
 
