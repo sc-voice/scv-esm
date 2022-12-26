@@ -20,7 +20,7 @@ export default class SuttaRef {
     });
   }
 
-  static createFromString(str, defaultLang="pli", suids=SUIDS) {
+  static createFromString(str='', defaultLang="pli", suids=SUIDS) {
     let refLower = str.toLowerCase();
     let segMatch = refLower.match(/:[-0-9.]*/);
     let segnum;
@@ -111,7 +111,10 @@ export default class SuttaRef {
         return SuttaRef.createFromObject(strOrObj, defaultLang, suids);
       }
     } catch(e) {
-      logger.warn(`SuttaRef.create()`, JSON.stringify(strOrObj), '=>', e.message);
+      let args = JSON.stringify(strOrObj);
+      let msg = `SuttaRef.create() ${args} => ${e.message}`;
+      console.warn(msg);
+      logger.warn(msg);
     }
 
     return null;
