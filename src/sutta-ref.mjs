@@ -62,7 +62,8 @@ export default class SuttaRef {
         if (cmpHigh > 0) {
           dbg && console.log("DEBUG3", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
-          iLow = i-1;
+          //iLow = i-1;
+          iLow = i;
         }
       }
     } else {
