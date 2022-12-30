@@ -1696,6 +1696,7 @@ const EXAMPLES = {
     "wrong immersion is blown away",
     "wrong turn",
     "yet I am not a perfected one",
+    "wife and husband",
     "zombie"
   ],
   "jpn": [
