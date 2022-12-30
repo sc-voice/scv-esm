@@ -93,6 +93,26 @@ typeof describe === "function" &&
         { sutta_uid, lang: defaultLang, author: undefined, segnum }
       );
     });
+    it("TESTTESTcreateFromString()", ()=>{
+      let defaultLang = "en";
+      let author = "ms";
+      let lang = "pli";
+      let sutta_uid = "sn24.11";
+      let segnum = undefined;
+      let sref = SuttaRef.createFromString('sn24.9-18');
+      should(sref).properties({ sutta_uid: 'sn24.9-18', lang, author, segnum, });
+    });
+    it("create(object) sn24.11=> SuttaRef", () => {
+      let defaultLang = "en";
+      let author = "sujato";
+      let lang = "en";
+      let sutta_uid = "sn24.11";
+      let segnum = undefined;
+      let sref = SuttaRef.create({ sutta_uid, lang, author, segnum });
+      should(sref).properties({ sutta_uid: 'sn24.9-18', lang, author, segnum, });
+      let sref2 = SuttaRef.create(sref);
+      should(sref2).properties({ sutta_uid: 'sn24.9-18', lang, author, segnum, });
+    });
     it("create(object) => SuttaRef", () => {
       let defaultLang = "default-lang";
       let author = "tst-author";

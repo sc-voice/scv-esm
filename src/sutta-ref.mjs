@@ -25,6 +25,7 @@ export default class SuttaRef {
     let segMatch = refLower.match(/:[-0-9.]*/);
     let segnum;
     let ref = refLower;
+    let dbg = 0;
     if (segMatch) {
       let [segPart]  = segMatch;
       segnum = segPart.substring(1);
@@ -48,14 +49,20 @@ export default class SuttaRef {
         let cmpLow = compareLow(suid, sutta_uid);
         let cmpHigh = compareHigh(sutta_uid, suid);
         if (cmpLow <= 0 && cmpHigh <= 0) {
+          dbg && console.log("DEBUG1", 
+            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           keys.push(suid);
           break;
         }
         if (cmpLow > 0) {
+          dbg && console.log("DEBUG2", 
+            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           iHigh = i;
         }
         if (cmpHigh > 0) {
-          iLow = i;
+          dbg && console.log("DEBUG3", 
+            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
+          iLow = i-1;
         }
       }
     } else {
