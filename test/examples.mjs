@@ -38,7 +38,7 @@ typeof describe === "function" &&
         author: 'sujato',
       });
     });
-    it("TESTTESTisExample", ()=>{
+    it("isExample", ()=>{
       // examples return example language
       should(Examples.isExample("wilde[sn] Fohlen")).equal('de');
       should(Examples.isExample("but ma'am")).equal('en');
@@ -74,7 +74,7 @@ typeof describe === "function" &&
       let msElapsed = Date.now() - msStart;
       should(msElapsed).below(10);
     });
-    it("TESTTESTreplaceAll()", ()=>{
+    it("replaceAll()", ()=>{
       let text = 'A root of suffering B Root of Suffering C ANXIETY D';
       let template = '($&)';
       

@@ -97,10 +97,11 @@ typeof describe === "function" &&
       let defaultLang = "en";
       let author = "ms";
       let lang = "pli";
-      let sutta_uid = "sn24.11";
       let segnum = undefined;
-      let sref = SuttaRef.createFromString('sn24.9-18');
-      should(sref).properties({ sutta_uid: 'sn24.9-18', lang, author, segnum, });
+      let sref2 = SuttaRef.createFromString('sn24.9-18');
+      should(sref2).properties({ sutta_uid: 'sn24.9-18', lang, author, segnum, });
+      let sref = SuttaRef.createFromString('thig1.2/en/soma');
+      should(sref).properties({ sutta_uid: 'thig1.2', lang:'en', author:'soma', });
     });
     it("create(object) sn24.11=> SuttaRef", () => {
       let defaultLang = "en";

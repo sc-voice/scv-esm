@@ -54,15 +54,17 @@ export default class SuttaRef {
           keys.push(suid);
           break;
         }
-        if (cmpLow > 0) {
+        if (cmpLow > 0 && cmpHigh > 0) {
           dbg && console.log("DEBUG2", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           iHigh = i;
-        }
-        if (cmpHigh > 0) {
+        } else if (cmpLow > 0) {
           dbg && console.log("DEBUG3", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
-          //iLow = i-1;
+          iHigh = i;
+        } else if (cmpHigh > 0) {
+          dbg && console.log("DEBUG4", 
+            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           iLow = i;
         }
       }
