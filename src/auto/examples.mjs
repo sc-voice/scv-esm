@@ -506,6 +506,7 @@ const EXAMPLES = {
     "mit freundlichen Augen",
     "mit ganzem Herzen dabei",
     "mitgenommen, leidend, schwer krank",
+    "mit gesträubten Haaren",
     "mit hängenden Schultern",
     "mithilfe eines Gleichnisses",
     "mit ihrem Geist erfasst",
