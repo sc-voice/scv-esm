@@ -269,7 +269,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Piotr Marcinów",
     "author": "marcinow",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "pl"
   }
 }
 

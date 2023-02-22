@@ -20087,11 +20087,13 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/davis": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/pl/marcinow": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.2": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/pl/marcinow": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.3": {
