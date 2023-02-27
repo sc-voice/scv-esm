@@ -27969,6 +27969,12 @@ const SUIDMAP = {
 	},
 	"vv9": {
 		"root/pli/ms": "sutta/kn/vv"
+	},
+	"pli-tv-bi-pm": {
+		"root/pli/ms": "vinaya"
+	},
+	"pli-tv-bu-pm": {
+		"root/pli/ms": "vinaya"
 	}
 }
 export default SUIDMAP;
