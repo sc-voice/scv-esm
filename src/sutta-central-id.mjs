@@ -179,8 +179,10 @@ export default class SuttaCentralId {
   static compareLow(a, b) {
     var abase = SuttaCentralId.basename(a);
     var bbase = SuttaCentralId.basename(b);
-    var aprefix = abase.substring(0, abase.search(/[0-9]/));
-    var bprefix = bbase.substring(0, bbase.search(/[0-9]/));
+    var adigit = abase.search(/[0-9]/);
+    var bdigit = bbase.search(/[0-9]/);
+    var aprefix = adigit < 0 ? abase : abase.substring(0, adigit);
+    var bprefix = bdigit < 0 ? bbase : bbase.substring(0, bdigit);
     var cmp = aprefix.localeCompare(bprefix);
     if (cmp === 0) {
       var adig = SuttaCentralId.scidNumbersLow(abase);

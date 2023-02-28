@@ -195,6 +195,9 @@ typeof describe === "function" &&
       testCompareLow("dn33:1.1", "dn33:1.1.0", -1);
       testCompareLow("dn33:1.10.1", "dn33:1.2.0", 8);
     });
+    it("compareLow(a,b) compares vinaya ids", () => {
+      testCompareLow('pli-tv-bu-pm', 'an1.1', 1);
+    });
     it("compareHigh(a,b) compares sutta file names", function () {
       var cmp = SuttaCentralId.compareHigh;
 

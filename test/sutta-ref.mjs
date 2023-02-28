@@ -93,7 +93,7 @@ typeof describe === "function" &&
         { sutta_uid, lang: defaultLang, author: undefined, segnum }
       );
     });
-    it("TESTTESTcreateFromString()", ()=>{
+    it("createFromString()", ()=>{
       let defaultLang = "en";
       let author = "ms";
       let lang = "pli";
@@ -103,16 +103,16 @@ typeof describe === "function" &&
       let sref = SuttaRef.createFromString('thig1.2/en/soma');
       should(sref).properties({ sutta_uid: 'thig1.2', lang:'en', author:'soma', });
     });
-    it("create(object) sn24.11=> SuttaRef", () => {
+    it("create(object) sutta in range=> SuttaRef", () => {
       let defaultLang = "en";
       let author = "sujato";
       let lang = "en";
-      let sutta_uid = "sn24.11";
+      let sutta_uid = "an1.11";
       let segnum = undefined;
       let sref = SuttaRef.create({ sutta_uid, lang, author, segnum });
-      should(sref).properties({ sutta_uid: 'sn24.9-18', lang, author, segnum, });
+      should(sref).properties({ sutta_uid: 'an1.11-20', lang, author, segnum, });
       let sref2 = SuttaRef.create(sref);
-      should(sref2).properties({ sutta_uid: 'sn24.9-18', lang, author, segnum, });
+      should(sref2).properties({ sutta_uid: 'an1.11-20', lang, author, segnum, });
     });
     it("create(object) => SuttaRef", () => {
       let defaultLang = "default-lang";
@@ -211,9 +211,11 @@ typeof describe === "function" &&
       });
       should(SuttaRef.segnum).equal(undefined);
     });
-    it("create(...) invalid SuttaRef", () => {
+    it("TESTTESTcreate(...) invalid SuttaRef", () => {
       let logLevel = logger.logLevel;
       logger.logLevel = 'error';
+      should(SuttaRef.create('xyz')).equal(null);
+      should(SuttaRef.create('aaa')).equal(null);
       should(SuttaRef.create('test-bad!!!')).equal(null);
       should(SuttaRef.create('thig1.1,en,abc')).equal(null);
       logger.logLevel = logLevel;

@@ -48,42 +48,49 @@ export default class SuttaRef {
         let suid = suids[i];
         let cmpLow = compareLow(suid, sutta_uid);
         let cmpHigh = compareHigh(sutta_uid, suid);
-        if (cmpLow <= 0 && cmpHigh <= 0) {
+        if (cmpLow < 0 && cmpHigh < 0) {
           dbg && console.log("DEBUG1", 
+            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
+          if (iLow === i) {
+            break;
+          }
+          iLow = i;
+        } else if (cmpLow <= 0 && cmpHigh <= 0) {
+          dbg && console.log("DEBUG2", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           keys.push(suid);
           break;
         }
         if (cmpLow > 0 && cmpHigh > 0) {
-          dbg && console.log("DEBUG2", 
-            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
-          iHigh = i;
-        } else if (cmpLow > 0) {
           dbg && console.log("DEBUG3", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           iHigh = i;
-        } else if (cmpHigh > 0) {
+        } else if (cmpLow > 0) {
           dbg && console.log("DEBUG4", 
+            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
+          iHigh = i;
+        } else if (cmpHigh > 0) {
+          dbg && console.log("DEBUG5", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           iLow = i;
         }
-      }
+      } // while
     } else {
       keys = suids.filter((k) => {
         return compareLow(k, sutta_uid) <= 0 && compareHigh(sutta_uid, k) <= 0;
       });
     }
     let suttaRef;
-    if (keys.length === 1) {
-      suttaRef = new SuttaRef({
-        sutta_uid: keys[0],
-        lang,
-        author,
-        segnum,
-      });
-    } else {
+    if (keys.length !== 1) {
       throw new Error(`SuttaRef.createFromString(${str}) invalid`);
     }
+
+    suttaRef = new SuttaRef({
+      sutta_uid: keys[0],
+      lang,
+      author,
+      segnum,
+    });
     return suttaRef;
   }
 
@@ -123,7 +130,6 @@ export default class SuttaRef {
     } catch(e) {
       let args = JSON.stringify(strOrObj);
       let msg = `SuttaRef.create() ${args} => ${e.message}`;
-      console.warn(msg);
       logger.warn(msg);
     }
 
