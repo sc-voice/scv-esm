@@ -19826,16 +19826,19 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/sn/sn55"
 	},
 	"sn55.4": {
+		"translation/de/sabbamitta": "sutta/sn/sn55",
 		"translation/en/sujato": "sutta/sn/sn55",
 		"translation/fr/sekha": "sutta/sn/sn55",
 		"root/pli/ms": "sutta/sn/sn55"
 	},
 	"sn55.5": {
+		"translation/de/sabbamitta": "sutta/sn/sn55",
 		"translation/en/sujato": "sutta/sn/sn55",
 		"translation/fr/sekha": "sutta/sn/sn55",
 		"root/pli/ms": "sutta/sn/sn55"
 	},
 	"sn55.6": {
+		"translation/de/sabbamitta": "sutta/sn/sn55",
 		"translation/en/sujato": "sutta/sn/sn55",
 		"translation/fr/sekha": "sutta/sn/sn55",
 		"root/pli/ms": "sutta/sn/sn55"
