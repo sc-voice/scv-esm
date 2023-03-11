@@ -20178,12 +20178,14 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/davis": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"translation/pl/marcinow": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.2": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"translation/pl/marcinow": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
@@ -20210,45 +20212,53 @@ const SUIDMAP = {
 	"sn56.7": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.8": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.9": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.10": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.11": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
 		"translation/fr/noeismet": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"translation/lt/piyadassi": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.12": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.13": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/davis": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.14": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/davis": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.15": {
@@ -20265,32 +20275,38 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/davis": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.18": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/davis": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.19": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.20": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.21": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.22": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.23": {
@@ -20311,11 +20327,13 @@ const SUIDMAP = {
 	"sn56.26": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.27": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.28": {
@@ -20326,6 +20344,7 @@ const SUIDMAP = {
 	"sn56.29": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.30": {
@@ -20337,6 +20356,7 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/davis": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"translation/lt/piyadassi": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
@@ -20348,6 +20368,7 @@ const SUIDMAP = {
 	"sn56.33": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.34": {
@@ -20359,6 +20380,7 @@ const SUIDMAP = {
 	"sn56.35": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.36": {
@@ -20369,6 +20391,7 @@ const SUIDMAP = {
 	"sn56.37": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.38": {
@@ -20409,6 +20432,7 @@ const SUIDMAP = {
 	"sn56.45": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.46": {
@@ -20420,12 +20444,14 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/davis": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.48": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/davis": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.49": {
@@ -20441,6 +20467,7 @@ const SUIDMAP = {
 	"sn56.51": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.52": {
@@ -20476,6 +20503,7 @@ const SUIDMAP = {
 	"sn56.58": {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
+		"translation/fr/sekha": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.59": {
