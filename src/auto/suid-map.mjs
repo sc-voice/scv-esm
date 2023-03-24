@@ -8755,6 +8755,7 @@ const SUIDMAP = {
 	},
 	"mn47": {
 		"translation/en/sujato": "sutta/mn",
+		"translation/fr/noeismet": "sutta/mn",
 		"root/pli/ms": "sutta/mn"
 	},
 	"mn48": {
