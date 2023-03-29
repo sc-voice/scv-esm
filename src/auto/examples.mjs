@@ -300,6 +300,7 @@ const EXAMPLES = {
     "Freude empfinden",
     "Freude und Glück",
     "Frieden finden",
+    "friedvoller",
     "Fröhlichkeit oder Traurigkeit oder Gleichmut",
     "Frucht des Gebens",
     "fühlt.* es abgelöst",
