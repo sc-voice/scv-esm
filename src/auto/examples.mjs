@@ -332,6 +332,7 @@ const EXAMPLES = {
     "Genussmensch",
     "gepackt",
     "gepflegt werden sollte, und",
+    "gepresster Zunge",
     "gerechter und prinzipientreuer König",
     "Gerstengranne",
     "Gerücht",
