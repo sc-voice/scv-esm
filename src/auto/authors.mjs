@@ -271,6 +271,12 @@ const AUTHORS = {
     "author": "marcinow",
     "exampleVersion": 0,
     "lang": "pl"
+  },
+  "sv": {
+    "type": "translator",
+    "name": "SV theravada.ru",
+    "author": "sv",
+    "exampleVersion": 0
   }
 }
 
