@@ -7845,6 +7845,7 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/dn"
 	},
 	"dn2": {
+		"translation/de/sabbamitta": "sutta/dn",
 		"translation/en/sujato": "sutta/dn",
 		"translation/lt/piyadassi": "sutta/dn",
 		"translation/my/my-team": "sutta/dn",
