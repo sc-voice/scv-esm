@@ -242,7 +242,7 @@ const EXAMPLES = {
     "einnicken",
     "ein paar Jungen",
     "ein paar Palisanderblätter",
-    "ein Pfahlhaus am zentralen Platz",
+    "ein Pfahlhaus an dem Platz im Zentrum",
     "ein Schmuck und ein Bestandteil",
     "Einswerden",
     "ein Rest",
