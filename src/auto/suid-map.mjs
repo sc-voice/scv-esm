@@ -3690,6 +3690,7 @@ const SUIDMAP = {
 	"an5.162": {
 		"translation/de/sabbamitta": "sutta/an/an5",
 		"translation/en/sujato": "sutta/an/an5",
+		"translation/lt/piyadassi": "sutta/an/an5",
 		"root/pli/ms": "sutta/an/an5"
 	},
 	"an5.163": {
@@ -8910,6 +8911,7 @@ const SUIDMAP = {
 	},
 	"mn60": {
 		"translation/en/sujato": "sutta/mn",
+		"translation/lt/piyadassi": "sutta/mn",
 		"root/pli/ms": "sutta/mn"
 	},
 	"mn61": {
