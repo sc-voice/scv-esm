@@ -276,7 +276,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "SV theravada.ru",
     "author": "sv",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "ru"
   }
 }
 
