@@ -7854,6 +7854,7 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/dn"
 	},
 	"dn3": {
+		"translation/de/sabbamitta": "sutta/dn",
 		"translation/en/sujato": "sutta/dn",
 		"translation/my/my-team": "sutta/dn",
 		"translation/sr/brankokovacevic": "sutta/dn",
@@ -21372,14 +21373,17 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag1.18": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag1.19": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag1.20": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
