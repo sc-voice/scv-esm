@@ -87,7 +87,7 @@ const EXAMPLES = {
     "bei der besten angekommen",
     "beim Einatmen Seligkeit",
     "bemüht.*, damit",
-    "Benommenheit",
+    "Benommenheit aufgeben",
     "Bergkuh",
     "Beruhigen.* aller Vorgänge",
     "beschließen ihren Weg",
