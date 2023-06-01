@@ -590,6 +590,7 @@ const EXAMPLES = {
     "Sanfteste der Sanften",
     "schädlichen Irrglauben",
     "Schale umdrehen",
+    "Schaumklumpen",
     "Schilfbündel",
     "Schlange Skorpion Tausendfüßler",
     "schleichend",
