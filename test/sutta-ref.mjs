@@ -1,6 +1,6 @@
 import should from "should";
 import { SuttaRef } from "../main.mjs";
-import { logger } from "log-instance";
+import { logger } from "log-instance/index.mjs";
 
 typeof describe === "function" &&
   describe("sutta-ref", function () {

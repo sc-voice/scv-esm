@@ -1,5 +1,5 @@
 import { Examples } from "../main.mjs";
-import { logger } from "log-instance";
+import { logger } from "log-instance/index.mjs";
 import should from "should";
 
 logger.logLevel = 'warn';

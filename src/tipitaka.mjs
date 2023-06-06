@@ -1,5 +1,4 @@
-import LOG_INSTANCE from "log-instance";
-const { logger } = LOG_INSTANCE;
+import { logger } from "log-instance/index.mjs";
 import SuidMap from "./auto/suid-map.mjs";
 import SuttaCentralId from "./sutta-central-id.mjs";
 
