@@ -25,9 +25,9 @@
     "log-instance": "^1.4.0"
   },
   "devDependencies": {
-    "memo-again": "^0.6.0",
+    "memo-again": "^0.7.0",
     "mocha": "^10.0.0",
-    "scv-bilara": "^3.64.62",
+    "scv-bilara": "^3.66.0",
     "should": "^13.2.3",
     "suttacentral-api": "^2.2.115"
   }
