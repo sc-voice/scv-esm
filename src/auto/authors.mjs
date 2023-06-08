@@ -278,6 +278,13 @@ const AUTHORS = {
     "author": "sv",
     "exampleVersion": 0,
     "lang": "ru"
+  },
+  "anandajoti": {
+    "type": "translator",
+    "name": "Bhikkhu Ānandajoti",
+    "author": "anandajoti",
+    "exampleVersion": 0,
+    "lang": "en"
   }
 }
 
