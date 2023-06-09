@@ -285,6 +285,12 @@ const AUTHORS = {
     "author": "anandajoti",
     "exampleVersion": 0,
     "lang": "en"
+  },
+  "hugovega": {
+    "type": "translator",
+    "name": "Hugo Vega",
+    "author": "hugovega",
+    "exampleVersion": 0
   }
 }
 
