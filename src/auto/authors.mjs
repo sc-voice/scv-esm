@@ -286,10 +286,10 @@ const AUTHORS = {
     "exampleVersion": 0,
     "lang": "en"
   },
-  "hugovega": {
+  "maggatr": {
     "type": "translator",
-    "name": "Hugo Vega",
-    "author": "hugovega",
+    "name": "Magga Traducciones",
+    "author": "maggatr",
     "exampleVersion": 0
   }
 }
