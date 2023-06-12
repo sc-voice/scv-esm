@@ -17777,6 +17777,7 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/sn/sn45",
 		"translation/en/sujato": "sutta/sn/sn45",
 		"translation/lt/piyadassi": "sutta/sn/sn45",
+		"translation/pl/hardao": "sutta/sn/sn45",
 		"root/pli/ms": "sutta/sn/sn45"
 	},
 	"sn45.3": {
@@ -18899,6 +18900,7 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/sn/sn47",
 		"translation/en/sujato": "sutta/sn/sn47",
 		"translation/lt/piyadassi": "sutta/sn/sn47",
+		"translation/pl/hardao": "sutta/sn/sn47",
 		"root/pli/ms": "sutta/sn/sn47"
 	},
 	"sn47.20": {
