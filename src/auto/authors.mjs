@@ -290,7 +290,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Magga Traducciones",
     "author": "maggatr",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "es"
   }
 }
 
