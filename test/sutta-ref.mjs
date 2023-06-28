@@ -211,7 +211,7 @@ typeof describe === "function" &&
       });
       should(SuttaRef.segnum).equal(undefined);
     });
-    it("TESTTESTcreate(...) invalid SuttaRef", () => {
+    it("create(...) invalid SuttaRef", () => {
       let logLevel = logger.logLevel;
       logger.logLevel = 'error';
       should(SuttaRef.create('xyz')).equal(null);

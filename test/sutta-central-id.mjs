@@ -62,6 +62,28 @@ typeof describe === "function" &&
       should.deepEqual(scids.map(scid=>match(scid, "thig1.2:1.1")), 
         [false, false, true, false]);
     });
+    it("match(scid, pat) MIL", ()=>{
+      let scid312 = "mil3.1.2";
+      let match = SuttaCentralId.match;
+      should(match(`${scid312}:1.2`, scid312)).equal(true);
+    });
+    it("compareLow(a,b) compares sutta file names MIL", function () {
+      var cmp = SuttaCentralId.compareLow;
+      testCompareLow("mil3.1.2", "mil3.1.5", -3);
+    });
+    it("rangeHigh => upper bound MIL", () => {
+      should(SuttaCentralId.rangeHigh("mil3.1.2--mil3.1.9")).equal("mil3.1.9");
+    });
+    it("nikaya return nikaya id MIL", function () {
+      var scid = new SuttaCentralId("mil3.1.2");
+      should(scid.nikaya).equal("mil");
+
+      var scid = new SuttaCentralId("mil3.1.2:2.3.4");
+      should(scid.nikaya).equal("mil");
+
+      var scid = new SuttaCentralId("mil3.1.2-8:2.3.4");
+      should(scid.nikaya).equal("mil");
+    });
     it("custom ctor", function () {
       // sutta id
       var scid = new SuttaCentralId("mn1");
@@ -436,5 +458,9 @@ typeof describe === "function" &&
       should(segid.standardForm()).equal("AN1.1:0.1");
       var segid = new SuttaCentralId("thag1.1:2.3");
       should(segid.standardForm()).equal("Thag1.1:2.3");
+    });
+    it("TESTTESTpartNumber()", ()=>{
+      should.deepEqual(SuttaCentralId.partNumber("Mn1", "Mn1:50.2"), [1,13]);
+      should.deepEqual(SuttaCentralId.partNumber("mn1", "mn1:50.2"), [1,13]);
     });
   });

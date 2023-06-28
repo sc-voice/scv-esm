@@ -3,7 +3,7 @@ import should from "should";
 
 typeof describe === "function" &&
   describe("bilara-path", function () {
-    var { translationPath } = BilaraPath;
+    var { translationPath, rootPath } = BilaraPath;
     this.timeout(1 * 1000);
 
     it("pathParts(f) returns parts of bilara filename", () => {
@@ -28,6 +28,32 @@ typeof describe === "function" &&
         category: "sutta",
         collection: "sn",
         bilaraPath: f,
+      });
+    });
+    it("pathParts(f) returns parts of bilara filename THIG", () => {
+      var f = rootPath("kn/thig/thig1.2", "pli", "ms");
+      should.deepEqual(BilaraPath.pathParts(f), {
+        author_uid: 'ms',
+        bilaraPath: 'root/pli/ms/sutta/kn/thig/thig1.2_root-pli-ms.json',
+        collection: 'kn',
+        category: 'sutta',
+        suid: "thig1.2",
+        lang: "pli",
+        suttaRef: "thig1.2/pli/ms",
+        type: "root",
+      });
+    });
+    it("pathParts(f) returns parts of bilara filename MIL", () => {
+      var f = rootPath("kn/mil/mil3.1.2", "pli", "ms");
+      should.deepEqual(BilaraPath.pathParts(f), {
+        author_uid: 'ms',
+        bilaraPath: 'root/pli/ms/sutta/kn/mil/mil3.1.2_root-pli-ms.json',
+        collection: 'kn',
+        category: 'sutta',
+        suid: "mil3.1.2",
+        lang: "pli",
+        suttaRef: "mil3.1.2/pli/ms",
+        type: "root",
       });
     });
   });

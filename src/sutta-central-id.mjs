@@ -13,6 +13,7 @@ export default class SuttaCentralId {
   }
 
   static match(scid, pat) {
+    const msg = "SuttaCentralId.match() ";
     let id = pat.indexOf(":") >= 0 ? scid : scid.split(":")[0];
     let pats = pat.split(/, */);
     if (pats.length > 1) {
@@ -28,6 +29,7 @@ export default class SuttaCentralId {
     let cmpL = SuttaCentralId.compareLow(scidHigh, matchLow);
     let cmpH = SuttaCentralId.compareHigh(scidLow, matchHigh);
     var match = 0 <= cmpL && cmpH <= 0;
+    //console.log(msg, {scidLow, scidHigh, matchLow, matchHigh, cmpL, cmpH, match});
     return match;
   }
 
@@ -103,13 +105,14 @@ export default class SuttaCentralId {
   }
 
   static partNumber(part, id) {
+    const msg = "SuttaCentralId.partNumber() ";
     var n = Number(part);
     if (isNaN(n)) {
       var caretParts = part.split("^");
       var [c0, c1] = caretParts;
       if (c1 == null) {
-        var c0dig = c0.replace(/[a-z]*/gu, "");
-        var c0let = c0.replace(/[0-9]*/gu, "");
+        var c0dig = c0.replace(/[a-z]*/gui, "");
+        var c0let = c0.replace(/[0-9]*/gu, "").toLowerCase();
         var n0 = Number(c0dig);
         var n1 = c0let.charCodeAt(0) - "a".charCodeAt(0) + 1;
         if (isNaN(n0) || isNaN(n1)) {
