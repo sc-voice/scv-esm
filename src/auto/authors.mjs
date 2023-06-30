@@ -292,6 +292,12 @@ const AUTHORS = {
     "author": "maggatr",
     "exampleVersion": 0,
     "lang": "es"
+  },
+  "kelly": {
+    "type": "translator",
+    "name": "John Kelly",
+    "author": "kelly",
+    "exampleVersion": 0
   }
 }
 
