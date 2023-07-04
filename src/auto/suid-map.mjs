@@ -8044,6 +8044,7 @@ const SUIDMAP = {
 		"translation/en/sujato": "sutta/dn",
 		"translation/lt/piyadassi": "sutta/dn",
 		"translation/pl/hardao": "sutta/dn",
+		"translation/sr/brankokovacevic": "sutta/dn",
 		"root/pli/ms": "sutta/dn"
 	},
 	"dn32": {
