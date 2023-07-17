@@ -65,10 +65,10 @@ export default class SuttaRef {
           }
           iLow = i;
         } else if (cmpLow <= 0 && cmpHigh <= 0) {
+          scid = `${refLower.split('/')[0]}`;
           dbg && console.log(msg, "DEBUG2", 
-            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
+            {refLower, scid, suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           keys.push(suid);
-          scid = `${suid}:${segnum}`;
           break;
         }
         if (cmpLow > 0 && cmpHigh > 0) {
