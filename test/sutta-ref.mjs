@@ -103,6 +103,18 @@ typeof describe === "function" &&
       let sref = SuttaRef.createFromString('thig1.2/en/soma');
       should(sref).properties({ sutta_uid: 'thig1.2', lang:'en', author:'soma', });
     });
+    it("TESTTESTcreate(object) sutta in range=> SuttaRef", () => {
+      let defaultLang = "en";
+      let author = "sujato";
+      let lang = "en";
+      let sutta_uid = "an1.2";
+      let segnum = "1.1";
+      let scid = `${sutta_uid}:${segnum}`;
+      let sref = SuttaRef.create(`${scid}/${lang}/${author}`);
+      should(sref).properties({ sutta_uid: 'an1.1-10', lang, author, segnum, scid });
+      let sref2 = SuttaRef.create(sref);
+      should(sref2).properties({ sutta_uid: 'an1.1-10', lang, author, segnum, scid});
+    });
     it("create(object) sutta in range=> SuttaRef", () => {
       let defaultLang = "en";
       let author = "sujato";

@@ -459,7 +459,7 @@ typeof describe === "function" &&
       var segid = new SuttaCentralId("thag1.1:2.3");
       should(segid.standardForm()).equal("Thag1.1:2.3");
     });
-    it("TESTTESTpartNumber()", ()=>{
+    it("partNumber()", ()=>{
       should.deepEqual(SuttaCentralId.partNumber("Mn1", "Mn1:50.2"), [1,13]);
       should.deepEqual(SuttaCentralId.partNumber("mn1", "mn1:50.2"), [1,13]);
     });

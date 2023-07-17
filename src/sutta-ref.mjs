@@ -6,20 +6,23 @@ const SUIDS = Object.keys(SuidMap).sort(SuttaCentralId.compareLow);
 
 export default class SuttaRef {
 
-  constructor({ sutta_uid, lang, author, segnum }) {
+  constructor({ sutta_uid, lang, author, segnum, scid }) {
     if (!sutta_uid || !sutta_uid.length || /\//.test(sutta_uid)) {
       throw new Error('use SuttaRef.create(${sutta_uid})');
     }
+    scid = scid || `${sutta_uid}:${segnum}`;
 
     Object.assign(this, {
-      sutta_uid,
-      lang,
-      author,
-      segnum,
+      sutta_uid, // file/document id (e.g., an1.1-10)
+      lang,      // translation language (e.g., en)
+      author,    // translator (e.g., sujato)
+      segnum,    // segment number (e.g., 1.1)
+      scid,      // segment key (e.g., an1.2:1.1)
     });
   }
 
   static createFromString(str='', defaultLang="pli", suids=SUIDS) {
+    const msg = "SuttaRef.createFromString() ";
     let refLower = str.toLowerCase();
     let segMatch = refLower.match(/:[-0-9.]*/);
     let segnum;
@@ -38,6 +41,7 @@ export default class SuttaRef {
     }
     let { compareLow, compareHigh } = SuttaCentralId;
     let keys = [];
+    let scid;
     if (suids === SUIDS) {
       let nSuids = suids.length;
       let iLow = 0;
@@ -48,28 +52,35 @@ export default class SuttaRef {
         let cmpLow = compareLow(suid, sutta_uid);
         let cmpHigh = compareHigh(sutta_uid, suid);
         if (cmpLow < 0 && cmpHigh < 0) {
-          dbg && console.log("DEBUG1", 
+          dbg && console.log(msg, "DEBUG1", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           if (iLow === i) {
+            let nikaya = refLower.replace(/[0-9.:]+[a-z\/]*/, '');
+            if (suid.startsWith(nikaya)) {
+              keys.push(suid);
+              scid = `${refLower.split('/')[0]}`;
+              dbg && console.log(msg, 'DEBUG1.5', {nikaya, refLower,suid, keys, scid} );
+            }
             break;
           }
           iLow = i;
         } else if (cmpLow <= 0 && cmpHigh <= 0) {
-          dbg && console.log("DEBUG2", 
+          dbg && console.log(msg, "DEBUG2", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           keys.push(suid);
+          scid = `${suid}:${segnum}`;
           break;
         }
         if (cmpLow > 0 && cmpHigh > 0) {
-          dbg && console.log("DEBUG3", 
+          dbg && console.log(msg, "DEBUG3", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           iHigh = i;
         } else if (cmpLow > 0) {
-          dbg && console.log("DEBUG4", 
+          dbg && console.log(msg, "DEBUG4", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           iHigh = i;
         } else if (cmpHigh > 0) {
-          dbg && console.log("DEBUG5", 
+          dbg && console.log(msg, "DEBUG5", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
           iLow = i;
         }
@@ -78,27 +89,31 @@ export default class SuttaRef {
       keys = suids.filter((k) => {
         return compareLow(k, sutta_uid) <= 0 && compareHigh(sutta_uid, k) <= 0;
       });
+      dbg && console.log(msg, "DEBUG6", {keys, suid});
     }
     let suttaRef;
     if (keys.length !== 1) {
       throw new Error(`SuttaRef.createFromString(${str}) invalid`);
     }
+    dbg && console.log(msg, "DEBUG7", {str, keys, scid});
 
     suttaRef = new SuttaRef({
       sutta_uid: keys[0],
       lang,
       author,
       segnum,
+      scid,
     });
     return suttaRef;
   }
 
   static createFromObject(obj, defaultLang="pli", suids=SUIDS) {
+    const msg = "SuttaRef.createFromObject() ";
     let parsed = SuttaRef.createFromString(
       obj.sutta_uid,
       obj.lang || defaultLang
     );
-    let { sutta_uid, lang, author, segnum, } = parsed || {};
+    let { sutta_uid, lang, author, segnum, scid} = parsed || {};
 
     if (obj.translator) {
       author = obj.translator; // legacy synonym
@@ -109,11 +124,15 @@ export default class SuttaRef {
     if (obj.author) {
       author = obj.author;
     }
+    if (obj.scid) {
+      scid = obj.scid;
+    }
     let suttaRef = new SuttaRef({
       sutta_uid,
       lang,
       author,
       segnum: segnum || obj.segnum,
+      scid,
     });
 
     return suttaRef;
