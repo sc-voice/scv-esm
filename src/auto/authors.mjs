@@ -297,7 +297,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "John Kelly",
     "author": "kelly",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "en"
   }
 }
 

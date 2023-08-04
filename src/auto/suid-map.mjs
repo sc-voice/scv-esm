@@ -8686,6 +8686,10 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/kn/mil",
 		"root/pli/ms": "sutta/kn/mil"
 	},
+	"mil3.1.2": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
 	"mn1": {
 		"translation/en/sujato": "sutta/mn",
 		"translation/pl/hardao": "sutta/mn",
@@ -21401,6 +21405,7 @@ const SUIDMAP = {
 	},
 	"snp5.19": {
 		"translation/en/sujato": "sutta/kn/snp/vagga5",
+		"translation/pt/laera-quaresma": "sutta/kn/snp/vagga5",
 		"root/pli/ms": "sutta/kn/snp/vagga5"
 	},
 	"thag1.1": {
@@ -25177,9 +25182,6 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.1.16": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.1.2": {
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.1.3": {
