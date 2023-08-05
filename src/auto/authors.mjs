@@ -153,7 +153,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Kovilo Bhikkhu",
     "author": "kovilo",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "en"
   },
   "suvira": {
     "type": "translator",
