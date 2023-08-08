@@ -300,6 +300,12 @@ const AUTHORS = {
     "author": "kelly",
     "exampleVersion": 0,
     "lang": "en"
+  },
+  "buddhadassa": {
+    "type": "translator",
+    "name": "Buddhadassa",
+    "author": "buddhadassa",
+    "exampleVersion": 0
   }
 }
 
