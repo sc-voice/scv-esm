@@ -303,7 +303,7 @@ const AUTHORS = {
   },
   "buddhadassa": {
     "type": "translator",
-    "name": "Buddhadassa",
+    "name": "Ryan John Guilfoyle",
     "author": "buddhadassa",
     "exampleVersion": 0
   }
