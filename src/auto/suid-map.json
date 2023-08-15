@@ -11250,7 +11250,8 @@
 		"root/pli/ms": "vinaya/pli-tv-pvr"
 	},
 	"sa1": {
-		"translation/id/seniya": "sutta/sa/sa1-100"
+		"translation/id/seniya": "sutta/sa/sa1-100",
+		"translation/pl/lucjan": "sutta/sa/sa1-100"
 	},
 	"sa2": {
 		"translation/id/seniya": "sutta/sa/sa1-100"
