@@ -153,7 +153,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Kovilo Bhikkhu",
     "author": "kovilo",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "en"
   },
   "suvira": {
     "type": "translator",
@@ -297,6 +298,13 @@ const AUTHORS = {
     "type": "translator",
     "name": "John Kelly",
     "author": "kelly",
+    "exampleVersion": 0,
+    "lang": "en"
+  },
+  "buddhadassa": {
+    "type": "translator",
+    "name": "Ryan John Guilfoyle",
+    "author": "buddhadassa",
     "exampleVersion": 0
   }
 }

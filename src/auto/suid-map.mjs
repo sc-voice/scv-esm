@@ -1207,6 +1207,7 @@ const SUIDMAP = {
 	"an4.1": {
 		"translation/cs/ashinsarana": "sutta/an/an4",
 		"translation/de/sabbamitta": "sutta/an/an4",
+		"translation/en/kovilo": "sutta/an/an4",
 		"translation/en/sujato": "sutta/an/an4",
 		"root/pli/ms": "sutta/an/an4"
 	},
@@ -8686,6 +8687,10 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/kn/mil",
 		"root/pli/ms": "sutta/kn/mil"
 	},
+	"mil3.1.2": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
 	"mn1": {
 		"translation/en/sujato": "sutta/mn",
 		"translation/pl/hardao": "sutta/mn",
@@ -11245,7 +11250,8 @@ const SUIDMAP = {
 		"root/pli/ms": "vinaya/pli-tv-pvr"
 	},
 	"sa1": {
-		"translation/id/seniya": "sutta/sa/sa1-100"
+		"translation/id/seniya": "sutta/sa/sa1-100",
+		"translation/pl/lucjan": "sutta/sa/sa1-100"
 	},
 	"sa2": {
 		"translation/id/seniya": "sutta/sa/sa1-100"
@@ -20563,6 +20569,7 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/sn/sn56",
 		"translation/en/sujato": "sutta/sn/sn56",
 		"translation/fr/sekha": "sutta/sn/sn56",
+		"translation/pl/marcinow": "sutta/sn/sn56",
 		"root/pli/ms": "sutta/sn/sn56"
 	},
 	"sn56.11": {
@@ -21401,6 +21408,7 @@ const SUIDMAP = {
 	},
 	"snp5.19": {
 		"translation/en/sujato": "sutta/kn/snp/vagga5",
+		"translation/pt/laera-quaresma": "sutta/kn/snp/vagga5",
 		"root/pli/ms": "sutta/kn/snp/vagga5"
 	},
 	"thag1.1": {
@@ -25177,9 +25185,6 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.1.16": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.1.2": {
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.1.3": {
