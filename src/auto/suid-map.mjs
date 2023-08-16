@@ -8685,9 +8685,38 @@ const SUIDMAP = {
 	},
 	"mil3.1.1": {
 		"translation/de/sabbamitta": "sutta/kn/mil",
+		"translation/en/kelly": "sutta/kn/mil",
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.1.2": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
+	"mil3.1.3": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
+	"mil3.1.4": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
+	"mil3.1.5": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
+	"mil3.1.6": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
+	"mil3.1.7": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
+	"mil3.1.8": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
+	"mil3.1.9": {
 		"translation/en/kelly": "sutta/kn/mil",
 		"root/pli/ms": "sutta/kn/mil"
 	},
@@ -25185,27 +25214,6 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.1.16": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.1.3": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.1.4": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.1.5": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.1.6": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.1.7": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.1.8": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.1.9": {
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.2.1": {
