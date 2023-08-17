@@ -9,5 +9,6 @@ npm install --save-dev scv-bilara@latest
 $DIR/js/suid-map.js
 $DIR/js/examples.js
 $DIR/js/authors.js
+$DIR/js/authors-v2.js
 $DIR/publish-npm
 
