@@ -1,5 +1,6 @@
 // ESM syntax is supported.
 export { default as Authors } from "./src/authors.mjs";
+export { default as AuthorsV2 } from "./src/authors-v2.mjs";
 export { default as BilaraPath } from "./src/bilara-path.mjs";
 export { default as Examples } from "./src/examples.mjs";
 export { default as SuidMap } from "./src/auto/suid-map.mjs";
