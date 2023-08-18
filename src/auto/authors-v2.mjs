@@ -1,5 +1,5 @@
 const AUTHORS = {
-  "en:sujato": {
+  "sujato": {
     "type": "translation",
     "lang": "en",
     "author": "sujato",
@@ -11,7 +11,7 @@ const AUTHORS = {
       "sutta"
     ]
   },
-  "en:brahmali": {
+  "brahmali": {
     "type": "translation",
     "lang": "en",
     "author": "brahmali",
@@ -20,7 +20,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "de:sabbamitta": {
+  "sabbamitta": {
     "type": "translation",
     "lang": "de",
     "author": "sabbamitta",
@@ -32,7 +32,7 @@ const AUTHORS = {
       "sutta"
     ]
   },
-  "ru:team": {
+  "team": {
     "type": "translation",
     "lang": "ru",
     "author": "team",
@@ -42,7 +42,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "jpn:kaz": {
+  "kaz": {
     "type": "translation",
     "lang": "jpn",
     "author": "kaz",
@@ -54,7 +54,7 @@ const AUTHORS = {
       "sutta"
     ]
   },
-  "pt:laera-quaresma": {
+  "laera-quaresma": {
     "type": "translation",
     "lang": "pt",
     "author": "laera-quaresma",
@@ -65,7 +65,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "en:patton": {
+  "patton": {
     "type": "translation",
     "lang": "en",
     "author": "patton",
@@ -74,16 +74,17 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "en:soma": {
+  "soma": {
     "type": "translation",
     "lang": "en",
     "author": "soma",
     "name": [
-      "Bhikkhuni Soma"
+      "Bhikkhuni Soma",
+      "Ayya Soma"
     ],
     "exampleVersion": 0
   },
-  "pli:dpcv": {
+  "dpcv": {
     "type": "root",
     "lang": "pli",
     "author": "dpcv",
@@ -95,7 +96,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "pli:bj": {
+  "bj": {
     "type": "root",
     "lang": "pli",
     "author": "bj",
@@ -105,7 +106,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "en:comm-team": {
+  "comm-team": {
     "type": "translation",
     "lang": "en",
     "author": "comm-team",
@@ -114,7 +115,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "cs:ashinsarana": {
+  "ashinsarana": {
     "type": "translation",
     "lang": "cs",
     "author": "ashinsarana",
@@ -123,7 +124,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "my:my-team": {
+  "my-team": {
     "type": "translation",
     "lang": "my",
     "author": "my-team",
@@ -132,7 +133,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "en:kovilo": {
+  "kovilo": {
     "type": "translation",
     "lang": "en",
     "author": "kovilo",
@@ -141,7 +142,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "pli:ms": {
+  "ms": {
     "type": "root",
     "lang": "pli",
     "author": "ms",
@@ -150,7 +151,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 999999
   },
-  "lzh:sct": {
+  "sct": {
     "type": "root",
     "lang": "lzh",
     "author": "sct",
@@ -159,7 +160,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "en:vimalanyani": {
+  "vimalanyani": {
     "type": "translation",
     "lang": "en",
     "author": "vimalanyani",
@@ -168,7 +169,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "si:madhu": {
+  "madhu": {
     "type": "translation",
     "lang": "si",
     "author": "madhu",
@@ -177,7 +178,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "id:seniya": {
+  "seniya": {
     "type": "translation",
     "lang": "id",
     "author": "seniya",
@@ -186,7 +187,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "vi:phantuananh": {
+  "phantuananh": {
     "type": "translation",
     "lang": "vi",
     "author": "phantuananh",
@@ -195,16 +196,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "it:soma": {
-    "type": "translation",
-    "lang": "it",
-    "author": "soma",
-    "name": [
-      "Ayya Soma"
-    ],
-    "exampleVersion": 0
-  },
-  "pl:lucjan": {
+  "lucjan": {
     "type": "translation",
     "lang": "pl",
     "author": "lucjan",
@@ -213,7 +205,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "en:suvira": {
+  "suvira": {
     "type": "translation",
     "lang": "en",
     "author": "suvira",
@@ -222,7 +214,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "es:sumano": {
+  "sumano": {
     "type": "translation",
     "lang": "es",
     "author": "sumano",
@@ -231,7 +223,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "fi:mudito": {
+  "mudito": {
     "type": "translation",
     "lang": "fi",
     "author": "mudito",
@@ -240,7 +232,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "pl:hardao": {
+  "hardao": {
     "type": "translation",
     "lang": "pl",
     "author": "hardao",
@@ -249,7 +241,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "en:suddhaso": {
+  "suddhaso": {
     "type": "translation",
     "lang": "en",
     "author": "suddhaso",
@@ -258,7 +250,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "it:giovannizappa": {
+  "giovannizappa": {
     "type": "translation",
     "lang": "it",
     "author": "giovannizappa",
@@ -267,7 +259,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "lt:piyadassi": {
+  "piyadassi": {
     "type": "translation",
     "lang": "lt",
     "author": "piyadassi",
@@ -276,7 +268,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "gu:trush": {
+  "trush": {
     "type": "translation",
     "lang": "gu",
     "author": "trush",
@@ -285,16 +277,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "hi:trush": {
-    "type": "translation",
-    "lang": "hi",
-    "author": "trush",
-    "name": [
-      "Trushant Majmudar"
-    ],
-    "exampleVersion": 0
-  },
-  "ca:bernatfontclos": {
+  "bernatfontclos": {
     "type": "translation",
     "lang": "ca",
     "author": "bernatfontclos",
@@ -303,7 +286,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "sr:brankokovacevic": {
+  "brankokovacevic": {
     "type": "translation",
     "lang": "sr",
     "author": "brankokovacevic",
@@ -312,7 +295,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "fr:noeismet": {
+  "noeismet": {
     "type": "translation",
     "lang": "fr",
     "author": "noeismet",
@@ -321,7 +304,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "en:anandajoti": {
+  "anandajoti": {
     "type": "translation",
     "lang": "en",
     "author": "anandajoti",
@@ -330,7 +313,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "fr:cittadhammo": {
+  "cittadhammo": {
     "type": "translation",
     "lang": "fr",
     "author": "cittadhammo",
@@ -339,7 +322,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "th:korakot": {
+  "korakot": {
     "type": "translation",
     "lang": "th",
     "author": "korakot",
@@ -348,7 +331,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "fr:sekha": {
+  "sekha": {
     "type": "translation",
     "lang": "fr",
     "author": "sekha",
@@ -357,7 +340,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "en:davis": {
+  "davis": {
     "type": "translation",
     "lang": "en",
     "author": "davis",
@@ -366,7 +349,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "pl:marcinow": {
+  "marcinow": {
     "type": "translation",
     "lang": "pl",
     "author": "marcinow",
@@ -375,7 +358,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "ru:sv": {
+  "sv": {
     "type": "translation",
     "lang": "ru",
     "author": "sv",
@@ -384,7 +367,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "es:maggatr": {
+  "maggatr": {
     "type": "translation",
     "lang": "es",
     "author": "maggatr",
@@ -393,7 +376,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "en:kelly": {
+  "kelly": {
     "type": "translation",
     "lang": "en",
     "author": "kelly",
@@ -402,7 +385,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "nys:buddhadassa": {
+  "buddhadassa": {
     "type": "translation",
     "lang": "nys",
     "author": "buddhadassa",

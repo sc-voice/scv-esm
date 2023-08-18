@@ -43,7 +43,8 @@ logger.logLevel = "info";
       let name = creator_name instanceof Array
         ? creator_name 
         : [ creator_name.toString() ];
-      let key = `${lang}:${author}`;
+      //let key = `${lang}:${author}`;
+      let key = author;
       let info = a[key] = a[key] || {
         type,
         lang, 
@@ -67,7 +68,7 @@ logger.logLevel = "info";
           ? authoredExample.category
           : [ authoredExample.category ].sort();
         pa.exampleVersion = Number(authoredExample.version);
-      } else if (key === 'pli:ms') {
+      } else if (pa.author === 'ms') {
         pa.exampleVersion = 999999;
       }
     });
