@@ -1,5 +1,5 @@
 const AUTHORS = {
-  "sujato": {
+  "en:sujato": {
     "type": "translation",
     "lang": "en",
     "author": "sujato",
@@ -7,20 +7,23 @@ const AUTHORS = {
       "Bhikkhu Sujato"
     ],
     "exampleVersion": 1,
-    "category": [
+    "sutta": true,
+    "vinaya": false,
+    "examples": [
       "sutta"
     ]
   },
-  "brahmali": {
+  "en:brahmali": {
     "type": "translation",
     "lang": "en",
     "author": "brahmali",
     "name": [
       "Bhikkhu Brahmali"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "vinaya": true
   },
-  "sabbamitta": {
+  "de:sabbamitta": {
     "type": "translation",
     "lang": "de",
     "author": "sabbamitta",
@@ -28,11 +31,13 @@ const AUTHORS = {
       "Sabbamitta"
     ],
     "exampleVersion": 1,
-    "category": [
+    "sutta": true,
+    "vinaya": false,
+    "examples": [
       "sutta"
     ]
   },
-  "team": {
+  "ru:team": {
     "type": "translation",
     "lang": "ru",
     "author": "team",
@@ -40,9 +45,10 @@ const AUTHORS = {
       "Dzmitry",
       "Danylo Rybchynskyi"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "kaz": {
+  "jpn:kaz": {
     "type": "translation",
     "lang": "jpn",
     "author": "kaz",
@@ -50,11 +56,12 @@ const AUTHORS = {
       "竹原 一江"
     ],
     "exampleVersion": 1,
-    "category": [
+    "sutta": true,
+    "examples": [
       "sutta"
     ]
   },
-  "laera-quaresma": {
+  "pt:laera-quaresma": {
     "type": "translation",
     "lang": "pt",
     "author": "laera-quaresma",
@@ -63,28 +70,31 @@ const AUTHORS = {
       "Marco Quaresma",
       "Vitor Guimarães"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true,
+    "vinaya": false
   },
-  "patton": {
+  "en:patton": {
     "type": "translation",
     "lang": "en",
     "author": "patton",
     "name": [
       "Charles D. Patton II"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "soma": {
+  "en:soma": {
     "type": "translation",
     "lang": "en",
     "author": "soma",
     "name": [
-      "Bhikkhuni Soma",
-      "Ayya Soma"
+      "Bhikkhuni Soma"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "dpcv": {
+  "pli:dpcv": {
     "type": "root",
     "lang": "pli",
     "author": "dpcv",
@@ -96,7 +106,7 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "bj": {
+  "pli:bj": {
     "type": "root",
     "lang": "pli",
     "author": "bj",
@@ -106,293 +116,347 @@ const AUTHORS = {
     ],
     "exampleVersion": 0
   },
-  "comm-team": {
+  "en:comm-team": {
     "type": "translation",
     "lang": "en",
     "author": "comm-team",
     "name": [
       "Bhikkhu Sujato"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false
   },
-  "ashinsarana": {
+  "cs:ashinsarana": {
     "type": "translation",
     "lang": "cs",
     "author": "ashinsarana",
     "name": [
       "Ashin Saraṅa"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "my-team": {
+  "my:my-team": {
     "type": "translation",
     "lang": "my",
     "author": "my-team",
     "name": [
       "Nyein Chan Aye"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "kovilo": {
+  "en:kovilo": {
     "type": "translation",
     "lang": "en",
     "author": "kovilo",
     "name": [
       "Kovilo Bhikkhu"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "ms": {
+  "pli:ms": {
     "type": "root",
     "lang": "pli",
     "author": "ms",
     "name": [
       "The M.L. Maniratana Bunnag Dhamma Society Fund"
     ],
-    "exampleVersion": 999999
+    "exampleVersion": 999999,
+    "sutta": true,
+    "vinaya": true
   },
-  "sct": {
+  "lzh:sct": {
     "type": "root",
     "lang": "lzh",
     "author": "sct",
     "name": [
       "Charles D. Patton II"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false
   },
-  "vimalanyani": {
+  "en:vimalanyani": {
     "type": "translation",
     "lang": "en",
     "author": "vimalanyani",
     "name": [
       "Bhikkhunī Vimalañāṇī"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false
   },
-  "madhu": {
+  "si:madhu": {
     "type": "translation",
     "lang": "si",
     "author": "madhu",
     "name": [
       "Madhuwanthi Buddhadasa"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false
   },
-  "seniya": {
+  "id:seniya": {
     "type": "translation",
     "lang": "id",
     "author": "seniya",
     "name": [
       "Seniya Ariyakumara"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "phantuananh": {
+  "vi:phantuananh": {
     "type": "translation",
     "lang": "vi",
     "author": "phantuananh",
     "name": [
       "Bhikkhu Thích Minh Châu"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "lucjan": {
+  "it:soma": {
+    "type": "translation",
+    "lang": "it",
+    "author": "soma",
+    "name": [
+      "Ayya Soma"
+    ],
+    "exampleVersion": 0,
+    "sutta": false
+  },
+  "pl:lucjan": {
     "type": "translation",
     "lang": "pl",
     "author": "lucjan",
     "name": [
       "Paweł Łucjan"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "suvira": {
+  "en:suvira": {
     "type": "translation",
     "lang": "en",
     "author": "suvira",
     "name": [
       "Bhikkhuni Suvira"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false
   },
-  "sumano": {
+  "es:sumano": {
     "type": "translation",
     "lang": "es",
     "author": "sumano",
     "name": [
       "Bhante Sumano"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false,
+    "vinaya": false
   },
-  "mudito": {
+  "fi:mudito": {
     "type": "translation",
     "lang": "fi",
     "author": "mudito",
     "name": [
       "Ajahn Mudito"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "hardao": {
+  "pl:hardao": {
     "type": "translation",
     "lang": "pl",
     "author": "hardao",
     "name": [
       "Piotr Jagodziński"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "suddhaso": {
+  "en:suddhaso": {
     "type": "translation",
     "lang": "en",
     "author": "suddhaso",
     "name": [
       "Bhante Suddhāso"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "giovannizappa": {
+  "it:giovannizappa": {
     "type": "translation",
     "lang": "it",
     "author": "giovannizappa",
     "name": [
       "Giovanni Zappa"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false
   },
-  "piyadassi": {
+  "lt:piyadassi": {
     "type": "translation",
     "lang": "lt",
     "author": "piyadassi",
     "name": [
       "Sayalay Piyadassi"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "trush": {
+  "gu:trush": {
     "type": "translation",
     "lang": "gu",
     "author": "trush",
     "name": [
       "Trushant Majmudar"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false
   },
-  "bernatfontclos": {
+  "hi:trush": {
+    "type": "translation",
+    "lang": "hi",
+    "author": "trush",
+    "name": [
+      "Trushant Majmudar"
+    ],
+    "exampleVersion": 0,
+    "sutta": false
+  },
+  "ca:bernatfontclos": {
     "type": "translation",
     "lang": "ca",
     "author": "bernatfontclos",
     "name": [
       "Bernat Font-Clos"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false
   },
-  "brankokovacevic": {
+  "sr:brankokovacevic": {
     "type": "translation",
     "lang": "sr",
     "author": "brankokovacevic",
     "name": [
       "Branislav Kovačević"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "noeismet": {
+  "fr:noeismet": {
     "type": "translation",
     "lang": "fr",
     "author": "noeismet",
     "name": [
       "Noé Ismet"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "anandajoti": {
+  "en:anandajoti": {
     "type": "translation",
     "lang": "en",
     "author": "anandajoti",
     "name": [
       "Bhikkhu Ānandajoti"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "cittadhammo": {
+  "fr:cittadhammo": {
     "type": "translation",
     "lang": "fr",
     "author": "cittadhammo",
     "name": [
       "Cittadhammo Bhikkhu"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false
   },
-  "korakot": {
+  "th:korakot": {
     "type": "translation",
     "lang": "th",
     "author": "korakot",
     "name": [
       "Korakot Chaovavanich"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false
   },
-  "sekha": {
+  "fr:sekha": {
     "type": "translation",
     "lang": "fr",
     "author": "sekha",
     "name": [
       "Bhikkhu Sekha"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "davis": {
+  "en:davis": {
     "type": "translation",
     "lang": "en",
     "author": "davis",
     "name": [
       "Andrew Davis"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "marcinow": {
+  "pl:marcinow": {
     "type": "translation",
     "lang": "pl",
     "author": "marcinow",
     "name": [
       "Piotr Marcinów"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "sv": {
+  "ru:sv": {
     "type": "translation",
     "lang": "ru",
     "author": "sv",
     "name": [
       "SV theravada.ru"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "maggatr": {
+  "es:maggatr": {
     "type": "translation",
     "lang": "es",
     "author": "maggatr",
     "name": [
       "Magga Traducciones"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "kelly": {
+  "en:kelly": {
     "type": "translation",
     "lang": "en",
     "author": "kelly",
     "name": [
       "John Kelly"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": true
   },
-  "buddhadassa": {
+  "nys:buddhadassa": {
     "type": "translation",
     "lang": "nys",
     "author": "buddhadassa",
     "name": [
       "Ryan John Guilfoyle"
     ],
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "sutta": false
   }
 }
 

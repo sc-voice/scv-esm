@@ -6,7 +6,15 @@ export default class AuthorsV2 {
   }
 
   static authorInfo(author) {
-    return AUTHORSV2[author];
+    const msg = "authros-v2.authorInfo() ";
+    let info = Object.keys(AUTHORSV2).reduce((a,k) => {
+      let ak = AUTHORSV2[k];
+      if (ak.author === author) {
+        a.push(ak);
+      }
+      return a;
+    }, []);
+    return info[0];
   }
 
   static langAuthor(lang) {
@@ -28,8 +36,12 @@ export default class AuthorsV2 {
   }
 
   static compare(author1, author2) {
-    let info1 = AuthorsV2.authorInfo(author1);
-    let info2 = AuthorsV2.authorInfo(author2);
+    const msg = "authors-v2.compare() ";
+    author1 = !!author1 ? author1 : '';
+    author2 = !!author2 ? author2 : '';
+    let noauthor = {};
+    let info1 = AuthorsV2.authorInfo(author1) || noauthor;
+    let info2 = AuthorsV2.authorInfo(author2) || noauthor;
 
     if (info1 === info2) {
       return 0;
@@ -41,8 +53,22 @@ export default class AuthorsV2 {
       return -1;
     }
 
-    return (info1.exampleVersion - info2.exampleVersion) || 
-      author2.localeCompare(author1);
+    let cmp = info1.exampleVersion - info2.exampleVersion;
+    if (!cmp) {
+      cmp = author1.localeCompare(author2);
+    }
+    if (!cmp) {
+      let sutta1 = info1.sutta ? 1 : 0;
+      let sutta2 = info2.sutta ? 1 : 0;
+      cmp = sutta1 - sutta2;
+    }
+    if (!cmp) {
+      let vinaya1 = info1.vinaya ? 1 : 0;
+      let vinaya2 = info2.vinaya ? 1 : 0;
+      cmp = vinaya1 - vinaya2;
+      return cmp;
+    }
+    return cmp;
   }
 }
 
