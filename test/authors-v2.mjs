@@ -81,11 +81,35 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(AuthorsV2.compare(sujato, unknown)).equal(-1);
     should(AuthorsV2.compare(sujato,sabbamitta)).equal(1);
   });
-  it("langAuthor", ()=>{
+  it("TESTTESTlangAuthor sutta", ()=>{
+    let opts = { category: 'sutta'};
+
+    should(AuthorsV2.langAuthor('unknown')).equal(undefined);
     should(AuthorsV2.langAuthor('de')).equal('sabbamitta');
     should(AuthorsV2.langAuthor('en')).equal('sujato');
     should(AuthorsV2.langAuthor('jpn')).equal('kaz');
     should(AuthorsV2.langAuthor('pt')).equal('laera-quaresma');
+
+    should(AuthorsV2.langAuthor('unknown', opts)).equal(undefined);
+    should(AuthorsV2.langAuthor('de', opts)).equal('sabbamitta');
+    should(AuthorsV2.langAuthor('en', opts)).equal('sujato');
+    should(AuthorsV2.langAuthor('jpn', opts)).equal('kaz');
+    should(AuthorsV2.langAuthor('pt', opts)).equal('laera-quaresma');
+  });
+  it("TESTTESTlangAuthor vinaya", ()=>{
+    let opts = { category: 'vinaya'};
+
+    should(AuthorsV2.langAuthor('unknown')).equal(undefined);
+    should(AuthorsV2.langAuthor('de')).equal('sabbamitta');
+    should(AuthorsV2.langAuthor('en')).equal('sujato');
+    should(AuthorsV2.langAuthor('jpn')).equal('kaz');
+    should(AuthorsV2.langAuthor('pt')).equal('laera-quaresma');
+
+    should(AuthorsV2.langAuthor('unknown', opts)).equal(undefined);
+    should(AuthorsV2.langAuthor('de', opts)).equal(undefined);
+    should(AuthorsV2.langAuthor('en', opts)).equal('brahmali');
+    should(AuthorsV2.langAuthor('jpn', opts)).equal(undefined);
+    should(AuthorsV2.langAuthor('pt', opts)).equal(undefined);
   });
 
 });

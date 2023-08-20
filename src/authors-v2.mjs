@@ -17,9 +17,24 @@ export default class AuthorsV2 {
     return info[0];
   }
 
-  static langAuthor(lang) {
+  static langAuthor(lang, opts={}) {
+    let {
+      category='sutta',
+    } = opts;
     let info =  Object.keys(AUTHORSV2).reduce((a,k)=>{
       let info = AUTHORSV2[k];
+      switch (category) {
+        case 'vinaya':
+          if (!info.vinaya) {
+            return a;
+          }
+          break;
+        default:
+        case 'sutta':
+          if (!info.sutta) {
+            return a;
+          }
+      }
       if (info.lang === lang) {
          if (a == null) {
            return info;
