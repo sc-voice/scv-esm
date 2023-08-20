@@ -306,6 +306,12 @@ const AUTHORS = {
     "name": "Ryan John Guilfoyle",
     "author": "buddhadassa",
     "exampleVersion": 0
+  },
+  "quaresma": {
+    "type": "translator",
+    "name": "Marco Quaresma",
+    "author": "quaresma",
+    "exampleVersion": 0
   }
 }
 
