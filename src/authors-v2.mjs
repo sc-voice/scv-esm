@@ -5,17 +5,16 @@ export default class AuthorsV2 {
     return Object.assign({}, AUTHORSV2);
   }
 
-  static authorInfo(author) {
-    const msg = "authros-v2.authorInfo() ";
-    let info = Object.keys(AUTHORSV2).reduce((a,k) => {
-      let ak = AUTHORSV2[k];
-      if (ak.author === author) {
-        a.push(ak);
-      }
-      return a;
-    }, []);
-    return info[0];
+  static authorInfo(author, lang='en') {
+    let keys = Object.keys(AUTHORSV2);
+    return keys.reduce((a,k)=>{
+      let info = AUTHORSV2[k];
+      return info.author===author && (!a || info.lang === lang) 
+        ? info 
+        : a;
+    }, undefined);
   }
+
 
   static langAuthor(lang, opts={}) {
     let {

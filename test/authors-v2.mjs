@@ -41,7 +41,40 @@ typeof describe === "function" && describe("authors-v2", function () {
         examples: ["sutta"],
         exampleVersion: 1,
     };
+    var soma = {
+        lang: 'en',
+        type: "translation",
+        name: ["Bhikkhuni Soma"],
+        author: "soma",
+        sutta: true,
+        exampleVersion: 0,
+    };
+    var kaz = {
+        lang: 'jpn',
+        type: "translation",
+        name: ["竹原 一江"],
+        examples: ['sutta'],
+        author: "kaz",
+        sutta: true,
+        exampleVersion: 1,
+    };
+    var gnlaera = {
+        lang: 'pt',
+        type: "translation",
+        name: [
+          "Gabriel Laera",
+          "Marco Quaresma",
+          "Vitor Guimarães",
+        ],
+        author: "laera-quaresma",
+        sutta: true,
+        vinaya: false,
+        exampleVersion: 0,
+    };
 
+    should.deepEqual(AuthorsV2.authorInfo('laera-quaresma'), gnlaera);
+    should.deepEqual(AuthorsV2.authorInfo('kaz'), kaz);
+    should.deepEqual(AuthorsV2.authorInfo('soma'), soma);
     should.deepEqual(AuthorsV2.authorInfo('ms'), ms);
     should.deepEqual(AuthorsV2.authorInfo('sujato'), sujato);
     should.deepEqual(AuthorsV2.authorInfo('sabbamitta'), sabbamitta);
