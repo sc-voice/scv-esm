@@ -450,7 +450,7 @@ const EXAMPLES = {
     "kennt mich",
     "Kennzeichen",
     "Keuschen und die Unkeuschen",
-    "kleine Hütte",
+    "kleine.* Hütte",
     "klug, fähig, verständig und gelehrt",
     "kommt der Löwe, der König der Tiere",
     "kommt zuerst die Versenkung",
