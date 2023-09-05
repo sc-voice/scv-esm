@@ -8108,86 +8108,103 @@ const SUIDMAP = {
 	"iti1": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga1",
 		"translation/en/sujato": "sutta/kn/iti/vagga1",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga1",
 		"root/pli/ms": "sutta/kn/iti/vagga1"
 	},
 	"iti2": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga1",
 		"translation/en/sujato": "sutta/kn/iti/vagga1",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga1",
 		"root/pli/ms": "sutta/kn/iti/vagga1"
 	},
 	"iti3": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga1",
 		"translation/en/sujato": "sutta/kn/iti/vagga1",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga1",
 		"root/pli/ms": "sutta/kn/iti/vagga1"
 	},
 	"iti4": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga1",
 		"translation/en/sujato": "sutta/kn/iti/vagga1",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga1",
 		"root/pli/ms": "sutta/kn/iti/vagga1"
 	},
 	"iti5": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga1",
 		"translation/en/sujato": "sutta/kn/iti/vagga1",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga1",
 		"root/pli/ms": "sutta/kn/iti/vagga1"
 	},
 	"iti6": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga1",
 		"translation/en/sujato": "sutta/kn/iti/vagga1",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga1",
 		"root/pli/ms": "sutta/kn/iti/vagga1"
 	},
 	"iti7": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga1",
 		"translation/en/sujato": "sutta/kn/iti/vagga1",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga1",
 		"root/pli/ms": "sutta/kn/iti/vagga1"
 	},
 	"iti8": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga1",
 		"translation/en/sujato": "sutta/kn/iti/vagga1",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga1",
 		"root/pli/ms": "sutta/kn/iti/vagga1"
 	},
 	"iti9": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga1",
 		"translation/en/sujato": "sutta/kn/iti/vagga1",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga1",
 		"root/pli/ms": "sutta/kn/iti/vagga1"
 	},
 	"iti10": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga1",
 		"translation/en/sujato": "sutta/kn/iti/vagga1",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga1",
 		"root/pli/ms": "sutta/kn/iti/vagga1"
 	},
 	"iti11": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga2",
 		"translation/en/sujato": "sutta/kn/iti/vagga2",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga2",
 		"root/pli/ms": "sutta/kn/iti/vagga2"
 	},
 	"iti12": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga2",
 		"translation/en/sujato": "sutta/kn/iti/vagga2",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga2",
 		"root/pli/ms": "sutta/kn/iti/vagga2"
 	},
 	"iti13": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga2",
 		"translation/en/sujato": "sutta/kn/iti/vagga2",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga2",
 		"root/pli/ms": "sutta/kn/iti/vagga2"
 	},
 	"iti14": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga2",
 		"translation/en/sujato": "sutta/kn/iti/vagga2",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga2",
 		"root/pli/ms": "sutta/kn/iti/vagga2"
 	},
 	"iti15": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga2",
 		"translation/en/sujato": "sutta/kn/iti/vagga2",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga2",
 		"root/pli/ms": "sutta/kn/iti/vagga2"
 	},
 	"iti16": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga2",
 		"translation/en/sujato": "sutta/kn/iti/vagga2",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga2",
 		"root/pli/ms": "sutta/kn/iti/vagga2"
 	},
 	"iti17": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga2",
 		"translation/en/sujato": "sutta/kn/iti/vagga2",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga2",
 		"root/pli/ms": "sutta/kn/iti/vagga2"
 	},
 	"iti18": {
@@ -8233,6 +8250,7 @@ const SUIDMAP = {
 	"iti26": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga3",
 		"translation/en/sujato": "sutta/kn/iti/vagga3",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga3",
 		"root/pli/ms": "sutta/kn/iti/vagga3"
 	},
 	"iti27": {
@@ -8348,6 +8366,7 @@ const SUIDMAP = {
 	"iti49": {
 		"translation/de/sabbamitta": "sutta/kn/iti/vagga5",
 		"translation/en/sujato": "sutta/kn/iti/vagga5",
+		"translation/lt/piyadassi": "sutta/kn/iti/vagga5",
 		"root/pli/ms": "sutta/kn/iti/vagga5"
 	},
 	"iti50": {
@@ -13253,6 +13272,7 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/sn/sn12",
 		"translation/en/davis": "sutta/sn/sn12",
 		"translation/en/sujato": "sutta/sn/sn12",
+		"translation/lt/piyadassi": "sutta/sn/sn12",
 		"root/pli/ms": "sutta/sn/sn12"
 	},
 	"sn12.62": {
@@ -16231,6 +16251,7 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/sn/sn35",
 		"translation/en/davis": "sutta/sn/sn35",
 		"translation/en/sujato": "sutta/sn/sn35",
+		"translation/lt/piyadassi": "sutta/sn/sn35",
 		"root/pli/ms": "sutta/sn/sn35"
 	},
 	"sn35.28": {
