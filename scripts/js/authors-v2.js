@@ -94,7 +94,12 @@ async function fileExists(fpath='') {
         pa.sutta = true;
         pa.vinaya = true;
       }
+      if (!pa.sutta && !pa.vinaya) {
+        console.log(msg, `omitting ${key}`);
+        delete pubAuthors[key];
+      }
     });
+
 
     let authorJson = JSON.stringify(pubAuthors, null, 2) + '\n';
     let authorMjs = [

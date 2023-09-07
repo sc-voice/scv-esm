@@ -5,16 +5,39 @@ export default class AuthorsV2 {
     return Object.assign({}, AUTHORSV2);
   }
 
-  static authorInfo(author, lang='en') {
+  static authorInfo(author, lang) {
+    const msg = "AuthorsV2.authorInfo() ";
     let keys = Object.keys(AUTHORSV2);
     return keys.reduce((a,k)=>{
       let info = AUTHORSV2[k];
-      return info.author===author && (!a || info.lang === lang) 
+      if (a) {
+        return a;
+      }
+      return info.author===author && 
+        (lang == null || info.lang === lang) 
         ? info 
         : a;
     }, undefined);
   }
 
+  static find(opts={}) {
+    let { author, exampleVersion, lang, sutta, vinaya } = opts;
+    let keys = Object.keys(AUTHORSV2);
+    return keys
+      .filter(k=>{
+        let info = AUTHORSV2[k];
+        return (
+          (exampleVersion == null || 
+            info.exampleVersion >= exampleVersion) &&
+          (author == null || info.author === author) &&
+          (lang == null || info.lang === lang) &&
+          (sutta == null || sutta === info.sutta) &&
+          (vinaya == null || vinaya === info.vinaya) 
+        );
+      })
+      .map(k=>AUTHORSV2[k])
+      .sort(AuthorsV2.compareInfo);
+  }
 
   static langAuthor(lang, opts={}) {
     let {
@@ -47,6 +70,26 @@ export default class AuthorsV2 {
       return a;
     }, undefined);
     return info && info.author;
+  }
+
+  static compareInfo(info1, info2) {
+    if (info1 === info2) {
+      return 0;
+    }
+    if (!info1) {
+      return 1;
+    }
+    if (!info2) {
+      return -1;
+    }
+    let cmp = Number(info2.exampleVersion) - Number(info1.exampleVersion);
+    if (cmp === 0) {
+      cmp = info1.author.localeCompare(info2.author);
+    }
+    if (cmp === 0) {
+      cmp = info1.lang.localeCompare(info2.lang);
+    }
+    return cmp;
   }
 
   static compare(author1, author2) {

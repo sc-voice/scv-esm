@@ -2,7 +2,7 @@ import { AuthorsV2 } from "../main.mjs";
 import should from "should";
 
 typeof describe === "function" && describe("authors-v2", function () {
-  it("TESTTESTauthorInfo() => supported author info", async()=>{
+  it("authorInfo() => supported author info", async()=>{
     var ms = {
         lang: 'pli',
         type: "root",
@@ -114,7 +114,7 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(AuthorsV2.compare(sujato, unknown)).equal(-1);
     should(AuthorsV2.compare(sujato,sabbamitta)).equal(1);
   });
-  it("TESTTESTlangAuthor sutta", ()=>{
+  it("langAuthor sutta", ()=>{
     let opts = { category: 'sutta'};
 
     should(AuthorsV2.langAuthor('unknown')).equal(undefined);
@@ -129,7 +129,7 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(AuthorsV2.langAuthor('jpn', opts)).equal('kaz');
     should(AuthorsV2.langAuthor('pt', opts)).equal('laera-quaresma');
   });
-  it("TESTTESTlangAuthor vinaya", ()=>{
+  it("langAuthor vinaya", ()=>{
     let opts = { category: 'vinaya'};
 
     should(AuthorsV2.langAuthor('unknown')).equal(undefined);
@@ -143,6 +143,62 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(AuthorsV2.langAuthor('en', opts)).equal('brahmali');
     should(AuthorsV2.langAuthor('jpn', opts)).equal(undefined);
     should(AuthorsV2.langAuthor('pt', opts)).equal(undefined);
+  });
+  it("TESTTESTfind() lang", ()=>{
+    should.deepEqual(AuthorsV2.find({lang:'pt'}), [
+      AuthorsV2.authorInfo('laera-quaresma'),
+    ]);
+    should.deepEqual(AuthorsV2.find({lang:'jpn'}), [
+      AuthorsV2.authorInfo('kaz'),
+    ]);
+    should.deepEqual(AuthorsV2.find({lang:'de'}), [
+      AuthorsV2.authorInfo('sabbamitta'),
+    ]);
+    should.deepEqual(AuthorsV2.find({lang:'en'}), [
+      AuthorsV2.authorInfo('sujato'),  // exampleVersion
+
+      // alphabetical
+      AuthorsV2.authorInfo('anandajoti'),
+      AuthorsV2.authorInfo('brahmali'),
+      AuthorsV2.authorInfo('davis'),
+      AuthorsV2.authorInfo('kelly'),
+      AuthorsV2.authorInfo('kovilo'),
+      AuthorsV2.authorInfo('patton'),
+      AuthorsV2.authorInfo('soma'),
+      AuthorsV2.authorInfo('suddhaso'),
+    ]);
+  });
+  it("TESTTESTfind() exampleVersion", ()=>{
+    should.deepEqual(AuthorsV2.find({exampleVersion:1}), [
+      AuthorsV2.authorInfo('ms'),
+      AuthorsV2.authorInfo('kaz'),
+      AuthorsV2.authorInfo('sabbamitta'),
+      AuthorsV2.authorInfo('sujato'), 
+    ]);
+    should.deepEqual(AuthorsV2.find({exampleVersion:1, lang:'en'}), [
+      AuthorsV2.authorInfo('sujato'), 
+    ]);
+  });
+  it("TESTTESTfind() sutta", ()=>{
+    should.deepEqual(AuthorsV2.find({sutta:true, lang:'en'}), [
+      // exampleVersion
+      AuthorsV2.authorInfo('sujato'),  
+
+      // alphabetical
+      AuthorsV2.authorInfo('anandajoti'),
+      AuthorsV2.authorInfo('davis'),
+      AuthorsV2.authorInfo('kelly'),
+      AuthorsV2.authorInfo('kovilo'),
+      AuthorsV2.authorInfo('patton'),
+      AuthorsV2.authorInfo('soma'),
+      AuthorsV2.authorInfo('suddhaso'),
+    ]);
+  });
+  it("TESTTESTfind() vinaya", ()=>{
+    should.deepEqual(AuthorsV2.find({vinaya:true}), [
+      AuthorsV2.authorInfo('ms'),
+      AuthorsV2.authorInfo('brahmali'),
+    ]);
   });
 
 });
