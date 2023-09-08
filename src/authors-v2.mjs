@@ -10,12 +10,11 @@ export default class AuthorsV2 {
     let keys = Object.keys(AUTHORSV2);
     return keys.reduce((a,k)=>{
       let info = AUTHORSV2[k];
-      if (a) {
+      if (info.author !== author) {
         return a;
       }
-      return info.author===author && 
-        (lang == null || info.lang === lang) 
-        ? info 
+      return info.lang === lang || a==null
+        ? info
         : a;
     }, undefined);
   }
