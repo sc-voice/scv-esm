@@ -30,8 +30,8 @@ export default class AuthorsV2 {
             info.exampleVersion >= exampleVersion) &&
           (author == null || info.author === author) &&
           (lang == null || info.lang === lang) &&
-          (sutta == null || sutta === info.sutta) &&
-          (vinaya == null || vinaya === info.vinaya) 
+          (sutta == null || sutta === !!info.sutta) &&
+          (vinaya == null || vinaya === !!info.vinaya) 
         );
       })
       .map(k=>AUTHORSV2[k])

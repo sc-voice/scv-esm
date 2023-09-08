@@ -155,12 +155,24 @@ typeof describe === "function" && describe("authors-v2", function () {
     should.deepEqual(AuthorsV2.find({lang:'de'}), [
       AuthorsV2.authorInfo('sabbamitta'),
     ]);
-    should.deepEqual(AuthorsV2.find({lang:'en'}), [
+    should.deepEqual(AuthorsV2.find({lang:'en', }), [
       AuthorsV2.authorInfo('sujato'),  // exampleVersion
 
       // alphabetical
       AuthorsV2.authorInfo('anandajoti'),
       AuthorsV2.authorInfo('brahmali'),
+      AuthorsV2.authorInfo('davis'),
+      AuthorsV2.authorInfo('kelly'),
+      AuthorsV2.authorInfo('kovilo'),
+      AuthorsV2.authorInfo('patton'),
+      AuthorsV2.authorInfo('soma'),
+      AuthorsV2.authorInfo('suddhaso'),
+    ]);
+    should.deepEqual(AuthorsV2.find({lang:'en', sutta:true, vinaya:false}), [
+      AuthorsV2.authorInfo('sujato'),  // exampleVersion
+
+      // alphabetical
+      AuthorsV2.authorInfo('anandajoti'),
       AuthorsV2.authorInfo('davis'),
       AuthorsV2.authorInfo('kelly'),
       AuthorsV2.authorInfo('kovilo'),
