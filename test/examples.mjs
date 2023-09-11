@@ -55,7 +55,12 @@ typeof describe === "function" &&
       should(Examples.isExample('Wurzel des Leidens', 'no-lang')).equal(undefined);
       should(Examples.isExample('not an example')).equal(undefined);
     });
-    it("test()", ()=>{
+    it("TESTTESTtest() no examples", ()=>{
+      let noMatch = 'no match text';
+
+      should(Examples.test('root of suffering', 'nolang')).equal(false);
+    });
+    it("TESTTESTtest()", ()=>{
       let enText = 'brown Root of Suffering fox';
       let deText = 'braune Wurzel des Leidens ist ein Fuchs';
       let noMatch = 'no match text';

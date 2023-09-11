@@ -2,7 +2,7 @@ import { AuthorsV2 } from "../main.mjs";
 import should from "should";
 
 typeof describe === "function" && describe("authors-v2", function () {
-  it("TESTTESTauthorInfo() => supported author info", async()=>{
+  it("authorInfo() => supported author info", async()=>{
     var ms = {
         lang: 'pli',
         type: "root",
@@ -145,7 +145,7 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(AuthorsV2.langAuthor('jpn', opts)).equal(undefined);
     should(AuthorsV2.langAuthor('pt', opts)).equal(undefined);
   });
-  it("TESTTESTfind() lang", ()=>{
+  it("find() lang", ()=>{
     should.deepEqual(AuthorsV2.find({lang:'pt'}), [
       AuthorsV2.authorInfo('laera-quaresma'),
     ]);
@@ -181,7 +181,7 @@ typeof describe === "function" && describe("authors-v2", function () {
       AuthorsV2.authorInfo('suddhaso'),
     ]);
   });
-  it("TESTTESTfind() exampleVersion", ()=>{
+  it("find() exampleVersion", ()=>{
     should.deepEqual(AuthorsV2.find({exampleVersion:1}), [
       AuthorsV2.authorInfo('ms'),
       AuthorsV2.authorInfo('kaz'),
@@ -192,7 +192,7 @@ typeof describe === "function" && describe("authors-v2", function () {
       AuthorsV2.authorInfo('sujato'), 
     ]);
   });
-  it("TESTTESTfind() sutta", ()=>{
+  it("find() sutta", ()=>{
     should.deepEqual(AuthorsV2.find({sutta:true, lang:'en'}), [
       // exampleVersion
       AuthorsV2.authorInfo('sujato'),  
@@ -207,7 +207,7 @@ typeof describe === "function" && describe("authors-v2", function () {
       AuthorsV2.authorInfo('suddhaso'),
     ]);
   });
-  it("TESTTESTfind() vinaya", ()=>{
+  it("find() vinaya", ()=>{
     should.deepEqual(AuthorsV2.find({vinaya:true}), [
       AuthorsV2.authorInfo('ms'),
       AuthorsV2.authorInfo('brahmali'),

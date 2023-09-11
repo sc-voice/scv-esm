@@ -79,7 +79,10 @@ Object.defineProperty(Examples, "isExample", {
 });
 
 Object.defineProperty(Examples, "test", {
-  value: (str, lang='en') => regExpLangExamples(lang).test(str),
+  value: (str, lang='en') => {
+    let reLang = regExpLangExamples(lang);
+    return !!(reLang && reLang.test(str));
+  },
 });
 
 Object.defineProperty(Examples, "replaceAll", {
