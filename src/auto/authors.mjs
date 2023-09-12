@@ -225,8 +225,11 @@ const AUTHORS = {
     "type": "translator",
     "name": "Noé Ismet",
     "author": "noeismet",
-    "exampleVersion": 0,
-    "lang": "fr"
+    "category": [
+      "sutta"
+    ],
+    "lang": "fr",
+    "exampleVersion": 1
   },
   "laera": {
     "type": "translator",

@@ -16,6 +16,12 @@ const EXAMPLES = {
       "author": "sujato"
     },
     {
+      "lang": "fr",
+      "category": "sutta",
+      "version": "1",
+      "author": "noeismet"
+    },
+    {
       "lang": "jpn",
       "category": "sutta",
       "version": "1",
@@ -1743,6 +1749,9 @@ const EXAMPLES = {
     "yet I am not a perfected one",
     "wife and husband",
     "zombie"
+  ],
+  "fr": [
+    "racine de la souffrance"
   ],
   "jpn": [
     "死ぬ時、喪失感",

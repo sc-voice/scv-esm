@@ -222,8 +222,11 @@ const AUTHORS = {
     "name": [
       "Noé Ismet"
     ],
-    "exampleVersion": 0,
-    "sutta": true
+    "exampleVersion": 1,
+    "sutta": true,
+    "examples": [
+      "sutta"
+    ]
   },
   "en:anandajoti": {
     "type": "translation",
