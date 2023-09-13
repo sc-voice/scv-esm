@@ -1570,7 +1570,6 @@ const EXAMPLES = {
     "the ball of bath powder",
     "the Buddha kept silent",
     "the cosmos is eternal",
-    "the dart of craving",
     "the detailed meaning",
     "the Dhamma in brief",
     "the doors to the deathless",
