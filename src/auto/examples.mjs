@@ -26,6 +26,12 @@ const EXAMPLES = {
       "category": "sutta",
       "version": "1",
       "author": "kaz"
+    },
+    {
+      "lang": "pt",
+      "category": "sutta",
+      "version": "1",
+      "author": "laera-quaresma"
     }
   ],
   "de": [
@@ -1016,6 +1022,7 @@ const EXAMPLES = {
     "darkness.* destroyed",
     "darkness vanished",
     "dark will vanish",
+    "dart of craving",
     "deadly suffering",
     "defeated and terrified",
     "definitive, categorical lion’s roar",
@@ -1782,6 +1789,9 @@ const EXAMPLES = {
     "高潔な心を目指し",
     "時が来ます",
     "深い瞑想は安らか"
+  ],
+  "pt": [
+    "dardo do anseio"
   ]
 }
 

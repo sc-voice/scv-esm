@@ -70,9 +70,12 @@ const AUTHORS = {
       "Marco Quaresma",
       "Vitor Guimarães"
     ],
-    "exampleVersion": 0,
+    "exampleVersion": 1,
     "sutta": true,
-    "vinaya": false
+    "vinaya": false,
+    "examples": [
+      "sutta"
+    ]
   },
   "en:patton": {
     "type": "translation",

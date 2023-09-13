@@ -2,7 +2,7 @@ import { AuthorsV2 } from "../main.mjs";
 import should from "should";
 
 typeof describe === "function" && describe("authors-v2", function () {
-  it("authorInfo() => supported author info", async()=>{
+  it("TESTTESTauthorInfo() => supported author info", async()=>{
     var ms = {
         lang: 'pli',
         type: "root",
@@ -69,9 +69,23 @@ typeof describe === "function" && describe("authors-v2", function () {
         author: "laera-quaresma",
         sutta: true,
         vinaya: false,
-        exampleVersion: 0,
+        examples: [ 'sutta' ],
+        exampleVersion: 1,
+    };
+    var noeismet = {
+        lang: 'fr',
+        type: "translation",
+        name: [
+          "Noé Ismet",
+        ],
+        author: "noeismet",
+        sutta: true,
+        examples: [ 'sutta' ],
+        exampleVersion: 1,
     };
 
+
+    should.deepEqual(AuthorsV2.authorInfo('noeismet'), noeismet);
     should.deepEqual(AuthorsV2.authorInfo('laera-quaresma'), gnlaera);
     should.deepEqual(AuthorsV2.authorInfo('kaz'), kaz);
     should.deepEqual(AuthorsV2.authorInfo('soma'), soma);
@@ -181,10 +195,12 @@ typeof describe === "function" && describe("authors-v2", function () {
       AuthorsV2.authorInfo('suddhaso'),
     ]);
   });
-  it("find() exampleVersion", ()=>{
+  it("TESTTESTfind() exampleVersion", ()=>{
     should.deepEqual(AuthorsV2.find({exampleVersion:1}), [
       AuthorsV2.authorInfo('ms'),
       AuthorsV2.authorInfo('kaz'),
+      AuthorsV2.authorInfo('laera-quaresma'),
+      AuthorsV2.authorInfo('noeismet'),
       AuthorsV2.authorInfo('sabbamitta'),
       AuthorsV2.authorInfo('sujato'), 
     ]);
