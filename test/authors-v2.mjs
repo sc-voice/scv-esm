@@ -1,4 +1,4 @@
-import { AuthorsV2 } from "../main.mjs";
+import { Authors, AuthorsV2 } from "../main.mjs";
 import should from "should";
 
 typeof describe === "function" && describe("authors-v2", function () {
@@ -96,6 +96,22 @@ typeof describe === "function" && describe("authors-v2", function () {
     should.deepEqual(AuthorsV2.authorInfo('brahmali'), brahmali);
 
     should.deepEqual(AuthorsV2.authorInfo('sabbamitta'), sabbamitta);
+  });
+  it("TESTTESTauthorInfo() v1 vs. v2", ()=>{
+    let info1 = Authors.authorInfo('sujato');
+    let info2 = AuthorsV2.authorInfo('sujato');
+
+    should(info1.author).equal(info2.author);
+    should(info1.lang).equal(info2.lang);
+    should(info1.exampleVersion).equal(info2.exampleVersion);
+
+    // Everything else is different
+    should(info1.category).not.equal(info2.category);
+    should(info1.name).not.equal(info2.name);
+    should(info1.sutta).not.equal(info2.sutta);
+    should(info1.vinaya).not.equal(info2.vinaya);
+    should(info1.examples).not.equal(info2.examples);
+    should(info1.type).not.equal(info2.type);
   });
   it("compare(a1,a2)", ()=>{
     let sujato = "sujato";
