@@ -8954,6 +8954,7 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/mn"
 	},
 	"mn28": {
+		"translation/de/sabbamitta": "sutta/mn",
 		"translation/en/sujato": "sutta/mn",
 		"translation/ru/sv": "sutta/mn",
 		"root/pli/ms": "sutta/mn"
@@ -22171,26 +22172,32 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.11": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.12": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.13": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.14": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.15": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.16": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
@@ -22200,18 +22207,22 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.18": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.19": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.20": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.21": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
@@ -22221,38 +22232,47 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.23": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.24": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.25": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.26": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.27": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.28": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.29": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.30": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.31": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
@@ -22262,30 +22282,37 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.33": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.34": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.35": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.36": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.37": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.38": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.39": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
@@ -22295,38 +22322,47 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.41": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.42": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.43": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.44": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.45": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.46": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.47": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.48": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
 	"thag2.49": {
+		"translation/de/sabbamitta": "sutta/kn/thag",
 		"translation/en/sujato": "sutta/kn/thag",
 		"root/pli/ms": "sutta/kn/thag"
 	},
