@@ -315,6 +315,13 @@ const AUTHORS = {
     "name": "Marco Quaresma",
     "author": "quaresma",
     "exampleVersion": 0
+  },
+  "lucjan": {
+    "type": "translator",
+    "name": "Paweł Łucjan",
+    "author": "lucjan",
+    "exampleVersion": 0,
+    "lang": "pl"
   }
 }
 
