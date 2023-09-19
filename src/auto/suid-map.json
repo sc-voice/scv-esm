@@ -11392,6 +11392,9 @@
 	"sa11": {
 		"translation/id/seniya": "sutta/sa/sa1-100"
 	},
+	"sa803": {
+		"translation/pl/lucjan": "sutta/sa/sa801-900"
+	},
 	"sn1.1": {
 		"translation/de/sabbamitta": "sutta/sn/sn1",
 		"translation/en/davis": "sutta/sn/sn1",
