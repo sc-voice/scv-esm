@@ -281,18 +281,32 @@ typeof describe === "function" &&
         segnum,
       });
     });
-    it("toString()", ()=>{ 
+    it("TESTTESTtoString()", ()=>{ 
       let sutta_uid = 'thig1.1';
       let lang = 'de';
       let translator = 'sabbamitta';
       let segnum = '2.3';
-      should(SuttaRef.create({sutta_uid, lang, translator}).toString())
+      let test = (o,lang)=>SuttaRef.create(o,lang).toString();
+
+      // Object
+      should(test({sutta_uid, lang, translator}))
         .equal("thig1.1/de/sabbamitta");
-      should(SuttaRef.create({sutta_uid, lang, translator, segnum}).toString())
+      should(test({sutta_uid, lang, translator, segnum}))
         .equal("thig1.1:2.3/de/sabbamitta");
-      should(SuttaRef.create({sutta_uid:"thig1.1:2.3/de/sabbamitta"}).toString())
+      should(test({sutta_uid:"thig1.1:2.3/de/sabbamitta"}))
         .equal("thig1.1:2.3/de/sabbamitta");
-      should(SuttaRef.create({sutta_uid:"thig1.1"}).toString())
-        .equal("thig1.1/pli/ms");
+      should(test({sutta_uid:"thig1.1"})).equal("thig1.1/pli/ms");
+
+      // String
+      should(test("thig1.1/en/soma")).equal("thig1.1/en/soma");
+      should(test("thig1.1")).equal("thig1.1/pli/ms");
+      should(test("thig1.1:2.3")).equal("thig1.1:2.3/pli/ms");
+      should(test("thig1.1", 'de')).equal("thig1.1/de");
+      should(test("thig1.1:2.3", 'de')).equal("thig1.1:2.3/de");
+      should(test("thig1.1:2.3/de")).equal("thig1.1:2.3/de");
+      should(test("thig1.1:2.3/de/sabbamitta"))
+        .equal("thig1.1:2.3/de/sabbamitta");
+      should(test("thig1.1", 'en')).equal("thig1.1/en");
+      should(test("thig1.1:2.3", 'en')).equal("thig1.1:2.3/en");
     });
   });

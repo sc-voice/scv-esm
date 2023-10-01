@@ -156,8 +156,11 @@ export default class SuttaRef {
 
   toString() { 
     let { sutta_uid, lang, author, segnum } = this;
-    return segnum 
-      ? `${sutta_uid}:${segnum}/${lang}/${author}`
-      : `${sutta_uid}/${lang}/${author}`;
+    let scid = segnum
+      ? `${sutta_uid}:${segnum}`
+      : sutta_uid;
+    return lang 
+      ? author ? `${scid}/${lang}/${author}` : `${scid}/${lang}`
+      : scid;
   }
 }
