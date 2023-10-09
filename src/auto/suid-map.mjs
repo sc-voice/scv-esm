@@ -9690,6 +9690,10 @@ const SUIDMAP = {
 	"pdhp398-414.json": {
 		"translation/en/anandajoti": "sutta/pdhp"
 	},
+	"pli-tv-bi-pm": {
+		"translation/en/brahmali": "vinaya",
+		"root/pli/ms": "vinaya"
+	},
 	"pli-tv-bi-vb-as1-7": {
 		"translation/en/brahmali": "vinaya/pli-tv-bi-vb",
 		"root/pli/ms": "vinaya/pli-tv-bi-vb"
@@ -10209,6 +10213,10 @@ const SUIDMAP = {
 	"pli-tv-bi-vb-ss13": {
 		"translation/en/brahmali": "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-ss",
 		"root/pli/ms": "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-ss"
+	},
+	"pli-tv-bu-pm": {
+		"translation/en/brahmali": "vinaya",
+		"root/pli/ms": "vinaya"
 	},
 	"pli-tv-bu-vb-as1-7": {
 		"translation/en/brahmali": "vinaya/pli-tv-bu-vb",
@@ -28669,12 +28677,6 @@ const SUIDMAP = {
 	},
 	"vv9": {
 		"root/pli/ms": "sutta/kn/vv"
-	},
-	"pli-tv-bi-pm": {
-		"root/pli/ms": "vinaya"
-	},
-	"pli-tv-bu-pm": {
-		"root/pli/ms": "vinaya"
 	}
 }
 export default SUIDMAP;
