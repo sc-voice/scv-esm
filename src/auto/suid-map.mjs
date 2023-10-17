@@ -10151,6 +10151,10 @@ const SUIDMAP = {
 		"translation/en/brahmali": "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pd",
 		"root/pli/ms": "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pd"
 	},
+	"pli-tv-bi-vb-pj1-4": {
+		"translation/en/brahmali": "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pj",
+		"root/pli/ms": "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pj"
+	},
 	"pli-tv-bi-vb-pj1": {
 		"translation/en/brahmali": "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pj",
 		"root/pli/ms": "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pj"
