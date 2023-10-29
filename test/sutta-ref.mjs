@@ -281,7 +281,7 @@ typeof describe === "function" &&
         segnum,
       });
     });
-    it("TESTTESTtoString()", ()=>{ 
+    it("toString()", ()=>{ 
       let sutta_uid = 'thig1.1';
       let lang = 'de';
       let translator = 'sabbamitta';
@@ -308,5 +308,39 @@ typeof describe === "function" &&
         .equal("thig1.1:2.3/de/sabbamitta");
       should(test("thig1.1", 'en')).equal("thig1.1/en");
       should(test("thig1.1:2.3", 'en')).equal("thig1.1:2.3/en");
+    });
+    it("create() thig11", ()=>{ 
+      let sutta_uid = 'thig11';
+      let lang = 'en';
+      let translator = 'soma';
+      let segnum = '2.3';
+      let eCaught;
+      let res;
+      let level = logger.logLevel;
+      logger.logLevel = 'error'; // ignore WARN
+      try {
+        res = SuttaRef.create({sutta_uid, lang, translator});
+      } catch(e) {
+        eCaught = e;
+      }
+      logger.logLevel = level;
+      should(res).equal(null);
+      should(eCaught).equal(undefined);
+    });
+    it("TESTTESTcreateWithError() thig11", ()=>{ 
+      let sutta_uid = 'thig11';
+      let lang = 'en';
+      let translator = 'soma';
+      let segnum = '2.3';
+      let test = (o,lang)=>SuttaRef.create(o,lang).toString();
+      let eCaught;
+      let res;
+      try {
+        let res = SuttaRef.createWithError({sutta_uid, lang, translator});
+      } catch(e) {
+        eCaught = e;
+      }
+      should(res).equal(undefined);
+      should(eCaught.message).match(/(thig11?)/);
     });
   });

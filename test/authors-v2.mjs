@@ -2,7 +2,7 @@ import { Authors, AuthorsV2 } from "../main.mjs";
 import should from "should";
 
 typeof describe === "function" && describe("authors-v2", function () {
-  it("TESTTESTauthorInfo() => supported author info", async()=>{
+  it("authorInfo() => supported author info", async()=>{
     var ms = {
         lang: 'pli',
         type: "root",
@@ -97,7 +97,7 @@ typeof describe === "function" && describe("authors-v2", function () {
 
     should.deepEqual(AuthorsV2.authorInfo('sabbamitta'), sabbamitta);
   });
-  it("TESTTESTauthorInfo() v1 vs. v2", ()=>{
+  it("authorInfo() v1 vs. v2", ()=>{
     let info1 = Authors.authorInfo('sujato');
     let info2 = AuthorsV2.authorInfo('sujato');
 
@@ -211,7 +211,7 @@ typeof describe === "function" && describe("authors-v2", function () {
       AuthorsV2.authorInfo('suddhaso'),
     ]);
   });
-  it("TESTTESTfind() exampleVersion", ()=>{
+  it("find() exampleVersion", ()=>{
     should.deepEqual(AuthorsV2.find({exampleVersion:1}), [
       AuthorsV2.authorInfo('ms'),
       AuthorsV2.authorInfo('kaz'),

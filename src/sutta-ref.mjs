@@ -22,7 +22,7 @@ export default class SuttaRef {
   }
 
   static createFromString(str='', defaultLang="pli", suids=SUIDS) {
-    const msg = "SuttaRef.createFromString() ";
+    const msg = 'SuttaRef.createFromString()';
     let refLower = str.toLowerCase();
     let segMatch = refLower.match(/:[-0-9.]*/);
     let segnum;
@@ -82,7 +82,12 @@ export default class SuttaRef {
         } else if (cmpHigh > 0) {
           dbg && console.log(msg, "DEBUG5", 
             {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
-          iLow = i;
+          if (iLow === i) {
+            let eMsg = msg+ ` ${suid}, (${str}?), ${suids[i+1]})`;
+            throw new Error(eMsg);
+          } else {
+            iLow = i;
+          } 
         }
       } // while
     } else {
@@ -140,11 +145,7 @@ export default class SuttaRef {
 
   static create(strOrObj, defaultLang="pli", suids=SUIDS) {
     try {
-      if (typeof strOrObj === "string") {
-        return SuttaRef.createFromString(strOrObj, defaultLang, suids);
-      } else if (typeof strOrObj === "object") {
-        return SuttaRef.createFromObject(strOrObj, defaultLang, suids);
-      }
+      return SuttaRef.createWithError(strOrObj, defaultLang, suids);
     } catch(e) {
       let args = JSON.stringify(strOrObj);
       let msg = `SuttaRef.create() ${args} => ${e.message}`;
@@ -152,6 +153,14 @@ export default class SuttaRef {
     }
 
     return null;
+  }
+
+  static createWithError(strOrObj, defaultLang="pli", suids=SUIDS) {
+    if (typeof strOrObj === "string") {
+      return SuttaRef.createFromString(strOrObj, defaultLang, suids);
+    } else if (typeof strOrObj === "object") {
+      return SuttaRef.createFromObject(strOrObj, defaultLang, suids);
+    }
   }
 
   toString() { 
