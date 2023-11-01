@@ -315,7 +315,6 @@ const SUIDMAP = {
 	"an2.130-140": {
 		"translation/de/sabbamitta": "sutta/an/an2",
 		"translation/en/sujato": "sutta/an/an2",
-		"translation/jpn/kaz": "sutta/an/an2",
 		"root/pli/ms": "sutta/an/an2"
 	},
 	"an2.141-150": {
@@ -334,7 +333,6 @@ const SUIDMAP = {
 	"an2.163-179": {
 		"translation/de/sabbamitta": "sutta/an/an2",
 		"translation/en/sujato": "sutta/an/an2",
-		"translation/jpn/kaz": "sutta/an/an2",
 		"root/pli/ms": "sutta/an/an2"
 	},
 	"an2.180-229": {
