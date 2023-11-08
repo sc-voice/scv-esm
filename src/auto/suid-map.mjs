@@ -8855,6 +8855,18 @@ const SUIDMAP = {
 		"translation/en/kelly": "sutta/kn/mil",
 		"root/pli/ms": "sutta/kn/mil"
 	},
+	"mil3.3.3": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
+	"mil3.3.4": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
+	"mil3.3.5": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
 	"mn1": {
 		"translation/en/sujato": "sutta/mn",
 		"translation/pl/hardao": "sutta/mn",
@@ -25610,15 +25622,6 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.3.14": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.3.3": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.3.4": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.3.5": {
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.3.6": {
