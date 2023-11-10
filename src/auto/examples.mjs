@@ -80,7 +80,7 @@ const EXAMPLES = {
     "Auflösung des Verlangens ist Erlöschen",
     "auf materiellen Besitz",
     "Auge der Weisheit",
-    "Augenblick versäumst",
+    "Augenblick versäum",
     "Ausbauen der Versenkung",
     "Ausdruck für Sinnenfreuden",
     "äußere Erkennen und Sehen",
