@@ -46,8 +46,8 @@ export default class Tipitaka {
     return null;
   }
 
-  canonicalSuttaUid(sutta_uid, type="acro") {
-    const msg = 'Tipitaka.canonicalSuttaUid()';
+  canonicalSuttaId(sutta_uid, type="acro") {
+    const msg = 'Tipitaka.canonicalSuttaId()';
     sutta_uid = sutta_uid.toLowerCase();
     let nikaya = sutta_uid.replace(/[-0-9:.]+/, '');
     let [ue] = UID_EXPANSION.filter((ue) => ue.uid === nikaya);

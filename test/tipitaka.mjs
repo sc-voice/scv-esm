@@ -28,32 +28,32 @@ typeof describe === "function" && describe("tipitaka", function () {
     should(taka.previousSuid("mn1")).equal(null);
     should(taka.previousSuid("mnd1")).equal(null);
   });
-  it("TESTTESTcanonicalSuttaUid(id)", ()=>{
+  it("TESTTESTcanonicalSuttaId(id)", ()=>{
     let taka = new Tipitaka();
-    should(taka.canonicalSuttaUid('an2.11-20')).equal('AN2.11-20');
-    should(taka.canonicalSuttaUid('AN2.11-20')).equal('AN2.11-20');
-    should(taka.canonicalSuttaUid('An2.11-20')).equal('AN2.11-20');
+    should(taka.canonicalSuttaId('an2.11-20')).equal('AN2.11-20');
+    should(taka.canonicalSuttaId('AN2.11-20')).equal('AN2.11-20');
+    should(taka.canonicalSuttaId('An2.11-20')).equal('AN2.11-20');
 
     // name
-    should(taka.canonicalSuttaUid('an2.12', 'name'))
+    should(taka.canonicalSuttaId('an2.12', 'name'))
       .equal('Aṅguttara Nikāya 2.12');
-    should(taka.canonicalSuttaUid('AN2.12', 'name'))
+    should(taka.canonicalSuttaId('AN2.12', 'name'))
       .equal('Aṅguttara Nikāya 2.12');
-    should(taka.canonicalSuttaUid('An2.12', 'name'))
+    should(taka.canonicalSuttaId('An2.12', 'name'))
       .equal('Aṅguttara Nikāya 2.12');
 
     // MN44
-    should(taka.canonicalSuttaUid('mn44')).equal('MN44');
-    should(taka.canonicalSuttaUid('mn44', 'acro')).equal('MN44');
-    should(taka.canonicalSuttaUid('mn44', 'name'))
+    should(taka.canonicalSuttaId('mn44')).equal('MN44');
+    should(taka.canonicalSuttaId('mn44', 'acro')).equal('MN44');
+    should(taka.canonicalSuttaId('mn44', 'name'))
       .equal('Majjhima Nikāya 44');
 
     // other
-    should(taka.canonicalSuttaUid('thig1.1')).equal('Thig1.1');
-    should(taka.canonicalSuttaUid('thig1.1', 'name'))
+    should(taka.canonicalSuttaId('thig1.1')).equal('Thig1.1');
+    should(taka.canonicalSuttaId('thig1.1', 'name'))
       .equal('Therīgāthā 1.1');
-    should(taka.canonicalSuttaUid('snp1.1')).equal('Snp1.1');
-    should(taka.canonicalSuttaUid('snp1.1', 'name'))
+    should(taka.canonicalSuttaId('snp1.1')).equal('Snp1.1');
+    should(taka.canonicalSuttaId('snp1.1', 'name'))
       .equal('Sutta Nipāta 1.1');
   });
 });
