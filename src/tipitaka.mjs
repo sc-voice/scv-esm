@@ -1,6 +1,7 @@
 import { logger } from "log-instance/index.mjs";
 import SuidMap from "./auto/suid-map.mjs";
 import SuttaCentralId from "./sutta-central-id.mjs";
+import { default as UID_EXPANSION } from "./uid-expansion.mjs";
 
 export default class Tipitaka {
   constructor(opts = {}) {
@@ -43,5 +44,19 @@ export default class Tipitaka {
       }
     }
     return null;
+  }
+
+  canonicalSuttaUid(sutta_uid, type="acro") {
+    const msg = 'Tipitaka.canonicalSuttaUid()';
+    sutta_uid = sutta_uid.toLowerCase();
+    let nikaya = sutta_uid.replace(/[-0-9:.]+/, '');
+    let [ue] = UID_EXPANSION.filter((ue) => ue.uid === nikaya);
+    switch (type) {
+      case "name":
+        return sutta_uid.replace(ue.uid, ue.name+' ');
+      case "acro":
+      default:
+        return sutta_uid.replace(ue.uid, ue.acro);
+    }
   }
 }
