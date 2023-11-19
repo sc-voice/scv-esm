@@ -585,7 +585,6 @@ const EXAMPLES = {
     "Opferpfahl",
     "Ordenssatzungen",
     "Pañcasikha -sl de",
-    "Persönlichkeitskonzepte",
     "Pfeil des Verlangens",
     "Pflegen der Versenkung",
     "polierte schwarze Schale",
