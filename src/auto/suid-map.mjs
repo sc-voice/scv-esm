@@ -5653,6 +5653,7 @@ const SUIDMAP = {
 	"an8.49": {
 		"translation/de/sabbamitta": "sutta/an/an8",
 		"translation/en/sujato": "sutta/an/an8",
+		"translation/fr/noeismet": "sutta/an/an8",
 		"root/pli/ms": "sutta/an/an8"
 	},
 	"an8.50": {
