@@ -7761,30 +7761,35 @@
 		"root/pli/ms": "sutta/kn/dhp"
 	},
 	"dhp21-32": {
+		"translation/de/sabbamitta": "sutta/kn/dhp",
 		"translation/en/suddhaso": "sutta/kn/dhp",
 		"translation/en/sujato": "sutta/kn/dhp",
 		"translation/vi/phantuananh": "sutta/kn/dhp",
 		"root/pli/ms": "sutta/kn/dhp"
 	},
 	"dhp33-43": {
+		"translation/de/sabbamitta": "sutta/kn/dhp",
 		"translation/en/suddhaso": "sutta/kn/dhp",
 		"translation/en/sujato": "sutta/kn/dhp",
 		"translation/vi/phantuananh": "sutta/kn/dhp",
 		"root/pli/ms": "sutta/kn/dhp"
 	},
 	"dhp44-59": {
+		"translation/de/sabbamitta": "sutta/kn/dhp",
 		"translation/en/suddhaso": "sutta/kn/dhp",
 		"translation/en/sujato": "sutta/kn/dhp",
 		"translation/vi/phantuananh": "sutta/kn/dhp",
 		"root/pli/ms": "sutta/kn/dhp"
 	},
 	"dhp60-75": {
+		"translation/de/sabbamitta": "sutta/kn/dhp",
 		"translation/en/suddhaso": "sutta/kn/dhp",
 		"translation/en/sujato": "sutta/kn/dhp",
 		"translation/vi/phantuananh": "sutta/kn/dhp",
 		"root/pli/ms": "sutta/kn/dhp"
 	},
 	"dhp76-89": {
+		"translation/de/sabbamitta": "sutta/kn/dhp",
 		"translation/en/suddhaso": "sutta/kn/dhp",
 		"translation/en/sujato": "sutta/kn/dhp",
 		"translation/vi/phantuananh": "sutta/kn/dhp",
@@ -8880,6 +8885,14 @@
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.3.8": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
+	"mil3.3.9": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
+	"mil3.3.10": {
 		"translation/en/kelly": "sutta/kn/mil",
 		"root/pli/ms": "sutta/kn/mil"
 	},
@@ -25650,9 +25663,6 @@
 	"mil2": {
 		"root/pli/ms": "sutta/kn/mil"
 	},
-	"mil3.3.10": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
 	"mil3.3.11": {
 		"root/pli/ms": "sutta/kn/mil"
 	},
@@ -25663,9 +25673,6 @@
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.3.14": {
-		"root/pli/ms": "sutta/kn/mil"
-	},
-	"mil3.3.9": {
 		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil3.4.10": {
