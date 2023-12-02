@@ -9405,6 +9405,7 @@ const SUIDMAP = {
 	"mn93": {
 		"translation/de/sabbamitta": "sutta/mn",
 		"translation/en/sujato": "sutta/mn",
+		"translation/fr/noeismet": "sutta/mn",
 		"root/pli/ms": "sutta/mn"
 	},
 	"mn94": {
