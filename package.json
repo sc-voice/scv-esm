@@ -1,6 +1,6 @@
 {
   "name": "scv-esm",
-  "version": "1.83.54",
+  "version": "1.83.55",
   "description": "SuttaCentral Voice ES Module",
   "main": "index.js",
   "module": "main.mjs",
@@ -28,7 +28,7 @@
   "devDependencies": {
     "memo-again": "^0.8.0",
     "mocha": "^10.0.0",
-    "scv-bilara": "^3.106.53",
+    "scv-bilara": "^3.106.54",
     "should": "^13.2.3",
     "suttacentral-api": "^2.9.7"
   }
