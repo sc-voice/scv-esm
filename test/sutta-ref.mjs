@@ -103,6 +103,17 @@ typeof describe === "function" &&
       let sref = SuttaRef.createFromString('thig1.2/en/soma');
       should(sref).properties({ sutta_uid: 'thig1.2', lang:'en', author:'soma', });
     });
+    it("TESTTESTcreateFromString() an1.175-186:1.1", ()=>{
+      let defaultLang = "en";
+      let author = "ms";
+      let lang = "pli";
+      let segnum = '1.1';
+      let sutta_uid = 'an1.175-186';
+      let scid = `${sutta_uid}:${segnum}`;
+      let sref2 = SuttaRef.createFromString(scid);
+      should(sref2).properties({ 
+        sutta_uid:'an1.170-187', lang, author, segnum, });
+    });
     it("create(object) an1.1 in an1.1-10=> SuttaRef", () => {
       let defaultLang = "en";
       let author = "sujato";
@@ -327,7 +338,7 @@ typeof describe === "function" &&
       should(res).equal(null);
       should(eCaught).equal(undefined);
     });
-    it("TESTTESTcreateWithError() thig11", ()=>{ 
+    it("createWithError() thig11", ()=>{ 
       let sutta_uid = 'thig11';
       let lang = 'en';
       let translator = 'soma';

@@ -52,36 +52,38 @@ export default class SuttaRef {
         let cmpLow = compareLow(suid, sutta_uid);
         let cmpHigh = compareHigh(sutta_uid, suid);
         if (cmpLow < 0 && cmpHigh < 0) {
-          dbg && console.log(msg, "DEBUG1", 
-            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
+          dbg && console.log(msg, "[1]",  JSON.stringify({
+            suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh}));
           if (iLow === i) {
-            let nikaya = refLower.replace(/[0-9.:]+[a-z\/]*/, '');
+            let nikaya = refLower.replace(/[-0-9.:]+[a-z\/]*/, '');
             if (suid.startsWith(nikaya)) {
               keys.push(suid);
               scid = `${refLower.split('/')[0]}`;
-              dbg && console.log(msg, 'DEBUG1.5', {nikaya, refLower,suid, keys, scid} );
+              dbg && console.log(msg, '[2]', JSON.stringify({
+                nikaya, refLower,suid, keys, scid}));
             }
             break;
           }
           iLow = i;
         } else if (cmpLow <= 0 && cmpHigh <= 0) {
           scid = `${refLower.split('/')[0]}`;
-          dbg && console.log(msg, "DEBUG2", 
-            {refLower, scid, suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
+          dbg && console.log(msg, "[3]", JSON.stringify({
+            refLower, scid, suid, sutta_uid, cmpLow, cmpHigh, iLow, 
+            i, iHigh}));
           keys.push(suid);
           break;
         }
         if (cmpLow > 0 && cmpHigh > 0) {
-          dbg && console.log(msg, "DEBUG3", 
-            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
+          dbg && console.log(msg, "[4]", JSON.stringify({
+            suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh}));
           iHigh = i;
         } else if (cmpLow > 0) {
-          dbg && console.log(msg, "DEBUG4", 
-            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
+          dbg && console.log(msg, "[5]", JSON.stringify({
+            suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh}));
           iHigh = i;
         } else if (cmpHigh > 0) {
-          dbg && console.log(msg, "DEBUG5", 
-            {suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh});
+          dbg && console.log(msg, "[6]",  JSON.stringify({
+            suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh}));
           if (iLow === i) {
             let eMsg = msg+ ` ${suid}, (${str}?), ${suids[i+1]})`;
             throw new Error(eMsg);
@@ -92,15 +94,17 @@ export default class SuttaRef {
       } // while
     } else {
       keys = suids.filter((k) => {
-        return compareLow(k, sutta_uid) <= 0 && compareHigh(sutta_uid, k) <= 0;
+        return compareLow(k, sutta_uid) <= 0 && 
+          compareHigh(sutta_uid, k) <= 0;
       });
-      dbg && console.log(msg, "DEBUG6", {keys, suid});
+      dbg && console.log(msg, "[7]", JSON.stringify({keys, suid}));
     }
     let suttaRef;
     if (keys.length !== 1) {
-      throw new Error(`SuttaRef.createFromString(${str}) invalid`);
+      let eMsg = `${msg} ${str} => keys?:${keys.length}`;
+      throw new Error(eMsg);
     }
-    dbg && console.log(msg, "DEBUG7", {str, keys, scid});
+    dbg && console.log(msg, "[8]", JSON.stringify({str, keys, scid}));
 
     suttaRef = new SuttaRef({
       sutta_uid: keys[0],
