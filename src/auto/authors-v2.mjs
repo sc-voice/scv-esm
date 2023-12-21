@@ -251,16 +251,6 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true
   },
-  "en:davis": {
-    "type": "translation",
-    "lang": "en",
-    "author": "davis",
-    "name": [
-      "Andrew Davis"
-    ],
-    "exampleVersion": 0,
-    "sutta": true
-  },
   "pl:marcinow": {
     "type": "translation",
     "lang": "pl",

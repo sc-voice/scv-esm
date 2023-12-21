@@ -260,8 +260,7 @@ const AUTHORS = {
     "type": "translator",
     "name": "Dr Joongpyo Lee",
     "author": "davis",
-    "exampleVersion": 0,
-    "lang": "en"
+    "exampleVersion": 0
   },
   "pasanna": {
     "type": "translator",
