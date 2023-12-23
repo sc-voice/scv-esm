@@ -30,7 +30,8 @@ typeof describe === "function" &&
       should(
         SuttaRef.create(`${sutta_uid}/${lang}/${author}:${segnum}`)
       ).properties({ sutta_uid, lang, author, segnum });
-      should(SuttaRef.create(`${sutta_uid}/${lang}/${author}`)).properties({
+      should(SuttaRef.create(`${sutta_uid}/${lang}/${author}`))
+      .properties({
         sutta_uid,
         lang,
         author,
@@ -93,17 +94,19 @@ typeof describe === "function" &&
         { sutta_uid, lang: defaultLang, author: undefined, segnum }
       );
     });
-    it("createFromString()", ()=>{
+    it("TESTTESTcreateFromString()", ()=>{
       let defaultLang = "en";
       let author = "ms";
       let lang = "pli";
       let segnum = undefined;
       let sref2 = SuttaRef.createFromString('sn24.9-18');
-      should(sref2).properties({ sutta_uid: 'sn24.9-18', lang, author, segnum, });
+      should(sref2).properties({ 
+        sutta_uid: 'sn24.9-18', lang, author, segnum, });
       let sref = SuttaRef.createFromString('thig1.2/en/soma');
-      should(sref).properties({ sutta_uid: 'thig1.2', lang:'en', author:'soma', });
+      should(sref).properties({ 
+        sutta_uid: 'thig1.2', lang:'en', author:'soma', });
     });
-    it("TESTTESTcreateFromString() an1.175-186:1.1", ()=>{
+    it("createFromString() an1.175-186:1.1", ()=>{
       let defaultLang = "en";
       let author = "ms";
       let lang = "pli";

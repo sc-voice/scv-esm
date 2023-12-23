@@ -57,8 +57,7 @@ const AUTHORS = {
     "type": "translator",
     "name": "Charles Patton",
     "author": "patton",
-    "exampleVersion": 0,
-    "lang": "en"
+    "exampleVersion": 0
   },
   "ashinsarana": {
     "type": "translator",
@@ -126,8 +125,7 @@ const AUTHORS = {
     "type": "translator",
     "name": "Seniya Ariyakumara",
     "author": "seniya",
-    "exampleVersion": 0,
-    "lang": "id"
+    "exampleVersion": 0
   },
   "soma": {
     "type": "translator",
@@ -286,8 +284,7 @@ const AUTHORS = {
     "type": "translator",
     "name": "Bhikkhu Ānandajoti",
     "author": "anandajoti",
-    "exampleVersion": 0,
-    "lang": "en"
+    "exampleVersion": 0
   },
   "maggatr": {
     "type": "translator",
@@ -319,8 +316,7 @@ const AUTHORS = {
     "type": "translator",
     "name": "Paweł Łucjan",
     "author": "lucjan",
-    "exampleVersion": 0,
-    "lang": "pl"
+    "exampleVersion": 0
   }
 }
 

@@ -77,16 +77,6 @@ const AUTHORS = {
       "sutta"
     ]
   },
-  "en:patton": {
-    "type": "translation",
-    "lang": "en",
-    "author": "patton",
-    "name": [
-      "Charles D. Patton II"
-    ],
-    "exampleVersion": 0,
-    "sutta": true
-  },
   "en:soma": {
     "type": "translation",
     "lang": "en",
@@ -138,32 +128,12 @@ const AUTHORS = {
     "sutta": true,
     "vinaya": true
   },
-  "id:seniya": {
-    "type": "translation",
-    "lang": "id",
-    "author": "seniya",
-    "name": [
-      "Seniya Ariyakumara"
-    ],
-    "exampleVersion": 0,
-    "sutta": true
-  },
   "vi:phantuananh": {
     "type": "translation",
     "lang": "vi",
     "author": "phantuananh",
     "name": [
       "Bhikkhu Thích Minh Châu"
-    ],
-    "exampleVersion": 0,
-    "sutta": true
-  },
-  "pl:lucjan": {
-    "type": "translation",
-    "lang": "pl",
-    "author": "lucjan",
-    "name": [
-      "Paweł Łucjan"
     ],
     "exampleVersion": 0,
     "sutta": true
@@ -230,16 +200,6 @@ const AUTHORS = {
     "examples": [
       "sutta"
     ]
-  },
-  "en:anandajoti": {
-    "type": "translation",
-    "lang": "en",
-    "author": "anandajoti",
-    "name": [
-      "Bhikkhu Ānandajoti"
-    ],
-    "exampleVersion": 0,
-    "sutta": true
   },
   "fr:sekha": {
     "type": "translation",

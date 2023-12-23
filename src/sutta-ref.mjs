@@ -27,7 +27,7 @@ export default class SuttaRef {
     let segMatch = refLower.match(/:[-0-9.]*/);
     let segnum;
     let ref = refLower;
-    let dbg = 0;
+    let dbg = 1;
     if (segMatch) {
       let [segPart]  = segMatch;
       segnum = segPart.substring(1);
