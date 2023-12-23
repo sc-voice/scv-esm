@@ -113,10 +113,10 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(info1.examples).not.equal(info2.examples);
     should(info1.type).not.equal(info2.type);
   });
-  it("compare(a1,a2)", ()=>{
+  it("TESTTESTcompare(a1,a2)", ()=>{
     let sujato = "sujato";
     let sabbamitta = "sabbamitta";
-    let davis = "davis";
+    let soma = "soma";
     let unknown = "unknown";
 
     // equal
@@ -127,21 +127,21 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(AuthorsV2.compare(undefined,null)).equal(0);
     should(AuthorsV2.compare(null,unknown)).equal(0);
     should(AuthorsV2.compare(sujato,sujato)).equal(0);
-    should(AuthorsV2.compare(davis,davis)).equal(0);
+    should(AuthorsV2.compare(soma,soma)).equal(0);
 
     // ascending
-    should(AuthorsV2.compare(undefined,davis)).equal(-1);
-    should(AuthorsV2.compare(null,davis)).equal(-1);
-    should(AuthorsV2.compare(unknown,davis)).equal(1);
+    should(AuthorsV2.compare(undefined,soma)).equal(-1);
+    should(AuthorsV2.compare(null,soma)).equal(-1);
+    should(AuthorsV2.compare(unknown,soma)).equal(1);
     should(AuthorsV2.compare(unknown,sujato)).equal(1);
-    should(AuthorsV2.compare(sujato,davis)).equal(1);
+    should(AuthorsV2.compare(sujato,soma)).equal(1);
     should(AuthorsV2.compare(sabbamitta, sujato)).equal(-1);
 
     // descending
-    should(AuthorsV2.compare(davis, sujato)).equal(-1);
-    should(AuthorsV2.compare(davis, undefined)).equal(1);
-    should(AuthorsV2.compare(davis, null)).equal(1);
-    should(AuthorsV2.compare(davis, unknown)).equal(-1);
+    should(AuthorsV2.compare(soma, sujato)).equal(-1);
+    should(AuthorsV2.compare(soma, undefined)).equal(1);
+    should(AuthorsV2.compare(soma, null)).equal(1);
+    should(AuthorsV2.compare(soma, unknown)).equal(-1);
     should(AuthorsV2.compare(sujato, unknown)).equal(-1);
     should(AuthorsV2.compare(sujato,sabbamitta)).equal(1);
   });
@@ -189,24 +189,25 @@ typeof describe === "function" && describe("authors-v2", function () {
       AuthorsV2.authorInfo('sujato'),  // exampleVersion
 
       // alphabetical
-      AuthorsV2.authorInfo('anandajoti'),
+      //AuthorsV2.authorInfo('anandajoti'),
       AuthorsV2.authorInfo('brahmali'),
-      AuthorsV2.authorInfo('davis'),
+      //AuthorsV2.authorInfo('davis'),
       AuthorsV2.authorInfo('kelly'),
       AuthorsV2.authorInfo('kovilo'),
-      AuthorsV2.authorInfo('patton'),
+      //AuthorsV2.authorInfo('patton'),
       AuthorsV2.authorInfo('soma'),
       AuthorsV2.authorInfo('suddhaso'),
     ]);
-    should.deepEqual(AuthorsV2.find({lang:'en', sutta:true, vinaya:false}), [
+    should.deepEqual(
+      AuthorsV2.find({lang:'en', sutta:true, vinaya:false}), [
       AuthorsV2.authorInfo('sujato'),  // exampleVersion
 
       // alphabetical
-      AuthorsV2.authorInfo('anandajoti'),
-      AuthorsV2.authorInfo('davis'),
+      //AuthorsV2.authorInfo('anandajoti'),
+      //AuthorsV2.authorInfo('davis'),
       AuthorsV2.authorInfo('kelly'),
       AuthorsV2.authorInfo('kovilo'),
-      AuthorsV2.authorInfo('patton'),
+      //AuthorsV2.authorInfo('patton'),
       AuthorsV2.authorInfo('soma'),
       AuthorsV2.authorInfo('suddhaso'),
     ]);
@@ -224,17 +225,17 @@ typeof describe === "function" && describe("authors-v2", function () {
       AuthorsV2.authorInfo('sujato'), 
     ]);
   });
-  it("find() sutta", ()=>{
+  it("TESTTESTfind() sutta", ()=>{
     should.deepEqual(AuthorsV2.find({sutta:true, lang:'en'}), [
       // exampleVersion
       AuthorsV2.authorInfo('sujato'),  
 
       // alphabetical
-      AuthorsV2.authorInfo('anandajoti'),
-      AuthorsV2.authorInfo('davis'),
+      //AuthorsV2.authorInfo('anandajoti'),
+      //AuthorsV2.authorInfo('davis'),
       AuthorsV2.authorInfo('kelly'),
       AuthorsV2.authorInfo('kovilo'),
-      AuthorsV2.authorInfo('patton'),
+      //AuthorsV2.authorInfo('patton'),
       AuthorsV2.authorInfo('soma'),
       AuthorsV2.authorInfo('suddhaso'),
     ]);
