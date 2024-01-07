@@ -9008,6 +9008,7 @@ const SUIDMAP = {
 	"mn4": {
 		"translation/de/sabbamitta": "sutta/mn",
 		"translation/en/sujato": "sutta/mn",
+		"translation/fr/noeismet": "sutta/mn",
 		"translation/pl/hardao": "sutta/mn",
 		"translation/ru/sv": "sutta/mn",
 		"translation/sr/brankokovacevic": "sutta/mn",
@@ -9164,6 +9165,7 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/mn"
 	},
 	"mn29": {
+		"translation/de/sabbamitta": "sutta/mn",
 		"translation/en/sujato": "sutta/mn",
 		"translation/lt/piyadassi": "sutta/mn",
 		"translation/ru/sv": "sutta/mn",
@@ -9218,6 +9220,7 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/mn"
 	},
 	"mn39": {
+		"translation/de/sabbamitta": "sutta/mn",
 		"translation/en/sujato": "sutta/mn",
 		"translation/ru/sv": "sutta/mn",
 		"root/pli/ms": "sutta/mn"
@@ -9281,6 +9284,7 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/mn"
 	},
 	"mn51": {
+		"translation/de/sabbamitta": "sutta/mn",
 		"translation/en/sujato": "sutta/mn",
 		"translation/ru/sv": "sutta/mn",
 		"root/pli/ms": "sutta/mn"
@@ -9330,6 +9334,7 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/mn"
 	},
 	"mn60": {
+		"translation/de/sabbamitta": "sutta/mn",
 		"translation/en/sujato": "sutta/mn",
 		"translation/lt/piyadassi": "sutta/mn",
 		"translation/ru/sv": "sutta/mn",
