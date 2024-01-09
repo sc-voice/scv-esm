@@ -113,7 +113,7 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(info1.examples).not.equal(info2.examples);
     should(info1.type).not.equal(info2.type);
   });
-  it("TESTTESTcompare(a1,a2)", ()=>{
+  it("compare(a1,a2)", ()=>{
     let sujato = "sujato";
     let sabbamitta = "sabbamitta";
     let soma = "soma";
@@ -225,7 +225,7 @@ typeof describe === "function" && describe("authors-v2", function () {
       AuthorsV2.authorInfo('sujato'), 
     ]);
   });
-  it("TESTTESTfind() sutta", ()=>{
+  it("find() sutta", ()=>{
     should.deepEqual(AuthorsV2.find({sutta:true, lang:'en'}), [
       // exampleVersion
       AuthorsV2.authorInfo('sujato'),  
