@@ -31,6 +31,12 @@ const EXAMPLES = {
       "lang": "pt",
       "category": "sutta",
       "version": "1",
+      "author": "ebt-deepl"
+    },
+    {
+      "lang": "pt",
+      "category": "sutta",
+      "version": "1",
       "author": "laera-quaresma"
     }
   ],
@@ -1816,7 +1822,8 @@ const EXAMPLES = {
     "深い瞑想は安らか"
   ],
   "pt": [
-    "dardo do anseio"
+    "dardo do anseio",
+    "em suportar"
   ]
 }
 
