@@ -286,7 +286,7 @@ const EXAMPLES = {
     "Erkenntnis des Entstehens und Vergehens",
     "erkläre mir das Leiden",
     "Erlangen von materiellem Besitz",
-    "erlesenste Dame",
+    "erlesenste",
     "erlöschen, bevor ich nicht Nonnenschülerinnen",
     "Erlöschen ist Seligkeit",
     "Erlöschen durch Nicht-Ergreifen",
@@ -1823,7 +1823,8 @@ const EXAMPLES = {
   ],
   "pt": [
     "dardo do anseio",
-    "em suportar"
+    "em suportar",
+    "raiva"
   ]
 }
 
