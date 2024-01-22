@@ -1172,6 +1172,7 @@ const EXAMPLES = {
     "freed by wisdom",
     "freed from all these things",
     "from a cow comes milk",
+    "from the foolish",
     "from the soles of the feet",
     "fruit of giving",
     "fuel for ignorance",
