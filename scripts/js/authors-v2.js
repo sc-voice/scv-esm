@@ -46,7 +46,23 @@ async function fileExists(fpath='') {
       }
     }
     let ebtPubs = JSON.parse(await fs.promises.readFile(EBT_PUBV2));
-    let pubAuthors = {};
+    let pubAuthors = { 
+      // EBT-Data authors not included in SuttaCentral authors
+      "pt:ebt-deepl": { // https://github.com/sc-voice/ebt-deepl
+        "type": "translation",
+        "lang": "pt",
+        "author": "ebt-deepl",
+        "name": [
+          "EBT-DeepL"
+        ],
+        "exampleVersion": 1,
+        "sutta": true,
+        "vinaya": false,
+        "examples": [
+          "sutta"
+        ]
+      }
+    };
     for (let i=0; i < ebtPubs.length; i++) {
       let v = ebtPubs[i];
       let { source_url, creator_uid, creator_name } = v;

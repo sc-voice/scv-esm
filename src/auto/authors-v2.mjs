@@ -1,4 +1,18 @@
 const AUTHORS = {
+  "pt:ebt-deepl": {
+    "type": "translation",
+    "lang": "pt",
+    "author": "ebt-deepl",
+    "name": [
+      "EBT-DeepL"
+    ],
+    "exampleVersion": 1,
+    "sutta": true,
+    "vinaya": false,
+    "examples": [
+      "sutta"
+    ]
+  },
   "en:sujato": {
     "type": "translation",
     "lang": "en",

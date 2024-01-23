@@ -94,7 +94,7 @@ typeof describe === "function" &&
         { sutta_uid, lang: defaultLang, author: undefined, segnum }
       );
     });
-    it("TESTTESTcreateFromString()", ()=>{
+    it("createFromString()", ()=>{
       // 2024-01-00 -- KML
       // SuttaRef is designed to handle one sutta, not a range
       // Not sure what this test case is used for.
