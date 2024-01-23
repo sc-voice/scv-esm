@@ -36,7 +36,7 @@ const EXAMPLES = {
     {
       "lang": "pt",
       "category": "sutta",
-      "version": "1",
+      "version": "2",
       "author": "laera-quaresma"
     }
   ],
@@ -1844,7 +1844,9 @@ const EXAMPLES = {
   "pt": [
     "dardo do anseio",
     "em suportar",
-    "raiva"
+    "raiva",
+    "este nobre caminho óctuplo",
+    "vêm do tolo"
   ]
 }
 

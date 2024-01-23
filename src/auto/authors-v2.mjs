@@ -70,7 +70,7 @@ const AUTHORS = {
       "Marco Quaresma",
       "Vitor Guimarães"
     ],
-    "exampleVersion": 1,
+    "exampleVersion": 2,
     "sutta": true,
     "vinaya": false,
     "examples": [
