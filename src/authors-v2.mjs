@@ -69,7 +69,7 @@ export default class AuthorsV2 {
            dbg && console.log(msg, '[1]lang', info.name);
            return info;
          }
-         let cmp = AuthorsV2.compare(info.author, a?.author);
+         let cmp = AuthorsV2.compare(info.author, a && a.author);
          dbg && console.log(msg, '[2]compare', info.name, cmp);
          if (cmp === 0) {
            return a;
@@ -113,7 +113,8 @@ export default class AuthorsV2 {
     let info2 = AuthorsV2.authorInfo(author2) || noauthor;
 
     if (info1 === info2) {
-      dbg && console.trace(msg, '[1]same', author1, author2, info1?.author);
+      dbg && console.trace(msg, '[1]same', author1, author2, 
+        info1 && info1.author);
       return 0;
     }
     if (!info1) {

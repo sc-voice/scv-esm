@@ -133,10 +133,6 @@ typeof describe === "function" && describe("authors-v2", function () {
     let laera = "laera-quaresma";
     let ebtdeepl = "ebt-deepl";
 
-    //should(AuthorsV2.compare(soma, sujato)).equal(-1);
-    //should(AuthorsV2.compare(ebtdeepl, laera)).equal(-1);
-    //return;
-
     // equal
     should(AuthorsV2.compare()).equal(0);
     should(AuthorsV2.compare(unknown,unknown)).equal(0);
@@ -167,9 +163,6 @@ typeof describe === "function" && describe("authors-v2", function () {
   });
   it("TESTTESTlangAuthor sutta", ()=>{
     let opts = { category: 'sutta'};
-
-    should(AuthorsV2.langAuthor('pt')).equal('laera-quaresma');
-    return;
 
     should(AuthorsV2.langAuthor('unknown')).equal(undefined);
     should(AuthorsV2.langAuthor('de')).equal('sabbamitta');
