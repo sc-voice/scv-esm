@@ -394,16 +394,19 @@ const SUIDMAP = {
 	"an3.6": {
 		"translation/de/sabbamitta": "sutta/an/an3",
 		"translation/en/sujato": "sutta/an/an3",
+		"translation/pt/laera-quaresma": "sutta/an/an3",
 		"root/pli/ms": "sutta/an/an3"
 	},
 	"an3.7": {
 		"translation/de/sabbamitta": "sutta/an/an3",
 		"translation/en/sujato": "sutta/an/an3",
+		"translation/pt/laera-quaresma": "sutta/an/an3",
 		"root/pli/ms": "sutta/an/an3"
 	},
 	"an3.8": {
 		"translation/de/sabbamitta": "sutta/an/an3",
 		"translation/en/sujato": "sutta/an/an3",
+		"translation/pt/laera-quaresma": "sutta/an/an3",
 		"root/pli/ms": "sutta/an/an3"
 	},
 	"an3.9": {
@@ -433,6 +436,7 @@ const SUIDMAP = {
 	"an3.13": {
 		"translation/de/sabbamitta": "sutta/an/an3",
 		"translation/en/sujato": "sutta/an/an3",
+		"translation/pt/laera-quaresma": "sutta/an/an3",
 		"root/pli/ms": "sutta/an/an3"
 	},
 	"an3.14": {
@@ -12460,6 +12464,7 @@ const SUIDMAP = {
 	"sn5.1": {
 		"translation/de/sabbamitta": "sutta/sn/sn5",
 		"translation/en/sujato": "sutta/sn/sn5",
+		"translation/pt/laera-quaresma": "sutta/sn/sn5",
 		"root/pli/ms": "sutta/sn/sn5"
 	},
 	"sn5.2": {
