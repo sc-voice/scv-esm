@@ -232,6 +232,7 @@ const EXAMPLES = {
     "Dunklen, die für das Helle bestimmt",
     "Durchbruch",
     "durch die Versenkung geläutert",
+    "durch Glück gewonnen",
     "durch Nahrung erhalten",
     "durch Vertrauen befreit",
     "durch Weisheit befreit",
