@@ -28,7 +28,7 @@
   "devDependencies": {
     "memo-again": "^0.8.0",
     "mocha": "^10.0.0",
-    "scv-bilara": "^3.136.2",
+    "scv-bilara": "^3.136.3",
     "should": "^13.2.3",
     "suttacentral-api": "^2.10.4"
   }
