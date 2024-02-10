@@ -1,10 +1,24 @@
 const AUTHORS = {
+  "es:ebt-deepl": {
+    "type": "translation",
+    "lang": "es",
+    "author": "ebt-deepl",
+    "name": [
+      "EBT-DeepL/ES"
+    ],
+    "exampleVersion": 1,
+    "sutta": true,
+    "vinaya": false,
+    "examples": [
+      "sutta"
+    ]
+  },
   "pt:ebt-deepl": {
     "type": "translation",
     "lang": "pt",
     "author": "ebt-deepl",
     "name": [
-      "EBT-DeepL"
+      "EBT-DeepL/PT"
     ],
     "exampleVersion": 1,
     "sutta": true,

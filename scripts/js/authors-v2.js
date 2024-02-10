@@ -29,6 +29,23 @@ async function fileExists(fpath='') {
   }
 }
 
+function deeplAuthor(pubAuthors, lang) {
+  // https://github.com/sc-voice/ebt-deepl
+  let key = `${lang}:ebt-deepl`;
+  pubAuthors[key] = {
+    "type": "translation",
+    "lang": lang,
+    "author": "ebt-deepl",
+    "name": [
+      `EBT-DeepL/${lang.toUpperCase()}`
+    ],
+    "exampleVersion": 1,
+    "sutta": true,
+    "vinaya": false,
+    "examples": [ "sutta" ]
+  }
+}
+
 (async function authors() {
   const msg = "authors() ";
   try {
@@ -46,23 +63,13 @@ async function fileExists(fpath='') {
       }
     }
     let ebtPubs = JSON.parse(await fs.promises.readFile(EBT_PUBV2));
-    let pubAuthors = { 
-      // EBT-Data authors not included in SuttaCentral authors
-      "pt:ebt-deepl": { // https://github.com/sc-voice/ebt-deepl
-        "type": "translation",
-        "lang": "pt",
-        "author": "ebt-deepl",
-        "name": [
-          "EBT-DeepL"
-        ],
-        "exampleVersion": 1,
-        "sutta": true,
-        "vinaya": false,
-        "examples": [
-          "sutta"
-        ]
-      }
-    };
+
+    // Initialize with authors not included in published 
+    // SuttaCentral authors
+    let pubAuthors = {};
+    deeplAuthor(pubAuthors, 'es');
+    deeplAuthor(pubAuthors, 'pt');
+
     for (let i=0; i < ebtPubs.length; i++) {
       let v = ebtPubs[i];
       let { source_url, creator_uid, creator_name } = v;
@@ -81,7 +88,8 @@ async function fileExists(fpath='') {
         exampleVersion,
       };
       category = category || 'sutta';
-      let categoryPath = path.join(EBT_DATA_DIR, type, lang, author, category);
+      let categoryPath = path.join(EBT_DATA_DIR, 
+        type, lang, author, category);
       switch (category) {
         case 'sutta':
           info.sutta = await fileExists(categoryPath);

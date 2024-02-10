@@ -1,4 +1,7 @@
 import AUTHORSV2 from "./auto/authors-v2.mjs";
+import {
+  DBG_AUTHOR, DBG_VERBOSE,
+} from './defines.mjs';
 
 export default class AuthorsV2 {
   static get authors() {
@@ -7,9 +10,10 @@ export default class AuthorsV2 {
 
   static authorInfo(author, lang) {
     const msg = "AuthorsV2.authorInfo() ";
-    const dbg = 0;
+    const dbg = DBG_AUTHOR;
+    const dbgv = DBG_VERBOSE && dbg;
     let keys = Object.keys(AUTHORSV2);
-    let authorInfo =  keys.reduce((a,k)=>{
+    let authorInfo = keys.reduce((a,k)=>{
       let info = AUTHORSV2[k];
       if (info.author !== author) {
         return a;
@@ -18,10 +22,11 @@ export default class AuthorsV2 {
         dbg && console.log(msg, '[1]info', info.author);
         return info;
       }
+      dbg && console.log(msg, '[2]!lang', info.lang, info.author);
       return a;
     }, undefined);
 
-    dbg && console.log(msg, '[2]info', author, authorInfo);
+    dbgv && console.log(msg, '[3]info', author, authorInfo);
     return authorInfo;
   }
 
@@ -46,7 +51,7 @@ export default class AuthorsV2 {
 
   static langAuthor(lang, opts={}) {
     const msg = "AuthorsV2.langAuthor()";
-    const dbg = 0;
+    const dbg = DBG_AUTHOR;
     let {
       category='sutta',
     } = opts;
@@ -84,6 +89,9 @@ export default class AuthorsV2 {
   }
 
   static compareInfo(info1, info2) {
+    const msg = "AuthorsV2.compareInfo()";
+    const dbg = DBG_AUTHOR;
+    const dbgv = DBG_VERBOSE && dbg;
     if (info1 === info2) {
       return 0;
     }
@@ -98,6 +106,18 @@ export default class AuthorsV2 {
       cmp = info1.author.localeCompare(info2.author);
     }
     if (cmp === 0) {
+      let deepl1 = info1.author.startsWith('ebt-deepl') ? 1 : 2;
+      let deepl2 = info2.author.startsWith('ebt-deepl') ? 1 : 2;
+      let cmp = deepl1 - deepl2;
+      //if (info1.author.startsWith('ebt-deepl')) {
+        //dbgv && console.log(msg, '[1]info1', info1.name);
+        //cmp = -1;
+      //} else if (info2.author.startsWith('ebt-deepl')) {
+        //dbgv && console.log(msg, '[2]info2', info2.name);
+        //cmp = 1;
+      //}
+    }
+    if (cmp === 0) {
       cmp = info1.lang.localeCompare(info2.lang);
     }
     return cmp;
@@ -105,10 +125,10 @@ export default class AuthorsV2 {
 
   static compare(author1, author2) {
     const msg = "authors-v2.compare() ";
-    const dbg = 0;
+    const dbg = DBG_AUTHOR;
     author1 = !!author1 ? author1 : '';
     author2 = !!author2 ? author2 : '';
-    let noauthor = {};
+    let noauthor = {author:'no-author'};
     let info1 = AuthorsV2.authorInfo(author1) || noauthor;
     let info2 = AuthorsV2.authorInfo(author2) || noauthor;
 
@@ -126,23 +146,35 @@ export default class AuthorsV2 {
       return -1;
     }
 
-    let cmp = info1.exampleVersion - info2.exampleVersion;
-    dbg && console.log(msg, '[4]exampleVersion', cmp);
+    let cmp = 0;
+    if (cmp === 0) {
+      let deepl1 = info1.author.startsWith('ebt-deepl') ? 1 : 2;
+      let deepl2 = info2.author.startsWith('ebt-deepl') ? 1 : 2;
+      cmp  = deepl1 - deepl2;
+      dbg && console.log(msg, '[4]deepl', 
+        info1.author, info2.author, cmp);
+    }
+
+    if (cmp === 0) {
+      cmp = info1.exampleVersion - info2.exampleVersion;
+      dbg && console.log(msg, '[5]exampleVersion', 
+        info1.author, info2.author, cmp);
+    }
     if (!cmp) {
       cmp = author1.localeCompare(author2);
-      dbg && console.log(msg, '[5]author2', cmp);
+      dbg && console.log(msg, '[6]author2', cmp);
     }
     if (!cmp) {
       let sutta1 = info1.sutta ? 1 : 0;
       let sutta2 = info2.sutta ? 1 : 0;
       cmp = sutta1 - sutta2;
-      dbg && console.log(msg, '[6]sutta', cmp);
+      dbg && console.log(msg, '[7]sutta', cmp);
     }
     if (!cmp) {
       let vinaya1 = info1.vinaya ? 1 : 0;
       let vinaya2 = info2.vinaya ? 1 : 0;
       cmp = vinaya1 - vinaya2;
-      dbg && console.log(msg, '[7]vinaya', cmp);
+      dbg && console.log(msg, '[8]vinaya', cmp);
       return cmp;
     }
     return cmp;
