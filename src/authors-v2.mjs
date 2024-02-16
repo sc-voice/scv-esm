@@ -4,9 +4,7 @@ import {
   DBG_AUTHOR, DBG_VERBOSE,
 } from './defines.mjs';
 
-import { default as  suidMap } 
-  from './auto/suid-map.json' assert {type:'json'};
-//const suidMap = require('./auto/suid-map.json');
+import { default as  suidMap } from './auto/suid-map.mjs';
 
 export default class AuthorsV2 {
   static get authors() {
