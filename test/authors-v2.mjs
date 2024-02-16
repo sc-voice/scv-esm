@@ -2,7 +2,7 @@ import { Authors, AuthorsV2 } from "../main.mjs";
 import should from "should";
 
 typeof describe === "function" && describe("authors-v2", function () {
-  it("TESTTESTauthorInfo() => supported author info", async()=>{
+  it("authorInfo() => supported author info", async()=>{
     var ms = {
         lang: 'pli',
         type: "root",
@@ -106,17 +106,17 @@ typeof describe === "function" && describe("authors-v2", function () {
         exampleVersion: 1,
     };
 
-    should.deepEqual(AuthorsV2.authorInfo('soma', 'it'), soma);
-    should.deepEqual(AuthorsV2.authorInfo('noeismet'), noeismet);
-    should.deepEqual(AuthorsV2.authorInfo('laera-quaresma'), gnlaera);
-    should.deepEqual(AuthorsV2.authorInfo('kaz'), kaz);
-    should.deepEqual(AuthorsV2.authorInfo('soma'), soma);
-    should.deepEqual(AuthorsV2.authorInfo('ms'), ms);
-    should.deepEqual(AuthorsV2.authorInfo('sujato'), sujato);
-    should.deepEqual(AuthorsV2.authorInfo('sabbamitta'), sabbamitta);
-    should.deepEqual(AuthorsV2.authorInfo('brahmali'), brahmali);
+    should(AuthorsV2.authorInfo('soma', 'it')).properties(soma);
+    should(AuthorsV2.authorInfo('noeismet')).properties(noeismet);
+    should(AuthorsV2.authorInfo('laera-quaresma')).properties(gnlaera);
+    should(AuthorsV2.authorInfo('kaz')).properties(kaz);
+    should(AuthorsV2.authorInfo('soma')).properties(soma);
+    should(AuthorsV2.authorInfo('ms')).properties(ms);
+    should(AuthorsV2.authorInfo('sujato')).properties(sujato);
+    should(AuthorsV2.authorInfo('sabbamitta')).properties(sabbamitta);
+    should(AuthorsV2.authorInfo('brahmali')).properties(brahmali);
 
-    should.deepEqual(AuthorsV2.authorInfo('sabbamitta'), sabbamitta);
+    should(AuthorsV2.authorInfo('sabbamitta')).properties(sabbamitta);
   });
   it("authorInfo() v1 vs. v2", ()=>{
     let info1 = Authors.authorInfo('sujato');
@@ -278,6 +278,53 @@ typeof describe === "function" && describe("authors-v2", function () {
       AuthorsV2.authorInfo('ms'),
       AuthorsV2.authorInfo('brahmali'),
     ]);
+  });
+  it("buildAuthorStats()", async ()=>{
+    let stats = await AuthorsV2.buildAuthorStats();
+    let sujato = stats['en:sujato'];
+    should(sujato.sutta).above(4000).below(6000);
+    should(sujato['sutta/dn']).equal(34);
+    should(sujato['sutta/an/an1']).equal(undefined);
+
+    let sabbamitta = stats['de:sabbamitta'];
+    should(sabbamitta.sutta).above(3900).below(6000);
+    should(sabbamitta['sutta/dn']).equal(34);
+  });
+  it("buildAuthorStats() depth", async ()=>{
+    let stats = await AuthorsV2.buildAuthorStats(99);
+    let sujato = stats['en:sujato'];
+    should(sujato.sutta).above(4000).below(6000);
+    should(sujato['sutta/dn']).equal(34);
+    should(sujato['sutta/an/an1']).equal(31);
+    should(sujato['sutta/kn/thig']).equal(73);
+
+    let sabbamitta = stats['de:sabbamitta'];
+    should(sabbamitta.sutta).above(3900).below(6000);
+    should(sabbamitta['sutta/dn']).equal(34);
+    should(sabbamitta['sutta/an/an1']).equal(31);
+    should(sabbamitta['sutta/kn/thig']).equal(73);
+  });
+  it("TESTTESTsuttaAuthor()", ()=>{
+    // choose human quality over ebt-deepl quantity
+    should(AuthorsV2.suttaAuthor('an1.1-10/pt')).equal('laera-quaresma');
+
+    // choose available vs. desired translator
+    should(AuthorsV2.suttaAuthor('mil3.1.1/en/sujato')).equal('kelly');
+    should(AuthorsV2.suttaAuthor('an5.22/pt/laera-quaresma'))
+      .equal('ebt-deepl');
+    should(AuthorsV2.suttaAuthor('an5.206/pt/ebt-deepl'))
+      .equal('laera-quaresma');
+    should(AuthorsV2.suttaAuthor('mn44/pt/laera-quaresma'))
+      .equal('ebt-deepl');
+
+    // Show preferred author when no translation exists
+    should(AuthorsV2.suttaAuthor('mil2/en/sujato')).equal('sujato');
+
+    // choose author with most translations overall when two 
+    // translatators have translated same things in translation folder
+    should(AuthorsV2.suttaAuthor('thig1.1/en')).equal('sujato');
+    should(AuthorsV2.suttaAuthor('thig1.1/en/soma')).equal('soma');
+    should(AuthorsV2.suttaAuthor('thig1.1/en/sujato')).equal('sujato');
   });
 
 });

@@ -11,7 +11,14 @@ const AUTHORS = {
     "vinaya": false,
     "examples": [
       "sutta"
-    ]
+    ],
+    "stats": {
+      "sutta": 3,
+      "sutta/mn": 1,
+      "sutta/sn": 2,
+      "sutta/sn/sn3": 1,
+      "sutta/sn/sn41": 1
+    }
   },
   "pt:ebt-deepl": {
     "type": "translation",
@@ -25,7 +32,18 @@ const AUTHORS = {
     "vinaya": false,
     "examples": [
       "sutta"
-    ]
+    ],
+    "stats": {
+      "sutta": 28,
+      "sutta/an": 26,
+      "sutta/an/an1": 20,
+      "sutta/an/an3": 3,
+      "sutta/an/an4": 2,
+      "sutta/an/an5": 1,
+      "sutta/mn": 1,
+      "sutta/sn": 1,
+      "sutta/sn/sn41": 1
+    }
   },
   "en:sujato": {
     "type": "translation",
@@ -39,7 +57,114 @@ const AUTHORS = {
     "vinaya": false,
     "examples": [
       "sutta"
-    ]
+    ],
+    "stats": {
+      "sutta": 4085,
+      "sutta/an": 1408,
+      "sutta/an/an1": 31,
+      "sutta/an/an2": 19,
+      "sutta/an/an3": 158,
+      "sutta/an/an4": 278,
+      "sutta/an/an5": 271,
+      "sutta/an/an6": 125,
+      "sutta/an/an7": 101,
+      "sutta/an/an8": 96,
+      "sutta/an/an9": 82,
+      "sutta/an/an10": 211,
+      "sutta/an/an11": 36,
+      "sutta/kn": 672,
+      "sutta/kn/cp": 35,
+      "sutta/kn/dhp": 26,
+      "sutta/dn": 34,
+      "sutta/kn/iti": 112,
+      "sutta/kn/iti/vagga1": 10,
+      "sutta/kn/iti/vagga2": 10,
+      "sutta/kn/iti/vagga3": 7,
+      "sutta/kn/iti/vagga4": 10,
+      "sutta/kn/iti/vagga5": 12,
+      "sutta/kn/iti/vagga6": 10,
+      "sutta/kn/iti/vagga7": 10,
+      "sutta/kn/iti/vagga8": 10,
+      "sutta/kn/iti/vagga9": 10,
+      "sutta/kn/iti/vagga10": 10,
+      "sutta/kn/iti/vagga11": 13,
+      "sutta/kn/kp": 9,
+      "sutta/mn": 152,
+      "sutta/sn": 1819,
+      "sutta/sn/sn1": 81,
+      "sutta/sn/sn2": 30,
+      "sutta/sn/sn3": 25,
+      "sutta/sn/sn4": 25,
+      "sutta/sn/sn5": 10,
+      "sutta/sn/sn6": 15,
+      "sutta/sn/sn7": 22,
+      "sutta/sn/sn8": 12,
+      "sutta/sn/sn9": 14,
+      "sutta/sn/sn10": 12,
+      "sutta/sn/sn11": 25,
+      "sutta/sn/sn12": 75,
+      "sutta/sn/sn13": 11,
+      "sutta/sn/sn14": 39,
+      "sutta/sn/sn15": 20,
+      "sutta/sn/sn16": 13,
+      "sutta/sn/sn17": 31,
+      "sutta/sn/sn18": 14,
+      "sutta/sn/sn19": 21,
+      "sutta/sn/sn20": 12,
+      "sutta/sn/sn21": 12,
+      "sutta/sn/sn22": 159,
+      "sutta/sn/sn23": 26,
+      "sutta/sn/sn24": 35,
+      "sutta/sn/sn25": 10,
+      "sutta/sn/sn26": 10,
+      "sutta/sn/sn27": 10,
+      "sutta/sn/sn28": 10,
+      "sutta/sn/sn29": 12,
+      "sutta/sn/sn30": 6,
+      "sutta/sn/sn31": 6,
+      "sutta/sn/sn32": 9,
+      "sutta/sn/sn33": 16,
+      "sutta/sn/sn34": 27,
+      "sutta/sn/sn35": 201,
+      "sutta/sn/sn36": 31,
+      "sutta/sn/sn37": 34,
+      "sutta/sn/sn38": 16,
+      "sutta/sn/sn39": 2,
+      "sutta/sn/sn40": 11,
+      "sutta/sn/sn41": 10,
+      "sutta/sn/sn42": 13,
+      "sutta/sn/sn43": 15,
+      "sutta/sn/sn44": 11,
+      "sutta/sn/sn45": 114,
+      "sutta/sn/sn46": 87,
+      "sutta/sn/sn47": 55,
+      "sutta/sn/sn48": 80,
+      "sutta/sn/sn49": 5,
+      "sutta/sn/sn50": 10,
+      "sutta/sn/sn51": 37,
+      "sutta/sn/sn52": 24,
+      "sutta/sn/sn53": 5,
+      "sutta/sn/sn54": 20,
+      "sutta/sn/sn55": 74,
+      "sutta/sn/sn56": 109,
+      "sutta/kn/snp": 73,
+      "sutta/kn/snp/vagga1": 12,
+      "sutta/kn/snp/vagga2": 14,
+      "sutta/kn/snp/vagga3": 12,
+      "sutta/kn/snp/vagga4": 16,
+      "sutta/kn/snp/vagga5": 19,
+      "sutta/kn/thag": 264,
+      "sutta/kn/thig": 73,
+      "sutta/kn/ud": 80,
+      "sutta/kn/ud/vagga1": 10,
+      "sutta/kn/ud/vagga2": 10,
+      "sutta/kn/ud/vagga3": 10,
+      "sutta/kn/ud/vagga4": 10,
+      "sutta/kn/ud/vagga5": 10,
+      "sutta/kn/ud/vagga6": 10,
+      "sutta/kn/ud/vagga7": 10,
+      "sutta/kn/ud/vagga8": 10
+    }
   },
   "en:brahmali": {
     "type": "translation",
@@ -49,7 +174,27 @@ const AUTHORS = {
       "Bhikkhu Brahmali"
     ],
     "exampleVersion": 0,
-    "vinaya": true
+    "vinaya": true,
+    "stats": {
+      "vinaya": 427,
+      "vinaya/pli-tv-bi-vb": 131,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-np": 12,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pc": 94,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pd": 2,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pj": 9,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-sk": 2,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-ss": 10,
+      "vinaya/pli-tv-bu-vb": 221,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-ay": 2,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-np": 30,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-pc": 92,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-pd": 4,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-pj": 4,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-sk": 75,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-ss": 13,
+      "vinaya/pli-tv-kd": 22,
+      "vinaya/pli-tv-pvr": 51
+    }
   },
   "de:sabbamitta": {
     "type": "translation",
@@ -63,7 +208,115 @@ const AUTHORS = {
     "vinaya": false,
     "examples": [
       "sutta"
-    ]
+    ],
+    "stats": {
+      "sutta": 3931,
+      "sutta/an": 1408,
+      "sutta/an/an1": 31,
+      "sutta/an/an2": 19,
+      "sutta/an/an3": 158,
+      "sutta/an/an4": 278,
+      "sutta/an/an5": 271,
+      "sutta/an/an6": 125,
+      "sutta/an/an7": 101,
+      "sutta/an/an8": 96,
+      "sutta/an/an9": 82,
+      "sutta/an/an10": 211,
+      "sutta/an/an11": 36,
+      "sutta/kn": 615,
+      "sutta/kn/cp": 34,
+      "sutta/kn/dhp": 26,
+      "sutta/dn": 34,
+      "sutta/kn/iti": 112,
+      "sutta/kn/iti/vagga1": 10,
+      "sutta/kn/iti/vagga2": 10,
+      "sutta/kn/iti/vagga3": 7,
+      "sutta/kn/iti/vagga4": 10,
+      "sutta/kn/iti/vagga5": 12,
+      "sutta/kn/iti/vagga6": 10,
+      "sutta/kn/iti/vagga7": 10,
+      "sutta/kn/iti/vagga8": 10,
+      "sutta/kn/iti/vagga9": 10,
+      "sutta/kn/iti/vagga10": 10,
+      "sutta/kn/iti/vagga11": 13,
+      "sutta/kn/kp": 9,
+      "sutta/kn/mil": 1,
+      "sutta/mn": 55,
+      "sutta/sn": 1819,
+      "sutta/sn/sn1": 81,
+      "sutta/sn/sn2": 30,
+      "sutta/sn/sn3": 25,
+      "sutta/sn/sn4": 25,
+      "sutta/sn/sn5": 10,
+      "sutta/sn/sn6": 15,
+      "sutta/sn/sn7": 22,
+      "sutta/sn/sn8": 12,
+      "sutta/sn/sn9": 14,
+      "sutta/sn/sn10": 12,
+      "sutta/sn/sn11": 25,
+      "sutta/sn/sn12": 75,
+      "sutta/sn/sn13": 11,
+      "sutta/sn/sn14": 39,
+      "sutta/sn/sn15": 20,
+      "sutta/sn/sn16": 13,
+      "sutta/sn/sn17": 31,
+      "sutta/sn/sn18": 14,
+      "sutta/sn/sn19": 21,
+      "sutta/sn/sn20": 12,
+      "sutta/sn/sn21": 12,
+      "sutta/sn/sn22": 159,
+      "sutta/sn/sn23": 26,
+      "sutta/sn/sn24": 35,
+      "sutta/sn/sn25": 10,
+      "sutta/sn/sn26": 10,
+      "sutta/sn/sn27": 10,
+      "sutta/sn/sn28": 10,
+      "sutta/sn/sn29": 12,
+      "sutta/sn/sn30": 6,
+      "sutta/sn/sn31": 6,
+      "sutta/sn/sn32": 9,
+      "sutta/sn/sn33": 16,
+      "sutta/sn/sn34": 27,
+      "sutta/sn/sn35": 201,
+      "sutta/sn/sn36": 31,
+      "sutta/sn/sn37": 34,
+      "sutta/sn/sn38": 16,
+      "sutta/sn/sn39": 2,
+      "sutta/sn/sn40": 11,
+      "sutta/sn/sn41": 10,
+      "sutta/sn/sn42": 13,
+      "sutta/sn/sn43": 15,
+      "sutta/sn/sn44": 11,
+      "sutta/sn/sn45": 114,
+      "sutta/sn/sn46": 87,
+      "sutta/sn/sn47": 55,
+      "sutta/sn/sn48": 80,
+      "sutta/sn/sn49": 5,
+      "sutta/sn/sn50": 10,
+      "sutta/sn/sn51": 37,
+      "sutta/sn/sn52": 24,
+      "sutta/sn/sn53": 5,
+      "sutta/sn/sn54": 20,
+      "sutta/sn/sn55": 74,
+      "sutta/sn/sn56": 109,
+      "sutta/kn/snp": 16,
+      "sutta/kn/snp/vagga1": 5,
+      "sutta/kn/snp/vagga2": 6,
+      "sutta/kn/snp/vagga3": 1,
+      "sutta/kn/snp/vagga4": 1,
+      "sutta/kn/snp/vagga5": 3,
+      "sutta/kn/thag": 264,
+      "sutta/kn/thig": 73,
+      "sutta/kn/ud": 80,
+      "sutta/kn/ud/vagga1": 10,
+      "sutta/kn/ud/vagga2": 10,
+      "sutta/kn/ud/vagga3": 10,
+      "sutta/kn/ud/vagga4": 10,
+      "sutta/kn/ud/vagga5": 10,
+      "sutta/kn/ud/vagga6": 10,
+      "sutta/kn/ud/vagga7": 10,
+      "sutta/kn/ud/vagga8": 10
+    }
   },
   "ru:team": {
     "type": "translation",
@@ -87,7 +340,16 @@ const AUTHORS = {
     "sutta": true,
     "examples": [
       "sutta"
-    ]
+    ],
+    "stats": {
+      "sutta": 56,
+      "sutta/an": 56,
+      "sutta/an/an1": 31,
+      "sutta/an/an2": 15,
+      "sutta/an/an3": 5,
+      "sutta/an/an4": 4,
+      "sutta/an/an11": 1
+    }
   },
   "pt:laera-quaresma": {
     "type": "translation",
@@ -103,7 +365,24 @@ const AUTHORS = {
     "vinaya": false,
     "examples": [
       "sutta"
-    ]
+    ],
+    "stats": {
+      "sutta": 169,
+      "sutta/an": 81,
+      "sutta/an/an1": 20,
+      "sutta/an/an2": 7,
+      "sutta/an/an3": 48,
+      "sutta/an/an4": 2,
+      "sutta/an/an5": 4,
+      "sutta/mn": 1,
+      "sutta/sn": 86,
+      "sutta/sn/sn1": 63,
+      "sutta/sn/sn2": 22,
+      "sutta/sn/sn5": 1,
+      "sutta/kn": 1,
+      "sutta/kn/snp": 1,
+      "sutta/kn/snp/vagga5": 1
+    }
   },
   "en:soma": {
     "type": "translation",
@@ -113,7 +392,12 @@ const AUTHORS = {
       "Bhikkhuni Soma"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 73,
+      "sutta/kn": 73,
+      "sutta/kn/thig": 73
+    }
   },
   "cs:ashinsarana": {
     "type": "translation",
@@ -123,7 +407,12 @@ const AUTHORS = {
       "Ashin Saraṅa"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 276,
+      "sutta/an": 276,
+      "sutta/an/an4": 276
+    }
   },
   "my:my-team": {
     "type": "translation",
@@ -133,7 +422,11 @@ const AUTHORS = {
       "Nyein Chan Aye"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 4,
+      "sutta/dn": 4
+    }
   },
   "en:kovilo": {
     "type": "translation",
@@ -143,7 +436,12 @@ const AUTHORS = {
       "Kovilo Bhikkhu"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 1,
+      "sutta/an": 1,
+      "sutta/an/an4": 1
+    }
   },
   "pli:ms": {
     "type": "root",
@@ -154,7 +452,144 @@ const AUTHORS = {
     ],
     "exampleVersion": 999999,
     "sutta": true,
-    "vinaya": true
+    "vinaya": true,
+    "stats": {
+      "sutta": 5764,
+      "sutta/an": 1408,
+      "sutta/an/an1": 31,
+      "sutta/an/an2": 19,
+      "sutta/an/an3": 158,
+      "sutta/an/an4": 278,
+      "sutta/an/an5": 271,
+      "sutta/an/an6": 125,
+      "sutta/an/an7": 101,
+      "sutta/an/an8": 96,
+      "sutta/an/an9": 82,
+      "sutta/an/an10": 211,
+      "sutta/an/an11": 36,
+      "sutta/kn": 2351,
+      "sutta/kn/cp": 35,
+      "sutta/kn/dhp": 26,
+      "sutta/dn": 34,
+      "sutta/kn/iti": 112,
+      "sutta/kn/iti/vagga1": 10,
+      "sutta/kn/iti/vagga2": 10,
+      "sutta/kn/iti/vagga3": 7,
+      "sutta/kn/iti/vagga4": 10,
+      "sutta/kn/iti/vagga5": 12,
+      "sutta/kn/iti/vagga6": 10,
+      "sutta/kn/iti/vagga7": 10,
+      "sutta/kn/iti/vagga8": 10,
+      "sutta/kn/iti/vagga9": 10,
+      "sutta/kn/iti/vagga10": 10,
+      "sutta/kn/iti/vagga11": 13,
+      "sutta/kn/kp": 9,
+      "sutta/kn/mil": 248,
+      "sutta/mn": 152,
+      "vinaya": 427,
+      "vinaya/pli-tv-bi-vb": 131,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-np": 12,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pc": 94,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pd": 2,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-pj": 9,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-sk": 2,
+      "vinaya/pli-tv-bi-vb/pli-tv-bi-vb-ss": 10,
+      "vinaya/pli-tv-bu-vb": 221,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-ay": 2,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-np": 30,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-pc": 92,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-pd": 4,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-pj": 4,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-sk": 75,
+      "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-ss": 13,
+      "vinaya/pli-tv-kd": 22,
+      "vinaya/pli-tv-pvr": 51,
+      "sutta/sn": 1819,
+      "sutta/sn/sn1": 81,
+      "sutta/sn/sn2": 30,
+      "sutta/sn/sn3": 25,
+      "sutta/sn/sn4": 25,
+      "sutta/sn/sn5": 10,
+      "sutta/sn/sn6": 15,
+      "sutta/sn/sn7": 22,
+      "sutta/sn/sn8": 12,
+      "sutta/sn/sn9": 14,
+      "sutta/sn/sn10": 12,
+      "sutta/sn/sn11": 25,
+      "sutta/sn/sn12": 75,
+      "sutta/sn/sn13": 11,
+      "sutta/sn/sn14": 39,
+      "sutta/sn/sn15": 20,
+      "sutta/sn/sn16": 13,
+      "sutta/sn/sn17": 31,
+      "sutta/sn/sn18": 14,
+      "sutta/sn/sn19": 21,
+      "sutta/sn/sn20": 12,
+      "sutta/sn/sn21": 12,
+      "sutta/sn/sn22": 159,
+      "sutta/sn/sn23": 26,
+      "sutta/sn/sn24": 35,
+      "sutta/sn/sn25": 10,
+      "sutta/sn/sn26": 10,
+      "sutta/sn/sn27": 10,
+      "sutta/sn/sn28": 10,
+      "sutta/sn/sn29": 12,
+      "sutta/sn/sn30": 6,
+      "sutta/sn/sn31": 6,
+      "sutta/sn/sn32": 9,
+      "sutta/sn/sn33": 16,
+      "sutta/sn/sn34": 27,
+      "sutta/sn/sn35": 201,
+      "sutta/sn/sn36": 31,
+      "sutta/sn/sn37": 34,
+      "sutta/sn/sn38": 16,
+      "sutta/sn/sn39": 2,
+      "sutta/sn/sn40": 11,
+      "sutta/sn/sn41": 10,
+      "sutta/sn/sn42": 13,
+      "sutta/sn/sn43": 15,
+      "sutta/sn/sn44": 11,
+      "sutta/sn/sn45": 114,
+      "sutta/sn/sn46": 87,
+      "sutta/sn/sn47": 55,
+      "sutta/sn/sn48": 80,
+      "sutta/sn/sn49": 5,
+      "sutta/sn/sn50": 10,
+      "sutta/sn/sn51": 37,
+      "sutta/sn/sn52": 24,
+      "sutta/sn/sn53": 5,
+      "sutta/sn/sn54": 20,
+      "sutta/sn/sn55": 74,
+      "sutta/sn/sn56": 109,
+      "sutta/kn/snp": 73,
+      "sutta/kn/snp/vagga1": 12,
+      "sutta/kn/snp/vagga2": 14,
+      "sutta/kn/snp/vagga3": 12,
+      "sutta/kn/snp/vagga4": 16,
+      "sutta/kn/snp/vagga5": 19,
+      "sutta/kn/thag": 264,
+      "sutta/kn/thig": 73,
+      "sutta/kn/ud": 80,
+      "sutta/kn/ud/vagga1": 10,
+      "sutta/kn/ud/vagga2": 10,
+      "sutta/kn/ud/vagga3": 10,
+      "sutta/kn/ud/vagga4": 10,
+      "sutta/kn/ud/vagga5": 10,
+      "sutta/kn/ud/vagga6": 10,
+      "sutta/kn/ud/vagga7": 10,
+      "sutta/kn/ud/vagga8": 10,
+      "sutta/kn/bv": 29,
+      "sutta/kn/cnd": 23,
+      "sutta/kn/ja": 547,
+      "sutta/kn/mnd": 16,
+      "sutta/kn/ne": 37,
+      "sutta/kn/pe": 9,
+      "sutta/kn/ps": 31,
+      "sutta/kn/pv": 51,
+      "sutta/kn/tha-ap": 563,
+      "sutta/kn/thi-ap": 40,
+      "sutta/kn/vv": 85
+    }
   },
   "vi:phantuananh": {
     "type": "translation",
@@ -164,7 +599,12 @@ const AUTHORS = {
       "Bhikkhu Thích Minh Châu"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 26,
+      "sutta/kn": 26,
+      "sutta/kn/dhp": 26
+    }
   },
   "fi:mudito": {
     "type": "translation",
@@ -174,7 +614,12 @@ const AUTHORS = {
       "Ajahn Mudito"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 1,
+      "sutta/an": 1,
+      "sutta/an/an1": 1
+    }
   },
   "pl:hardao": {
     "type": "translation",
@@ -184,7 +629,36 @@ const AUTHORS = {
       "Piotr Jagodziński"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 46,
+      "sutta/an": 16,
+      "sutta/an/an3": 5,
+      "sutta/an/an4": 6,
+      "sutta/an/an5": 1,
+      "sutta/an/an8": 2,
+      "sutta/an/an10": 1,
+      "sutta/an/an11": 1,
+      "sutta/dn": 1,
+      "sutta/kn": 6,
+      "sutta/kn/kp": 2,
+      "sutta/mn": 10,
+      "sutta/sn": 13,
+      "sutta/sn/sn12": 3,
+      "sutta/sn/sn16": 1,
+      "sutta/sn/sn20": 1,
+      "sutta/sn/sn22": 2,
+      "sutta/sn/sn35": 1,
+      "sutta/sn/sn44": 1,
+      "sutta/sn/sn45": 1,
+      "sutta/sn/sn47": 2,
+      "sutta/sn/sn51": 1,
+      "sutta/kn/snp": 2,
+      "sutta/kn/snp/vagga1": 1,
+      "sutta/kn/snp/vagga2": 1,
+      "sutta/kn/ud": 2,
+      "sutta/kn/ud/vagga8": 2
+    }
   },
   "en:suddhaso": {
     "type": "translation",
@@ -194,7 +668,12 @@ const AUTHORS = {
       "Bhante Suddhāso"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 13,
+      "sutta/kn": 13,
+      "sutta/kn/dhp": 13
+    }
   },
   "lt:piyadassi": {
     "type": "translation",
@@ -204,7 +683,54 @@ const AUTHORS = {
       "Sayalay Piyadassi"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 233,
+      "sutta/an": 46,
+      "sutta/an/an1": 2,
+      "sutta/an/an3": 2,
+      "sutta/an/an4": 4,
+      "sutta/an/an5": 10,
+      "sutta/an/an6": 6,
+      "sutta/an/an7": 7,
+      "sutta/an/an8": 3,
+      "sutta/an/an9": 5,
+      "sutta/an/an10": 6,
+      "sutta/an/an11": 1,
+      "sutta/dn": 2,
+      "sutta/kn": 44,
+      "sutta/kn/iti": 38,
+      "sutta/kn/iti/vagga1": 10,
+      "sutta/kn/iti/vagga2": 10,
+      "sutta/kn/iti/vagga3": 7,
+      "sutta/kn/iti/vagga4": 10,
+      "sutta/kn/iti/vagga5": 1,
+      "sutta/mn": 22,
+      "sutta/sn": 119,
+      "sutta/sn/sn1": 3,
+      "sutta/sn/sn2": 1,
+      "sutta/sn/sn11": 3,
+      "sutta/sn/sn12": 7,
+      "sutta/sn/sn15": 20,
+      "sutta/sn/sn22": 17,
+      "sutta/sn/sn35": 19,
+      "sutta/sn/sn36": 1,
+      "sutta/sn/sn45": 2,
+      "sutta/sn/sn46": 23,
+      "sutta/sn/sn47": 1,
+      "sutta/sn/sn48": 1,
+      "sutta/sn/sn49": 1,
+      "sutta/sn/sn50": 1,
+      "sutta/sn/sn51": 1,
+      "sutta/sn/sn53": 1,
+      "sutta/sn/sn54": 7,
+      "sutta/sn/sn55": 2,
+      "sutta/sn/sn56": 8,
+      "sutta/kn/snp": 6,
+      "sutta/kn/snp/vagga1": 1,
+      "sutta/kn/snp/vagga2": 1,
+      "sutta/kn/snp/vagga5": 4
+    }
   },
   "sr:brankokovacevic": {
     "type": "translation",
@@ -214,7 +740,24 @@ const AUTHORS = {
       "Branislav Kovačević"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 150,
+      "sutta/dn": 34,
+      "sutta/mn": 12,
+      "sutta/sn": 24,
+      "sutta/sn/sn1": 24,
+      "sutta/kn": 80,
+      "sutta/kn/ud": 80,
+      "sutta/kn/ud/vagga1": 10,
+      "sutta/kn/ud/vagga2": 10,
+      "sutta/kn/ud/vagga3": 10,
+      "sutta/kn/ud/vagga4": 10,
+      "sutta/kn/ud/vagga5": 10,
+      "sutta/kn/ud/vagga6": 10,
+      "sutta/kn/ud/vagga7": 10,
+      "sutta/kn/ud/vagga8": 10
+    }
   },
   "fr:noeismet": {
     "type": "translation",
@@ -227,7 +770,27 @@ const AUTHORS = {
     "sutta": true,
     "examples": [
       "sutta"
-    ]
+    ],
+    "stats": {
+      "sutta": 46,
+      "sutta/an": 10,
+      "sutta/an/an1": 1,
+      "sutta/an/an3": 3,
+      "sutta/an/an4": 2,
+      "sutta/an/an7": 1,
+      "sutta/an/an8": 2,
+      "sutta/an/an11": 1,
+      "sutta/dn": 4,
+      "sutta/mn": 20,
+      "sutta/sn": 12,
+      "sutta/sn/sn3": 2,
+      "sutta/sn/sn15": 4,
+      "sutta/sn/sn22": 2,
+      "sutta/sn/sn35": 1,
+      "sutta/sn/sn42": 1,
+      "sutta/sn/sn48": 1,
+      "sutta/sn/sn56": 1
+    }
   },
   "fr:sekha": {
     "type": "translation",
@@ -237,7 +800,19 @@ const AUTHORS = {
       "Bhikkhu Sekha"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 152,
+      "sutta/an": 57,
+      "sutta/an/an1": 31,
+      "sutta/an/an2": 1,
+      "sutta/an/an10": 2,
+      "sutta/an/an11": 23,
+      "sutta/sn": 95,
+      "sutta/sn/sn54": 20,
+      "sutta/sn/sn55": 47,
+      "sutta/sn/sn56": 28
+    }
   },
   "pl:marcinow": {
     "type": "translation",
@@ -247,7 +822,12 @@ const AUTHORS = {
       "Piotr Marcinów"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 10,
+      "sutta/sn": 10,
+      "sutta/sn/sn56": 10
+    }
   },
   "ru:sv": {
     "type": "translation",
@@ -257,7 +837,11 @@ const AUTHORS = {
       "SV theravada.ru"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 81,
+      "sutta/mn": 81
+    }
   },
   "es:maggatr": {
     "type": "translation",
@@ -267,7 +851,17 @@ const AUTHORS = {
       "Magga Traducciones"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 8,
+      "sutta/an": 5,
+      "sutta/an/an2": 1,
+      "sutta/an/an3": 2,
+      "sutta/an/an8": 2,
+      "sutta/sn": 3,
+      "sutta/sn/sn3": 2,
+      "sutta/sn/sn36": 1
+    }
   },
   "en:kelly": {
     "type": "translation",
@@ -277,7 +871,12 @@ const AUTHORS = {
       "John Kelly"
     ],
     "exampleVersion": 0,
-    "sutta": true
+    "sutta": true,
+    "stats": {
+      "sutta": 67,
+      "sutta/kn": 67,
+      "sutta/kn/mil": 67
+    }
   }
 }
 

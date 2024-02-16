@@ -1,7 +1,12 @@
 import AUTHORSV2 from "./auto/authors-v2.mjs";
+import { default as SuttaRef } from './sutta-ref.mjs';
 import {
   DBG_AUTHOR, DBG_VERBOSE,
 } from './defines.mjs';
+
+import { default as  suidMap } 
+  from './auto/suid-map.json' assert {type:'json'};
+//const suidMap = require('./auto/suid-map.json');
 
 export default class AuthorsV2 {
   static get authors() {
@@ -19,16 +24,40 @@ export default class AuthorsV2 {
         return a;
       }
       if (info.lang === lang || a==null) {
-        dbg && console.log(msg, '[1]info', info.author);
+        dbgv && console.log(msg, '[1]info', info.author);
         return info;
       }
-      dbg && console.log(msg, '[2]!lang', info.lang, info.author);
+      dbgv && console.log(msg, '[2]!lang', info.lang, info.author);
       return a;
     }, undefined);
-
     dbgv && console.log(msg, '[3]info', author, authorInfo);
     return authorInfo;
   }
+
+  static buildAuthorStats(depth=2) {
+    let suids = Object.keys(suidMap);
+    let map = suids.reduce((aMap,suid)=>{
+      let transObj = suidMap[suid];
+      let transKeys = Object.keys(transObj);
+      transKeys.forEach(transKey=>{
+        let [ ignore, lang, author ] = transKey.split('/');
+        let langAuthor = `${lang}:${author}`;
+        let authLangEntry = aMap[langAuthor] = aMap[langAuthor] || {};
+
+        let transDir = transObj[transKey];
+        let dirParts = transDir.split('/');
+        for (let end=1; end <= Math.min(depth,dirParts.length); end++) {
+          let key = dirParts.slice(0, end).join('/');
+          authLangEntry[key] = authLangEntry[key] || 0;
+          authLangEntry[key]++;
+        }
+      });
+      return aMap;
+    }, {});
+
+    return map;
+  }
+
 
   static find(opts={}) {
     let { author, exampleVersion, lang, sutta, vinaya } = opts;
@@ -178,6 +207,47 @@ export default class AuthorsV2 {
       return cmp;
     }
     return cmp;
+  }
+
+  static suttaAuthor(suttaRef) {
+    const msg = 'AuthorsV2.suttaAuthor()';
+    const dbg = DBG_AUTHOR;
+    let { 
+      sutta_uid, lang, author 
+    } = SuttaRef.create(suttaRef);
+    const MAX_SCORE = 10000;
+    let bPaths = suidMap[sutta_uid];
+    if (bPaths == null) {
+      return undefined;
+    }
+
+    let bpks = Object.keys(bPaths);
+    let score = -1; // default
+    let suttaAuthor = bpks.reduce((a,bpk)=>{
+      let bpv = bPaths[bpk] || '';
+      let [ ignore, bpLang, bpAuthor ] = bpk.split('/');
+      let info = AuthorsV2.authorInfo(bpAuthor, bpLang); 
+      let { stats } = info;
+      let bpvParts = bpv && bpv.split('/');
+      let bpScore = (stats[bpv]||0) + (stats[bpvParts[0]]||0)/MAX_SCORE;
+      if (bpLang === lang) {
+        if (bpAuthor === author) {
+          a = bpAuthor;
+          score = MAX_SCORE;
+          dbg && console.log(msg, '[1]bpAuthor', 
+            {bpLang, bpAuthor, bpk, bpv, bpScore});
+        } else if (bpScore > score) {
+          score = bpScore;
+          a = bpAuthor;
+          dbg && console.log(msg, '[2]bpScore', 
+            {bpLang, lang, bpk, bpv, bpScore});
+        }
+      }
+      return a;
+    }, author);
+
+    dbg && console.log(msg, '[3]suttaAuthor', suttaAuthor); 
+    return suttaAuthor;
   }
 }
 
