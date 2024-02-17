@@ -227,7 +227,9 @@ export default class AuthorsV2 {
       let info = AuthorsV2.authorInfo(bpAuthor, bpLang); 
       let { stats } = info;
       let bpvParts = bpv && bpv.split('/');
-      let bpScore = (stats[bpv]||0) + (stats[bpvParts[0]]||0)/MAX_SCORE;
+      let bpScore = bpAuthor.endsWith('ebt-deepl')
+        ? 1
+        : (stats[bpv]||0) + (stats[bpvParts[0]]||0)/MAX_SCORE;
       if (bpLang === lang) {
         if (bpAuthor === author) {
           a = bpAuthor;
