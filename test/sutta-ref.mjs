@@ -361,4 +361,31 @@ typeof describe === "function" &&
       should(res).equal(undefined);
       should(eCaught.message).match(/(thig11?)/);
     });
+    it("TESTTESTcreateOpts() existing parameters", ()=>{
+      const suids = {
+        filter: ()=>['thig1.1-10'],
+      };
+      const defaultLang = 'de';
+
+      // existing parameters
+      should.deepEqual(SuttaRef.createOpts('thig1.1/en/soma'),
+        SuttaRef.create('thig1.1/en/soma'));
+      should.deepEqual(SuttaRef.createOpts('thig1.1', {defaultLang}),
+        SuttaRef.create('thig1.1', 'de'));
+      should.deepEqual(
+        SuttaRef.createOpts('thig1.1', {defaultLang, suids}),
+        SuttaRef.create('thig1.1', 'de', suids));
+      should.deepEqual(
+        SuttaRef.createOpts('thig1.1', {suids}),
+        SuttaRef.create('thig1.1', undefined, suids));
+    });
+    it("TESTTESTcreateOpts() new parameters", ()=>{
+      const suids = {
+        filter: ()=>['thig1.1-10'],
+      };
+      const normalize = true;
+
+      should.deepEqual(SuttaRef.createOpts('mil3.1.1/en', {normalize}),
+        SuttaRef.create('mil3.1.1/en/kelly'));
+    });
   });

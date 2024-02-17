@@ -1,6 +1,7 @@
 import SuttaCentralId from './sutta-central-id.mjs';
 import SuidMap from './auto/suid-map.mjs';
 import { logger } from "log-instance/index.mjs";
+import AuthorsV2 from './authors-v2.mjs';
 import {
   DBG_SUTTA_REF,
 } from "./defines.mjs"
@@ -160,6 +161,26 @@ export default class SuttaRef {
     }
 
     return null;
+  }
+
+  static createOpts(strOrObj, opts={}) {
+    let {
+      defaultLang = 'pli',
+      suids = SUIDS,
+      normalize = false,
+    } = opts;
+
+    let sref = SuttaRef.create(strOrObj, defaultLang, suids);
+
+    if (normalize) {
+      let { sutta_uid, lang, author, segnum } = sref;
+      if (author == null) {
+        author = AuthorsV2.suttaAuthor(sref);
+        sref = SuttaRef.create({sutta_uid, lang, author, segnum});
+      }
+    }
+
+    return sref;
   }
 
   static createWithError(strOrObj, defaultLang="pli", suids=SUIDS) {
