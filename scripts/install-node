@@ -1,6 +1,7 @@
 #!/bin/bash
 SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
+
 RQDVER=$1
 if [ ! -x /usr/bin/curl ]; then
     echo -e "${SCRIPT}: apt-get install curl"
