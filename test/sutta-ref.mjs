@@ -19,6 +19,15 @@ typeof describe === "function" &&
       let suttaRef2 = new SuttaRef(suttaRef);
       should(suttaRef2).properties({ sutta_uid, lang, author, segnum });
     });
+    it("TESTTESTcreate(...) jpn", () => {
+      let sutta_uid = 'an1.31-40';
+      let lang = 'jpn';
+      let author = 'kaz';
+      should(SuttaRef.create(sutta_uid, lang))
+        .properties({sutta_uid, lang, author:undefined});
+      should(SuttaRef.create(`${sutta_uid}/${lang}/${author}`))
+        .properties({sutta_uid, lang, author});
+    });
     it("create(...) => SuttaRef", () => {
       let defaultLang = "default-lang";
       let author = "tst-author";
@@ -43,7 +52,8 @@ typeof describe === "function" &&
         author: undefined,
         segnum: undefined,
       });
-      should(SuttaRef.create(`${sutta_uid}/${lang}:${segnum}`)).properties({
+      should(SuttaRef.create(`${sutta_uid}/${lang}:${segnum}`))
+      .properties({
         sutta_uid,
         lang,
         author: undefined,
@@ -64,15 +74,19 @@ typeof describe === "function" &&
 
       // string sutta reference defaultLang
       should(
-        SuttaRef.create(`${sutta_uid}:${segnum}/${lang}/${author}`, defaultLang)
+        SuttaRef.create(`${sutta_uid}:${segnum}/${lang}/${author}`, 
+          defaultLang)
       ).properties({ sutta_uid, lang, author, segnum });
       should(
-        SuttaRef.create(`${sutta_uid}/${lang}/${author}:${segnum}`, defaultLang)
+        SuttaRef.create(`${sutta_uid}/${lang}/${author}:${segnum}`, 
+          defaultLang)
       ).properties({ sutta_uid, lang, author, segnum });
       should(
         SuttaRef.create(`${sutta_uid}/${lang}/${author}`, defaultLang)
       ).properties({ sutta_uid, lang, author, segnum: undefined });
-      should(SuttaRef.create(`${sutta_uid}/${lang}`, defaultLang)).properties({
+      should(
+        SuttaRef.create(`${sutta_uid}/${lang}`, defaultLang)
+      ).properties({
         sutta_uid,
         lang,
         author: undefined,
@@ -90,9 +104,11 @@ typeof describe === "function" &&
         author: undefined,
         segnum: undefined,
       });
-      should(SuttaRef.create(`${sutta_uid}:${segnum}`, defaultLang)).properties(
-        { sutta_uid, lang: defaultLang, author: undefined, segnum }
-      );
+      should(
+        SuttaRef.create(`${sutta_uid}:${segnum}`, defaultLang)
+      ).properties({ 
+        sutta_uid, lang: defaultLang, author: undefined, segnum 
+      });
     });
     it("createFromString()", ()=>{
       // 2024-01-00 -- KML
@@ -361,7 +377,7 @@ typeof describe === "function" &&
       should(res).equal(undefined);
       should(eCaught.message).match(/(thig11?)/);
     });
-    it("TESTTESTcreate() creates copy", ()=>{
+    it("create() creates copy", ()=>{
       let sref1 = SuttaRef.create("thig1.1");
       let sref2 = SuttaRef.create(sref1);
 
@@ -369,7 +385,7 @@ typeof describe === "function" &&
       should(sref1 === sref2).equal(false);
       should(sref1).not.equal(sref2);
     });
-    it("TESTTESTcreateOpts() creates copy", ()=>{
+    it("createOpts() creates copy", ()=>{
       let sref1 = SuttaRef.createOpts("thig1.1");
       let sref2 = SuttaRef.createOpts(sref1);
 
@@ -377,13 +393,17 @@ typeof describe === "function" &&
       should(sref1 === sref2).equal(false);
       should(sref1).not.equal(sref2);
     });
-    it("TESTTESTcreateOpts() existing parameters", ()=>{
+    it("createOpts() existing parameters", ()=>{
       const suids = {
         filter: ()=>['thig1.1-10'],
       };
       const defaultLang = 'de';
 
       // existing parameters
+      should.deepEqual(SuttaRef.createOpts('an1.31-40/jpn/kaz'),
+        SuttaRef.create('an1.31-40/jpn/kaz'));
+      should.deepEqual(SuttaRef.createOpts('an1.31-40/jpn'),
+        SuttaRef.create('an1.31-40/jpn'));
       should.deepEqual(SuttaRef.createOpts('xyz'),
         SuttaRef.create('xyz'));
       should.deepEqual(SuttaRef.createOpts(undefined),
@@ -405,6 +425,8 @@ typeof describe === "function" &&
       };
       const normalize = true;
 
+      should.deepEqual(SuttaRef.createOpts('an1.31-40/jpn', {normalize}),
+        SuttaRef.create('an1.31-40/jpn/kaz'));
       should.deepEqual(SuttaRef.createOpts('xyz', {normalize}),
         SuttaRef.create('xyz'));
       should.deepEqual(SuttaRef.createOpts('mil3.1.1/en', {normalize}),
