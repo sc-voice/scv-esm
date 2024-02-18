@@ -368,6 +368,10 @@ typeof describe === "function" &&
       const defaultLang = 'de';
 
       // existing parameters
+      should.deepEqual(SuttaRef.createOpts('xyz'),
+        SuttaRef.create('xyz'));
+      should.deepEqual(SuttaRef.createOpts(undefined),
+        SuttaRef.create(undefined));
       should.deepEqual(SuttaRef.createOpts('thig1.1/en/soma'),
         SuttaRef.create('thig1.1/en/soma'));
       should.deepEqual(SuttaRef.createOpts('thig1.1', {defaultLang}),
@@ -385,6 +389,8 @@ typeof describe === "function" &&
       };
       const normalize = true;
 
+      should.deepEqual(SuttaRef.createOpts('xyz', {normalize}),
+        SuttaRef.create('xyz'));
       should.deepEqual(SuttaRef.createOpts('mil3.1.1/en', {normalize}),
         SuttaRef.create('mil3.1.1/en/kelly'));
     });

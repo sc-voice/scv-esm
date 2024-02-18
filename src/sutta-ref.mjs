@@ -172,9 +172,9 @@ export default class SuttaRef {
 
     let sref = SuttaRef.create(strOrObj, defaultLang, suids);
 
-    if (normalize) {
+    if (normalize && sref) {
       let { sutta_uid, lang, author, segnum } = sref;
-      if (author == null) {
+      if (sutta_uid && author == null) {
         author = AuthorsV2.suttaAuthor(sref);
         sref = SuttaRef.create({sutta_uid, lang, author, segnum});
       }
