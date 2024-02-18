@@ -170,13 +170,18 @@ export default class SuttaRef {
       normalize = false,
     } = opts;
 
-    let sref = SuttaRef.create(strOrObj, defaultLang, suids);
+    if (strOrObj == null) {
+      return undefined;
+    }
+
+    let sref = typeof strOrObj === 'string'
+      ? SuttaRef.create(strOrObj, defaultLang, suids)
+      : SuttaRef.create(Object.assign({},strOrObj), defaultLang, suids);
 
     if (normalize && sref) {
       let { sutta_uid, lang, author, segnum } = sref;
       if (sutta_uid && author == null) {
-        author = AuthorsV2.suttaAuthor(sref);
-        sref = SuttaRef.create({sutta_uid, lang, author, segnum});
+        sref.author = AuthorsV2.suttaAuthor(sref);
       }
     }
 

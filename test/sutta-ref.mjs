@@ -361,6 +361,22 @@ typeof describe === "function" &&
       should(res).equal(undefined);
       should(eCaught.message).match(/(thig11?)/);
     });
+    it("TESTTESTcreate() creates copy", ()=>{
+      let sref1 = SuttaRef.create("thig1.1");
+      let sref2 = SuttaRef.create(sref1);
+
+      should.deepEqual(sref1, sref2);
+      should(sref1 === sref2).equal(false);
+      should(sref1).not.equal(sref2);
+    });
+    it("TESTTESTcreateOpts() creates copy", ()=>{
+      let sref1 = SuttaRef.createOpts("thig1.1");
+      let sref2 = SuttaRef.createOpts(sref1);
+
+      should.deepEqual(sref1, sref2);
+      should(sref1 === sref2).equal(false);
+      should(sref1).not.equal(sref2);
+    });
     it("TESTTESTcreateOpts() existing parameters", ()=>{
       const suids = {
         filter: ()=>['thig1.1-10'],
