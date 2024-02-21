@@ -34,9 +34,9 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 34,
-      "sutta/an": 32,
-      "sutta/an/an1": 26,
+      "sutta": 36,
+      "sutta/an": 34,
+      "sutta/an/an1": 28,
       "sutta/an/an3": 3,
       "sutta/an/an4": 2,
       "sutta/an/an5": 1,
