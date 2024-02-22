@@ -854,11 +854,12 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 8,
+      "sutta": 9,
       "sutta/an": 5,
       "sutta/an/an2": 1,
       "sutta/an/an3": 2,
       "sutta/an/an8": 2,
+      "sutta/mn": 1,
       "sutta/sn": 3,
       "sutta/sn/sn3": 2,
       "sutta/sn/sn36": 1
