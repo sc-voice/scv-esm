@@ -210,7 +210,7 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 3935,
+      "sutta": 3938,
       "sutta/an": 1408,
       "sutta/an/an1": 31,
       "sutta/an/an2": 19,
@@ -241,7 +241,7 @@ const AUTHORS = {
       "sutta/kn/iti/vagga11": 13,
       "sutta/kn/kp": 9,
       "sutta/kn/mil": 1,
-      "sutta/mn": 59,
+      "sutta/mn": 62,
       "sutta/sn": 1819,
       "sutta/sn/sn1": 81,
       "sutta/sn/sn2": 30,
