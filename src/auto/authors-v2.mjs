@@ -13,7 +13,9 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 3,
+      "sutta": 6,
+      "sutta/an": 3,
+      "sutta/an/an1": 3,
       "sutta/mn": 1,
       "sutta/sn": 2,
       "sutta/sn/sn3": 1,
@@ -367,14 +369,14 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 169,
-      "sutta/an": 81,
-      "sutta/an/an1": 20,
+      "sutta": 171,
+      "sutta/an": 82,
+      "sutta/an/an1": 21,
       "sutta/an/an2": 7,
       "sutta/an/an3": 48,
       "sutta/an/an4": 2,
       "sutta/an/an5": 4,
-      "sutta/mn": 1,
+      "sutta/mn": 2,
       "sutta/sn": 86,
       "sutta/sn/sn1": 63,
       "sutta/sn/sn2": 22,
