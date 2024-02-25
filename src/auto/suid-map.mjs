@@ -32,6 +32,7 @@ const SUIDMAP = {
 	"an1.31-40": {
 		"translation/de/sabbamitta": "sutta/an/an1",
 		"translation/en/sujato": "sutta/an/an1",
+		"translation/es/ebt-deepl": "sutta/an/an1",
 		"translation/fr/sekha": "sutta/an/an1",
 		"translation/jpn/kaz": "sutta/an/an1",
 		"translation/pt/ebt-deepl": "sutta/an/an1",
@@ -40,6 +41,7 @@ const SUIDMAP = {
 	"an1.41-50": {
 		"translation/de/sabbamitta": "sutta/an/an1",
 		"translation/en/sujato": "sutta/an/an1",
+		"translation/es/ebt-deepl": "sutta/an/an1",
 		"translation/fr/sekha": "sutta/an/an1",
 		"translation/jpn/kaz": "sutta/an/an1",
 		"translation/pt/ebt-deepl": "sutta/an/an1",
@@ -48,6 +50,7 @@ const SUIDMAP = {
 	"an1.51-60": {
 		"translation/de/sabbamitta": "sutta/an/an1",
 		"translation/en/sujato": "sutta/an/an1",
+		"translation/es/ebt-deepl": "sutta/an/an1",
 		"translation/fr/sekha": "sutta/an/an1",
 		"translation/jpn/kaz": "sutta/an/an1",
 		"translation/pt/ebt-deepl": "sutta/an/an1",
