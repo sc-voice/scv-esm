@@ -19,7 +19,7 @@ typeof describe === "function" &&
       let suttaRef2 = new SuttaRef(suttaRef);
       should(suttaRef2).properties({ sutta_uid, lang, author, segnum });
     });
-    it("TESTTESTcreate(...) jpn", () => {
+    it("create(...) jpn", () => {
       let sutta_uid = 'an1.31-40';
       let lang = 'jpn';
       let author = 'kaz';
@@ -110,32 +110,19 @@ typeof describe === "function" &&
         sutta_uid, lang: defaultLang, author: undefined, segnum 
       });
     });
-    it("createFromString()", ()=>{
-      // 2024-01-00 -- KML
-      // SuttaRef is designed to handle one sutta, not a range
-      // Not sure what this test case is used for.
-      return;
-      let defaultLang = "en";
-      let author = "ms";
-      let lang = "pli";
-      let segnum = undefined;
-      let sref2 = SuttaRef.createFromString('sn24.9-18');
-      should(sref2).properties({ 
-        sutta_uid: 'sn24.9-18', lang, author, segnum, });
-      let sref = SuttaRef.createFromString('thig1.2/en/soma');
-      should(sref).properties({ 
-        sutta_uid: 'thig1.2', lang:'en', author:'soma', });
-    });
-    it("createFromString() an1.175-186:1.1", ()=>{
-      let defaultLang = "en";
-      let author = "ms";
-      let lang = "pli";
+    it("TESTTESTcreateFromString() an1.175-186:1.1", ()=>{
+      // an1.175-186:1.1 is a segment in an1.170-187
       let segnum = '1.1';
-      let sutta_uid = 'an1.175-186';
-      let scid = `${sutta_uid}:${segnum}`;
-      let sref2 = SuttaRef.createFromString(scid);
-      should(sref2).properties({ 
-        sutta_uid:'an1.170-187', lang, author, segnum, });
+      let sutta_uid = 'an1.170-187';
+      let scid = `an1.175-186:${segnum}`;
+      let sref = SuttaRef.createFromString(scid);
+      should(sref).properties({ 
+        sutta_uid, 
+        lang: 'pli', 
+        author: 'ms', 
+        segnum, 
+        scid 
+      });
     });
     it("create(object) an1.1 in an1.1-10=> SuttaRef", () => {
       let defaultLang = "en";
@@ -419,7 +406,7 @@ typeof describe === "function" &&
         SuttaRef.createOpts('thig1.1', {suids}),
         SuttaRef.create('thig1.1', undefined, suids));
     });
-    it("TESTTESTcreateOpts() new parameters", ()=>{
+    it("createOpts() new parameters", ()=>{
       const suids = {
         filter: ()=>['thig1.1-10'],
       };
@@ -431,5 +418,14 @@ typeof describe === "function" &&
         SuttaRef.create('xyz'));
       should.deepEqual(SuttaRef.createOpts('mil3.1.1/en', {normalize}),
         SuttaRef.create('mil3.1.1/en/kelly'));
+    });
+    it("create() ranged suttas", ()=>{
+      return; // TODO
+      should(SuttaRef.create('an1.102-109:1.1/pt/ebt-deepl')).properties({
+        sutta_uid: 'an1.98-139',
+        segnum: '1.1',
+        lang: 'pt',
+        author: 'ebt-deepl',
+      });
     });
   });

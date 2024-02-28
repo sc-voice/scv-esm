@@ -186,6 +186,46 @@ typeof describe === "function" &&
       should(cmp("an1.1", "an1.1-10")).equal(0);
       should(cmp("an1.10", "an1.1-10")).equal(9);
     });
+    it("compare nested segment id an1.102-109:1.1", () => {
+      let segId = 'an1.102-109:1.1';
+      let docId = 'an1.98-139';
+      let prevDocId = 'an1.82-97';
+      let nextDocId = 'an1.140-149';
+
+      should(SuttaCentralId.compareLow(segId, prevDocId)).equal(20);
+      should(SuttaCentralId.compareHigh(segId, prevDocId)).equal(12);
+      should(SuttaCentralId.compareLow(segId, docId)).equal(4);
+      should(SuttaCentralId.compareHigh(segId, docId)).equal(-30);
+      should(SuttaCentralId.compareLow(segId, nextDocId)).equal(-38);
+      should(SuttaCentralId.compareHigh(segId, nextDocId)).equal(-40);
+
+      should(SuttaCentralId.compareLow(prevDocId, segId)).equal(-20);
+      should(SuttaCentralId.compareHigh(prevDocId, segId)).equal(-12);
+      should(SuttaCentralId.compareLow(docId, segId)).equal(-4);
+      should(SuttaCentralId.compareHigh(docId, segId)).equal(30);
+      should(SuttaCentralId.compareLow(nextDocId, segId)).equal(38);
+      should(SuttaCentralId.compareHigh(nextDocId, segId)).equal(40);
+    });
+    it("compare nested segment id an1.98:1.1", () => {
+      let segId = 'an1.98-109:1.1';
+      let docId = 'an1.98-139';
+      let prevDocId = 'an1.82-97';
+      let nextDocId = 'an1.140-149';
+
+      should(SuttaCentralId.compareLow(segId, prevDocId)).equal(16);
+      should(SuttaCentralId.compareHigh(segId, prevDocId)).equal(12);
+      should(SuttaCentralId.compareLow(segId, docId)).equal(1);
+      should(SuttaCentralId.compareHigh(segId, docId)).equal(-30);
+      should(SuttaCentralId.compareLow(segId, nextDocId)).equal(-42);
+      should(SuttaCentralId.compareHigh(segId, nextDocId)).equal(-40);
+
+      should(SuttaCentralId.compareLow(prevDocId, segId)).equal(-16);
+      should(SuttaCentralId.compareHigh(prevDocId, segId)).equal(-12);
+      should(SuttaCentralId.compareLow(docId, segId)).equal(-1);
+      should(SuttaCentralId.compareHigh(docId, segId)).equal(30);
+      should(SuttaCentralId.compareLow(nextDocId, segId)).equal(42);
+      should(SuttaCentralId.compareHigh(nextDocId, segId)).equal(40);
+    });
     it("compareLow(a,b) compares segment ids", () => {
       // Zeroes
       testCompareLow("dn2:75.3.0", "dn2:75.3", 1);

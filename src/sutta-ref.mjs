@@ -53,41 +53,45 @@ export default class SuttaRef {
       while (iLow < iHigh) {
         let i = Math.floor((iLow+iHigh)/2);
         let suid = suids[i];
-        let cmpLow = compareLow(suid, sutta_uid);
+        let cmpLow = compareLow(sutta_uid, suid);
         let cmpHigh = compareHigh(sutta_uid, suid);
-        if (cmpLow < 0 && cmpHigh < 0) {
-          dbg && console.log(msg, "[1]",  JSON.stringify({
-            suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh}));
+        if (cmpLow > 0 && cmpHigh < 0) {
           if (iLow === i) {
             let nikaya = refLower.replace(/[-0-9.:]+[a-z\/]*/, '');
             if (suid.startsWith(nikaya)) {
               keys.push(suid);
               scid = `${refLower.split('/')[0]}`;
-              dbg && console.log(msg, '[2]', JSON.stringify({
-                nikaya, refLower,suid, keys, scid}));
+              dbg && console.log(msg, `[1]${sutta_uid}`, JSON.stringify({
+                suid, nikaya, refLower, keys, scid}));
+            } else {
+              dbg && console.log(msg, `[2]${sutta_uid}`,  JSON.stringify({
+                suid, cmpLow, cmpHigh, iLow, i, iHigh}));
             }
             break;
+          } else {
+            dbg && console.log(msg, `[3]${sutta_uid}`,  JSON.stringify({
+              suid, cmpLow, cmpHigh, iLow, i, iHigh}));
+            iLow = i;
           }
-          iLow = i;
-        } else if (cmpLow <= 0 && cmpHigh <= 0) {
+        } else if (cmpLow >= 0 && cmpHigh <= 0) {
           scid = `${refLower.split('/')[0]}`;
-          dbg && console.log(msg, "[3]", JSON.stringify({
-            refLower, scid, suid, sutta_uid, cmpLow, cmpHigh, iLow, 
+          dbg && console.log(msg, `[4]${sutta_uid}`, JSON.stringify({
+            suid, refLower, scid, cmpLow, cmpHigh, iLow, 
             i, iHigh}));
           keys.push(suid);
           break;
         }
-        if (cmpLow > 0 && cmpHigh > 0) {
-          dbg && console.log(msg, "[4]", JSON.stringify({
-            suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh}));
+        if (cmpLow < 0 && cmpHigh > 0) {
+          dbg && console.log(msg, `[5]${sutta_uid}`, JSON.stringify({
+            suid, cmpLow, cmpHigh, iLow, i, iHigh}));
           iHigh = i;
-        } else if (cmpLow > 0) {
-          dbg && console.log(msg, "[5]", JSON.stringify({
-            suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh}));
+        } else if (cmpLow < 0) {
+          dbg && console.log(msg, `[6]${sutta_uid}`, JSON.stringify({
+            suid, cmpLow, cmpHigh, iLow, i, iHigh}));
           iHigh = i;
         } else if (cmpHigh > 0) {
-          dbg && console.log(msg, "[6]",  JSON.stringify({
-            suid, sutta_uid, cmpLow, cmpHigh, iLow, i, iHigh}));
+          dbg && console.log(msg, `[7]${sutta_uid}`,  JSON.stringify({
+            suid, cmpLow, cmpHigh, iLow, i, iHigh}));
           if (iLow === i) {
             let eMsg = msg+ ` ${suid}, (${str}?), ${suids[i+1]})`;
             throw new Error(eMsg);
@@ -101,14 +105,14 @@ export default class SuttaRef {
         return compareLow(k, sutta_uid) <= 0 && 
           compareHigh(sutta_uid, k) <= 0;
       });
-      dbg && console.log(msg, "[7]", JSON.stringify({keys, suid}));
+      dbg && console.log(msg, `[8]${sutta_uid}`, JSON.stringify({keys, suid}));
     }
     let suttaRef;
     if (keys.length !== 1) {
-      let eMsg = `${msg} ${str} => keys?:${keys.length}`;
+      let eMsg = `${msg} [9]${str} => keys?:${keys.length}`;
       throw new Error(eMsg);
     }
-    dbg && console.log(msg, "[8]", JSON.stringify({str, keys, scid}));
+    dbg && console.log(msg, `[10]${sutta_uid}`, JSON.stringify({str, keys, scid}));
 
     suttaRef = new SuttaRef({
       sutta_uid: keys[0],
