@@ -500,7 +500,14 @@ typeof describe === "function" &&
       should(segid.standardForm()).equal("Thag1.1:2.3");
     });
     it("partNumber()", ()=>{
-      should.deepEqual(SuttaCentralId.partNumber("Mn1", "Mn1:50.2"), [1,13]);
-      should.deepEqual(SuttaCentralId.partNumber("mn1", "mn1:50.2"), [1,13]);
+      should.deepEqual(SuttaCentralId.partNumber("Mn1", "Mn1:50.2"), 
+        [1,13]);
+      should.deepEqual(SuttaCentralId.partNumber("mn1", "mn1:50.2"), 
+        [1,13]);
+    });
+    it("compare vinaya ids", ()=>{
+      let suid = 'pli-tv-pvr5'; // Valid vinaya document
+      should(SuttaCentralId.compareHigh('xyz', suid)).equal(1);
+      should(SuttaCentralId.compareLow('xyz', suid)).equal(1);
     });
   });

@@ -1,4 +1,7 @@
 import BilaraPath from "./bilara-path.mjs";
+import {
+  DBG_COMPARE,
+} from '../src/defines.mjs'; 
 
 export default class SuttaCentralId {
   constructor(scid = null) {
@@ -152,11 +155,15 @@ export default class SuttaCentralId {
   }
 
   static compareHigh(a, b) {
+    const msg = "SuttaCentralId.compareHigh()";
+    const dbg = DBG_COMPARE;
     var abase = SuttaCentralId.basename(a);
     var bbase = SuttaCentralId.basename(b);
-    var aprefix = abase.substring(0, abase.search(/[0-9]/));
-    var bprefix = bbase.substring(0, bbase.search(/[0-9]/));
+    var aprefix = abase.substring(0, abase.search(/[0-9]/)) || a;
+    var bprefix = bbase.substring(0, bbase.search(/[0-9]/)) || b;
     var cmp = aprefix.localeCompare(bprefix);
+    dbg && console.log(msg, '[1]cmp prefix', {
+      cmp, abase, bbase, aprefix, bprefix});
     if (cmp === 0) {
       var adig = SuttaCentralId.scidNumbersHigh(a);
       var bdig = SuttaCentralId.scidNumbersHigh(b);

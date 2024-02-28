@@ -1,7 +1,6 @@
 import should from "should";
 import { SuttaRef } from "../main.mjs";
 import { logger } from "log-instance/index.mjs";
-
 typeof describe === "function" &&
   describe("sutta-ref", function () {
     it("default ctor", () => {
@@ -108,20 +107,6 @@ typeof describe === "function" &&
         SuttaRef.create(`${sutta_uid}:${segnum}`, defaultLang)
       ).properties({ 
         sutta_uid, lang: defaultLang, author: undefined, segnum 
-      });
-    });
-    it("TESTTESTcreateFromString() an1.175-186:1.1", ()=>{
-      // an1.175-186:1.1 is a segment in an1.170-187
-      let segnum = '1.1';
-      let sutta_uid = 'an1.170-187';
-      let scid = `an1.175-186:${segnum}`;
-      let sref = SuttaRef.createFromString(scid);
-      should(sref).properties({ 
-        sutta_uid, 
-        lang: 'pli', 
-        author: 'ms', 
-        segnum, 
-        scid 
       });
     });
     it("create(object) an1.1 in an1.1-10=> SuttaRef", () => {
@@ -380,7 +365,7 @@ typeof describe === "function" &&
       should(sref1 === sref2).equal(false);
       should(sref1).not.equal(sref2);
     });
-    it("createOpts() existing parameters", ()=>{
+    it("TESTTESTcreateOpts() existing parameters", ()=>{
       const suids = {
         filter: ()=>['thig1.1-10'],
       };
@@ -391,8 +376,10 @@ typeof describe === "function" &&
         SuttaRef.create('an1.31-40/jpn/kaz'));
       should.deepEqual(SuttaRef.createOpts('an1.31-40/jpn'),
         SuttaRef.create('an1.31-40/jpn'));
-      should.deepEqual(SuttaRef.createOpts('xyz'),
-        SuttaRef.create('xyz'));
+      console.log("BEGIN EXPECTED WARNING");
+      should.deepEqual(SuttaRef.createOpts('yzx'),
+        SuttaRef.create('yzx'));
+      console.log("END EXPECTED WARNING");
       should.deepEqual(SuttaRef.createOpts(undefined),
         SuttaRef.create(undefined));
       should.deepEqual(SuttaRef.createOpts('thig1.1/en/soma'),
@@ -406,7 +393,7 @@ typeof describe === "function" &&
         SuttaRef.createOpts('thig1.1', {suids}),
         SuttaRef.create('thig1.1', undefined, suids));
     });
-    it("createOpts() new parameters", ()=>{
+    it("TESTTESTcreateOpts() new parameters", ()=>{
       const suids = {
         filter: ()=>['thig1.1-10'],
       };
@@ -414,14 +401,30 @@ typeof describe === "function" &&
 
       should.deepEqual(SuttaRef.createOpts('an1.31-40/jpn', {normalize}),
         SuttaRef.create('an1.31-40/jpn/kaz'));
+      console.log("BEGIN EXPECTED WARNING");
       should.deepEqual(SuttaRef.createOpts('xyz', {normalize}),
         SuttaRef.create('xyz'));
+      console.log("END EXPECTED WARNING");
       should.deepEqual(SuttaRef.createOpts('mil3.1.1/en', {normalize}),
         SuttaRef.create('mil3.1.1/en/kelly'));
     });
-    it("create() ranged suttas", ()=>{
-      return; // TODO
-      should(SuttaRef.create('an1.102-109:1.1/pt/ebt-deepl')).properties({
+    it("createFromString() an1.175-186:1.1", ()=>{
+      // an1.175-186:1.1 is a segment in an1.170-187
+      let segnum = '1.1';
+      let sutta_uid = 'an1.170-187';
+      let scid = `an1.175-186:${segnum}`;
+      let sref = SuttaRef.createFromString(scid);
+      should(sref).properties({ 
+        sutta_uid, 
+        lang: 'pli', 
+        author: 'ms', 
+        segnum, 
+        scid 
+      });
+    });
+    it("createFromString() an1.102-109:1.1/pt/ebt-deepl", ()=>{
+      let scid = 'an1.102-109:1.1/pt/ebt-deepl';
+      should(SuttaRef.createFromString(scid)).properties({
         sutta_uid: 'an1.98-139',
         segnum: '1.1',
         lang: 'pt',
