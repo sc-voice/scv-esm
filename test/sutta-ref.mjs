@@ -365,7 +365,7 @@ typeof describe === "function" &&
       should(sref1 === sref2).equal(false);
       should(sref1).not.equal(sref2);
     });
-    it("TESTTESTcreateOpts() existing parameters", ()=>{
+    it("createOpts() existing parameters", ()=>{
       const suids = {
         filter: ()=>['thig1.1-10'],
       };
@@ -393,7 +393,7 @@ typeof describe === "function" &&
         SuttaRef.createOpts('thig1.1', {suids}),
         SuttaRef.create('thig1.1', undefined, suids));
     });
-    it("TESTTESTcreateOpts() new parameters", ()=>{
+    it("createOpts() new parameters", ()=>{
       const suids = {
         filter: ()=>['thig1.1-10'],
       };

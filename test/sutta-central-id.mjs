@@ -1,5 +1,6 @@
 import { SuttaCentralId } from "../main.mjs";
 import should from "should";
+import { DBG } from '../src/defines.mjs';
 
 typeof describe === "function" &&
   describe("sutta-central-id", function () {
@@ -505,9 +506,13 @@ typeof describe === "function" &&
       should.deepEqual(SuttaCentralId.partNumber("mn1", "mn1:50.2"), 
         [1,13]);
     });
-    it("compare vinaya ids", ()=>{
+    it("TESTTESTcompare vinaya ids", ()=>{
       let suid = 'pli-tv-pvr5'; // Valid vinaya document
+      DBG.COMPARE = 0;
+      should(SuttaCentralId.compareHigh('abc', suid)).equal(-1);
+      should(SuttaCentralId.compareLow('abc', suid)).equal(-1);
       should(SuttaCentralId.compareHigh('xyz', suid)).equal(1);
       should(SuttaCentralId.compareLow('xyz', suid)).equal(1);
+      DBG.COMPARE = 0;
     });
   });

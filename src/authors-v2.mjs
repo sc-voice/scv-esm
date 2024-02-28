@@ -1,8 +1,6 @@
 import AUTHORSV2 from "./auto/authors-v2.mjs";
 import { default as SuttaRef } from './sutta-ref.mjs';
-import {
-  DBG_AUTHOR, DBG_VERBOSE,
-} from './defines.mjs';
+import { DBG, } from './defines.mjs';
 
 import { default as  suidMap } from './auto/suid-map.mjs';
 
@@ -13,8 +11,8 @@ export default class AuthorsV2 {
 
   static authorInfo(author, lang) {
     const msg = "AuthorsV2.authorInfo() ";
-    const dbg = DBG_AUTHOR;
-    const dbgv = DBG_VERBOSE && dbg;
+    const dbg = DBG.AUTHOR;
+    const dbgv = DBG.VERBOSE && dbg;
     let keys = Object.keys(AUTHORSV2);
     let authorInfo = keys.reduce((a,k)=>{
       let info = AUTHORSV2[k];
@@ -78,7 +76,7 @@ export default class AuthorsV2 {
 
   static langAuthor(lang, opts={}) {
     const msg = "AuthorsV2.langAuthor()";
-    const dbg = DBG_AUTHOR;
+    const dbg = DBG.AUTHOR;
     let {
       category='sutta',
     } = opts;
@@ -117,8 +115,8 @@ export default class AuthorsV2 {
 
   static compareInfo(info1, info2) {
     const msg = "AuthorsV2.compareInfo()";
-    const dbg = DBG_AUTHOR;
-    const dbgv = DBG_VERBOSE && dbg;
+    const dbg = DBG.AUTHOR;
+    const dbgv = DBG.VERBOSE && dbg;
     if (info1 === info2) {
       return 0;
     }
@@ -152,7 +150,7 @@ export default class AuthorsV2 {
 
   static compare(author1, author2) {
     const msg = "authors-v2.compare() ";
-    const dbg = DBG_AUTHOR;
+    const dbg = DBG.AUTHOR;
     author1 = !!author1 ? author1 : '';
     author2 = !!author2 ? author2 : '';
     let noauthor = {author:'no-author'};
@@ -209,7 +207,7 @@ export default class AuthorsV2 {
 
   static suttaAuthor(suttaRef) {
     const msg = 'AuthorsV2.suttaAuthor()';
-    const dbg = DBG_AUTHOR;
+    const dbg = DBG.AUTHOR;
     let { 
       sutta_uid, lang, author 
     } = SuttaRef.create(suttaRef);

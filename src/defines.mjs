@@ -1,5 +1,7 @@
+export const DBG = {
+  AUTHOR: 0,
+  COMPARE: 0,
+  SUTTA_REF: 0,
+  VERBOSE: 0,
+};
 
-export const DBG_AUTHOR    = 0;
-export const DBG_COMPARE   = 0;
-export const DBG_SUTTA_REF = 0;
-export const DBG_VERBOSE   = 0;

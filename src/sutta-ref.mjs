@@ -2,9 +2,7 @@ import SuttaCentralId from './sutta-central-id.mjs';
 import SuidMap from './auto/suid-map.mjs';
 import { logger } from "log-instance/index.mjs";
 import AuthorsV2 from './authors-v2.mjs';
-import {
-  DBG_SUTTA_REF,
-} from "./defines.mjs"
+import { DBG } from "./defines.mjs"
 
 const SUIDS = Object.keys(SuidMap).sort(SuttaCentralId.compareLow);
 
@@ -27,7 +25,7 @@ export default class SuttaRef {
 
   static createFromString(str='', defaultLang="pli", suids=SUIDS) {
     const msg = 'SuttaRef.createFromString()';
-    const dbg = DBG_SUTTA_REF;
+    const dbg = DBG.SUTTA_REF;
     let refLower = str.toLowerCase();
     let segMatch = refLower.match(/:[-0-9.]*/);
     let segnum;
