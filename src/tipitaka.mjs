@@ -14,33 +14,47 @@ export default class Tipitaka {
     });
   }
 
-  nikayaOfSuid(suid = "") {
-    return suid.replace(/[-.0-9]+(\/.*)?/, "");
+  static folderOfSuid(suid = "") {
+    let nikaya = Tipitaka.nikayaOfSuid(suid);
+    let parts = suid.split(".");
+    switch (nikaya) {
+      case "an":
+      case "sn":
+        return parts[0];
+      default:
+        return nikaya;
+    }
   }
 
-  nextSuid(suid) {
+  static nikayaOfSuid(suid = "") {
+    return suid.replace(/([.0-9]+-)?[.0-9]+(\/.*)?/, "");
+  }
+
+  nextSuid(suid, group=Tipitaka.nikayaOfSuid) {
     let { compareLow, compareHigh } = SuttaCentralId;
     let { suids } = this;
-    let nikaya = this.nikayaOfSuid(suid);
+    suid = suid.toLowerCase();
+    let nikaya = group(suid);
     for (let i = 0; i < suids.length; i++) {
       let si = suids[i];
       let cmpL = compareHigh(suid, si);
       if (cmpL < 0) {
-        return this.nikayaOfSuid(si) === nikaya ? si : null;
+        return group(si) === nikaya ? si : null;
       }
     }
     return null;
   }
 
-  previousSuid(suid) {
+  previousSuid(suid, group=Tipitaka.nikayaOfSuid) {
     let { compareLow, compareHigh } = SuttaCentralId;
     let { suids } = this;
-    let nikaya = this.nikayaOfSuid(suid);
+    suid = suid.toLowerCase();
+    let nikaya = group(suid);
     for (let i = suids.length; 0 < i--; ) {
       let si = suids[i];
       let cmpL = compareLow(si, suid);
       if (cmpL < 0) {
-        return this.nikayaOfSuid(si) === nikaya ? si : null;
+        return group(si) === nikaya ? si : null;
       }
     }
     return null;
