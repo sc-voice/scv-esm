@@ -13,13 +13,16 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 34,
+      "sutta": 35,
       "sutta/an": 31,
       "sutta/an/an1": 31,
       "sutta/mn": 1,
       "sutta/sn": 2,
       "sutta/sn/sn3": 1,
-      "sutta/sn/sn41": 1
+      "sutta/sn/sn41": 1,
+      "sutta/kn": 1,
+      "sutta/kn/snp": 1,
+      "sutta/kn/snp/vagga1": 1
     }
   },
   "pt:ebt-deepl": {
@@ -36,9 +39,10 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 39,
-      "sutta/an": 37,
+      "sutta": 40,
+      "sutta/an": 38,
       "sutta/an/an1": 31,
+      "sutta/an/an2": 1,
       "sutta/an/an3": 3,
       "sutta/an/an4": 2,
       "sutta/an/an5": 1,
