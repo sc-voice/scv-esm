@@ -344,6 +344,7 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/an/an2",
 		"translation/en/sujato": "sutta/an/an2",
 		"translation/jpn/kaz": "sutta/an/an2",
+		"translation/pt/ebt-deepl": "sutta/an/an2",
 		"translation/pt/laera-quaresma": "sutta/an/an2",
 		"root/pli/ms": "sutta/an/an2"
 	},
@@ -13828,6 +13829,7 @@ const SUIDMAP = {
 		"translation/en/sujato": "sutta/sn/sn15",
 		"translation/fr/noeismet": "sutta/sn/sn15",
 		"translation/lt/piyadassi": "sutta/sn/sn15",
+		"translation/pl/hardao": "sutta/sn/sn15",
 		"root/pli/ms": "sutta/sn/sn15"
 	},
 	"sn15.6": {
