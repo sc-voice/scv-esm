@@ -39,10 +39,10 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 51,
-      "sutta/an": 49,
+      "sutta": 54,
+      "sutta/an": 52,
       "sutta/an/an1": 31,
-      "sutta/an/an2": 12,
+      "sutta/an/an2": 15,
       "sutta/an/an3": 3,
       "sutta/an/an4": 2,
       "sutta/an/an5": 1,
@@ -780,7 +780,7 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 50,
+      "sutta": 51,
       "sutta/an": 10,
       "sutta/an/an1": 1,
       "sutta/an/an3": 3,
@@ -789,7 +789,7 @@ const AUTHORS = {
       "sutta/an/an8": 2,
       "sutta/an/an11": 1,
       "sutta/dn": 4,
-      "sutta/mn": 24,
+      "sutta/mn": 25,
       "sutta/sn": 12,
       "sutta/sn/sn3": 2,
       "sutta/sn/sn15": 4,
