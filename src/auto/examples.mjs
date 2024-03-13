@@ -697,7 +697,7 @@ const EXAMPLES = {
     "Strudel",
     "stufenweise Schulung",
     "substanzialistische Ansicht",
-    "Suche nach den vorteilhaften Folgen",
+    "Suche nach Befriedigung",
     "süße Spitze",
     "tatsächlich gibt",
     "tauglicher sittlichkeit",
