@@ -883,9 +883,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 70,
-      "sutta/kn": 70,
-      "sutta/kn/mil": 70
+      "sutta": 72,
+      "sutta/kn": 72,
+      "sutta/kn/mil": 72
     }
   }
 }
