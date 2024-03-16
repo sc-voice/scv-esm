@@ -52,6 +52,25 @@ const AUTHORS = {
       "sutta/sn/sn41": 1
     }
   },
+  "it:ebt-deepl": {
+    "type": "translation",
+    "lang": "it",
+    "author": "ebt-deepl",
+    "name": [
+      "EBT-DeepL/IT"
+    ],
+    "exampleVersion": 1,
+    "sutta": true,
+    "vinaya": false,
+    "examples": [
+      "sutta"
+    ],
+    "stats": {
+      "sutta": 1,
+      "sutta/an": 1,
+      "sutta/an/an1": 1
+    }
+  },
   "en:sujato": {
     "type": "translation",
     "lang": "en",

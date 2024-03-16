@@ -244,15 +244,18 @@ typeof describe === "function" && describe("authors-v2", function () {
     ]);
   });
   it("find() exampleVersion", ()=>{
-    should.deepEqual(AuthorsV2.find({exampleVersion:1}), [
-      AuthorsV2.authorInfo('ms'),
-      AuthorsV2.authorInfo('laera-quaresma'),
-      AuthorsV2.authorInfo('ebt-deepl', 'es'),
-      AuthorsV2.authorInfo('ebt-deepl', 'pt'),
-      AuthorsV2.authorInfo('kaz'),
-      AuthorsV2.authorInfo('noeismet'),
-      AuthorsV2.authorInfo('sabbamitta'),
-      AuthorsV2.authorInfo('sujato'), 
+    let ainfo = AuthorsV2.find({exampleVersion:1});
+    let authors = ainfo.map(a=>`${a.lang}/${a.author}`).sort();
+    should.deepEqual(authors, [
+      'de/sabbamitta',
+      'en/sujato',
+      'es/ebt-deepl',
+      'fr/noeismet',
+      'it/ebt-deepl',
+      'jpn/kaz',
+      'pli/ms',
+      'pt/ebt-deepl',
+      'pt/laera-quaresma',
     ]);
     should.deepEqual(AuthorsV2.find({exampleVersion:1, lang:'en'}), [
       AuthorsV2.authorInfo('sujato'), 

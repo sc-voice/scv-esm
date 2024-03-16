@@ -81,6 +81,7 @@ function deeplAuthor(pubAuthors, lang) {
     let pubAuthors = {};
     deeplAuthor(pubAuthors, 'es');
     deeplAuthor(pubAuthors, 'pt');
+    deeplAuthor(pubAuthors, 'it');
 
     for (let i=0; i < ebtPubs.length; i++) {
       let v = ebtPubs[i];
