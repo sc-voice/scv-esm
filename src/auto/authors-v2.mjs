@@ -13,10 +13,10 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 48,
-      "sutta/an": 44,
+      "sutta": 51,
+      "sutta/an": 47,
       "sutta/an/an1": 31,
-      "sutta/an/an2": 13,
+      "sutta/an/an2": 16,
       "sutta/mn": 1,
       "sutta/sn": 2,
       "sutta/sn/sn3": 1,
@@ -66,9 +66,9 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 1,
-      "sutta/an": 1,
-      "sutta/an/an1": 1
+      "sutta": 2,
+      "sutta/an": 2,
+      "sutta/an/an1": 2
     }
   },
   "en:sujato": {
