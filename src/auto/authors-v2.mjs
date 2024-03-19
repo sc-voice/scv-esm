@@ -800,7 +800,7 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 51,
+      "sutta": 52,
       "sutta/an": 10,
       "sutta/an/an1": 1,
       "sutta/an/an3": 3,
@@ -809,7 +809,7 @@ const AUTHORS = {
       "sutta/an/an8": 2,
       "sutta/an/an11": 1,
       "sutta/dn": 4,
-      "sutta/mn": 25,
+      "sutta/mn": 26,
       "sutta/sn": 12,
       "sutta/sn/sn3": 2,
       "sutta/sn/sn15": 4,
