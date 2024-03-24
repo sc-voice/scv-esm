@@ -317,6 +317,12 @@ const AUTHORS = {
     "name": "Paweł Łucjan",
     "author": "lucjan",
     "exampleVersion": 0
+  },
+  "mahabodhi": {
+    "type": "translator",
+    "name": "Bhikkhu Mahabodhi",
+    "author": "mahabodhi",
+    "exampleVersion": 0
   }
 }
 
