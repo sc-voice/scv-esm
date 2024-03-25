@@ -40,11 +40,11 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 68,
-      "sutta/an": 66,
+      "sutta": 72,
+      "sutta/an": 70,
       "sutta/an/an1": 31,
       "sutta/an/an2": 19,
-      "sutta/an/an3": 13,
+      "sutta/an/an3": 17,
       "sutta/an/an4": 2,
       "sutta/an/an5": 1,
       "sutta/mn": 1,

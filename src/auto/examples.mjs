@@ -1736,6 +1736,7 @@ const EXAMPLES = {
     "two kinds of",
     "two kinds of happiness",
     "two kinds of people",
+    "five kinds of people",
     "two things should be developed",
     "twofold",
     "ugly and deformed",
