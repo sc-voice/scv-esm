@@ -393,13 +393,14 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 171,
-      "sutta/an": 82,
+      "sutta": 172,
+      "sutta/an": 83,
       "sutta/an/an1": 21,
       "sutta/an/an2": 7,
       "sutta/an/an3": 48,
       "sutta/an/an4": 2,
       "sutta/an/an5": 4,
+      "sutta/an/an7": 1,
       "sutta/mn": 2,
       "sutta/sn": 86,
       "sutta/sn/sn1": 63,
