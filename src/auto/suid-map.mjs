@@ -682,12 +682,14 @@ const SUIDMAP = {
 	"an3.33": {
 		"translation/de/sabbamitta": "sutta/an/an3",
 		"translation/en/sujato": "sutta/an/an3",
+		"translation/pt/ebt-deepl": "sutta/an/an3",
 		"translation/pt/laera-quaresma": "sutta/an/an3",
 		"root/pli/ms": "sutta/an/an3"
 	},
 	"an3.34": {
 		"translation/de/sabbamitta": "sutta/an/an3",
 		"translation/en/sujato": "sutta/an/an3",
+		"translation/pt/ebt-deepl": "sutta/an/an3",
 		"root/pli/ms": "sutta/an/an3"
 	},
 	"an3.35": {
