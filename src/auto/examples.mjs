@@ -757,6 +757,7 @@ const EXAMPLES = {
     "Verlangen wird.* aufgegeben",
     "verlasse.* darauf",
     "verloren, wenn er stirbt",
+    "Vermögen und Besitz anderer",
     "vernünftiger erwachsener",
     "verpasste Gelegenheit",
     "Verschwinden der wahren Lehre",
