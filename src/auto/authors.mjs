@@ -323,6 +323,12 @@ const AUTHORS = {
     "name": "Bhikkhu Mahabodhi",
     "author": "mahabodhi",
     "exampleVersion": 0
+  },
+  "mangala": {
+    "type": "translator",
+    "name": "Mangala",
+    "author": "mangala",
+    "exampleVersion": 0
   }
 }
 
