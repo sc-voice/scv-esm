@@ -11,20 +11,7 @@ const AUTHORS = {
     "vinaya": false,
     "examples": [
       "sutta"
-    ],
-    "stats": {
-      "sutta": 54,
-      "sutta/an": 50,
-      "sutta/an/an1": 31,
-      "sutta/an/an2": 19,
-      "sutta/mn": 1,
-      "sutta/sn": 2,
-      "sutta/sn/sn3": 1,
-      "sutta/sn/sn41": 1,
-      "sutta/kn": 1,
-      "sutta/kn/snp": 1,
-      "sutta/kn/snp/vagga1": 1
-    }
+    ]
   },
   "pt:ebt-deepl": {
     "type": "translation",
@@ -38,19 +25,7 @@ const AUTHORS = {
     "vinaya": false,
     "examples": [
       "sutta"
-    ],
-    "stats": {
-      "sutta": 94,
-      "sutta/an": 92,
-      "sutta/an/an1": 31,
-      "sutta/an/an2": 19,
-      "sutta/an/an3": 39,
-      "sutta/an/an4": 2,
-      "sutta/an/an5": 1,
-      "sutta/mn": 1,
-      "sutta/sn": 1,
-      "sutta/sn/sn41": 1
-    }
+    ]
   },
   "it:ebt-deepl": {
     "type": "translation",
@@ -64,12 +39,7 @@ const AUTHORS = {
     "vinaya": false,
     "examples": [
       "sutta"
-    ],
-    "stats": {
-      "sutta": 2,
-      "sutta/an": 2,
-      "sutta/an/an1": 2
-    }
+    ]
   },
   "en:sujato": {
     "type": "translation",
