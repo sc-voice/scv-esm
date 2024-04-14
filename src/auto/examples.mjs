@@ -1358,6 +1358,7 @@ const EXAMPLES = {
     "language",
     "laughing wisdom",
     "law of nature persists",
+    "lay people",
     "lead the mendicant",
     "lead to distinction",
     "learn new things",
