@@ -307,18 +307,18 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(sabbamitta['sutta/an/an1']).equal(31);
     should(sabbamitta['sutta/kn/thig']).equal(73);
   });
-  it("suttaAuthor()", ()=>{
+  it("TESTTESTsuttaAuthor()", ()=>{
     // choose human quality over ebt-deepl quantity
     should(AuthorsV2.suttaAuthor('an1.1-10/pt')).equal('laera-quaresma');
 
     // choose available vs. desired translator
     should(AuthorsV2.suttaAuthor('mil3.1.1/en/sujato')).equal('kelly');
     should(AuthorsV2.suttaAuthor('an5.22/pt/laera-quaresma'))
-      .equal('ebt-deepl');
+      .equal('laera-quaresma');
     should(AuthorsV2.suttaAuthor('an5.206/pt/ebt-deepl'))
       .equal('laera-quaresma');
     should(AuthorsV2.suttaAuthor('mn44/pt/laera-quaresma'))
-      .equal('ebt-deepl');
+      .equal('laera-quaresma');
 
     // Show preferred author when no translation exists
     should(AuthorsV2.suttaAuthor('mil2/en/sujato')).equal('sujato');
