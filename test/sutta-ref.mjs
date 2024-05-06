@@ -431,4 +431,27 @@ typeof describe === "function" &&
         author: 'ebt-deepl',
       });
     });
+    it("exists",()=>{
+      let mn1 = SuttaRef.create('mn1/en/soma');
+      should(mn1.exists()).equal(false);
+
+      // EN
+      should(SuttaRef.create('thig1.1/en').exists()).equal(true);
+      should(SuttaRef.create('thig1.1/en/sujato').exists()).equal(true);
+      should(SuttaRef.create('thig1.1/en/soma').exists()).equal(true);
+      should(SuttaRef.create('mn1/en/soma').exists()).equal(false);
+
+      // DE
+      should(SuttaRef.create('thig1.1/de').exists()).equal(true);
+      should(
+        SuttaRef.create('thig1.1/de/sabbamitta').exists()
+      ).equal(true);
+      should(SuttaRef.create('thig1.1/de/sujato').exists()).equal(false);
+
+      // Pali
+      should(SuttaRef.create('thig1.1').exists()).equal(true);
+      should(SuttaRef.create('thig1.1/pli').exists()).equal(true);
+      should(SuttaRef.create('thig1.1/pli/ms').exists()).equal(true);
+      should(SuttaRef.create('thig1.1/pli/sujato').exists()).equal(false);
+    });
   });

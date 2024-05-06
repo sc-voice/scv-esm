@@ -198,4 +198,17 @@ export default class SuttaRef {
       ? author ? `${scid}/${lang}/${author}` : `${scid}/${lang}`
       : scid;
   }
+
+  exists() {
+    let { sutta_uid, lang, author } = this;
+    let info = SuidMap[sutta_uid];
+    if (!info) {
+      return false;
+    }
+    author = author || AuthorsV2.langAuthor(lang);
+    let prefix = lang === 'pli' ? 'root' : 'translation';
+    let key = `${prefix}/${lang}/${author}`;
+    let value = info[key];
+    return !!value;
+  }
 }
