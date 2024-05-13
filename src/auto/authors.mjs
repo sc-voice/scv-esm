@@ -329,6 +329,12 @@ const AUTHORS = {
     "name": "Mangala",
     "author": "mangala",
     "exampleVersion": 0
+  },
+  "cone": {
+    "type": "root",
+    "name": "Margaret Cone",
+    "author": "cone",
+    "exampleVersion": 0
   }
 }
 
