@@ -335,6 +335,12 @@ const AUTHORS = {
     "name": "Margaret Cone",
     "author": "cone",
     "exampleVersion": 0
+  },
+  "pts": {
+    "type": "root",
+    "name": "PTS",
+    "author": "pts",
+    "exampleVersion": 0
   }
 }
 
