@@ -449,6 +449,7 @@ typeof describe === "function" &&
       should(SuttaRef.create('thig1.1/de/sujato').exists()).equal(false);
 
       // Pali
+      should(SuttaRef.create('tha-ap34').exists()).equal(true);
       should(SuttaRef.create('thig1.1').exists()).equal(true);
       should(SuttaRef.create('thig1.1/pli').exists()).equal(true);
       should(SuttaRef.create('thig1.1/pli/ms').exists()).equal(true);

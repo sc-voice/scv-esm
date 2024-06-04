@@ -63,6 +63,7 @@ typeof describe === "function" && describe("tipitaka", function () {
     should(taka.nextSuid("an4.99",grp)).equal("an4.100");
     should(taka.nextSuid("an1.1",grp)).equal("an1.1-10");
     should(taka.nextSuid("an1.10",grp)).equal("an1.11-20");
+    should(taka.nextSuid("tha-ap34",grp)).equal("tha-ap35");
 
     // boundaries
     should(taka.nextSuid("sn1.81",grp)).equal(null);
