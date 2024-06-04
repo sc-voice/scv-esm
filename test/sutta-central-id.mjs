@@ -506,7 +506,7 @@ typeof describe === "function" &&
       should.deepEqual(SuttaCentralId.partNumber("mn1", "mn1:50.2"), 
         [1,13]);
     });
-    it("TESTTESTcompare vinaya ids", ()=>{
+    it("compare vinaya ids", ()=>{
       let suid = 'pli-tv-pvr5'; // Valid vinaya document
       DBG.COMPARE = 0;
       should(SuttaCentralId.compareHigh('abc', suid)).equal(-1);

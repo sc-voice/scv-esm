@@ -307,7 +307,7 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(sabbamitta['sutta/an/an1']).equal(31);
     should(sabbamitta['sutta/kn/thig']).equal(73);
   });
-  it("TESTTESTsuttaAuthor()", ()=>{
+  it("suttaAuthor()", ()=>{
     // choose human quality over ebt-deepl quantity
     should(AuthorsV2.suttaAuthor('an1.1-10/pt')).equal('laera-quaresma');
 

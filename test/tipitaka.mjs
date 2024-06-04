@@ -52,7 +52,7 @@ typeof describe === "function" && describe("tipitaka", function () {
     should(taka.nextSuid("an11.992-1151")).equal(null);
     should(taka.nextSuid("mn152")).equal(null);
   });
-  it("TESTTESTnextSuid() folderOfGroup", () => {
+  it("nextSuid() folderOfGroup", () => {
     let taka = new Tipitaka();
     let grp = Tipitaka.folderOfSuid;
 

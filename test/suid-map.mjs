@@ -14,4 +14,10 @@ typeof describe === "function" &&
         "root/pli/ms": "sutta/kn/thig"
       });
     });
+    it("tha-ap34", () => {
+      let suidInfo = SuidMap["tha-ap34"];
+      should.deepEqual(suidInfo, {
+        "root/pli/ms": "sutta/kn/tha-ap"
+      });
+    });
   });
