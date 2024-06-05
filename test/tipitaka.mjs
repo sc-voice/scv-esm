@@ -87,8 +87,12 @@ typeof describe === "function" && describe("tipitaka", function () {
     should(taka.previousSuid("mn1")).equal(null);
     should(taka.previousSuid("mnd1")).equal(null);
   });
-  it("canonicalSuttaId(id)", ()=>{
+  it("TESTTESTcanonicalSuttaId(id)", ()=>{
     let taka = new Tipitaka();
+
+    // Hyphens
+    should(taka.canonicalSuttaId('tha-ap34-35')).equal('Tha Ap34-35');
+
     should(taka.canonicalSuttaId('an2.11-20')).equal('AN2.11-20');
     should(taka.canonicalSuttaId('AN2.11-20')).equal('AN2.11-20');
     should(taka.canonicalSuttaId('An2.11-20')).equal('AN2.11-20');
