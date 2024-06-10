@@ -366,6 +366,7 @@ const EXAMPLES = {
     "geistgeschaffenen Körper",
     "gelichtet",
     "genährt und unterhalten",
+    "genas",
     "genießt.*Arbeit",
     "Genügsamkeit",
     "Genussmensch",
