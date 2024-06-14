@@ -9575,6 +9575,7 @@ const SUIDMAP = {
 		"root/pli/ms": "sutta/mn"
 	},
 	"mn67": {
+		"translation/de/sabbamitta": "sutta/mn",
 		"translation/en/sujato": "sutta/mn",
 		"translation/ru/sv": "sutta/mn",
 		"root/pli/ms": "sutta/mn"
