@@ -733,6 +733,20 @@ const AUTHORS = {
       "sutta/kn/snp/vagga5": 4
     }
   },
+  "hi:trush": {
+    "type": "translation",
+    "lang": "hi",
+    "author": "trush",
+    "name": [
+      "तृषांत मजमुदार"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 6,
+      "sutta/mn": 6
+    }
+  },
   "sr:brankokovacevic": {
     "type": "translation",
     "lang": "sr",
@@ -840,8 +854,10 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 81,
-      "sutta/mn": 81
+      "sutta": 91,
+      "sutta/mn": 81,
+      "sutta/sn": 10,
+      "sutta/sn/sn1": 10
     }
   },
   "es:maggatr": {

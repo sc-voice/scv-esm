@@ -204,7 +204,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Trushant Majmudar",
     "author": "trush",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "hi"
   },
   "bernatfontclos": {
     "type": "translator",
