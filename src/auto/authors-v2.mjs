@@ -206,7 +206,7 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 3965,
+      "sutta": 3966,
       "sutta/an": 1408,
       "sutta/an/an1": 31,
       "sutta/an/an2": 19,
@@ -219,7 +219,7 @@ const AUTHORS = {
       "sutta/an/an9": 82,
       "sutta/an/an10": 211,
       "sutta/an/an11": 36,
-      "sutta/kn": 615,
+      "sutta/kn": 616,
       "sutta/kn/cp": 34,
       "sutta/kn/dhp": 26,
       "sutta/dn": 34,
@@ -295,11 +295,11 @@ const AUTHORS = {
       "sutta/sn/sn54": 20,
       "sutta/sn/sn55": 74,
       "sutta/sn/sn56": 109,
-      "sutta/kn/snp": 16,
+      "sutta/kn/snp": 17,
       "sutta/kn/snp/vagga1": 5,
       "sutta/kn/snp/vagga2": 6,
       "sutta/kn/snp/vagga3": 1,
-      "sutta/kn/snp/vagga4": 1,
+      "sutta/kn/snp/vagga4": 2,
       "sutta/kn/snp/vagga5": 3,
       "sutta/kn/thag": 264,
       "sutta/kn/thig": 73,
@@ -670,9 +670,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 13,
-      "sutta/kn": 13,
-      "sutta/kn/dhp": 13
+      "sutta": 15,
+      "sutta/kn": 15,
+      "sutta/kn/dhp": 15
     }
   },
   "lt:piyadassi": {
