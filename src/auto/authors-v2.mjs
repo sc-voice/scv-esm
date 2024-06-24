@@ -854,10 +854,10 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 97,
+      "sutta": 98,
       "sutta/mn": 81,
-      "sutta/sn": 16,
-      "sutta/sn/sn1": 16
+      "sutta/sn": 17,
+      "sutta/sn/sn1": 17
     }
   },
   "es:maggatr": {
