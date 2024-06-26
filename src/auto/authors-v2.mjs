@@ -436,9 +436,11 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 1,
+      "sutta": 2,
       "sutta/an": 1,
-      "sutta/an/an4": 1
+      "sutta/an/an4": 1,
+      "sutta/kn": 1,
+      "sutta/kn/pv": 1
     }
   },
   "pli:ms": {
@@ -502,6 +504,7 @@ const AUTHORS = {
       "vinaya/pli-tv-bu-vb/pli-tv-bu-vb-ss": 13,
       "vinaya/pli-tv-kd": 22,
       "vinaya/pli-tv-pvr": 51,
+      "sutta/kn/pv": 51,
       "sutta/sn": 1819,
       "sutta/sn/sn1": 81,
       "sutta/sn/sn2": 30,
@@ -583,7 +586,6 @@ const AUTHORS = {
       "sutta/kn/ne": 37,
       "sutta/kn/pe": 9,
       "sutta/kn/ps": 31,
-      "sutta/kn/pv": 51,
       "sutta/kn/tha-ap": 563,
       "sutta/kn/thi-ap": 40,
       "sutta/kn/vv": 85
@@ -743,8 +745,8 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 6,
-      "sutta/mn": 6
+      "sutta": 7,
+      "sutta/mn": 7
     }
   },
   "sr:brankokovacevic": {
