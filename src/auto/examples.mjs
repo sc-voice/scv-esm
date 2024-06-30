@@ -63,7 +63,7 @@ const EXAMPLES = {
     "allein zu wandern",
     "alles Leiden",
     "alle tauglichen Eigenschaften",
-    "als ‚Teller‘, als ‚Schale‘, als ‚Häferl‘",
+    "als ‚Kelch‘, als ‚Schale‘, als ‚Krug‘",
     "als unbeständig erkennt",
     "alt werden m[uü]ss",
     "an einem sicheren Ort",
@@ -927,7 +927,7 @@ const EXAMPLES = {
   ],
   "en": [
     "a beryl gem that was naturally beautiful",
-    "a ‘plate’, a ‘bowl’, a ‘cup’",
+    "a ‘pot’, a ‘bowl’, a ‘jar’",
     "accept my mistake",
     "accomplishment in",
     "a condition for old age and death",
