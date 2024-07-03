@@ -342,6 +342,18 @@ const AUTHORS = {
     "name": "PTS",
     "author": "pts",
     "exampleVersion": 0
+  },
+  "cыркин": {
+    "type": "translator",
+    "name": "А. Я. Сыркин",
+    "author": "cыркин",
+    "exampleVersion": 0
+  },
+  "syrkin": {
+    "type": "translator",
+    "name": "A. Y. Syrkin",
+    "author": "syrkin",
+    "exampleVersion": 0
   }
 }
 
