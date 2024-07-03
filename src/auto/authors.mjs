@@ -353,7 +353,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "A. Y. Syrkin",
     "author": "syrkin",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "ru"
   }
 }
 

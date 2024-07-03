@@ -856,10 +856,10 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 105,
-      "sutta/mn": 81,
-      "sutta/sn": 24,
-      "sutta/sn/sn1": 24
+      "sutta": 151,
+      "sutta/mn": 126,
+      "sutta/sn": 25,
+      "sutta/sn/sn1": 25
     }
   },
   "es:maggatr": {
@@ -896,6 +896,20 @@ const AUTHORS = {
       "sutta": 72,
       "sutta/kn": 72,
       "sutta/kn/mil": 72
+    }
+  },
+  "ru:syrkin": {
+    "type": "translation",
+    "lang": "ru",
+    "author": "syrkin",
+    "name": [
+      "A. Y. Syrkin"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 1,
+      "sutta/dn": 1
     }
   }
 }
