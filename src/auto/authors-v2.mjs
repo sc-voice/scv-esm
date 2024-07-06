@@ -908,8 +908,8 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 1,
-      "sutta/dn": 1
+      "sutta": 8,
+      "sutta/dn": 8
     }
   }
 }
