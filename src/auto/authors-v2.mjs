@@ -856,10 +856,10 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 193,
+      "sutta": 203,
       "sutta/mn": 152,
-      "sutta/sn": 41,
-      "sutta/sn/sn1": 41
+      "sutta/sn": 51,
+      "sutta/sn/sn1": 51
     }
   },
   "es:maggatr": {
