@@ -355,6 +355,30 @@ const AUTHORS = {
     "author": "syrkin",
     "exampleVersion": 0,
     "lang": "ru"
+  },
+  "narinyanievmenenko": {
+    "type": "translator",
+    "name": "E. Evmenenko",
+    "author": "narinyanievmenenko",
+    "exampleVersion": 0
+  },
+  "mao": {
+    "type": "translator",
+    "name": "Tsung-Mao Lee",
+    "author": "mao",
+    "exampleVersion": 0
+  },
+  "yingchen": {
+    "type": "translator",
+    "name": "Ying-Chen Chang",
+    "author": "yingchen",
+    "exampleVersion": 0
+  },
+  "gloine": {
+    "type": "translator",
+    "name": "Jaehyung Lee",
+    "author": "gloine",
+    "exampleVersion": 0
   }
 }
 
