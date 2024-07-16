@@ -735,6 +735,20 @@ const AUTHORS = {
       "sutta/kn/snp/vagga5": 4
     }
   },
+  "gu:trush": {
+    "type": "translation",
+    "lang": "gu",
+    "author": "trush",
+    "name": [
+      "तृषांत मजमुदार"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 9,
+      "sutta/mn": 9
+    }
+  },
   "hi:trush": {
     "type": "translation",
     "lang": "hi",
