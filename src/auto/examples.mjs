@@ -218,6 +218,7 @@ const EXAMPLES = {
     "die Weisen geben",
     "die Welt ist brüchig und wird fortgerissen",
     "die Welt streitet mit mir",
+    "die Worte des Buddha wieder",
     "Dinge bei sich selbst",
     "Dinge sind eine Hilfe",
     "disziplinarische Angelegenheit beizulegen",
