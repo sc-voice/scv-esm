@@ -927,6 +927,22 @@ const AUTHORS = {
       "sutta": 8,
       "sutta/dn": 8
     }
+  },
+  "ru:narinyanievmenenko": {
+    "type": "translation",
+    "lang": "ru",
+    "author": "narinyanievmenenko",
+    "name": [
+      "Evgenia Evmenenko"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 19,
+      "sutta/kn": 19,
+      "sutta/kn/thag": 17,
+      "sutta/kn/thig": 2
+    }
   }
 }
 

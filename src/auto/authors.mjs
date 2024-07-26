@@ -358,9 +358,10 @@ const AUTHORS = {
   },
   "narinyanievmenenko": {
     "type": "translator",
-    "name": "E. Evmenenko",
+    "name": "Evgenia Evmenenko",
     "author": "narinyanievmenenko",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "ru"
   },
   "mao": {
     "type": "translator",
