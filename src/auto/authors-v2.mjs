@@ -939,9 +939,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 23,
-      "sutta/kn": 23,
-      "sutta/kn/thag": 21,
+      "sutta": 58,
+      "sutta/kn": 58,
+      "sutta/kn/thag": 56,
       "sutta/kn/thig": 2
     }
   }
