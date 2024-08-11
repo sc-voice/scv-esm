@@ -1499,6 +1499,7 @@ const EXAMPLES = {
     "only be given to me",
     "origin of the world",
     "others' intentions",
+    "others will",
     "overcome by anger",
     "own island",
     "ox fond of crops",

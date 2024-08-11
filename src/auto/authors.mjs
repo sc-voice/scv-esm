@@ -380,6 +380,18 @@ const AUTHORS = {
     "name": "Jaehyung Lee",
     "author": "gloine",
     "exampleVersion": 0
+  },
+  "francois": {
+    "type": "translator",
+    "name": "Francois Thibeault",
+    "author": "francois",
+    "exampleVersion": 0
+  },
+  "jayasaro": {
+    "type": "translator",
+    "name": "Jayasāro Bhikkhu",
+    "author": "jayasaro",
+    "exampleVersion": 0
   }
 }
 
