@@ -150,7 +150,7 @@ export default class AuthorsV2 {
 
   static compare(author1, author2) {
     const msg = "authors-v2.compare() ";
-    const dbg = DBG.AUTHOR;
+    const dbg = 0 || DBG.AUTHOR;
     author1 = !!author1 ? author1 : '';
     author2 = !!author2 ? author2 : '';
     let noauthor = {author:'no-author'};
@@ -187,7 +187,7 @@ export default class AuthorsV2 {
     }
     if (!cmp) {
       cmp = author1.localeCompare(author2);
-      dbg && console.log(msg, '[6]author2', cmp);
+      dbg && console.log(msg, '[6]author2', author1, author2, cmp);
     }
     if (!cmp) {
       let sutta1 = info1.sutta ? 1 : 0;
@@ -225,9 +225,10 @@ export default class AuthorsV2 {
       let info = AuthorsV2.authorInfo(bpAuthor, bpLang); 
       let { stats } = info;
       let bpvParts = bpv && bpv.split('/');
-      let bpScore = bpAuthor.endsWith('ebt-deepl')
-        ? 1
-        : (stats[bpv]||0) + (stats[bpvParts[0]]||0)/MAX_SCORE;
+      let statsScore = stats 
+        ? (stats[bpv]||0) + (stats[bpvParts[0]]||0)/MAX_SCORE
+        : 0;
+      let bpScore = bpAuthor.endsWith('ebt-deepl') ? 1 : statsScore;
       if (bpLang === lang) {
         if (bpAuthor === author) {
           a = bpAuthor;

@@ -134,7 +134,7 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(info1.examples).not.equal(info2.examples);
     should(info1.type).not.equal(info2.type);
   });
-  it("compare(a1,a2)", ()=>{
+  it("TESTTESTcompare(a1,a2)", ()=>{
     let sujato = "sujato";
     let sabbamitta = "sabbamitta";
     let soma = "soma";
