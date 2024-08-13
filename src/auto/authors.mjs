@@ -392,6 +392,12 @@ const AUTHORS = {
     "name": "Jayasāro Bhikkhu",
     "author": "jayasaro",
     "exampleVersion": 0
+  },
+  "font": {
+    "type": "translator",
+    "name": "Bernat Font",
+    "author": "font",
+    "exampleVersion": 0
   }
 }
 
