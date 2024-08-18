@@ -946,6 +946,19 @@ const AUTHORS = {
       "sutta/kn/thag": 56,
       "sutta/kn/thig": 2
     }
+  },
+  "th:jayasaro": {
+    "type": "translation",
+    "lang": "th",
+    "author": "jayasaro",
+    "name": [
+      "Jayasāro Bhikkhu"
+    ],
+    "exampleVersion": 0,
+    "vinaya": true,
+    "stats": {
+      "vinaya": 1
+    }
   }
 }
 
