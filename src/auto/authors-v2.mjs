@@ -959,7 +959,7 @@ const AUTHORS = {
     "exampleVersion": 0,
     "vinaya": true,
     "stats": {
-      "vinaya": 1
+      "vinaya": 2
     }
   }
 }
