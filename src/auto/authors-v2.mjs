@@ -872,13 +872,13 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 298,
+      "sutta": 317,
       "sutta/mn": 152,
-      "sutta/sn": 146,
+      "sutta/sn": 165,
       "sutta/sn/sn1": 81,
       "sutta/sn/sn2": 30,
       "sutta/sn/sn3": 25,
-      "sutta/sn/sn4": 6,
+      "sutta/sn/sn4": 25,
       "sutta/sn/sn12": 1,
       "sutta/sn/sn45": 3
     }
@@ -943,9 +943,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 124,
-      "sutta/kn": 124,
-      "sutta/kn/thag": 122,
+      "sutta": 171,
+      "sutta/kn": 171,
+      "sutta/kn/thag": 169,
       "sutta/kn/thig": 2
     }
   },
