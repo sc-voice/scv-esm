@@ -963,6 +963,19 @@ const AUTHORS = {
     "stats": {
       "vinaya": 2
     }
+  },
+  "lo:jayasaro": {
+    "type": "translation",
+    "lang": "lo",
+    "author": "jayasaro",
+    "name": [
+      "Jayasāro Bhikkhu"
+    ],
+    "exampleVersion": 0,
+    "vinaya": true,
+    "stats": {
+      "vinaya": 1
+    }
   }
 }
 
