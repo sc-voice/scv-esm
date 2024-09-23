@@ -873,14 +873,15 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 327,
+      "sutta": 328,
       "sutta/mn": 152,
-      "sutta/sn": 175,
+      "sutta/sn": 176,
       "sutta/sn/sn1": 81,
       "sutta/sn/sn2": 30,
       "sutta/sn/sn3": 25,
       "sutta/sn/sn4": 25,
       "sutta/sn/sn5": 10,
+      "sutta/sn/sn6": 1,
       "sutta/sn/sn12": 1,
       "sutta/sn/sn45": 3
     }
@@ -945,10 +946,10 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 171,
-      "sutta/kn": 171,
-      "sutta/kn/thag": 169,
-      "sutta/kn/thig": 2
+      "sutta": 227,
+      "sutta/kn": 227,
+      "sutta/kn/thag": 209,
+      "sutta/kn/thig": 18
     }
   },
   "th:jayasaro": {
