@@ -10420,6 +10420,7 @@ const SUIDMAP = {
 	},
 	"pli-tv-bi-pm": {
 		"translation/en/brahmali": "vinaya",
+		"translation/lo/jayasaro": "vinaya",
 		"translation/th/jayasaro": "vinaya",
 		"root/pli/ms": "vinaya"
 	},
