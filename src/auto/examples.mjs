@@ -661,7 +661,7 @@ const EXAMPLES = {
     "sechs Dinge.* entwickelt werden",
     "sechs Elemente",
     "sechs Gegenstände zur Besinnung",
-    "seelische.* Kargheit",
+    "seelische.* Öde",
     "Sehen der Gesetzmäßigkeiten",
     "sehr lange.* Zeit",
     "Sehvermögen nicht zügelt",
