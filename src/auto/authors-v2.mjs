@@ -874,7 +874,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 364,
+      "sutta": 366,
+      "sutta/an": 1,
+      "sutta/an/an10": 1,
       "sutta/mn": 152,
       "sutta/sn": 212,
       "sutta/sn/sn1": 81,
@@ -885,7 +887,10 @@ const AUTHORS = {
       "sutta/sn/sn6": 15,
       "sutta/sn/sn7": 22,
       "sutta/sn/sn12": 1,
-      "sutta/sn/sn45": 3
+      "sutta/sn/sn45": 3,
+      "sutta/kn": 1,
+      "sutta/kn/snp": 1,
+      "sutta/kn/snp/vagga1": 1
     }
   },
   "es:maggatr": {
@@ -948,10 +953,10 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 313,
-      "sutta/kn": 313,
+      "sutta": 324,
+      "sutta/kn": 324,
       "sutta/kn/thag": 264,
-      "sutta/kn/thig": 49
+      "sutta/kn/thig": 60
     }
   },
   "th:jayasaro": {
