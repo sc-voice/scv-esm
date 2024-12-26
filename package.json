@@ -21,13 +21,12 @@
   "license": "MIT",
   "dependencies": {
     "esm": "^3.2.25",
-    "log-instance": "^1.5.0",
-    "ls": "^0.2.1"
+    "log-instance": "^1.5.0"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
+    "eslint": "^9.17.0",
     "memo-again": "^0.8.0",
-    "mocha": "^10.0.0",
+    "mocha": "^11.0.1",
     "scv-bilara": "^3.162.1",
     "should": "^13.2.3",
     "suttacentral-api": "^2.16.5"

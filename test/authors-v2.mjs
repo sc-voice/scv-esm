@@ -276,11 +276,12 @@ typeof describe === "function" && describe("authors-v2", function () {
       AuthorsV2.authorInfo('suddhaso'),
     ]);
   });
-  it("find() vinaya", ()=>{
-    should.deepEqual(AuthorsV2.find({vinaya:true}), [
-      AuthorsV2.authorInfo('ms'),
-      AuthorsV2.authorInfo('brahmali'),
-    ]);
+  it("TESTTESTfind() vinaya", ()=>{
+    let authors = AuthorsV2.find({vinaya:true});
+    should.deepEqual(authors[0], AuthorsV2.authorInfo('ms'));
+    should.deepEqual(authors[1], AuthorsV2.authorInfo('brahmali'));
+    should.deepEqual(authors[2], AuthorsV2.authorInfo('jayasaro', 'lo'));
+    should.deepEqual(authors[3], AuthorsV2.authorInfo('jayasaro', 'th'));
   });
   it("buildAuthorStats()", async ()=>{
     let stats = await AuthorsV2.buildAuthorStats();
