@@ -955,10 +955,10 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 324,
-      "sutta/kn": 324,
+      "sutta": 337,
+      "sutta/kn": 337,
       "sutta/kn/thag": 264,
-      "sutta/kn/thig": 60
+      "sutta/kn/thig": 73
     }
   },
   "th:jayasaro": {
