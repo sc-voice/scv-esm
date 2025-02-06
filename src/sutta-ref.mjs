@@ -25,7 +25,7 @@ export default class SuttaRef {
 
   static createFromString(str='', defaultLang="pli", suids=SUIDS) {
     const msg = 's6f.createFromString()';
-    const dbg = DBG.SUTTA_REF;
+    const dbg = DBG.S6F_CREATE_FROM_STRING;
     let refLower = str.toLowerCase();
     let segMatch = refLower.match(/:[-0-9.]*/);
     let segnum;
