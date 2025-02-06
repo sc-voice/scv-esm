@@ -99,14 +99,18 @@ export default class AuthorsV2 {
            return info;
          }
 
-         // compare by number of MN suttas translated
-         let sutta_mn1 = info?.stats?.['sutta/mn'] || 0;
-         let sutta_mn2 = a?.stats?.['sutta/mn'] || 0;
-         let cmp = sutta_mn1 - sutta_mn2;
+         let cmp = 0;
+         let stats1 = info.stats || {};
+         let stats2 = a.stats || {};
+         if (cmp === 0) { // compare by number of MN suttas translated
+           let sutta_mn1 = stats1['sutta/mn'] || 0;
+           let sutta_mn2 = stats2['sutta/mn'] || 0;
+           cmp = sutta_mn1 - sutta_mn2;
+         }
 
          if (cmp === 0) { // compare by number of suttas translated
-           let sutta1 = info?.stats?.sutta || 0;
-           let sutta2 = a?.stats?.sutta || 0;
+           let sutta1 = stats1.sutta || 0;
+           let sutta2 = stats2.sutta || 0;
            cmp = sutta1 - sutta2;
          }
          dbg && console.log(msg, '[2]stats', {sutta1, sutta2, cmp});
