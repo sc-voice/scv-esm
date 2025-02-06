@@ -98,8 +98,22 @@ export default class AuthorsV2 {
            dbg && console.log(msg, '[1]lang', info.name);
            return info;
          }
-         let cmp = AuthorsV2.compare(info.author, a && a.author);
-         dbg && console.log(msg, '[2]compare', info.name, cmp);
+
+         // compare by number of MN suttas translated
+         let sutta_mn1 = info?.stats?.['sutta/mn'] || 0;
+         let sutta_mn2 = a?.stats?.['sutta/mn'] || 0;
+         let cmp = sutta_mn1 - sutta_mn2;
+
+         if (cmp === 0) { // compare by number of suttas translated
+           let sutta1 = info?.stats?.sutta || 0;
+           let sutta2 = a?.stats?.sutta || 0;
+           cmp = sutta1 - sutta2;
+         }
+         dbg && console.log(msg, '[2]stats', {sutta1, sutta2, cmp});
+         if (cmp === 0) { // compare by author name
+           cmp = AuthorsV2.compare(info.author, a && a.author);
+           dbg && console.log(msg, '[3]author', info.name, cmp);
+         }
          if (cmp === 0) {
            return a;
          }
@@ -191,7 +205,7 @@ export default class AuthorsV2 {
       let sutta1 = info1.sutta ? 1 : 0;
       let sutta2 = info2.sutta ? 1 : 0;
       cmp = sutta1 - sutta2;
-      dbg && console.log(msg, '[7]sutta', cmp);
+      dbg && console.log(msg, '[7]sutta', cmp, info1.sutta, info2.sutta);
     }
     if (!cmp) {
       let vinaya1 = info1.vinaya ? 1 : 0;

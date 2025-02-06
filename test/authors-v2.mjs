@@ -170,9 +170,10 @@ describe("authors-v2", function () {
     should(AuthorsV2.compare(sujato, unknown)).equal(-1);
     should(AuthorsV2.compare(sujato,sabbamitta)).equal(1);
   });
-  it("langAuthor sutta", ()=>{
+  it("TESTTESTlangAuthor sutta", ()=>{
     let opts = { category: 'sutta'};
 
+    should(AuthorsV2.langAuthor('ru')).equal('sv');
     should(AuthorsV2.langAuthor('es')).equal('maggatr');
     should(AuthorsV2.langAuthor('unknown')).equal(undefined);
     should(AuthorsV2.langAuthor('fr')).equal('noeismet');
@@ -182,6 +183,7 @@ describe("authors-v2", function () {
     should(AuthorsV2.langAuthor('pt')).equal('laera-quaresma');
 
     should(AuthorsV2.langAuthor('unknown', opts)).equal(undefined);
+    should(AuthorsV2.langAuthor('ru', opts)).equal('sv');
     should(AuthorsV2.langAuthor('fr', opts)).equal('noeismet');
     should(AuthorsV2.langAuthor('de', opts)).equal('sabbamitta');
     should(AuthorsV2.langAuthor('en', opts)).equal('sujato');
