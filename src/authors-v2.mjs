@@ -1,6 +1,6 @@
 import AUTHORSV2 from "./auto/authors-v2.mjs";
 import { default as SuttaRef } from './sutta-ref.mjs';
-import { DBG, } from './defines.mjs';
+import { DBG } from './defines.mjs';
 
 import { default as  suidMap } from './auto/suid-map.mjs';
 
@@ -10,9 +10,8 @@ export default class AuthorsV2 {
   }
 
   static authorInfo(author, lang) {
-    const msg = "AuthorsV2.authorInfo() ";
-    const dbg = DBG.AUTHOR;
-    const dbgv = DBG.VERBOSE && dbg;
+    const msg = "a72.authorInfo() ";
+    const dbg = DBG.A72_AUTHOR_INFO;
     let keys = Object.keys(AUTHORSV2);
     let authorInfo = keys.reduce((a,k)=>{
       let info = AUTHORSV2[k];
@@ -20,13 +19,13 @@ export default class AuthorsV2 {
         return a;
       }
       if (info.lang === lang || a==null) {
-        dbgv && console.log(msg, '[1]info', info.author);
+        dbg>1 && console.log(msg, '[1]info', info.author);
         return info;
       }
-      dbgv && console.log(msg, '[2]!lang', info.lang, info.author);
+      dbg>1 && console.log(msg, '[2]!lang', info.lang, info.author);
       return a;
     }, undefined);
-    dbgv && console.log(msg, '[3]info', author, authorInfo);
+    dbg>1 && console.log(msg, '[3]info', author, authorInfo);
     return authorInfo;
   }
 
@@ -75,8 +74,8 @@ export default class AuthorsV2 {
   }
 
   static langAuthor(lang, opts={}) {
-    const msg = "AuthorsV2.langAuthor()";
-    const dbg = DBG.AUTHOR;
+    const msg = "a72.langAuthor()";
+    const dbg = DBG.A72_LANG_AUTHOR;
     let {
       category='sutta',
     } = opts;
@@ -114,9 +113,8 @@ export default class AuthorsV2 {
   }
 
   static compareInfo(info1, info2) {
-    const msg = "AuthorsV2.compareInfo()";
-    const dbg = DBG.AUTHOR;
-    const dbgv = DBG.VERBOSE && dbg;
+    const msg = "a72.compareInfo()";
+    const dbg = DBG.A72_COMPARE_INFO;
     if (info1 === info2) {
       return 0;
     }
@@ -135,10 +133,10 @@ export default class AuthorsV2 {
       let deepl2 = info2.author.startsWith('ebt-deepl') ? 1 : 2;
       let cmp = deepl1 - deepl2;
       //if (info1.author.startsWith('ebt-deepl')) {
-        //dbgv && console.log(msg, '[1]info1', info1.name);
+        //dbg>1 && console.log(msg, '[1]info1', info1.name);
         //cmp = -1;
       //} else if (info2.author.startsWith('ebt-deepl')) {
-        //dbgv && console.log(msg, '[2]info2', info2.name);
+        //dbg>1 && console.log(msg, '[2]info2', info2.name);
         //cmp = 1;
       //}
     }
@@ -149,8 +147,8 @@ export default class AuthorsV2 {
   }
 
   static compare(author1, author2) {
-    const msg = "authors-v2.compare() ";
-    const dbg = 0 || DBG.AUTHOR;
+    const msg = "a72.compare() ";
+    const dbg = DBG.A72_COMPARE;
     author1 = !!author1 ? author1 : '';
     author2 = !!author2 ? author2 : '';
     let noauthor = {author:'no-author'};
@@ -206,8 +204,8 @@ export default class AuthorsV2 {
   }
 
   static suttaAuthor(suttaRef) {
-    const msg = 'AuthorsV2.suttaAuthor()';
-    const dbg = DBG.AUTHOR;
+    const msg = 'a72.suttaAuthor()';
+    const dbg = DBG.A72_SUTTA_AUTHOR;
     let { 
       sutta_uid, lang, author 
     } = SuttaRef.create(suttaRef);
@@ -223,6 +221,10 @@ export default class AuthorsV2 {
       let bpv = bPaths[bpk] || '';
       let [ ignore, bpLang, bpAuthor ] = bpk.split('/');
       let info = AuthorsV2.authorInfo(bpAuthor, bpLang); 
+      if (info == null) { // aligned legacy (fr/wijayaratna)
+        dbg && console.log(msg, {bpAuthor, bpLang});
+        return a;
+      }
       let { stats } = info;
       let bpvParts = bpv && bpv.split('/');
       let statsScore = stats 

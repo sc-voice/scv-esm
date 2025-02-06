@@ -24,7 +24,7 @@ export default class SuttaRef {
   }
 
   static createFromString(str='', defaultLang="pli", suids=SUIDS) {
-    const msg = 'SuttaRef.createFromString()';
+    const msg = 's6f.createFromString()';
     const dbg = DBG.SUTTA_REF;
     let refLower = str.toLowerCase();
     let segMatch = refLower.match(/:[-0-9.]*/);
@@ -114,7 +114,7 @@ export default class SuttaRef {
   }
 
   static createFromObject(obj, defaultLang="pli", suids=SUIDS) {
-    const msg = "SuttaRef.createFromObject() ";
+    const msg = "s6f.createFromObject() ";
     let parsed = SuttaRef.createFromString(
       obj.sutta_uid,
       obj.lang || defaultLang
@@ -145,18 +145,21 @@ export default class SuttaRef {
   }
 
   static create(strOrObj, defaultLang="pli", suids=SUIDS) {
+    const msg = 's6f.create:';
     try {
       return SuttaRef.createWithError(strOrObj, defaultLang, suids);
     } catch(e) {
       let args = JSON.stringify(strOrObj);
-      let msg = `SuttaRef.create() ${args} => ${e.message}`;
-      logger.warn(msg);
+      let emsg = `${msg} ${args} => ${e.message}`;
+      logger.warn(emsg);
     }
 
     return null;
   }
 
   static createOpts(strOrObj, opts={}) {
+    const msg = 's6f.createOpts:';
+    const dbg = DBG.S6F_CREATE_OPTS;
     let {
       defaultLang = 'pli',
       suids = SUIDS,
@@ -167,6 +170,7 @@ export default class SuttaRef {
       return undefined;
     }
 
+    dbg && console.log(msg, '[1]', {strOrObj, defaultLang, normalize});
     let sref = typeof strOrObj === 'string'
       ? SuttaRef.create(strOrObj, defaultLang, suids)
       : SuttaRef.create(Object.assign({},strOrObj), defaultLang, suids);
@@ -174,6 +178,7 @@ export default class SuttaRef {
     if (normalize && sref) {
       let { sutta_uid, lang, author, segnum } = sref;
       if (sutta_uid && author == null) {
+        dbg && console.log(msg, '[2]author?', {sref});
         sref.author = AuthorsV2.suttaAuthor(sref);
       }
     }

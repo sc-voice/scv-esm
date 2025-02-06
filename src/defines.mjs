@@ -1,7 +1,6 @@
 export const DBG = {
-  AUTHOR: 0,
-  COMPARE: 0,
-  SUTTA_REF: 0,
-  VERBOSE: 0,
+  A72_SUTTA_AUTHOR: 0,
+  A72_COMPARE: 0,
+  S6F_CREATE_OPTS: 0,
 };
 

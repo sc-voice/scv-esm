@@ -87,7 +87,7 @@ typeof describe === "function" && describe("tipitaka", function () {
     should(taka.previousSuid("mn1")).equal(null);
     should(taka.previousSuid("mnd1")).equal(null);
   });
-  it("TESTTESTcanonicalSuttaId(id)", ()=>{
+  it("canonicalSuttaId(id)", ()=>{
     let taka = new Tipitaka();
 
     // Hyphens

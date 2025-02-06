@@ -1,7 +1,7 @@
 import { Authors, AuthorsV2 } from "../main.mjs";
 import should from "should";
 
-typeof describe === "function" && describe("authors-v2", function () {
+describe("authors-v2", function () {
   it("authorInfo() => supported author info", async()=>{
     var ms = {
         lang: 'pli',
@@ -134,7 +134,7 @@ typeof describe === "function" && describe("authors-v2", function () {
     should(info1.examples).not.equal(info2.examples);
     should(info1.type).not.equal(info2.type);
   });
-  it("TESTTESTcompare(a1,a2)", ()=>{
+  it("compare(a1,a2)", ()=>{
     let sujato = "sujato";
     let sabbamitta = "sabbamitta";
     let soma = "soma";
@@ -175,12 +175,14 @@ typeof describe === "function" && describe("authors-v2", function () {
 
     should(AuthorsV2.langAuthor('es')).equal('maggatr');
     should(AuthorsV2.langAuthor('unknown')).equal(undefined);
+    should(AuthorsV2.langAuthor('fr')).equal('noeismet');
     should(AuthorsV2.langAuthor('de')).equal('sabbamitta');
     should(AuthorsV2.langAuthor('en')).equal('sujato');
     should(AuthorsV2.langAuthor('jpn')).equal('kaz');
     should(AuthorsV2.langAuthor('pt')).equal('laera-quaresma');
 
     should(AuthorsV2.langAuthor('unknown', opts)).equal(undefined);
+    should(AuthorsV2.langAuthor('fr', opts)).equal('noeismet');
     should(AuthorsV2.langAuthor('de', opts)).equal('sabbamitta');
     should(AuthorsV2.langAuthor('en', opts)).equal('sujato');
     should(AuthorsV2.langAuthor('jpn', opts)).equal('kaz');
@@ -276,7 +278,7 @@ typeof describe === "function" && describe("authors-v2", function () {
       AuthorsV2.authorInfo('suddhaso'),
     ]);
   });
-  it("TESTTESTfind() vinaya", ()=>{
+  it("find() vinaya", ()=>{
     let authors = AuthorsV2.find({vinaya:true});
     should.deepEqual(authors[0], AuthorsV2.authorInfo('ms'));
     should.deepEqual(authors[1], AuthorsV2.authorInfo('brahmali'));
