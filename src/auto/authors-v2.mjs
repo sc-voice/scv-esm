@@ -1,46 +1,4 @@
 const AUTHORS = {
-  "es:ebt-deepl": {
-    "type": "translation",
-    "lang": "es",
-    "author": "ebt-deepl",
-    "name": [
-      "EBT-DeepL/ES"
-    ],
-    "exampleVersion": 1,
-    "sutta": true,
-    "vinaya": false,
-    "examples": [
-      "sutta"
-    ]
-  },
-  "pt:ebt-deepl": {
-    "type": "translation",
-    "lang": "pt",
-    "author": "ebt-deepl",
-    "name": [
-      "EBT-DeepL/PT"
-    ],
-    "exampleVersion": 1,
-    "sutta": true,
-    "vinaya": false,
-    "examples": [
-      "sutta"
-    ]
-  },
-  "it:ebt-deepl": {
-    "type": "translation",
-    "lang": "it",
-    "author": "ebt-deepl",
-    "name": [
-      "EBT-DeepL/IT"
-    ],
-    "exampleVersion": 1,
-    "sutta": true,
-    "vinaya": false,
-    "examples": [
-      "sutta"
-    ]
-  },
   "en:sujato": {
     "type": "translation",
     "lang": "en",
@@ -315,17 +273,6 @@ const AUTHORS = {
       "sutta/kn/ud/vagga7": 10,
       "sutta/kn/ud/vagga8": 10
     }
-  },
-  "ru:team": {
-    "type": "translation",
-    "lang": "ru",
-    "author": "team",
-    "name": [
-      "Dzmitry",
-      "Danylo Rybchynskyi"
-    ],
-    "exampleVersion": 0,
-    "sutta": true
   },
   "jpn:kaz": {
     "type": "translation",

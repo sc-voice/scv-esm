@@ -79,9 +79,9 @@ function deeplAuthor(pubAuthors, lang) {
     // Initialize with authors not included in published 
     // SuttaCentral authors
     let pubAuthors = {};
-    deeplAuthor(pubAuthors, 'es');
-    deeplAuthor(pubAuthors, 'pt');
-    deeplAuthor(pubAuthors, 'it');
+    //deeplAuthor(pubAuthors, 'es');
+    //deeplAuthor(pubAuthors, 'pt');
+    //deeplAuthor(pubAuthors, 'it');
 
     for (let i=0; i < ebtPubs.length; i++) {
       let v = ebtPubs[i];
@@ -131,10 +131,11 @@ function deeplAuthor(pubAuthors, lang) {
         pa.sutta = true;
         pa.vinaya = true;
       }
-      if (pa.sutta || pa.vinaya) {
-        pa.stats = authorStats[key];
+      let stats = authorStats[key];
+      if (stats && (stats.sutta || stats.vinaya)) {
+        pa.stats = stats;
       } else {
-        console.log(msg, `omitting ${key}`);
+        console.log(msg, `omitting ${key}`, stats);
         delete pubAuthors[key];
       }
     });
