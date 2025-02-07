@@ -207,12 +207,17 @@ describe("authors-v2", function () {
   });
   it("find() lang", ()=>{
     should.deepEqual(AuthorsV2.find({lang:'es'}), [
-      AuthorsV2.authorInfo('ebt-deepl', 'es'),
+      //AuthorsV2.authorInfo('ebt-deepl', 'es'),
       AuthorsV2.authorInfo('maggatr'),
     ]);
     should.deepEqual(AuthorsV2.find({lang:'pt'}), [
       AuthorsV2.authorInfo('laera-quaresma'),
-      AuthorsV2.authorInfo('ebt-deepl', 'pt'),
+      //AuthorsV2.authorInfo('ebt-deepl', 'pt'),
+    ]);
+    should.deepEqual(AuthorsV2.find({lang:'ru'}), [
+      AuthorsV2.authorInfo('narinyanievmenenko'),
+      AuthorsV2.authorInfo('sv'),
+      AuthorsV2.authorInfo('syrkin'),
     ]);
     should.deepEqual(AuthorsV2.find({lang:'jpn'}), [
       AuthorsV2.authorInfo('kaz'),
@@ -253,12 +258,12 @@ describe("authors-v2", function () {
     should.deepEqual(authors, [
       'de/sabbamitta',
       'en/sujato',
-      'es/ebt-deepl',
+      //'es/ebt-deepl',
       'fr/noeismet',
-      'it/ebt-deepl',
+      //'it/ebt-deepl',
       'jpn/kaz',
       'pli/ms',
-      'pt/ebt-deepl',
+      //'pt/ebt-deepl',
       'pt/laera-quaresma',
     ]);
     should.deepEqual(AuthorsV2.find({exampleVersion:1, lang:'en'}), [
