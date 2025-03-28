@@ -784,7 +784,7 @@ const AUTHORS = {
     "lang": "fr",
     "author": "sekha",
     "name": [
-      "Bhikkhu Sekha"
+      "Rémy Zins"
     ],
     "exampleVersion": 0,
     "sutta": true,

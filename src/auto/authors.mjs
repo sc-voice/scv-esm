@@ -302,7 +302,7 @@ const AUTHORS = {
   },
   "sekha": {
     "type": "translator",
-    "name": "Bhikkhu Sekha",
+    "name": "Rémy Zins",
     "author": "sekha",
     "exampleVersion": 0,
     "lang": "fr"
