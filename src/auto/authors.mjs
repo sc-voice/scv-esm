@@ -97,6 +97,12 @@ const AUTHORS = {
     "author": "davis",
     "exampleVersion": 0
   },
+  "flavio": {
+    "type": "translator",
+    "name": "Flavio Stucky",
+    "author": "flavio",
+    "exampleVersion": 0
+  },
   "font": {
     "type": "translator",
     "name": "Bernat Font",
