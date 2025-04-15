@@ -101,7 +101,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Flavio Stucky",
     "author": "flavio",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "gsw"
   },
   "font": {
     "type": "translator",

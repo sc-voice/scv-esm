@@ -946,6 +946,22 @@ const AUTHORS = {
     "stats": {
       "vinaya": 2
     }
+  },
+  "gsw:flavio": {
+    "type": "translation",
+    "lang": "gsw",
+    "author": "flavio",
+    "name": [
+      "Flavio Stucky"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 1,
+      "sutta/kn": 1,
+      "sutta/kn/snp": 1,
+      "sutta/kn/snp/vagga1": 1
+    }
   }
 }
 
