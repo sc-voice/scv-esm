@@ -626,6 +626,20 @@ const AUTHORS = {
       "sutta/kn/dhp": 15
     }
   },
+  "it:giovannizappa": {
+    "type": "translation",
+    "lang": "it",
+    "author": "giovannizappa",
+    "name": [
+      "Giovanni Zappa"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 12,
+      "sutta/mn": 12
+    }
+  },
   "lt:piyadassi": {
     "type": "translation",
     "lang": "lt",
@@ -957,8 +971,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 1,
-      "sutta/kn": 1,
+      "sutta": 2,
+      "sutta/kn": 2,
+      "sutta/kn/kp": 1,
       "sutta/kn/snp": 1,
       "sutta/kn/snp/vagga1": 1
     }

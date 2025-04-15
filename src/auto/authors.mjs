@@ -120,7 +120,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Giovanni Zappa",
     "author": "giovannizappa",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "it"
   },
   "gloine": {
     "type": "translator",
