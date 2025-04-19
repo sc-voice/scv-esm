@@ -803,10 +803,10 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 211,
-      "sutta/an": 115,
+      "sutta": 227,
+      "sutta/an": 131,
       "sutta/an/an1": 31,
-      "sutta/an/an2": 2,
+      "sutta/an/an2": 18,
       "sutta/an/an3": 57,
       "sutta/an/an10": 2,
       "sutta/an/an11": 23,
