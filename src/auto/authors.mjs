@@ -375,7 +375,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Ṭhitañāṇa Bhikkhu",
     "author": "thitanana",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "et"
   },
   "trush": {
     "type": "translator",

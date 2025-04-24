@@ -962,6 +962,21 @@ const AUTHORS = {
       "vinaya": 2
     }
   },
+  "et:thitanana": {
+    "type": "translation",
+    "lang": "et",
+    "author": "thitanana",
+    "name": [
+      "Ṭhitañāṇa Bhikkhu"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 26,
+      "sutta/kn": 26,
+      "sutta/kn/dhp": 26
+    }
+  },
   "gsw:flavio": {
     "type": "translation",
     "lang": "gsw",
