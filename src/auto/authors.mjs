@@ -373,7 +373,7 @@ const AUTHORS = {
   },
   "thitanana": {
     "type": "translator",
-    "name": "Ṭhitañāṇa Bhikkhu",
+    "name": "Ṭhitañāṇa Bhikkhu (Dr. Andrus Kahn)",
     "author": "thitanana",
     "exampleVersion": 0,
     "lang": "et"

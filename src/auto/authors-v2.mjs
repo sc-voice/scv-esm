@@ -967,7 +967,7 @@ const AUTHORS = {
     "lang": "et",
     "author": "thitanana",
     "name": [
-      "Ṭhitañāṇa Bhikkhu"
+      "Ṭhitañāṇa Bhikkhu (Dr. Andrus Kahn)"
     ],
     "exampleVersion": 0,
     "sutta": true,
