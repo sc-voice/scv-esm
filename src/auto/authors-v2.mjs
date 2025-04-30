@@ -636,8 +636,8 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 32,
-      "sutta/mn": 32
+      "sutta": 152,
+      "sutta/mn": 152
     }
   },
   "lt:piyadassi": {
