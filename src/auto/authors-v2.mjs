@@ -843,7 +843,7 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 837,
+      "sutta": 838,
       "sutta/an": 466,
       "sutta/an/an5": 218,
       "sutta/an/an6": 111,
@@ -851,7 +851,7 @@ const AUTHORS = {
       "sutta/an/an8": 51,
       "sutta/an/an9": 1,
       "sutta/an/an10": 1,
-      "sutta/kn": 7,
+      "sutta/kn": 8,
       "sutta/kn/iti": 6,
       "sutta/kn/iti/vagga1": 1,
       "sutta/kn/iti/vagga3": 3,
@@ -869,7 +869,9 @@ const AUTHORS = {
       "sutta/sn/sn12": 1,
       "sutta/sn/sn45": 3,
       "sutta/kn/snp": 1,
-      "sutta/kn/snp/vagga1": 1
+      "sutta/kn/snp/vagga1": 1,
+      "sutta/kn/ud": 1,
+      "sutta/kn/ud/vagga2": 1
     }
   },
   "es:maggatr": {
