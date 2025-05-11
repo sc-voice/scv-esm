@@ -165,7 +165,7 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 4013,
+      "sutta": 4014,
       "sutta/an": 1408,
       "sutta/an/an1": 31,
       "sutta/an/an2": 19,
@@ -197,7 +197,7 @@ const AUTHORS = {
       "sutta/kn/ja": 23,
       "sutta/kn/kp": 9,
       "sutta/kn/mil": 1,
-      "sutta/mn": 113,
+      "sutta/mn": 114,
       "sutta/sn": 1819,
       "sutta/sn/sn1": 81,
       "sutta/sn/sn2": 30,
@@ -636,10 +636,11 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 233,
+      "sutta": 263,
       "sutta/mn": 152,
-      "sutta/sn": 81,
-      "sutta/sn/sn1": 81
+      "sutta/sn": 111,
+      "sutta/sn/sn1": 81,
+      "sutta/sn/sn2": 30
     }
   },
   "lt:piyadassi": {
@@ -848,7 +849,7 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 838,
+      "sutta": 839,
       "sutta/an": 466,
       "sutta/an/an5": 218,
       "sutta/an/an6": 111,
@@ -863,7 +864,7 @@ const AUTHORS = {
       "sutta/kn/iti/vagga7": 1,
       "sutta/kn/iti/vagga10": 1,
       "sutta/mn": 152,
-      "sutta/sn": 212,
+      "sutta/sn": 213,
       "sutta/sn/sn1": 81,
       "sutta/sn/sn2": 30,
       "sutta/sn/sn3": 25,
@@ -872,6 +873,7 @@ const AUTHORS = {
       "sutta/sn/sn6": 15,
       "sutta/sn/sn7": 22,
       "sutta/sn/sn12": 1,
+      "sutta/sn/sn20": 1,
       "sutta/sn/sn45": 3,
       "sutta/kn/snp": 1,
       "sutta/kn/snp/vagga1": 1,
