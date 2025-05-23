@@ -165,7 +165,7 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 4016,
+      "sutta": 4018,
       "sutta/an": 1408,
       "sutta/an/an1": 31,
       "sutta/an/an2": 19,
@@ -178,7 +178,7 @@ const AUTHORS = {
       "sutta/an/an9": 82,
       "sutta/an/an10": 211,
       "sutta/an/an11": 36,
-      "sutta/kn": 640,
+      "sutta/kn": 642,
       "sutta/kn/cp": 34,
       "sutta/kn/dhp": 26,
       "sutta/dn": 34,
@@ -194,7 +194,7 @@ const AUTHORS = {
       "sutta/kn/iti/vagga9": 10,
       "sutta/kn/iti/vagga10": 10,
       "sutta/kn/iti/vagga11": 13,
-      "sutta/kn/ja": 23,
+      "sutta/kn/ja": 25,
       "sutta/kn/kp": 9,
       "sutta/kn/mil": 1,
       "sutta/mn": 115,
@@ -945,6 +945,21 @@ const AUTHORS = {
       "sutta/kn": 337,
       "sutta/kn/thag": 264,
       "sutta/kn/thig": 73
+    }
+  },
+  "es:font": {
+    "type": "translation",
+    "lang": "es",
+    "author": "font",
+    "name": [
+      "Bernat Font"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 31,
+      "sutta/sn": 31,
+      "sutta/sn/sn36": 31
     }
   },
   "th:jayasaro": {

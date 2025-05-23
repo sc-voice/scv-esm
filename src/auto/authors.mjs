@@ -108,7 +108,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Bernat Font",
     "author": "font",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "es"
   },
   "francois": {
     "type": "translator",
