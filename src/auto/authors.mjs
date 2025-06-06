@@ -97,6 +97,12 @@ const AUTHORS = {
     "author": "davis",
     "exampleVersion": 0
   },
+  "dogensisapa": {
+    "type": "translator",
+    "name": "Dōgen Sisapa",
+    "author": "dogensisapa",
+    "exampleVersion": 0
+  },
   "flavio": {
     "type": "translator",
     "name": "Flavio Stucky",
