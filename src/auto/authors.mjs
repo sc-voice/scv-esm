@@ -79,6 +79,12 @@ const AUTHORS = {
     "author": "buddhadassa",
     "exampleVersion": 0
   },
+  "christelle": {
+    "type": "translator",
+    "name": "Christelle Ah-Mouck",
+    "author": "christelle",
+    "exampleVersion": 0
+  },
   "cittadhammo": {
     "type": "translator",
     "name": "Cittadhammo Bhikkhu",
