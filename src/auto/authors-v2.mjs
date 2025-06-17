@@ -1020,6 +1020,21 @@ const AUTHORS = {
       "sutta/kn/snp": 1,
       "sutta/kn/snp/vagga1": 1
     }
+  },
+  "tr:dogensisapa": {
+    "type": "translation",
+    "lang": "tr",
+    "author": "dogensisapa",
+    "name": [
+      "Dōgen Sisapa"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 37,
+      "sutta/kn": 37,
+      "sutta/kn/thig": 37
+    }
   }
 }
 

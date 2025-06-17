@@ -107,7 +107,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Dōgen Sisapa",
     "author": "dogensisapa",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "tr"
   },
   "flavio": {
     "type": "translator",
