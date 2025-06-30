@@ -1032,9 +1032,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 37,
-      "sutta/kn": 37,
-      "sutta/kn/thig": 37
+      "sutta": 62,
+      "sutta/kn": 62,
+      "sutta/kn/thig": 62
     }
   }
 }
