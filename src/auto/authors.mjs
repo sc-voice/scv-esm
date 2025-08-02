@@ -103,6 +103,12 @@ const AUTHORS = {
     "author": "davis",
     "exampleVersion": 0
   },
+  "dhiranandi": {
+    "type": "translator",
+    "name": "Dhīranandī",
+    "author": "dhiranandi",
+    "exampleVersion": 0
+  },
   "dogensisapa": {
     "type": "translator",
     "name": "Dōgen Sisapa",
