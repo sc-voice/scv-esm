@@ -1036,6 +1036,21 @@ const AUTHORS = {
       "sutta/kn": 72,
       "sutta/kn/thig": 72
     }
+  },
+  "fr:christelle": {
+    "type": "translation",
+    "lang": "fr",
+    "author": "christelle",
+    "name": [
+      "Christelle Ah-Mouck"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 1,
+      "sutta/an": 1,
+      "sutta/an/an8": 1
+    }
   }
 }
 

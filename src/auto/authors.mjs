@@ -83,7 +83,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Christelle Ah-Mouck",
     "author": "christelle",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "fr"
   },
   "cittadhammo": {
     "type": "translator",
