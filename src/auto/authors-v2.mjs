@@ -1051,6 +1051,22 @@ const AUTHORS = {
       "sutta/an": 1,
       "sutta/an/an8": 1
     }
+  },
+  "th:dhiranandi": {
+    "type": "translation",
+    "lang": "th",
+    "author": "dhiranandi",
+    "name": [
+      "Dhīranandī"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 1,
+      "sutta/kn": 1,
+      "sutta/kn/snp": 1,
+      "sutta/kn/snp/vagga1": 1
+    }
   }
 }
 

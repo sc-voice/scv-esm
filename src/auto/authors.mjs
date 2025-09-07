@@ -108,7 +108,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Dhīranandī",
     "author": "dhiranandi",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "th"
   },
   "dogensisapa": {
     "type": "translator",
