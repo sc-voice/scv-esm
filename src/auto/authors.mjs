@@ -171,6 +171,12 @@ const AUTHORS = {
     "exampleVersion": 0,
     "lang": "th"
   },
+  "karunika": {
+    "type": "translator",
+    "name": "Ayyā Kāruṇikā, Ayyā Therikā",
+    "author": "karunika",
+    "exampleVersion": 0
+  },
   "kaz": {
     "type": "translator",
     "name": "Kaz Takehara",
