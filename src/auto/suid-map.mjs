@@ -5994,6 +5994,7 @@ const SUIDMAP = {
 	"an8.4": {
 		"translation/de/sabbamitta": "sutta/an/an8",
 		"translation/en/sujato": "sutta/an/an8",
+		"translation/fr/christelle": "sutta/an/an8",
 		"translation/ru/sv": "sutta/an/an8",
 		"root/pli/ms": "sutta/an/an8"
 	},
@@ -6001,6 +6002,7 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/an/an8",
 		"translation/en/sujato": "sutta/an/an8",
 		"translation/es/maggatr": "sutta/an/an8",
+		"translation/fr/christelle": "sutta/an/an8",
 		"translation/ru/sv": "sutta/an/an8",
 		"root/pli/ms": "sutta/an/an8"
 	},
@@ -6008,6 +6010,7 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/an/an8",
 		"translation/en/sujato": "sutta/an/an8",
 		"translation/es/maggatr": "sutta/an/an8",
+		"translation/fr/christelle": "sutta/an/an8",
 		"translation/fr/noeismet": "sutta/an/an8",
 		"root/pli/ms": "sutta/an/an8"
 	},
@@ -10457,6 +10460,7 @@ const SUIDMAP = {
 	"mn18": {
 		"translation/de/sabbamitta": "sutta/mn",
 		"translation/en/sujato": "sutta/mn",
+		"translation/fr/christelle": "sutta/mn",
 		"translation/fr/noeismet": "sutta/mn",
 		"translation/it/giovannizappa": "sutta/mn",
 		"translation/ru/sv": "sutta/mn",
