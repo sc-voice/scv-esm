@@ -356,6 +356,12 @@ const AUTHORS = {
     "exampleVersion": 0,
     "lang": "en"
   },
+  "sonjabuege": {
+    "type": "translator",
+    "name": "Sonja Büge",
+    "author": "sonjabuege",
+    "exampleVersion": 0
+  },
   "suddhaso": {
     "type": "translator",
     "name": "Bhante Suddhāso",
