@@ -1813,6 +1813,7 @@ const SUIDMAP = {
 		"translation/de/sabbamitta": "sutta/an/an4",
 		"translation/en/sujato": "sutta/an/an4",
 		"translation/pl/hardao": "sutta/an/an4",
+		"translation/sr/brankokovacevic": "sutta/an/an4",
 		"root/pli/ms": "sutta/an/an4"
 	},
 	"an4.78": {
