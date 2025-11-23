@@ -1078,6 +1078,21 @@ const AUTHORS = {
       "sutta/kn/snp": 1,
       "sutta/kn/snp/vagga1": 1
     }
+  },
+  "de:sonjabuege": {
+    "type": "translation",
+    "lang": "de",
+    "author": "sonjabuege",
+    "name": [
+      "Sonja Büge"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 18,
+      "sutta/kn": 18,
+      "sutta/kn/thig": 18
+    }
   }
 }
 

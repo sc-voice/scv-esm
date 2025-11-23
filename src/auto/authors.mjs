@@ -194,6 +194,12 @@ const AUTHORS = {
     "exampleVersion": 0,
     "lang": "en"
   },
+  "khantibalo": {
+    "type": "translator",
+    "name": "Khantibalo",
+    "author": "khantibalo",
+    "exampleVersion": 0
+  },
   "korakot": {
     "type": "translator",
     "name": "Korakot Chaovavanich",
@@ -256,6 +262,12 @@ const AUTHORS = {
     "author": "marcinow",
     "exampleVersion": 0,
     "lang": "pl"
+  },
+  "mgvali": {
+    "type": "translator",
+    "name": "Margus Väli",
+    "author": "mgvali",
+    "exampleVersion": 0
   },
   "mudito": {
     "type": "translator",
@@ -360,7 +372,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Sonja Büge",
     "author": "sonjabuege",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "de"
   },
   "suddhaso": {
     "type": "translator",
