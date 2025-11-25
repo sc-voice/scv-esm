@@ -743,14 +743,15 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 304,
+      "sutta": 329,
       "sutta/an": 1,
       "sutta/an/an4": 1,
       "sutta/dn": 34,
       "sutta/mn": 12,
-      "sutta/sn": 151,
+      "sutta/sn": 176,
       "sutta/sn/sn1": 81,
       "sutta/sn/sn2": 30,
+      "sutta/sn/sn3": 25,
       "sutta/sn/sn5": 10,
       "sutta/sn/sn12": 7,
       "sutta/sn/sn22": 10,
@@ -918,9 +919,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 95,
-      "sutta/kn": 95,
-      "sutta/kn/mil": 95
+      "sutta": 96,
+      "sutta/kn": 96,
+      "sutta/kn/mil": 96
     }
   },
   "ru:syrkin": {
