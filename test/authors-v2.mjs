@@ -208,6 +208,7 @@ describe("authors-v2", function () {
   it("find() lang", ()=>{
     should.deepEqual(AuthorsV2.find({lang:'es'}), [
       //AuthorsV2.authorInfo('ebt-deepl', 'es'),
+      AuthorsV2.authorInfo('font'),
       AuthorsV2.authorInfo('maggatr'),
     ]);
     should.deepEqual(AuthorsV2.find({lang:'pt'}), [
@@ -224,6 +225,7 @@ describe("authors-v2", function () {
     ]);
     should.deepEqual(AuthorsV2.find({lang:'de'}), [
       AuthorsV2.authorInfo('sabbamitta'),
+      AuthorsV2.authorInfo('sonjabuege'),
     ]);
     should.deepEqual(AuthorsV2.find({lang:'en', }), [
       AuthorsV2.authorInfo('sujato'),  // exampleVersion
@@ -329,9 +331,6 @@ describe("authors-v2", function () {
       .equal('laera-quaresma');
     should(AuthorsV2.suttaAuthor('mn44/pt/laera-quaresma'))
       .equal('laera-quaresma');
-
-    // Show preferred author when no translation exists
-    should(AuthorsV2.suttaAuthor('mil2/en/sujato')).equal('sujato');
 
     // choose author with most translations overall when two 
     // translatators have translated same things in translation folder

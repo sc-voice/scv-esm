@@ -6,7 +6,8 @@ logger.logLevel = 'warn';
 
 typeof describe === "function" &&
   describe("examples", function () {
-    before(()=>{
+    before(function() {
+      this.timeout(10000); // warm-up takes ~6s
       let msStart = Date.now();
 
       // pre-optimize by running TWICE!
