@@ -29,6 +29,6 @@
     "mocha": "^11.0.1",
     "scv-bilara": "^3.182.62",
     "should": "^13.2.3",
-    "suttacentral-api": "^2.17.71"
+    "suttacentral-api": "^2.18.0"
   }
 }
