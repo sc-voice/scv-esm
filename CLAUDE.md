@@ -13,8 +13,10 @@ Make scv-esm compatible with Node 24.x to support OIDC npm publishing in depende
 
 ## Backlog
 
+All items complete - objective achieved:
+
 1. ✓ Test scv-esm against Node 24.x locally (DONE - all 81 tests pass)
 2. ✓ Update devDependencies if needed (DONE - found not needed)
 3. ✓ Add Node version constraint to package.json (DONE - found not needed)
 4. ✓ Run full test suite on Node 24.x (DONE)
-5. [ ] Publish updated scv-esm to npm
+5. ✓ Publish updated scv-esm to npm (DONE)
