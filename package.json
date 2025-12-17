@@ -20,7 +20,6 @@
   "author": "Karl Lew",
   "license": "MIT",
   "dependencies": {
-    "esm": "^3.2.25",
     "log-instance": "^1.5.0"
   },
   "devDependencies": {
