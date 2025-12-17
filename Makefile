@@ -1,4 +1,7 @@
-.PHONY: commit
+.PHONY: commit rebuild
+
+rebuild:
+	npm run test
 
 commit:
 	@if [ ! -f .commit-msg ]; then echo "Error: .commit-msg not found"; exit 1; fi
