@@ -25571,6 +25571,7 @@ const SUIDMAP = {
 	},
 	"thig2.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
