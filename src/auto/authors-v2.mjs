@@ -361,18 +361,18 @@ const AUTHORS = {
       "sutta/an/an4": 276
     }
   },
-  "my:my-team": {
+  "my:myteam": {
     "type": "translation",
     "lang": "my",
-    "author": "my-team",
+    "author": "myteam",
     "name": [
       "Nyein Chan Aye"
     ],
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 4,
-      "sutta/dn": 4
+      "sutta": 2,
+      "sutta/dn": 2
     }
   },
   "en:kovilo": {

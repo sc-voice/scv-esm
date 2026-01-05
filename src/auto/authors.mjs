@@ -276,10 +276,10 @@ const AUTHORS = {
     "exampleVersion": 0,
     "lang": "fi"
   },
-  "my-team": {
+  "myteam": {
     "type": "translator",
     "name": "Myanmar Translation Team",
-    "author": "my-team",
+    "author": "myteam",
     "exampleVersion": 0,
     "lang": "my"
   },
