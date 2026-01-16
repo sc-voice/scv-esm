@@ -165,7 +165,7 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 4062,
+      "sutta": 4064,
       "sutta/an": 1408,
       "sutta/an/an1": 31,
       "sutta/an/an2": 19,
@@ -197,7 +197,7 @@ const AUTHORS = {
       "sutta/kn/ja": 47,
       "sutta/kn/kp": 9,
       "sutta/kn/mil": 1,
-      "sutta/mn": 132,
+      "sutta/mn": 134,
       "sutta/sn": 1819,
       "sutta/sn/sn1": 81,
       "sutta/sn/sn2": 30,
@@ -621,9 +621,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 21,
-      "sutta/kn": 21,
-      "sutta/kn/dhp": 21
+      "sutta": 22,
+      "sutta/kn": 22,
+      "sutta/kn/dhp": 22
     }
   },
   "it:giovannizappa": {
