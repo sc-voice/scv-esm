@@ -870,7 +870,7 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 903,
+      "sutta": 904,
       "sutta/an": 471,
       "sutta/an/an5": 218,
       "sutta/an/an6": 111,
@@ -885,7 +885,7 @@ const AUTHORS = {
       "sutta/kn/iti/vagga7": 1,
       "sutta/kn/iti/vagga10": 1,
       "sutta/mn": 152,
-      "sutta/sn": 272,
+      "sutta/sn": 273,
       "sutta/sn/sn1": 81,
       "sutta/sn/sn2": 30,
       "sutta/sn/sn3": 25,
@@ -895,7 +895,7 @@ const AUTHORS = {
       "sutta/sn/sn7": 22,
       "sutta/sn/sn11": 2,
       "sutta/sn/sn12": 1,
-      "sutta/sn/sn20": 1,
+      "sutta/sn/sn20": 2,
       "sutta/sn/sn42": 13,
       "sutta/sn/sn45": 3,
       "sutta/sn/sn55": 44,
@@ -1110,6 +1110,20 @@ const AUTHORS = {
       "sutta": 19,
       "sutta/kn": 19,
       "sutta/kn/thig": 19
+    }
+  },
+  "ru:khantibalo": {
+    "type": "translation",
+    "lang": "ru",
+    "author": "khantibalo",
+    "name": [
+      "Khantibalo"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 4,
+      "sutta/dn": 4
     }
   }
 }

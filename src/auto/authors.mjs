@@ -198,7 +198,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Khantibalo",
     "author": "khantibalo",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "ru"
   },
   "korakot": {
     "type": "translator",
