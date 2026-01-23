@@ -170,7 +170,7 @@ describe("authors-v2", function () {
     should(AuthorsV2.compare(sujato, unknown)).equal(-1);
     should(AuthorsV2.compare(sujato,sabbamitta)).equal(1);
   });
-  it("TESTTESTlangAuthor sutta", ()=>{
+  it("langAuthor sutta", ()=>{
     let opts = { category: 'sutta'};
 
     should(AuthorsV2.langAuthor('ru')).equal('sv');
@@ -205,7 +205,7 @@ describe("authors-v2", function () {
     should(AuthorsV2.langAuthor('jpn', opts)).equal(undefined);
     should(AuthorsV2.langAuthor('pt', opts)).equal(undefined);
   });
-  it("find() lang", ()=>{
+  it("TESTTESTfind() lang", ()=>{
     should.deepEqual(AuthorsV2.find({lang:'es'}), [
       //AuthorsV2.authorInfo('ebt-deepl', 'es'),
       AuthorsV2.authorInfo('font'),
@@ -216,6 +216,7 @@ describe("authors-v2", function () {
       //AuthorsV2.authorInfo('ebt-deepl', 'pt'),
     ]);
     should.deepEqual(AuthorsV2.find({lang:'ru'}), [
+      AuthorsV2.authorInfo('khantibalo'),
       AuthorsV2.authorInfo('narinyanievmenenko'),
       AuthorsV2.authorInfo('sv'),
       AuthorsV2.authorInfo('syrkin'),
