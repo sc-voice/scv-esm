@@ -307,6 +307,12 @@ const AUTHORS = {
     "author": "nyeinchanaye",
     "exampleVersion": 0
   },
+  "o": {
+    "type": "translator",
+    "name": "o Dhamma.gift",
+    "author": "o",
+    "exampleVersion": 0
+  },
   "pasanna": {
     "type": "translator",
     "name": "Venerable Pasanna",
