@@ -1069,15 +1069,15 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 15,
+      "sutta": 16,
       "sutta/an": 12,
       "sutta/an/an6": 4,
       "sutta/an/an7": 1,
       "sutta/an/an8": 6,
       "sutta/an/an9": 1,
       "sutta/mn": 2,
-      "sutta/sn": 1,
-      "sutta/sn/sn22": 1
+      "sutta/sn": 2,
+      "sutta/sn/sn22": 2
     }
   },
   "th:dhiranandi": {
