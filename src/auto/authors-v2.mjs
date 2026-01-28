@@ -621,9 +621,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 25,
-      "sutta/kn": 25,
-      "sutta/kn/dhp": 25
+      "sutta": 26,
+      "sutta/kn": 26,
+      "sutta/kn/dhp": 26
     }
   },
   "it:giovannizappa": {
@@ -1069,15 +1069,15 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 16,
+      "sutta": 17,
       "sutta/an": 12,
       "sutta/an/an6": 4,
       "sutta/an/an7": 1,
       "sutta/an/an8": 6,
       "sutta/an/an9": 1,
       "sutta/mn": 2,
-      "sutta/sn": 2,
-      "sutta/sn/sn22": 2
+      "sutta/sn": 3,
+      "sutta/sn/sn22": 3
     }
   },
   "th:dhiranandi": {
