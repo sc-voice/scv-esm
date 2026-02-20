@@ -23,11 +23,16 @@
     "log-instance": "^1.5.0"
   },
   "devDependencies": {
-    "eslint": "^9.17.0",
+    "eslint": "^10.0.0",
     "memo-again": "^0.8.0",
     "mocha": "^11.0.1",
     "scv-bilara": "^3.198.82",
     "should": "^13.2.3",
     "suttacentral-api": "^2.24.0"
+  },
+  "overrides": {
+    "diff": ">=8.0.3",
+    "minimatch": ">=10.2.1",
+    "ajv": ">=8.18.0"
   }
 }
