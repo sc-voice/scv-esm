@@ -1069,15 +1069,15 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 24,
+      "sutta": 25,
       "sutta/an": 12,
       "sutta/an/an6": 4,
       "sutta/an/an7": 1,
       "sutta/an/an8": 6,
       "sutta/an/an9": 1,
       "sutta/mn": 2,
-      "sutta/sn": 10,
-      "sutta/sn/sn3": 7,
+      "sutta/sn": 11,
+      "sutta/sn/sn3": 8,
       "sutta/sn/sn22": 3
     }
   },
