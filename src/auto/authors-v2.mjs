@@ -870,8 +870,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 904,
-      "sutta/an": 471,
+      "sutta": 905,
+      "sutta/an": 472,
+      "sutta/an/an1": 1,
       "sutta/an/an5": 218,
       "sutta/an/an6": 111,
       "sutta/an/an7": 84,
@@ -1069,15 +1070,15 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 25,
+      "sutta": 26,
       "sutta/an": 12,
       "sutta/an/an6": 4,
       "sutta/an/an7": 1,
       "sutta/an/an8": 6,
       "sutta/an/an9": 1,
       "sutta/mn": 2,
-      "sutta/sn": 11,
-      "sutta/sn/sn3": 8,
+      "sutta/sn": 12,
+      "sutta/sn/sn3": 9,
       "sutta/sn/sn22": 3
     }
   },
