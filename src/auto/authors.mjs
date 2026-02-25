@@ -311,7 +311,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "o Dhamma.gift",
     "author": "o",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "ru"
   },
   "pasanna": {
     "type": "translator",
