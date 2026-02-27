@@ -165,7 +165,7 @@ const AUTHORS = {
       "sutta"
     ],
     "stats": {
-      "sutta": 4089,
+      "sutta": 4094,
       "sutta/an": 1408,
       "sutta/an/an1": 31,
       "sutta/an/an2": 19,
@@ -178,7 +178,7 @@ const AUTHORS = {
       "sutta/an/an9": 82,
       "sutta/an/an10": 211,
       "sutta/an/an11": 36,
-      "sutta/kn": 676,
+      "sutta/kn": 681,
       "sutta/kn/cp": 34,
       "sutta/kn/dhp": 26,
       "sutta/dn": 34,
@@ -255,9 +255,9 @@ const AUTHORS = {
       "sutta/sn/sn54": 20,
       "sutta/sn/sn55": 74,
       "sutta/sn/sn56": 109,
-      "sutta/kn/snp": 28,
-      "sutta/kn/snp/vagga1": 10,
-      "sutta/kn/snp/vagga2": 7,
+      "sutta/kn/snp": 33,
+      "sutta/kn/snp/vagga1": 12,
+      "sutta/kn/snp/vagga2": 10,
       "sutta/kn/snp/vagga3": 4,
       "sutta/kn/snp/vagga4": 2,
       "sutta/kn/snp/vagga5": 5,
@@ -1070,16 +1070,16 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 26,
+      "sutta": 27,
       "sutta/an": 12,
       "sutta/an/an6": 4,
       "sutta/an/an7": 1,
       "sutta/an/an8": 6,
       "sutta/an/an9": 1,
       "sutta/mn": 2,
-      "sutta/sn": 12,
+      "sutta/sn": 13,
       "sutta/sn/sn3": 9,
-      "sutta/sn/sn22": 3
+      "sutta/sn/sn22": 4
     }
   },
   "th:dhiranandi": {
