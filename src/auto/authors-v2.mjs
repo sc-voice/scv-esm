@@ -1070,16 +1070,16 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 27,
+      "sutta": 28,
       "sutta/an": 12,
       "sutta/an/an6": 4,
       "sutta/an/an7": 1,
       "sutta/an/an8": 6,
       "sutta/an/an9": 1,
       "sutta/mn": 2,
-      "sutta/sn": 13,
+      "sutta/sn": 14,
       "sutta/sn/sn3": 9,
-      "sutta/sn/sn22": 4
+      "sutta/sn/sn22": 5
     }
   },
   "th:dhiranandi": {
