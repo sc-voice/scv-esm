@@ -1,13 +1,10 @@
+import { expect, describe, it } from "vitest";
 import { SuidMap } from "../main.mjs";
-import should from "should";
 
-typeof describe === "function" &&
-  describe("suid-map", function () {
-    this.timeout(1 * 1000);
-
+describe("suid-map", () => {
     it("thig1.1", () => {
       let thig1_1 = SuidMap["thig1.1"];
-      should.deepEqual(thig1_1, {
+      expect(thig1_1).toEqual({
         "root/pli/ms": "sutta/kn/thig",
         "translation/de/sabbamitta": "sutta/kn/thig",
         "translation/de/sonjabuege": "sutta/kn/thig",
@@ -19,7 +16,7 @@ typeof describe === "function" &&
     });
     it("tha-ap34", () => {
       let suidInfo = SuidMap["tha-ap34"];
-      should.deepEqual(suidInfo, {
+      expect(suidInfo).toEqual({
         "root/pli/ms": "sutta/kn/tha-ap"
       });
     });

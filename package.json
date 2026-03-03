@@ -9,9 +9,8 @@
   },
   "scripts": {
     "schedule-action": "scripts/schedule-action",
-    "test": "npm run test:verbose",
-    "test:test": "mocha --config test/mocha-watch.json",
-    "test:verbose": "mocha --inline-diffs"
+    "test": "vitest run --config test/vitest.config.mjs",
+    "test:test": "vitest --config test/vitest.config.mjs"
   },
   "repository": {
     "type": "git",
@@ -25,10 +24,9 @@
   "devDependencies": {
     "eslint": "^10.0.0",
     "memo-again": "^0.8.0",
-    "mocha": "^11.0.1",
     "scv-bilara": "^3.199.32",
-    "should": "^13.2.3",
-    "suttacentral-api": "^2.24.0"
+    "suttacentral-api": "^2.24.0",
+    "vitest": "^4.0.18"
   },
   "overrides": {
     "diff": ">=8.0.3",

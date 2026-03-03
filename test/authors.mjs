@@ -1,7 +1,7 @@
+import { expect, describe, it } from "vitest";
 import { Authors } from "../main.mjs";
-import should from "should";
 
-typeof describe === "function" && describe("authors", function () {
+describe("authors", () => {
   it("authorInfo() => supported author info", async()=>{
     var ms = {
         lang: 'pli',
@@ -36,12 +36,12 @@ typeof describe === "function" && describe("authors", function () {
         exampleVersion: 1,
     };
 
-    should.deepEqual(Authors.authorInfo('ms'), ms);
-    should.deepEqual(Authors.authorInfo('sujato'), sujato);
-    should.deepEqual(Authors.authorInfo('sabbamitta'), sabbamitta);
-    should.deepEqual(Authors.authorInfo('brahmali'), brahmali);
+    expect(Authors.authorInfo('ms')).toEqual(ms);
+    expect(Authors.authorInfo('sujato')).toEqual(sujato);
+    expect(Authors.authorInfo('sabbamitta')).toEqual(sabbamitta);
+    expect(Authors.authorInfo('brahmali')).toEqual(brahmali);
 
-    should.deepEqual(Authors.authorInfo('sabbamitta'), sabbamitta);
+    expect(Authors.authorInfo('sabbamitta')).toEqual(sabbamitta);
   });
   it("compare(a1,a2)", ()=>{
     let sujato = "sujato";
@@ -50,36 +50,36 @@ typeof describe === "function" && describe("authors", function () {
     let unknown = "unknown";
 
     // equal
-    should(Authors.compare()).equal(0);
-    should(Authors.compare(unknown,unknown)).equal(0);
-    should(Authors.compare(undefined,undefined)).equal(0);
-    should(Authors.compare(null,null)).equal(0);
-    should(Authors.compare(undefined,null)).equal(0);
-    should(Authors.compare(null,unknown)).equal(0);
-    should(Authors.compare(sujato,sujato)).equal(0);
-    should(Authors.compare(davis,davis)).equal(0);
+    expect(Authors.compare()).toBe(0);
+    expect(Authors.compare(unknown,unknown)).toBe(0);
+    expect(Authors.compare(undefined,undefined)).toBe(0);
+    expect(Authors.compare(null,null)).toBe(0);
+    expect(Authors.compare(undefined,null)).toBe(0);
+    expect(Authors.compare(null,unknown)).toBe(0);
+    expect(Authors.compare(sujato,sujato)).toBe(0);
+    expect(Authors.compare(davis,davis)).toBe(0);
 
     // ascending
-    should(Authors.compare(undefined,davis)).equal(1);
-    should(Authors.compare(null,davis)).equal(1);
-    should(Authors.compare(unknown,davis)).equal(1);
-    should(Authors.compare(unknown,sujato)).equal(1);
-    should(Authors.compare(sujato,davis)).equal(1);
-    should(Authors.compare(sabbamitta, sujato)).equal(1);
+    expect(Authors.compare(undefined,davis)).toBe(1);
+    expect(Authors.compare(null,davis)).toBe(1);
+    expect(Authors.compare(unknown,davis)).toBe(1);
+    expect(Authors.compare(unknown,sujato)).toBe(1);
+    expect(Authors.compare(sujato,davis)).toBe(1);
+    expect(Authors.compare(sabbamitta, sujato)).toBe(1);
 
     // descending
-    should(Authors.compare(davis, sujato)).equal(-1);
-    should(Authors.compare(davis, undefined)).equal(-1);
-    should(Authors.compare(davis, null)).equal(-1);
-    should(Authors.compare(davis, unknown)).equal(-1);
-    should(Authors.compare(sujato, unknown)).equal(-1);
-    should(Authors.compare(sujato,sabbamitta)).equal(-1);
+    expect(Authors.compare(davis, sujato)).toBe(-1);
+    expect(Authors.compare(davis, undefined)).toBe(-1);
+    expect(Authors.compare(davis, null)).toBe(-1);
+    expect(Authors.compare(davis, unknown)).toBe(-1);
+    expect(Authors.compare(sujato, unknown)).toBe(-1);
+    expect(Authors.compare(sujato,sabbamitta)).toBe(-1);
   });
   it("langAuthor", ()=>{
-    should(Authors.langAuthor('de')).equal('sabbamitta');
-    should(Authors.langAuthor('en')).equal('sujato');
-    should(Authors.langAuthor('jpn')).equal('kaz');
-    should(Authors.langAuthor('pt')).equal(undefined);
+    expect(Authors.langAuthor('de')).toBe('sabbamitta');
+    expect(Authors.langAuthor('en')).toBe('sujato');
+    expect(Authors.langAuthor('jpn')).toBe('kaz');
+    expect(Authors.langAuthor('pt')).toBeUndefined();
   });
 
 });

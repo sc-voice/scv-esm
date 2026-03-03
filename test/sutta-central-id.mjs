@@ -1,35 +1,33 @@
+import { expect, describe, it, beforeEach } from "vitest";
 import { SuttaCentralId } from "../main.mjs";
-import should from "should";
 import { DBG } from '../src/defines.mjs';
 
-typeof describe === "function" &&
-  describe("sutta-central-id", function () {
+describe("sutta-central-id", () => {
     const logLevel = false;
 
     const assertLess = (cmp, a, b) => {
-      should(cmp(a, b)).below(0);
-      should(cmp(b, a)).above(0);
+      expect(cmp(a, b)).toBeLessThan(0);
+      expect(cmp(b, a)).toBeGreaterThan(0);
     };
     const assertEqual = (cmp, a, b) => {
-      should(cmp(a, b)).equal(0);
-      should(cmp(b, a)).equal(0);
+      expect(cmp(a, b)).toBe(0);
+      expect(cmp(b, a)).toBe(0);
     };
     function testCompareLow(a, b, expected) {
-      should(SuttaCentralId.compareLow(a, b)).equal(expected);
+      expect(SuttaCentralId.compareLow(a, b)).toBe(expected);
       if (expected === 0) {
-        should(SuttaCentralId.compareLow(b, a)).equal(expected);
+        expect(SuttaCentralId.compareLow(b, a)).toBe(expected);
       } else {
-        should(SuttaCentralId.compareLow(b, a)).equal(-expected);
+        expect(SuttaCentralId.compareLow(b, a)).toBe(-expected);
       }
     }
 
     var en_suj = `translation/en/sujato/sutta/`;
-    this.timeout(5 * 1000);
 
     it("default ctor", function () {
-      should.throws(() => {
+      expect(() => {
         var scid = new SuttaCentralId();
-      });
+      }).toThrow();
     });
     it("match(scid, pat)", ()=>{
       let scid11 = "thig1.1:1.1";
@@ -39,62 +37,62 @@ typeof describe === "function" &&
       let scids = [scid11, scid12, scid21, scid22 ];
       let match = SuttaCentralId.match;
       
-      should.deepEqual(scids.map(scid=>match(scid, "thig 1.1-2")), 
-        [true, true, true, true]);
-      should.deepEqual(scids.map(scid=>match(scid, "thig1.1-2")), 
-        [true, true, true, true]);
-      should.deepEqual(scids.map(scid=>match(scid, 
-        "thig1.1:1.2/en/soma,thig1.2:1.1/en/soma")), 
-        [false, true, true, false]);
-      should.deepEqual(scids.map(scid=>match(scid, "thig1.1:1.2/en/soma")), 
-        [false, true, false, false]);
-      should.deepEqual(scids.map(scid=>match(scid, "thig1.1/en/soma")), 
-        [true, true, false, false]);
-      should.deepEqual(scids.map(scid=>match(scid, "thig1.3, thig1.2")), 
-        [false, false, true, true]);
-      should.deepEqual(scids.map(scid=>match(scid, "thig1.1, thig1.2")), 
-        [true, true, true, true]);
-      should.deepEqual(scids.map(scid=>match(scid, "thig1.1")), 
-        [true, true, false, false]);
-      should.deepEqual(scids.map(scid=>match(scid, "thig1.2")), 
-        [false, false, true, true]);
-      should.deepEqual(scids.map(scid=>match(scid, "thig1.1:1.2")), 
-        [false, true, false, false]);
-      should.deepEqual(scids.map(scid=>match(scid, "thig1.2:1.1")), 
-        [false, false, true, false]);
+      expect(scids.map(scid=>match(scid, "thig 1.1-2")))
+        .toEqual([true, true, true, true]);
+      expect(scids.map(scid=>match(scid, "thig1.1-2")))
+        .toEqual([true, true, true, true]);
+      expect(scids.map(scid=>match(scid,
+        "thig1.1:1.2/en/soma,thig1.2:1.1/en/soma")))
+        .toEqual([false, true, true, false]);
+      expect(scids.map(scid=>match(scid, "thig1.1:1.2/en/soma")))
+        .toEqual([false, true, false, false]);
+      expect(scids.map(scid=>match(scid, "thig1.1/en/soma")))
+        .toEqual([true, true, false, false]);
+      expect(scids.map(scid=>match(scid, "thig1.3, thig1.2")))
+        .toEqual([false, false, true, true]);
+      expect(scids.map(scid=>match(scid, "thig1.1, thig1.2")))
+        .toEqual([true, true, true, true]);
+      expect(scids.map(scid=>match(scid, "thig1.1")))
+        .toEqual([true, true, false, false]);
+      expect(scids.map(scid=>match(scid, "thig1.2")))
+        .toEqual([false, false, true, true]);
+      expect(scids.map(scid=>match(scid, "thig1.1:1.2")))
+        .toEqual([false, true, false, false]);
+      expect(scids.map(scid=>match(scid, "thig1.2:1.1")))
+        .toEqual([false, false, true, false]);
     });
     it("match(scid, pat) MIL", ()=>{
       let scid312 = "mil3.1.2";
       let match = SuttaCentralId.match;
-      should(match(`${scid312}:1.2`, scid312)).equal(true);
+      expect(match(`${scid312}:1.2`, scid312)).toBe(true);
     });
     it("compareLow(a,b) compares sutta file names MIL", function () {
       var cmp = SuttaCentralId.compareLow;
       testCompareLow("mil3.1.2", "mil3.1.5", -3);
     });
     it("rangeHigh => upper bound MIL", () => {
-      should(SuttaCentralId.rangeHigh("mil3.1.2--mil3.1.9")).equal("mil3.1.9");
+      expect(SuttaCentralId.rangeHigh("mil3.1.2--mil3.1.9")).toBe("mil3.1.9");
     });
     it("nikaya return nikaya id MIL", function () {
       var scid = new SuttaCentralId("mil3.1.2");
-      should(scid.nikaya).equal("mil");
+      expect(scid.nikaya).toBe("mil");
 
       var scid = new SuttaCentralId("mil3.1.2:2.3.4");
-      should(scid.nikaya).equal("mil");
+      expect(scid.nikaya).toBe("mil");
 
       var scid = new SuttaCentralId("mil3.1.2-8:2.3.4");
-      should(scid.nikaya).equal("mil");
+      expect(scid.nikaya).toBe("mil");
     });
     it("custom ctor", function () {
       // sutta id
       var scid = new SuttaCentralId("mn1");
-      should(scid).instanceOf(SuttaCentralId);
-      should(scid.toString()).equal("mn1");
+      expect(scid).toBeInstanceOf(SuttaCentralId);
+      expect(scid.toString()).toBe("mn1");
 
       // segment id
       var scid = new SuttaCentralId("mn1:2.3.4");
-      should(scid).instanceOf(SuttaCentralId);
-      should(scid.toString()).equal("mn1:2.3.4");
+      expect(scid).toBeInstanceOf(SuttaCentralId);
+      expect(scid.toString()).toBe("mn1:2.3.4");
     });
     it("compareLow(a,b) compares sutta file names", function () {
       var cmp = SuttaCentralId.compareLow;
@@ -132,60 +130,60 @@ typeof describe === "function" &&
       );
 
       // misc
-      should(cmp("an1.1", "an2.11-20")).equal(-1);
-      should(cmp("an1.1", "an2.011-20")).equal(-1);
-      should(cmp("an1.100", "an2.11-20")).equal(-1);
-      should(cmp("an1.100", "an2.011-020")).equal(-1);
-      should(cmp("an2.1", "an2.11-20")).equal(-10);
-      should(cmp("an2.1", "an2.011-020")).equal(-10);
-      should(cmp("an2.5", "an2.11-20")).equal(-6);
-      should(cmp("an2.10", "an2.11-20")).equal(-1);
-      should(cmp("an2.11", "an2.11-20")).equal(0);
-      should(cmp("an2.21", "an2.11-20")).equal(10);
-      should(cmp("an2.100", "an2.11-20")).equal(89);
-      should(cmp("an3.1", "an2.11-20")).equal(1);
-      should(cmp("an3.1", "an2.011-020")).equal(1);
-      should(cmp("an1", "dn2")).equal(-1);
-      should(cmp("an9.1", "dn2")).equal(-1);
-      should(cmp("dn2", "mn1")).equal(-1);
-      should(cmp("an2.1-10", "an2.11-20")).equal(-10);
+      expect(cmp("an1.1", "an2.11-20")).toBe(-1);
+      expect(cmp("an1.1", "an2.011-20")).toBe(-1);
+      expect(cmp("an1.100", "an2.11-20")).toBe(-1);
+      expect(cmp("an1.100", "an2.011-020")).toBe(-1);
+      expect(cmp("an2.1", "an2.11-20")).toBe(-10);
+      expect(cmp("an2.1", "an2.011-020")).toBe(-10);
+      expect(cmp("an2.5", "an2.11-20")).toBe(-6);
+      expect(cmp("an2.10", "an2.11-20")).toBe(-1);
+      expect(cmp("an2.11", "an2.11-20")).toBe(0);
+      expect(cmp("an2.21", "an2.11-20")).toBe(10);
+      expect(cmp("an2.100", "an2.11-20")).toBe(89);
+      expect(cmp("an3.1", "an2.11-20")).toBe(1);
+      expect(cmp("an3.1", "an2.011-020")).toBe(1);
+      expect(cmp("an1", "dn2")).toBe(-1);
+      expect(cmp("an9.1", "dn2")).toBe(-1);
+      expect(cmp("dn2", "mn1")).toBe(-1);
+      expect(cmp("an2.1-10", "an2.11-20")).toBe(-10);
 
       // Standalone
-      should(cmp("mn33", "mn33")).equal(0);
-      should(cmp("mn33", "mn34")).equal(-1);
-      should(cmp("mn34", "mn33")).equal(1);
+      expect(cmp("mn33", "mn33")).toBe(0);
+      expect(cmp("mn33", "mn34")).toBe(-1);
+      expect(cmp("mn34", "mn33")).toBe(1);
 
       // collection suttacentral order
-      should(cmp("sn/en/sujato/sn22.1", "an/en/sujato/an22.1")).equal(1);
-      should(cmp("an/en/sujato/an22.1", "sn/en/sujato/sn22.1")).equal(-1);
-      should(cmp("xx/en/sujato/sn22.1", "xx/en/sujato/an22.1")).equal(1);
-      should(cmp("xx/en/sujato/an22.1", "xx/en/sujato/sn22.1")).equal(-1);
+      expect(cmp("sn/en/sujato/sn22.1", "an/en/sujato/an22.1")).toBe(1);
+      expect(cmp("an/en/sujato/an22.1", "sn/en/sujato/sn22.1")).toBe(-1);
+      expect(cmp("xx/en/sujato/sn22.1", "xx/en/sujato/an22.1")).toBe(1);
+      expect(cmp("xx/en/sujato/an22.1", "xx/en/sujato/sn22.1")).toBe(-1);
 
       // major number
-      should(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn22.1")).equal(7);
-      should(cmp("sn/en/sujato/sn22.1", "sn/en/sujato/sn29.1")).equal(-7);
+      expect(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn22.1")).toBe(7);
+      expect(cmp("sn/en/sujato/sn22.1", "sn/en/sujato/sn29.1")).toBe(-7);
 
       // subchapter numbering
-      should(cmp("sn/en/sujato/sn30.1", "sn/en/sujato/sn30.2")).equal(-1);
-      should(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn29.10")).equal(-9);
-      should(cmp("sn/en/sujato/sn29.10", "sn/en/sujato/sn29.1")).equal(9);
-      should(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn29.11-20")).equal(-10);
-      should(cmp("sn/en/sujato/sn29.11-20", "sn/en/sujato/sn29.1")).equal(10);
-      should(cmp("sn/en/sujato/sn29.10", "sn/en/sujato/sn29.11-20")).equal(-1);
-      should(cmp("sn/en/sujato/sn29.11-20", "sn/en/sujato/sn29.10")).equal(1);
+      expect(cmp("sn/en/sujato/sn30.1", "sn/en/sujato/sn30.2")).toBe(-1);
+      expect(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn29.10")).toBe(-9);
+      expect(cmp("sn/en/sujato/sn29.10", "sn/en/sujato/sn29.1")).toBe(9);
+      expect(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn29.11-20")).toBe(-10);
+      expect(cmp("sn/en/sujato/sn29.11-20", "sn/en/sujato/sn29.1")).toBe(10);
+      expect(cmp("sn/en/sujato/sn29.10", "sn/en/sujato/sn29.11-20")).toBe(-1);
+      expect(cmp("sn/en/sujato/sn29.11-20", "sn/en/sujato/sn29.10")).toBe(1);
 
       // ranges
-      should(cmp("sn29.11-20", "sn29.11-20")).equal(0);
-      should(cmp("sn29.11-20", "sn29.10")).equal(1);
-      should(cmp("sn29.11-20", "sn29.11")).equal(0);
-      should(cmp("sn29.11-20", "sn29.12")).equal(-1);
-      should(cmp("sn29.21", "sn29.20")).equal(1);
-      should(cmp("sn29.21", "sn29.21")).equal(0);
-      should(cmp("sn29.21", "sn29.22")).equal(-1);
+      expect(cmp("sn29.11-20", "sn29.11-20")).toBe(0);
+      expect(cmp("sn29.11-20", "sn29.10")).toBe(1);
+      expect(cmp("sn29.11-20", "sn29.11")).toBe(0);
+      expect(cmp("sn29.11-20", "sn29.12")).toBe(-1);
+      expect(cmp("sn29.21", "sn29.20")).toBe(1);
+      expect(cmp("sn29.21", "sn29.21")).toBe(0);
+      expect(cmp("sn29.21", "sn29.22")).toBe(-1);
 
-      should(cmp("an1.1-10", "an1.1-10")).equal(0);
-      should(cmp("an1.1", "an1.1-10")).equal(0);
-      should(cmp("an1.10", "an1.1-10")).equal(9);
+      expect(cmp("an1.1-10", "an1.1-10")).toBe(0);
+      expect(cmp("an1.1", "an1.1-10")).toBe(0);
+      expect(cmp("an1.10", "an1.1-10")).toBe(9);
     });
     it("compare nested segment id an1.102-109:1.1", () => {
       let segId = 'an1.102-109:1.1';
@@ -193,19 +191,19 @@ typeof describe === "function" &&
       let prevDocId = 'an1.82-97';
       let nextDocId = 'an1.140-149';
 
-      should(SuttaCentralId.compareLow(segId, prevDocId)).equal(20);
-      should(SuttaCentralId.compareHigh(segId, prevDocId)).equal(12);
-      should(SuttaCentralId.compareLow(segId, docId)).equal(4);
-      should(SuttaCentralId.compareHigh(segId, docId)).equal(-30);
-      should(SuttaCentralId.compareLow(segId, nextDocId)).equal(-38);
-      should(SuttaCentralId.compareHigh(segId, nextDocId)).equal(-40);
+      expect(SuttaCentralId.compareLow(segId, prevDocId)).toBe(20);
+      expect(SuttaCentralId.compareHigh(segId, prevDocId)).toBe(12);
+      expect(SuttaCentralId.compareLow(segId, docId)).toBe(4);
+      expect(SuttaCentralId.compareHigh(segId, docId)).toBe(-30);
+      expect(SuttaCentralId.compareLow(segId, nextDocId)).toBe(-38);
+      expect(SuttaCentralId.compareHigh(segId, nextDocId)).toBe(-40);
 
-      should(SuttaCentralId.compareLow(prevDocId, segId)).equal(-20);
-      should(SuttaCentralId.compareHigh(prevDocId, segId)).equal(-12);
-      should(SuttaCentralId.compareLow(docId, segId)).equal(-4);
-      should(SuttaCentralId.compareHigh(docId, segId)).equal(30);
-      should(SuttaCentralId.compareLow(nextDocId, segId)).equal(38);
-      should(SuttaCentralId.compareHigh(nextDocId, segId)).equal(40);
+      expect(SuttaCentralId.compareLow(prevDocId, segId)).toBe(-20);
+      expect(SuttaCentralId.compareHigh(prevDocId, segId)).toBe(-12);
+      expect(SuttaCentralId.compareLow(docId, segId)).toBe(-4);
+      expect(SuttaCentralId.compareHigh(docId, segId)).toBe(30);
+      expect(SuttaCentralId.compareLow(nextDocId, segId)).toBe(38);
+      expect(SuttaCentralId.compareHigh(nextDocId, segId)).toBe(40);
     });
     it("compare nested segment id an1.98:1.1", () => {
       let segId = 'an1.98-109:1.1';
@@ -213,19 +211,19 @@ typeof describe === "function" &&
       let prevDocId = 'an1.82-97';
       let nextDocId = 'an1.140-149';
 
-      should(SuttaCentralId.compareLow(segId, prevDocId)).equal(16);
-      should(SuttaCentralId.compareHigh(segId, prevDocId)).equal(12);
-      should(SuttaCentralId.compareLow(segId, docId)).equal(1);
-      should(SuttaCentralId.compareHigh(segId, docId)).equal(-30);
-      should(SuttaCentralId.compareLow(segId, nextDocId)).equal(-42);
-      should(SuttaCentralId.compareHigh(segId, nextDocId)).equal(-40);
+      expect(SuttaCentralId.compareLow(segId, prevDocId)).toBe(16);
+      expect(SuttaCentralId.compareHigh(segId, prevDocId)).toBe(12);
+      expect(SuttaCentralId.compareLow(segId, docId)).toBe(1);
+      expect(SuttaCentralId.compareHigh(segId, docId)).toBe(-30);
+      expect(SuttaCentralId.compareLow(segId, nextDocId)).toBe(-42);
+      expect(SuttaCentralId.compareHigh(segId, nextDocId)).toBe(-40);
 
-      should(SuttaCentralId.compareLow(prevDocId, segId)).equal(-16);
-      should(SuttaCentralId.compareHigh(prevDocId, segId)).equal(-12);
-      should(SuttaCentralId.compareLow(docId, segId)).equal(-1);
-      should(SuttaCentralId.compareHigh(docId, segId)).equal(30);
-      should(SuttaCentralId.compareLow(nextDocId, segId)).equal(42);
-      should(SuttaCentralId.compareHigh(nextDocId, segId)).equal(40);
+      expect(SuttaCentralId.compareLow(prevDocId, segId)).toBe(-16);
+      expect(SuttaCentralId.compareHigh(prevDocId, segId)).toBe(-12);
+      expect(SuttaCentralId.compareLow(docId, segId)).toBe(-1);
+      expect(SuttaCentralId.compareHigh(docId, segId)).toBe(30);
+      expect(SuttaCentralId.compareLow(nextDocId, segId)).toBe(42);
+      expect(SuttaCentralId.compareHigh(nextDocId, segId)).toBe(40);
     });
     it("compareLow(a,b) compares segment ids", () => {
       // Zeroes
@@ -286,233 +284,232 @@ typeof describe === "function" &&
       );
 
       // misc
-      should(cmp("an1.1", "an2.11-20")).equal(-1);
-      should(cmp("an1.1", "an2.011-20")).equal(-1);
-      should(cmp("an1.100", "an2.11-20")).equal(-1);
-      should(cmp("an1.100", "an2.011-020")).equal(-1);
-      should(cmp("an2.1", "an2.11-20")).equal(-19);
-      should(cmp("an2.1", "an2.011-020")).equal(-19);
-      should(cmp("an2.5", "an2.11-20")).equal(-15);
-      should(cmp("an2.10", "an2.11-20")).equal(-10);
-      should(cmp("an2.11", "an2.11-20")).equal(-9);
-      should(cmp("an2.21", "an2.11-20")).equal(1);
-      should(cmp("an2.100", "an2.11-20")).equal(80);
-      should(cmp("an3.1", "an2.11-20")).equal(1);
-      should(cmp("an3.1", "an2.011-020")).equal(1);
-      should(cmp("an1", "dn2")).equal(-1);
-      should(cmp("an9.1", "dn2")).equal(-1);
-      should(cmp("dn2", "mn1")).equal(-1);
-      should(cmp("an2.1-10", "an2.11-20")).equal(-10);
+      expect(cmp("an1.1", "an2.11-20")).toBe(-1);
+      expect(cmp("an1.1", "an2.011-20")).toBe(-1);
+      expect(cmp("an1.100", "an2.11-20")).toBe(-1);
+      expect(cmp("an1.100", "an2.011-020")).toBe(-1);
+      expect(cmp("an2.1", "an2.11-20")).toBe(-19);
+      expect(cmp("an2.1", "an2.011-020")).toBe(-19);
+      expect(cmp("an2.5", "an2.11-20")).toBe(-15);
+      expect(cmp("an2.10", "an2.11-20")).toBe(-10);
+      expect(cmp("an2.11", "an2.11-20")).toBe(-9);
+      expect(cmp("an2.21", "an2.11-20")).toBe(1);
+      expect(cmp("an2.100", "an2.11-20")).toBe(80);
+      expect(cmp("an3.1", "an2.11-20")).toBe(1);
+      expect(cmp("an3.1", "an2.011-020")).toBe(1);
+      expect(cmp("an1", "dn2")).toBe(-1);
+      expect(cmp("an9.1", "dn2")).toBe(-1);
+      expect(cmp("dn2", "mn1")).toBe(-1);
+      expect(cmp("an2.1-10", "an2.11-20")).toBe(-10);
 
       // Standalone
-      should(cmp("mn33", "mn33")).equal(0);
-      should(cmp("mn33", "mn34")).equal(-1);
-      should(cmp("mn34", "mn33")).equal(1);
+      expect(cmp("mn33", "mn33")).toBe(0);
+      expect(cmp("mn33", "mn34")).toBe(-1);
+      expect(cmp("mn34", "mn33")).toBe(1);
 
       // collection
-      should(cmp("sn/en/sujato/sn22.1", "an/en/sujato/an22.1")).equal(1);
-      should(cmp("an/en/sujato/an22.1", "sn/en/sujato/sn22.1")).equal(-1);
-      should(cmp("xx/en/sujato/sn22.1", "xx/en/sujato/an22.1")).equal(1);
-      should(cmp("xx/en/sujato/an22.1", "xx/en/sujato/sn22.1")).equal(-1);
+      expect(cmp("sn/en/sujato/sn22.1", "an/en/sujato/an22.1")).toBe(1);
+      expect(cmp("an/en/sujato/an22.1", "sn/en/sujato/sn22.1")).toBe(-1);
+      expect(cmp("xx/en/sujato/sn22.1", "xx/en/sujato/an22.1")).toBe(1);
+      expect(cmp("xx/en/sujato/an22.1", "xx/en/sujato/sn22.1")).toBe(-1);
 
       // major number
-      should(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn22.1")).equal(7);
-      should(cmp("sn/en/sujato/sn22.1", "sn/en/sujato/sn29.1")).equal(-7);
+      expect(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn22.1")).toBe(7);
+      expect(cmp("sn/en/sujato/sn22.1", "sn/en/sujato/sn29.1")).toBe(-7);
 
       // subchapter numbering
-      should(cmp("sn/en/sujato/sn30.1", "sn/en/sujato/sn30.2")).equal(-1);
-      should(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn29.10")).equal(-9);
-      should(cmp("sn/en/sujato/sn29.10", "sn/en/sujato/sn29.1")).equal(9);
-      should(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn29.11-20")).equal(-19);
-      should(cmp("sn/en/sujato/sn29.11-20", "sn/en/sujato/sn29.1")).equal(19);
-      should(cmp("sn/en/sujato/sn29.10", "sn/en/sujato/sn29.11-20")).equal(-10);
-      should(cmp("sn/en/sujato/sn29.11-20", "sn/en/sujato/sn29.10")).equal(10);
+      expect(cmp("sn/en/sujato/sn30.1", "sn/en/sujato/sn30.2")).toBe(-1);
+      expect(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn29.10")).toBe(-9);
+      expect(cmp("sn/en/sujato/sn29.10", "sn/en/sujato/sn29.1")).toBe(9);
+      expect(cmp("sn/en/sujato/sn29.1", "sn/en/sujato/sn29.11-20")).toBe(-19);
+      expect(cmp("sn/en/sujato/sn29.11-20", "sn/en/sujato/sn29.1")).toBe(19);
+      expect(cmp("sn/en/sujato/sn29.10", "sn/en/sujato/sn29.11-20")).toBe(-10);
+      expect(cmp("sn/en/sujato/sn29.11-20", "sn/en/sujato/sn29.10")).toBe(10);
 
       // ranges
-      should(cmp("sn29.11-20", "sn29.11-20")).equal(0);
-      should(cmp("sn29.11-20", "sn29.10")).equal(10);
-      should(cmp("sn29.11-20", "sn29.11")).equal(9);
-      should(cmp("sn29.11-20", "sn29.12")).equal(8);
-      should(cmp("sn29.21", "sn29.20")).equal(1);
-      should(cmp("sn29.21", "sn29.21")).equal(0);
-      should(cmp("sn29.21", "sn29.22")).equal(-1);
+      expect(cmp("sn29.11-20", "sn29.11-20")).toBe(0);
+      expect(cmp("sn29.11-20", "sn29.10")).toBe(10);
+      expect(cmp("sn29.11-20", "sn29.11")).toBe(9);
+      expect(cmp("sn29.11-20", "sn29.12")).toBe(8);
+      expect(cmp("sn29.21", "sn29.20")).toBe(1);
+      expect(cmp("sn29.21", "sn29.21")).toBe(0);
+      expect(cmp("sn29.21", "sn29.22")).toBe(-1);
 
-      should(cmp("an1.1-10", "an1.1-10")).equal(0);
-      should(cmp("an1.1", "an1.1-10")).equal(-9);
-      should(cmp("an1.10", "an1.1-10")).equal(0);
+      expect(cmp("an1.1-10", "an1.1-10")).toBe(0);
+      expect(cmp("an1.1", "an1.1-10")).toBe(-9);
+      expect(cmp("an1.10", "an1.1-10")).toBe(0);
     });
     it("sutta return sutta id", function () {
       var scid = new SuttaCentralId("mn1");
-      should(scid.sutta).equal("mn1");
+      expect(scid.sutta).toBe("mn1");
 
       var scid = new SuttaCentralId("mn1:2.3.4");
-      should(scid.sutta).equal("mn1");
+      expect(scid.sutta).toBe("mn1");
 
       var scid = new SuttaCentralId("sn1.11-20:2.3.4");
-      should(scid.sutta).equal("sn1.11-20");
+      expect(scid.sutta).toBe("sn1.11-20");
     });
     it("nikaya return nikaya id", function () {
       var scid = new SuttaCentralId("mn1");
-      should(scid.nikaya).equal("mn");
+      expect(scid.nikaya).toBe("mn");
 
       var scid = new SuttaCentralId("mn1:2.3.4");
-      should(scid.nikaya).equal("mn");
+      expect(scid.nikaya).toBe("mn");
 
       var scid = new SuttaCentralId("sn1.11-20:2.3.4");
-      should(scid.nikaya).equal("sn");
+      expect(scid.nikaya).toBe("sn");
     });
     it("nikayaFolder => nikaya folder", function () {
       // DEPRECATED
       var scid = new SuttaCentralId("thag21.7");
-      should(scid.nikayaFolder).equal("kn/thag");
+      expect(scid.nikayaFolder).toBe("kn/thag");
 
       var scid = new SuttaCentralId("mn1");
-      should(scid.nikayaFolder).equal("mn");
+      expect(scid.nikayaFolder).toBe("mn");
 
       var scid = new SuttaCentralId("mn1:2.3.4");
-      should(scid.nikayaFolder).equal("mn");
+      expect(scid.nikayaFolder).toBe("mn");
 
       var scid = new SuttaCentralId("sn1.11-20:2.3.4");
-      should(scid.nikayaFolder).equal("sn/sn1");
+      expect(scid.nikayaFolder).toBe("sn/sn1");
     });
     it("parent returns parent SuttaCentralId", function () {
       var scid = new SuttaCentralId("mn1");
-      should(scid.parent).equal(null);
+      expect(scid.parent).toBe(null);
 
       var scid = new SuttaCentralId("mn1:2.");
-      should(scid.parent).instanceOf(SuttaCentralId);
-      should(scid.parent.scid).equal("mn1:");
+      expect(scid.parent).toBeInstanceOf(SuttaCentralId);
+      expect(scid.parent.scid).toBe("mn1:");
 
       var scid = new SuttaCentralId("mn1:2.3.4");
-      should(scid.parent).instanceOf(SuttaCentralId);
-      should(scid.parent.scid).equal("mn1:2.3.");
+      expect(scid.parent).toBeInstanceOf(SuttaCentralId);
+      expect(scid.parent.scid).toBe("mn1:2.3.");
     });
     it("scidRegExp(pat) creates a scid wildcard pattern", function () {
       // should be same as Linux file wildcards
-      should.deepEqual(SuttaCentralId.scidRegExp("mn1:2.3"), /mn1:2\.3/);
-      should.deepEqual(SuttaCentralId.scidRegExp("mn1:2.*"), /mn1:2\..*/);
-      should.deepEqual(SuttaCentralId.scidRegExp("mn1:2.?"), /mn1:2\../);
-      should.deepEqual(
-        SuttaCentralId.scidRegExp("mn1:[2-3].*"),
-        /mn1:[2-3]\..*/
-      );
-      should.deepEqual(SuttaCentralId.scidRegExp("^mn1:2.3"), /\^mn1:2\.3/);
-      should.deepEqual(SuttaCentralId.scidRegExp("mn1:2.3$"), /mn1:2\.3\$/);
+      expect(SuttaCentralId.scidRegExp("mn1:2.3")).toEqual(/mn1:2\.3/);
+      expect(SuttaCentralId.scidRegExp("mn1:2.*")).toEqual(/mn1:2\..*/);
+      expect(SuttaCentralId.scidRegExp("mn1:2.?")).toEqual(/mn1:2\../);
+      expect(
+        SuttaCentralId.scidRegExp("mn1:[2-3].*")
+      ).toEqual(/mn1:[2-3]\..*/);
+      expect(SuttaCentralId.scidRegExp("^mn1:2.3")).toEqual(/\^mn1:2\.3/);
+      expect(SuttaCentralId.scidRegExp("mn1:2.3$")).toEqual(/mn1:2\.3\$/);
     });
     it("groups returns array of groups", function () {
       var scid = new SuttaCentralId("mn1:2.3.4");
-      should.deepEqual(scid.groups, ["2", "3", "4"]);
+      expect(scid.groups).toEqual(["2", "3", "4"]);
       var scid = new SuttaCentralId("mn1");
-      should.deepEqual(scid.groups, null);
+      expect(scid.groups).toBeNull();
     });
     it("test(text) => text is suid ", function () {
       // vinaya
-      should(SuttaCentralId.test("pli-tv-bi-vb-sk1-75")).equal(true);
+      expect(SuttaCentralId.test("pli-tv-bi-vb-sk1-75")).toBe(true);
 
       // space
-      should(SuttaCentralId.test("an3. 90")).equal(true);
-      should(SuttaCentralId.test("an3.  90")).equal(true);
-      should(SuttaCentralId.test("mn 1-10")).equal(true);
-      should(SuttaCentralId.test("mn 1")).equal(true);
+      expect(SuttaCentralId.test("an3. 90")).toBe(true);
+      expect(SuttaCentralId.test("an3.  90")).toBe(true);
+      expect(SuttaCentralId.test("mn 1-10")).toBe(true);
+      expect(SuttaCentralId.test("mn 1")).toBe(true);
 
       // unsupported sutta
-      should(SuttaCentralId.test("t1670b2.8")).equal(true);
+      expect(SuttaCentralId.test("t1670b2.8")).toBe(true);
 
       // fully specified sutta
-      should(SuttaCentralId.test("mn1/en/sujato")).equal(true);
-      should(SuttaCentralId.test("mn1/en/sujato,mn1/en/bodhi")).equal(true);
-      should(
+      expect(SuttaCentralId.test("mn1/en/sujato")).toBe(true);
+      expect(SuttaCentralId.test("mn1/en/sujato,mn1/en/bodhi")).toBe(true);
+      expect(
         SuttaCentralId.test("dn7/de/kusalagnana-maitrimurti-traetow")
-      ).equal(true);
+      ).toBe(true);
 
       // valid collection with a number
-      should(SuttaCentralId.test("mn2000")).equal(true);
-      should(SuttaCentralId.test("an1")).equal(true);
-      should(SuttaCentralId.test("sn22.1")).equal(true);
-      should(SuttaCentralId.test("sn22.1-20")).equal(true);
-      should(SuttaCentralId.test("mn8-11")).equal(true);
-      should(SuttaCentralId.test("mn8-11,mn9-12")).equal(true);
+      expect(SuttaCentralId.test("mn2000")).toBe(true);
+      expect(SuttaCentralId.test("an1")).toBe(true);
+      expect(SuttaCentralId.test("sn22.1")).toBe(true);
+      expect(SuttaCentralId.test("sn22.1-20")).toBe(true);
+      expect(SuttaCentralId.test("mn8-11")).toBe(true);
+      expect(SuttaCentralId.test("mn8-11,mn9-12")).toBe(true);
 
       // unknown but valid sutta
-      should(SuttaCentralId.test("a1")).equal(true);
-      should(SuttaCentralId.test("mn01")).equal(true);
+      expect(SuttaCentralId.test("a1")).toBe(true);
+      expect(SuttaCentralId.test("mn01")).toBe(true);
 
       // not a sutta_uid pattern
-      should(SuttaCentralId.test("red")).equal(false);
-      should(SuttaCentralId.test("thig")).equal(false);
-      should(SuttaCentralId.test("mn")).equal(false);
+      expect(SuttaCentralId.test("red")).toBe(false);
+      expect(SuttaCentralId.test("thig")).toBe(false);
+      expect(SuttaCentralId.test("mn")).toBe(false);
 
       // lists
-      should(SuttaCentralId.test("mn1, mn2")).equal(true);
-      should(SuttaCentralId.test("sn22-25")).equal(true);
-      should(SuttaCentralId.test("sn22.1-20,mn1")).equal(true);
-      should(SuttaCentralId.test("sn22.1-20   ,   mn1")).equal(true);
-      should(SuttaCentralId.test("sn22.1-20,red")).equal(false);
-      should(SuttaCentralId.test("red,sn22.1-20,mn1")).equal(false);
-      should(SuttaCentralId.test("sn22.1-20    ,   red")).equal(false);
-      should(SuttaCentralId.test("red,sn22.1-20")).equal(false);
+      expect(SuttaCentralId.test("mn1, mn2")).toBe(true);
+      expect(SuttaCentralId.test("sn22-25")).toBe(true);
+      expect(SuttaCentralId.test("sn22.1-20,mn1")).toBe(true);
+      expect(SuttaCentralId.test("sn22.1-20   ,   mn1")).toBe(true);
+      expect(SuttaCentralId.test("sn22.1-20,red")).toBe(false);
+      expect(SuttaCentralId.test("red,sn22.1-20,mn1")).toBe(false);
+      expect(SuttaCentralId.test("sn22.1-20    ,   red")).toBe(false);
+      expect(SuttaCentralId.test("red,sn22.1-20")).toBe(false);
     });
     it("rangeHigh => upper bound", () => {
-      should(SuttaCentralId.rangeHigh("an1.10--an1.11")).equal("an1.11");
-      should(SuttaCentralId.rangeHigh("an1.2:3.4--5.6")).equal(
+      expect(SuttaCentralId.rangeHigh("an1.10--an1.11")).toBe("an1.11");
+      expect(SuttaCentralId.rangeHigh("an1.2:3.4--5.6")).toBe(
         "an1.2:5.6.9999"
       );
-      should(
+      expect(
         SuttaCentralId.rangeHigh("an1.2:2.1.3--an1.11:5.1.19/en/sujato")
-      ).equal("an1.11:5.1.19.9999/en/sujato");
-      should(SuttaCentralId.rangeHigh("an1.2-11:2-5.1.3-19/en/sujato")).equal(
+      ).toBe("an1.11:5.1.19.9999/en/sujato");
+      expect(SuttaCentralId.rangeHigh("an1.2-11:2-5.1.3-19/en/sujato")).toBe(
         "an1.11:5.1.19.9999/en/sujato"
       );
-      should(SuttaCentralId.rangeHigh("an1.2-11:2-5.1.3-19")).equal(
+      expect(SuttaCentralId.rangeHigh("an1.2-11:2-5.1.3-19")).toBe(
         "an1.11:5.1.19.9999"
       );
-      should(SuttaCentralId.rangeHigh("an1.2-11")).equal("an1.11");
-      should(SuttaCentralId.rangeHigh("an1.2")).equal("an1.2");
-      should(SuttaCentralId.rangeHigh("mn1")).equal("mn1");
+      expect(SuttaCentralId.rangeHigh("an1.2-11")).toBe("an1.11");
+      expect(SuttaCentralId.rangeHigh("an1.2")).toBe("an1.2");
+      expect(SuttaCentralId.rangeHigh("mn1")).toBe("mn1");
     });
     it("rangeLow => lower bound", () => {
-      should(
+      expect(
         SuttaCentralId.rangeLow("an1.2:2.1.3--an1.11:5.1.19/en/sujato")
-      ).equal("an1.2:2.1.3/en/sujato");
-      should(SuttaCentralId.rangeLow("an1.2:3.4--5.6")).equal("an1.2:3.4");
-      should(SuttaCentralId.rangeLow("an1.2-11:2-5.1.3-19/en/sujato")).equal(
+      ).toBe("an1.2:2.1.3/en/sujato");
+      expect(SuttaCentralId.rangeLow("an1.2:3.4--5.6")).toBe("an1.2:3.4");
+      expect(SuttaCentralId.rangeLow("an1.2-11:2-5.1.3-19/en/sujato")).toBe(
         "an1.2:2.1.3/en/sujato"
       );
-      should(SuttaCentralId.rangeLow("an1.2-11:2-5.1.3-19")).equal(
+      expect(SuttaCentralId.rangeLow("an1.2-11:2-5.1.3-19")).toBe(
         "an1.2:2.1.3"
       );
-      should(SuttaCentralId.rangeLow("an1.2-11")).equal("an1.2");
-      should(SuttaCentralId.rangeLow("an1.2")).equal("an1.2");
-      should(SuttaCentralId.rangeLow("mn1")).equal("mn1");
+      expect(SuttaCentralId.rangeLow("an1.2-11")).toBe("an1.2");
+      expect(SuttaCentralId.rangeLow("an1.2")).toBe("an1.2");
+      expect(SuttaCentralId.rangeLow("mn1")).toBe("mn1");
     });
     it("add(...) increments number", () => {
       var segid = new SuttaCentralId("an1.1:0.1");
-      should(segid.add(1).scid).equal("an1.1:1.0");
-      should(segid.add(0, 1).scid).equal("an1.1:0.2");
+      expect(segid.add(1).scid).toBe("an1.1:1.0");
+      expect(segid.add(0, 1).scid).toBe("an1.1:0.2");
 
       var suid = new SuttaCentralId("an1.1");
-      should(suid.add(1).scid).equal("an2.1");
-      should(suid.add(0, 1).scid).equal("an1.2");
+      expect(suid.add(1).scid).toBe("an2.1");
+      expect(suid.add(0, 1).scid).toBe("an1.2");
     });
     it("standardForm() => human standard", () => {
       var segid = new SuttaCentralId("an1.1:0.1");
-      should(segid.standardForm()).equal("AN1.1:0.1");
+      expect(segid.standardForm()).toBe("AN1.1:0.1");
       var segid = new SuttaCentralId("thag1.1:2.3");
-      should(segid.standardForm()).equal("Thag1.1:2.3");
+      expect(segid.standardForm()).toBe("Thag1.1:2.3");
     });
     it("partNumber()", ()=>{
-      should.deepEqual(SuttaCentralId.partNumber("Mn1", "Mn1:50.2"), 
+      expect(SuttaCentralId.partNumber("Mn1", "Mn1:50.2"), 
         [1,13]);
-      should.deepEqual(SuttaCentralId.partNumber("mn1", "mn1:50.2"), 
+      expect(SuttaCentralId.partNumber("mn1", "mn1:50.2"), 
         [1,13]);
     });
     it("compare vinaya ids", ()=>{
       let suid = 'pli-tv-pvr5'; // Valid vinaya document
       DBG.COMPARE = 0;
-      should(SuttaCentralId.compareHigh('abc', suid)).equal(-1);
-      should(SuttaCentralId.compareLow('abc', suid)).equal(-1);
-      should(SuttaCentralId.compareHigh('xyz', suid)).equal(1);
-      should(SuttaCentralId.compareLow('xyz', suid)).equal(1);
+      expect(SuttaCentralId.compareHigh('abc', suid)).toBe(-1);
+      expect(SuttaCentralId.compareLow('abc', suid)).toBe(-1);
+      expect(SuttaCentralId.compareHigh('xyz', suid)).toBe(1);
+      expect(SuttaCentralId.compareLow('xyz', suid)).toBe(1);
       DBG.COMPARE = 0;
     });
   });
