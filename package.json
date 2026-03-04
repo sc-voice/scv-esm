@@ -22,11 +22,11 @@
     "log-instance": "^1.5.0"
   },
   "devDependencies": {
+    "@sc-voice/vitest": "^4.0.1",
     "eslint": "^10.0.0",
     "memo-again": "^0.8.0",
     "scv-bilara": "^3.199.32",
-    "suttacentral-api": "^2.24.0",
-    "vitest": "^4.0.18"
+    "suttacentral-api": "^2.24.0"
   },
   "overrides": {
     "diff": ">=8.0.3",

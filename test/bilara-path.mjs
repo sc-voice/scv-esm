@@ -1,4 +1,4 @@
-import { expect, describe, it } from "vitest";
+import { expect, describe, it } from "@sc-voice/vitest";
 import { BilaraPath } from "../main.mjs";
 
 describe("bilara-path", () => {

@@ -1,4 +1,4 @@
-import { expect, describe, it, beforeAll } from "vitest";
+import { expect, describe, it, beforeAll } from "@sc-voice/vitest";
 import { Examples } from "../main.mjs";
 import { logger } from "log-instance/index.mjs";
 

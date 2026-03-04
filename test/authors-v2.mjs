@@ -1,4 +1,4 @@
-import { expect, describe, it } from "vitest";
+import { expect, describe, it } from "@sc-voice/vitest";
 import { Authors, AuthorsV2 } from "../main.mjs";
 
 describe("authors-v2", () => {
