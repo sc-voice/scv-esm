@@ -865,7 +865,8 @@ const AUTHORS = {
     "lang": "ru",
     "author": "sv",
     "name": [
-      "SV theravada.ru"
+      "SV theravada.ru",
+      "o Dhamma.gift"
     ],
     "exampleVersion": 0,
     "sutta": true,
