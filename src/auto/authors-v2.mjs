@@ -1072,18 +1072,18 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 34,
+      "sutta": 35,
       "sutta/an": 12,
       "sutta/an/an6": 4,
       "sutta/an/an7": 1,
       "sutta/an/an8": 6,
       "sutta/an/an9": 1,
       "sutta/mn": 2,
-      "sutta/sn": 20,
+      "sutta/sn": 21,
       "sutta/sn/sn3": 9,
       "sutta/sn/sn6": 1,
       "sutta/sn/sn22": 8,
-      "sutta/sn/sn35": 1,
+      "sutta/sn/sn35": 2,
       "sutta/sn/sn47": 1
     }
   },
