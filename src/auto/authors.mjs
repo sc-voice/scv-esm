@@ -40,6 +40,12 @@ const AUTHORS = {
     "author": "vri",
     "exampleVersion": 0
   },
+  "alaeddin": {
+    "type": "translator",
+    "name": "Ādam ʿAlāʾ al-Dīn",
+    "author": "alaeddin",
+    "exampleVersion": 0
+  },
   "anandajoti": {
     "type": "translator",
     "name": "Bhikkhu Ānandajoti",
@@ -224,6 +230,12 @@ const AUTHORS = {
     "type": "translator",
     "name": "Paweł Łucjan",
     "author": "lucjan",
+    "exampleVersion": 0
+  },
+  "luka": {
+    "type": "translator",
+    "name": "Luka Phorumeli",
+    "author": "luka",
     "exampleVersion": 0
   },
   "madhu": {
