@@ -871,9 +871,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 912,
-      "sutta/an": 478,
-      "sutta/an/an1": 7,
+      "sutta": 913,
+      "sutta/an": 479,
+      "sutta/an/an1": 8,
       "sutta/an/an5": 218,
       "sutta/an/an6": 111,
       "sutta/an/an7": 84,
@@ -1132,6 +1132,21 @@ const AUTHORS = {
     "stats": {
       "sutta": 5,
       "sutta/dn": 5
+    }
+  },
+  "ka:luka": {
+    "type": "translation",
+    "lang": "ka",
+    "author": "luka",
+    "name": [
+      "Luka Elizbarashvili"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 5,
+      "sutta/kn": 5,
+      "sutta/kn/dhp": 5
     }
   }
 }

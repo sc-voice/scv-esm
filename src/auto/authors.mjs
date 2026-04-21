@@ -34,6 +34,12 @@ const AUTHORS = {
     "author": "pts",
     "exampleVersion": 0
   },
+  "sct": {
+    "type": "root",
+    "name": "Taisho Tipitaka",
+    "author": "sct",
+    "exampleVersion": 0
+  },
   "vri": {
     "type": "root",
     "name": "Vipassana Research Institute",
@@ -234,9 +240,10 @@ const AUTHORS = {
   },
   "luka": {
     "type": "translator",
-    "name": "Luka Phorumeli",
+    "name": "Luka Elizbarashvili",
     "author": "luka",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "ka"
   },
   "madhu": {
     "type": "translator",
