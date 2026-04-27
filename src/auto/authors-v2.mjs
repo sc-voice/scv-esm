@@ -871,9 +871,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 917,
-      "sutta/an": 483,
-      "sutta/an/an1": 12,
+      "sutta": 918,
+      "sutta/an": 484,
+      "sutta/an/an1": 13,
       "sutta/an/an5": 218,
       "sutta/an/an6": 111,
       "sutta/an/an7": 84,
