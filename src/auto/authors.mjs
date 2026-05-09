@@ -287,7 +287,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Margus Väli",
     "author": "mgvali",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "et"
   },
   "mudito": {
     "type": "translator",
