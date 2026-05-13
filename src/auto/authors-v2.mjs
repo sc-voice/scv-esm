@@ -621,10 +621,10 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 29,
+      "sutta": 30,
       "sutta/kn": 28,
       "sutta/kn/dhp": 26,
-      "sutta/mn": 1,
+      "sutta/mn": 2,
       "sutta/kn/snp": 2,
       "sutta/kn/snp/vagga1": 2
     }
@@ -1134,8 +1134,8 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 5,
-      "sutta/dn": 5
+      "sutta": 6,
+      "sutta/dn": 6
     }
   },
   "et:mgvali": {
