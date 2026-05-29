@@ -433,6 +433,7 @@ const SUIDMAP = {
 		"translation/en/sujato": "sutta/an/an3",
 		"translation/fr/sekha": "sutta/an/an3",
 		"translation/pt/laera-quaresma": "sutta/an/an3",
+		"translation/ru/sv": "sutta/an/an3",
 		"root/pli/ms": "sutta/an/an3"
 	},
 	"an3.2": {
