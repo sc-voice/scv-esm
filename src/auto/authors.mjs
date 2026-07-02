@@ -130,6 +130,12 @@ const AUTHORS = {
     "exampleVersion": 0,
     "lang": "tr"
   },
+  "fulyakoksoy": {
+    "type": "translator",
+    "name": "Fulyak Oksoy",
+    "author": "fulyakoksoy",
+    "exampleVersion": 0
+  },
   "flavio": {
     "type": "translator",
     "name": "Flavio Stucky",
