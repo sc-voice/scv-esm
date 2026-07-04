@@ -134,7 +134,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Fulyak Oksoy",
     "author": "fulyakoksoy",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "tr"
   },
   "flavio": {
     "type": "translator",
