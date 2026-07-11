@@ -1128,9 +1128,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 19,
-      "sutta/kn": 19,
-      "sutta/kn/thig": 19
+      "sutta": 73,
+      "sutta/kn": 73,
+      "sutta/kn/thig": 73
     }
   },
   "ru:khantibalo": {

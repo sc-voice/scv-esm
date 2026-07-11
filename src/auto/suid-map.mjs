@@ -26784,6 +26784,7 @@ const SUIDMAP = {
 	},
 	"thig2.2": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26792,6 +26793,7 @@ const SUIDMAP = {
 	},
 	"thig2.3": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26800,6 +26802,7 @@ const SUIDMAP = {
 	},
 	"thig2.4": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26808,6 +26811,7 @@ const SUIDMAP = {
 	},
 	"thig2.5": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26816,6 +26820,7 @@ const SUIDMAP = {
 	},
 	"thig2.6": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26824,6 +26829,7 @@ const SUIDMAP = {
 	},
 	"thig2.7": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26832,6 +26838,7 @@ const SUIDMAP = {
 	},
 	"thig2.8": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26840,6 +26847,7 @@ const SUIDMAP = {
 	},
 	"thig2.9": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26848,6 +26856,7 @@ const SUIDMAP = {
 	},
 	"thig2.10": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26856,6 +26865,7 @@ const SUIDMAP = {
 	},
 	"thig3.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26864,6 +26874,7 @@ const SUIDMAP = {
 	},
 	"thig3.2": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26872,6 +26883,7 @@ const SUIDMAP = {
 	},
 	"thig3.3": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26880,6 +26892,7 @@ const SUIDMAP = {
 	},
 	"thig3.4": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26888,6 +26901,7 @@ const SUIDMAP = {
 	},
 	"thig3.5": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26896,6 +26910,7 @@ const SUIDMAP = {
 	},
 	"thig3.6": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26904,6 +26919,7 @@ const SUIDMAP = {
 	},
 	"thig3.7": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26912,6 +26928,7 @@ const SUIDMAP = {
 	},
 	"thig3.8": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26920,6 +26937,7 @@ const SUIDMAP = {
 	},
 	"thig4.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26928,6 +26946,7 @@ const SUIDMAP = {
 	},
 	"thig5.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26936,6 +26955,7 @@ const SUIDMAP = {
 	},
 	"thig5.2": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26944,6 +26964,7 @@ const SUIDMAP = {
 	},
 	"thig5.3": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26952,6 +26973,7 @@ const SUIDMAP = {
 	},
 	"thig5.4": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26960,6 +26982,7 @@ const SUIDMAP = {
 	},
 	"thig5.5": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26968,6 +26991,7 @@ const SUIDMAP = {
 	},
 	"thig5.6": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26976,6 +27000,7 @@ const SUIDMAP = {
 	},
 	"thig5.7": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26984,6 +27009,7 @@ const SUIDMAP = {
 	},
 	"thig5.8": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -26992,6 +27018,7 @@ const SUIDMAP = {
 	},
 	"thig5.9": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27000,6 +27027,7 @@ const SUIDMAP = {
 	},
 	"thig5.10": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27008,6 +27036,7 @@ const SUIDMAP = {
 	},
 	"thig5.11": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27016,6 +27045,7 @@ const SUIDMAP = {
 	},
 	"thig5.12": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27024,6 +27054,7 @@ const SUIDMAP = {
 	},
 	"thig6.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27032,6 +27063,7 @@ const SUIDMAP = {
 	},
 	"thig6.2": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27040,6 +27072,7 @@ const SUIDMAP = {
 	},
 	"thig6.3": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27048,6 +27081,7 @@ const SUIDMAP = {
 	},
 	"thig6.4": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27056,6 +27090,7 @@ const SUIDMAP = {
 	},
 	"thig6.5": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27064,6 +27099,7 @@ const SUIDMAP = {
 	},
 	"thig6.6": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27072,6 +27108,7 @@ const SUIDMAP = {
 	},
 	"thig6.7": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27080,6 +27117,7 @@ const SUIDMAP = {
 	},
 	"thig6.8": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27088,6 +27126,7 @@ const SUIDMAP = {
 	},
 	"thig7.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27096,6 +27135,7 @@ const SUIDMAP = {
 	},
 	"thig7.2": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27104,6 +27144,7 @@ const SUIDMAP = {
 	},
 	"thig7.3": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27112,6 +27153,7 @@ const SUIDMAP = {
 	},
 	"thig8.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27120,6 +27162,7 @@ const SUIDMAP = {
 	},
 	"thig9.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27128,6 +27171,7 @@ const SUIDMAP = {
 	},
 	"thig10.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27136,6 +27180,7 @@ const SUIDMAP = {
 	},
 	"thig11.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27144,6 +27189,7 @@ const SUIDMAP = {
 	},
 	"thig12.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27152,6 +27198,7 @@ const SUIDMAP = {
 	},
 	"thig13.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27160,6 +27207,7 @@ const SUIDMAP = {
 	},
 	"thig13.2": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27168,6 +27216,7 @@ const SUIDMAP = {
 	},
 	"thig13.3": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27176,6 +27225,7 @@ const SUIDMAP = {
 	},
 	"thig13.4": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27184,6 +27234,7 @@ const SUIDMAP = {
 	},
 	"thig13.5": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27192,6 +27243,7 @@ const SUIDMAP = {
 	},
 	"thig14.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27200,6 +27252,7 @@ const SUIDMAP = {
 	},
 	"thig15.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
@@ -27208,6 +27261,7 @@ const SUIDMAP = {
 	},
 	"thig16.1": {
 		"translation/de/sabbamitta": "sutta/kn/thig",
+		"translation/de/sonjabuege": "sutta/kn/thig",
 		"translation/en/soma": "sutta/kn/thig",
 		"translation/en/sujato": "sutta/kn/thig",
 		"translation/ru/narinyanievmenenko": "sutta/kn/thig",
