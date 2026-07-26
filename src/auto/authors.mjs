@@ -290,6 +290,12 @@ const AUTHORS = {
     "exampleVersion": 0,
     "lang": "pl"
   },
+  "marion": {
+    "type": "translator",
+    "name": "Marion Ah-Mouck",
+    "author": "marion",
+    "exampleVersion": 0
+  },
   "mgvali": {
     "type": "translator",
     "name": "Margus Väli",
