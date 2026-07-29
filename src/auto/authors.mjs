@@ -294,7 +294,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Marion Ah-Mouck",
     "author": "marion",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "fr"
   },
   "mgvali": {
     "type": "translator",
