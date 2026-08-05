@@ -498,17 +498,18 @@ const AUTHORS = {
     "author": "yingchen",
     "exampleVersion": 0
   },
-  "çakmakçı": {
+  "cakmakcı": {
     "type": "translator",
     "name": "Ufuk Çakmakçı",
-    "author": "çakmakçı",
+    "author": "cakmakcı",
     "exampleVersion": 0
   },
-  "şen": {
+  "sen": {
     "type": "translator",
     "name": "Cem Şen",
-    "author": "şen",
-    "exampleVersion": 0
+    "author": "sen",
+    "exampleVersion": 0,
+    "lang": "tr"
   }
 }
 
