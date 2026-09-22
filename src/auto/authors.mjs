@@ -510,6 +510,12 @@ const AUTHORS = {
     "author": "sen",
     "exampleVersion": 0,
     "lang": "tr"
+  },
+  "magesh": {
+    "type": "translator",
+    "name": "Upasaka Magesh",
+    "author": "magesh",
+    "exampleVersion": 0
   }
 }
 
