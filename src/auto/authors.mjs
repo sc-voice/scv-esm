@@ -515,7 +515,8 @@ const AUTHORS = {
     "type": "translator",
     "name": "Upasaka Magesh",
     "author": "magesh",
-    "exampleVersion": 0
+    "exampleVersion": 0,
+    "lang": "ta"
   }
 }
 
