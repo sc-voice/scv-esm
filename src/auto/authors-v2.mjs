@@ -878,11 +878,11 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 1213,
-      "sutta/an": 590,
+      "sutta": 1214,
+      "sutta/an": 591,
       "sutta/an/an1": 31,
       "sutta/an/an2": 19,
-      "sutta/an/an3": 67,
+      "sutta/an/an3": 68,
       "sutta/an/an4": 2,
       "sutta/an/an5": 218,
       "sutta/an/an6": 111,
@@ -1176,6 +1176,20 @@ const AUTHORS = {
       "sutta": 18,
       "sutta/kn": 18,
       "sutta/kn/dhp": 18
+    }
+  },
+  "ta:magesh": {
+    "type": "translation",
+    "lang": "ta",
+    "author": "magesh",
+    "name": [
+      "Upasaka Magesh"
+    ],
+    "exampleVersion": 0,
+    "sutta": true,
+    "stats": {
+      "sutta": 1,
+      "sutta/mn": 1
     }
   }
 }
