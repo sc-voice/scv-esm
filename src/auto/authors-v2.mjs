@@ -1188,8 +1188,8 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 2,
-      "sutta/mn": 2
+      "sutta": 3,
+      "sutta/mn": 3
     }
   }
 }
