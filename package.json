@@ -32,5 +32,8 @@
     "diff": ">=8.0.3",
     "minimatch": ">=10.2.1",
     "ajv": ">=8.18.0"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true
   }
 }
