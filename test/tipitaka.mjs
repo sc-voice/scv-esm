@@ -1,4 +1,4 @@
-import { expect, describe, it } from "@sc-voice/vitest";
+import { expect, describe, it } from "vitest";
 import { Tipitaka } from "../main.mjs";
 
 describe("tipitaka", () => {

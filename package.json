@@ -22,17 +22,16 @@
     "log-instance": "^1.5.0"
   },
   "devDependencies": {
-    "@sc-voice/vitest": "^4.1.11",
     "eslint": "^10.0.0",
     "memo-again": "^0.8.0",
     "scv-bilara": "^3.216.20",
-    "suttacentral-api": "^2.25.0"
+    "suttacentral-api": "^2.25.0",
+    "vitest": "^5.0.5"
   },
   "overrides": {
     "diff": ">=8.0.3",
     "minimatch": ">=10.2.1",
-    "ajv": ">=8.18.0",
-    "@vitest/mocker": "4.1.12"
+    "ajv": ">=8.18.0"
   },
   "allowScripts": {
     "fsevents@2.3.3": true
