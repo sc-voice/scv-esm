@@ -956,9 +956,9 @@ const AUTHORS = {
     "exampleVersion": 0,
     "sutta": true,
     "stats": {
-      "sutta": 109,
-      "sutta/kn": 109,
-      "sutta/kn/mil": 109
+      "sutta": 110,
+      "sutta/kn": 110,
+      "sutta/kn/mil": 110
     }
   },
   "ru:syrkin": {
