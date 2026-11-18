@@ -10673,6 +10673,10 @@ const SUIDMAP = {
 		"translation/en/kelly": "sutta/kn/mil",
 		"root/pli/ms": "sutta/kn/mil"
 	},
+	"mil5.2.4": {
+		"translation/en/kelly": "sutta/kn/mil",
+		"root/pli/ms": "sutta/kn/mil"
+	},
 	"mn1": {
 		"translation/de/sabbamitta": "sutta/mn",
 		"translation/en/sujato": "sutta/mn",
@@ -29541,9 +29545,6 @@ const SUIDMAP = {
 	},
 	"ja99": {
 		"root/pli/ms": "sutta/kn/ja"
-	},
-	"mil5.2.4": {
-		"root/pli/ms": "sutta/kn/mil"
 	},
 	"mil5.2.5": {
 		"root/pli/ms": "sutta/kn/mil"
